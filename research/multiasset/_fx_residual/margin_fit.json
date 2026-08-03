@@ -1,0 +1,39 @@
+{
+  "purpose": "FIT step only. k is frozen from here into the holdout prereg; the holdout residuals have NOT been computed at the time of writing.",
+  "model": "earned = max(0, overnight) * (1 - k); remainder ~= k * max(0, overnight)/12",
+  "fitted_on": [
+    "EURUSD",
+    "GBPUSD",
+    "JPYUSD"
+  ],
+  "k_pooled_no_intercept": 0.345139,
+  "k_pct_of_rate_kept_by_depository": 34.514,
+  "r2_raw_no_intercept": 0.00545,
+  "r2_about_mean": 0.0024,
+  "n_pooled_months": 709,
+  "per_currency": {
+    "EURUSD": {
+      "n": 242,
+      "k_if_fitted_alone": 0.586408,
+      "mean_remainder_pct_yr": 0.7427,
+      "mean_positive_overnight_pct": 1.1334
+    },
+    "GBPUSD": {
+      "n": 235,
+      "k_if_fitted_alone": 0.211296,
+      "mean_remainder_pct_yr": 0.4905,
+      "mean_positive_overnight_pct": 1.7332
+    },
+    "JPYUSD": {
+      "n": 232,
+      "k_if_fitted_alone": 1.800984,
+      "mean_remainder_pct_yr": 0.2164,
+      "mean_positive_overnight_pct": 0.1271
+    }
+  },
+  "diagnostic_free_intercept": {
+    "slope": 0.289617,
+    "intercept_pct_yr": 0.1964,
+    "note": "reported to show how much level a free intercept would absorb; the frozen k above is the NO-INTERCEPT fit, which is the harder one"
+  }
+}

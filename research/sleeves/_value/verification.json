@@ -1,0 +1,92 @@
+{
+  "v1_signal_sanity": {
+    "NASDAQ_1998_2006": {
+      "argmax_date": "2005-02-28",
+      "max": 0.8281795413398818,
+      "argmin_date": "2000-02-29",
+      "min": -1.7778699433670497
+    },
+    "SPX_1928_1940": {
+      "argmax_date": "1934-08-31",
+      "max": 1.2428782220816235,
+      "argmin_date": "1937-05-31",
+      "min": -1.2913197565075576
+    },
+    "GOLD_F_2006_2020": {
+      "argmax_date": "2016-11-30",
+      "max": 0.3993537300224367,
+      "argmin_date": "2011-08-31",
+      "min": -1.0720605846524525
+    },
+    "note": "A 5-year reversal score must PEAK (cheapest) right after a crash and TROUGH (dearest) at a top. NASDAQ's score must peak ~2002-2005 and trough ~2000."
+  },
+  "v2_rank_ic_vs_next_month": {
+    "equity": {
+      "months": 605,
+      "mean_ic": -0.06840613931523022,
+      "ic_tstat_newey_west": -3.1414666611719615,
+      "pct_positive": 44.132231404958674
+    },
+    "rates": {
+      "months": 533,
+      "mean_ic": 0.028142589118198873,
+      "ic_tstat_newey_west": 0.7255264653760626,
+      "pct_positive": 51.21951219512195
+    },
+    "commodity": {
+      "months": 250,
+      "mean_ic": 0.08399999999999999,
+      "ic_tstat_newey_west": 2.16408164082925,
+      "pct_positive": 54.0
+    }
+  },
+  "v2_note": "Computed straight from the panel: no positions, no vol scaling, no costs. A negative mean IC means the signal itself is anti-predictive there.",
+  "v3_perfect_foresight": {
+    "months": 533,
+    "gross_sharpe": 5.853964223438671,
+    "net_sharpe_10bps": 5.587127279762721,
+    "verdict": "PIPELINE CAN EXPRESS AN EDGE"
+  },
+  "v4_from_csv": {
+    "months": 533,
+    "net_sharpe_10bps": -0.08240373021400124,
+    "bench_sharpe_10bps": 0.7550939275012375,
+    "arith_active_annual": -0.09835490818693525,
+    "arith_active_tstat_newey_west": -2.804253086874095,
+    "arith_active_tstat_iid": -2.8023446530627742,
+    "corr_to_trend": -0.1644821720634458,
+    "corr_to_trend_spearman": -0.09145140820726058,
+    "identity_geometric_equals_arith_minus_drag": -0.0016956339067726173
+  },
+  "v5_gross_leverage_share": {
+    "US5Y_TR": 0.4265915725417221,
+    "US30Y_TR": 0.14780415624410917,
+    "US10Y_TR": 0.0791029875086393,
+    "NASDAQ": 0.05750991403200873,
+    "N225": 0.05502325549166059,
+    "SPX": 0.049362963455706024,
+    "FTSE100": 0.032845237682842726,
+    "ASX200": 0.031674361247505535,
+    "GOLD_F": 0.029854562805624166,
+    "HSI": 0.02905689821744972,
+    "DAX": 0.018280243848751525,
+    "COPPER_F": 0.017588227073757283,
+    "WTI_F": 0.014141294462437398,
+    "SILVER_F": 0.011164325387785851
+  },
+  "v5_mean_gross_leverage": 7.881948936158512,
+  "v6_dsr_anchors": {
+    "7yr_n32": 1.4881,
+    "40yr_n32": 0.5971,
+    "expected": {
+      "7yr_n32": 1.488,
+      "40yr_n32": 0.597
+    }
+  },
+  "v7_cost_arithmetic": {
+    "turnover_per_year": 18.645720213648204,
+    "cost_drag_2bps_annual": 0.0018645720213648176,
+    "cost_drag_10bps_annual": 0.009322860106824104,
+    "implied_ratio": 5.0
+  }
+}

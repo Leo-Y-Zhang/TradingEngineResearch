@@ -1,0 +1,225 @@
+{
+  "prereg": "research/multiasset/uncorrected_bound_prereg.md",
+  "question": "By how much is the corrected book Sharpe of 0.7834 an upper bound?",
+  "what_this_changes": "The honesty statement attached to 0.7834. It promotes nothing, re-opens no gate, and re-selects no sleeve.",
+  "B1_reproduction_anchor": {
+    "measured": 0.783398,
+    "recorded": 0.7834,
+    "reproduces": true
+  },
+  "commodity_gaps": {
+    "GOLD_F": {
+      "n": 260,
+      "first": "2004-11-30",
+      "last": "2026-06-30",
+      "gap_pct_yr": 2.3626,
+      "gap_upper95_pct_yr": 3.2763,
+      "corr": 0.99199,
+      "reference": "GLD",
+      "why": "physically backed bullion - no roll at all",
+      "reference_is_roll_free": true
+    },
+    "SILVER_F": {
+      "n": 242,
+      "first": "2006-05-31",
+      "last": "2026-06-30",
+      "gap_pct_yr": 2.3396,
+      "gap_upper95_pct_yr": 3.8685,
+      "corr": 0.99424,
+      "reference": "SLV",
+      "why": "physically backed - no roll at all",
+      "reference_is_roll_free": true
+    },
+    "WTI_F": {
+      "n": 243,
+      "first": "2006-04-30",
+      "last": "2026-06-30",
+      "gap_pct_yr": 14.0146,
+      "gap_upper95_pct_yr": 26.2661,
+      "corr": 0.76578,
+      "reference": "USO",
+      "why": "WTI-only futures ETF with a published roll",
+      "reference_is_roll_free": false
+    },
+    "COPPER_F": {
+      "n": 176,
+      "first": "2011-11-30",
+      "last": "2026-06-30",
+      "gap_pct_yr": 2.598,
+      "gap_upper95_pct_yr": 4.416,
+      "corr": 0.98422,
+      "reference": "CPER",
+      "why": "copper-only futures ETF; only single-metal option",
+      "reference_is_roll_free": false
+    }
+  },
+  "usdx_correction": {
+    "weights": {
+      "EZ": 0.576,
+      "JP": 0.136,
+      "GB": 0.119,
+      "CA": 0.091,
+      "SE": 0.042,
+      "CH": 0.036
+    },
+    "n_months_corrected": 285,
+    "n_months_live": 666,
+    "frac_corrected": 0.4279,
+    "mean_charge_pct_yr": -0.6103
+  },
+  "B4_usdx_standalone": {
+    "sharpe_book": 0.786372,
+    "delta_vs_uncharged": -0.002974
+  },
+  "runs": {
+    "central_uncharged": {
+      "sharpe_book": 0.783398,
+      "sharpe_trend": 0.5708,
+      "sharpe_passive": 0.5078,
+      "vol_matched_active_pct_yr": 2.4352,
+      "vol_matched_active_tstat": 2.684,
+      "sharpe_since_2010": 0.7074,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.4,
+          "cagr_pct": 13.758,
+          "cagr_after_reconciliation_pct": 12.066
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 16.329,
+          "cagr_after_reconciliation_pct": 14.321
+        }
+      }
+    },
+    "roll_free_only": {
+      "sharpe_book": 0.774418,
+      "sharpe_trend": 0.5659,
+      "sharpe_passive": 0.4981,
+      "vol_matched_active_pct_yr": 2.4367,
+      "vol_matched_active_tstat": 2.689,
+      "sharpe_since_2010": 0.6878,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.4,
+          "cagr_pct": 13.613,
+          "cagr_after_reconciliation_pct": 11.939
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 16.125,
+          "cagr_after_reconciliation_pct": 14.142
+        }
+      }
+    },
+    "overlap_only": {
+      "sharpe_book": 0.752432,
+      "sharpe_trend": 0.5644,
+      "sharpe_passive": 0.4661,
+      "vol_matched_active_pct_yr": 2.5211,
+      "vol_matched_active_tstat": 2.789,
+      "sharpe_since_2010": 0.61,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.35,
+          "cagr_pct": 13.067,
+          "cagr_after_reconciliation_pct": 11.46
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 15.673,
+          "cagr_after_reconciliation_pct": 13.745
+        }
+      }
+    },
+    "full_sample": {
+      "sharpe_book": 0.744123,
+      "sharpe_trend": 0.56,
+      "sharpe_passive": 0.4586,
+      "vol_matched_active_pct_yr": 2.5118,
+      "vol_matched_active_tstat": 2.778,
+      "sharpe_since_2010": 0.6087,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.35,
+          "cagr_pct": 12.948,
+          "cagr_after_reconciliation_pct": 11.355
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 15.498,
+          "cagr_after_reconciliation_pct": 13.592
+        }
+      }
+    },
+    "full_sample_upper": {
+      "sharpe_book": 0.72041,
+      "sharpe_trend": 0.5638,
+      "sharpe_passive": 0.4191,
+      "vol_matched_active_pct_yr": 2.6412,
+      "vol_matched_active_tstat": 2.934,
+      "sharpe_since_2010": 0.5614,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.35,
+          "cagr_pct": 12.606,
+          "cagr_after_reconciliation_pct": 11.056
+        },
+        "dd50": {
+          "leverage": 1.9,
+          "cagr_pct": 14.809,
+          "cagr_after_reconciliation_pct": 12.987
+        }
+      }
+    }
+  },
+  "per_instrument_charge": {
+    "GOLD_F": {
+      "sharpe_book": 0.777854,
+      "delta_vs_usdx_only": 0.008518,
+      "gap_pct_yr": 2.3626,
+      "reference": "GLD",
+      "reference_is_roll_free": true
+    },
+    "SILVER_F": {
+      "sharpe_book": 0.782945,
+      "delta_vs_usdx_only": 0.003427,
+      "gap_pct_yr": 2.3396,
+      "reference": "SLV",
+      "reference_is_roll_free": true
+    },
+    "WTI_F": {
+      "sharpe_book": 0.759243,
+      "delta_vs_usdx_only": 0.027129,
+      "gap_pct_yr": 14.0146,
+      "reference": "USO",
+      "reference_is_roll_free": false
+    },
+    "COPPER_F": {
+      "sharpe_book": 0.783546,
+      "delta_vs_usdx_only": 0.002826,
+      "gap_pct_yr": 2.598,
+      "reference": "CPER",
+      "reference_is_roll_free": false
+    }
+  },
+  "B3_deltas_sharpe": {
+    "roll_free_only": 0.00898,
+    "overlap_only": 0.030966,
+    "full_sample": 0.039275,
+    "full_sample_upper": 0.062988
+  },
+  "B2_direction_all_charges_lower_the_book": true,
+  "bracket_spread_sharpe": 0.054008,
+  "bracket_bounds_agree": false,
+  "headline": {
+    "uncharged_book_sharpe": 0.783398,
+    "headline_bound": "full_sample",
+    "charged_book_sharpe": 0.744123,
+    "upper_bound_by_at_most_sharpe": 0.063,
+    "robust_core_delta_roll_free_only": 0.009,
+    "statement": "0.7834 is an upper bound by at most 0.0630 Sharpe; the headline charged figure is 0.7441. The ROBUST core, using only the two roll-free references, is 0.0090.",
+    "material_at_0.01_sharpe": true
+  },
+  "verdict": "MATERIAL"
+}

@@ -1,0 +1,178 @@
+{
+  "w1_dsr_anchors": {
+    "7yr_n32": 1.4881,
+    "40yr_n32": 0.5971,
+    "expected": {
+      "7yr_n32": 1.488,
+      "40yr_n32": 0.597
+    }
+  },
+  "w2_beta_sanity": {
+    "mean_beta_full_sample": {
+      "USDX": -0.158,
+      "JPYUSD": 0.174,
+      "US5Y_TR": 0.203,
+      "US10Y_TR": 0.296,
+      "US30Y_TR": 0.356,
+      "EURUSD": 0.514,
+      "GBPUSD": 0.534,
+      "GOLD_F": 0.863,
+      "ASX200": 1.074,
+      "N225": 1.155,
+      "FTSE100": 1.177,
+      "SPX": 1.264,
+      "DAX": 1.495,
+      "NASDAQ": 1.757,
+      "COPPER_F": 1.765,
+      "HSI": 1.944,
+      "SILVER_F": 2.147,
+      "WTI_F": 2.215
+    },
+    "mean_beta_since_2006": {
+      "USDX": -0.514,
+      "US30Y_TR": -0.015,
+      "US5Y_TR": 0.034,
+      "US10Y_TR": 0.037,
+      "JPYUSD": 0.18,
+      "EURUSD": 0.514,
+      "GBPUSD": 0.535,
+      "GOLD_F": 1.001,
+      "FTSE100": 1.038,
+      "ASX200": 1.109,
+      "N225": 1.134,
+      "SPX": 1.285,
+      "DAX": 1.378,
+      "NASDAQ": 1.495,
+      "HSI": 1.785,
+      "COPPER_F": 1.827,
+      "SILVER_F": 2.422,
+      "WTI_F": 2.592
+    },
+    "highest_beta_equity_full_sample": "HSI",
+    "lowest_three_since_2006": [
+      "USDX",
+      "US30Y_TR",
+      "US5Y_TR"
+    ],
+    "usdx_mean_beta": -0.158,
+    "checks": {
+      "nasdaq_beta_above_spx": true,
+      "usdx_beta_is_negative": true,
+      "bonds_among_lowest_four_since_2006": true,
+      "every_equity_beta_above_every_bond_beta_since_2006": true
+    },
+    "note": "A high-beta/low-beta sign error would put the bonds at the top and the growth indices at the bottom. USDX must be negative: the dollar rallies when risk assets fall. NOTE the highest-beta equity full-sample is HSI (1.94), not NASDAQ (1.76) -- Hong Kong really is the more volatile market over 1974-2026, so this is the estimator working, not failing."
+  },
+  "w3_point_in_time_truncation": {
+    "cut": "1999-12-31",
+    "months_compared": 853,
+    "max_abs_weight_difference": 1.7763568394002505e-15,
+    "max_abs_beta_difference": 0.0,
+    "verdict": "PIT CLEAN",
+    "note": "The full-sample run and a run on a panel that physically ends in 1999 must produce identical weights before 1999. Any use of future data breaks this."
+  },
+  "w4_perfect_foresight": {
+    "months": 253,
+    "gross_sharpe": 3.7361796369865803,
+    "net_sharpe_10bps": 3.68670929941377,
+    "verdict": "PIPELINE CAN EXPRESS AN EDGE"
+  },
+  "w5_vol_target_invariance": {
+    "10pct": {
+      "sharpe_all_months": 0.06393673979616693,
+      "sharpe_excl_no_vol_estimate_months": 0.16343028675804194,
+      "n_no_vol_estimate_months": 12,
+      "pct_cap_binding": 1.0143702451394758
+    },
+    "20pct": {
+      "sharpe_all_months": 0.11362310090043631,
+      "sharpe_excl_no_vol_estimate_months": 0.16389713348859053,
+      "n_no_vol_estimate_months": 12,
+      "pct_cap_binding": 1.0143702451394758
+    },
+    "40pct": {
+      "sharpe_all_months": 0.16417940436836434,
+      "sharpe_excl_no_vol_estimate_months": 0.1924462339798282,
+      "n_no_vol_estimate_months": 12,
+      "pct_cap_binding": 25.190194420963653
+    },
+    "spread_all_months": 0.10024266457219741,
+    "spread_excluding_no_vol_months": 0.02901594722178627,
+    "note": "A vol-targeted book's Sharpe should be invariant to the target because gross return, turnover and cost all scale with k. The pre-registration said so. It is violated by (a) the first months of the book's life, when there is no volatility estimate and k falls through to the GROSS_CAP identically at every target, and (b) the 40% target, where the cap binds a quarter of the time. Both are leverage-cap artefacts, not edge."
+  },
+  "w6_naive_no_neutralisation": {
+    "net_sharpe_10bps": -0.36986015781823584,
+    "realised_beta_to_proxy": {
+      "months": 629,
+      "beta": -2.1237779722586114,
+      "beta_se": 0.07706832638168737,
+      "beta_tstat_ols": -27.55707917855154,
+      "alpha_annual": 0.0361224504163585,
+      "alpha_tstat": 1.3798733096481772,
+      "r2": 0.5477471574882808
+    },
+    "bab_realised_beta_to_proxy": {
+      "months": 629,
+      "beta": 0.020679345636503428,
+      "beta_se": 0.09704472995547857,
+      "beta_tstat_ols": 0.21309086692281526,
+      "alpha_annual": 0.023714860685864154,
+      "alpha_tstat": 0.6595073048260542,
+      "r2": 7.241535781477015e-05
+    },
+    "note": "Long low-beta / short high-beta with rho fixed at 1 and no neutralisation. The pre-registration asserts this is simply a short position in the panel proxy; the realised beta is the measurement of that assertion."
+  },
+  "w7_is_it_just_levered_bonds": {
+    "corr_to_equal_weight_bond_book": 0.6312645030240044,
+    "beta_to_bond_book": 1.6090774451424343,
+    "r2_on_bond_book": 0.39849487277814344,
+    "alpha_annual_over_bond_book": -0.007701062269280967,
+    "alpha_tstat": -0.273632298859857,
+    "gross_leverage_share_bonds": 0.5355864077498406,
+    "gross_leverage_share_usdx": 0.24312965534814304,
+    "gross_leverage_share_equity_block": 0.10515627055173034
+  },
+  "w8_placebo_matched_window": {
+    "placebo_months": 263,
+    "placebo_first": "1974-02-28",
+    "placebo_net_sharpe": -0.008496988413658594,
+    "real_net_sharpe_same_months": 0.09596626394701642,
+    "placebo_turnover_per_year": 95.80133002931024,
+    "real_turnover_per_year": 4.94023799089466,
+    "note": "A random ranking rarely clears the pre-registered beta-spread guard, so the placebo book is OFF most months and its sample is much shorter than the real one. Comparing them on the full sample would be comparing two different periods; this row compares them on the placebo's own months."
+  },
+  "w9_from_csv": {
+    "months": 629,
+    "net_sharpe_10bps": 0.11362310090043644,
+    "bench_sharpe_10bps": 0.6898085067555059,
+    "arith_active_annual": -0.03749755488524851,
+    "arith_active_tstat_newey_west": -0.9780165280276539,
+    "arith_active_tstat_iid": -1.1443318399283704,
+    "volmatched_active_annual": -0.052205136787716336,
+    "volmatched_active_tstat": -2.626199241942958,
+    "corr_to_trend": 0.019796722994696814,
+    "corr_to_trend_spearman": 0.04484160336539504,
+    "corr_to_carry": 0.4775051834797881,
+    "corr_to_carry_spearman": 0.4248306176675482,
+    "identity_geometric_equals_arith_minus_drag": -0.0018321054099673245
+  },
+  "w10_volmatched_identity": {
+    "PRIMARY": {
+      "volmatched_active": -0.05220513678771645,
+      "bench_vol_times_sharpe_gap": -0.05220513678771645,
+      "abs_difference": 0.0
+    },
+    "NAIVE": {
+      "volmatched_active": -0.09601101836592495,
+      "bench_vol_times_sharpe_gap": -0.09601101836592492,
+      "abs_difference": 2.7755575615628914e-17
+    },
+    "FORESIGHT": {
+      "volmatched_active": 0.4664326946642775,
+      "bench_vol_times_sharpe_gap": 0.4664326946642774,
+      "abs_difference": 1.1102230246251565e-16
+    },
+    "identity": "volmatched_active_annual == bench_vol_annual * (SR_strat - SR_bench)",
+    "why_it_matters": "The mandated matched-volatility comparison is algebraically the Sharpe comparison rescaled by the benchmark's volatility. It therefore cannot reverse a Sharpe ranking, and its t-stat is the honest significance of the Sharpe GAP -- which is what makes it the right test and the raw arithmetic active return the wrong one."
+  }
+}

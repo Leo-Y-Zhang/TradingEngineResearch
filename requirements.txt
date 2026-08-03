@@ -1,0 +1,23 @@
+# TradingEngineResearch v6 — Python dependencies
+#
+# Dependencies are now defined authoritatively in **pyproject.toml** (Phase 0).
+# This file is kept as a convenience entry point for `pip install -r requirements.txt`.
+#
+#   Quant core only:        pip install -e .
+#   Dev (this file):        pip install -r requirements.txt          # == pip install -e ".[dev]"
+#   Reproducible / pinned:  pip install -r requirements.txt -c constraints.txt
+#   Everything optional:    pip install -e ".[all]" -c constraints.txt
+#
+# Optional extras (see pyproject.toml [project.optional-dependencies]):
+#   nlp        FinBERT sentiment (transformers, torch, psutil)
+#   boost      LightGBM booster (optional ML fallback)
+#   shrinkage  nlshrink nonlinear Ledoit-Wolf (optional)
+#   app        baseline FastAPI app (future)
+#   brokers    IBKR / Alpaca connectivity (future)
+#   ingestion  market-data ingestion (future)
+#   vault      encrypted secrets vault (Phase 6)
+#
+# Licence policy: all bundled third-party packages must be MIT, Apache 2.0, BSD,
+# or ISC licensed. AGPL packages are not permitted in bundled components.
+
+-e .[dev]

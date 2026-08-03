@@ -1,0 +1,35 @@
+# Keep the build context small and secret-free. The Dockerfile COPYs only the
+# source packages it needs; this excludes everything heavy or sensitive.
+.git
+.gitignore
+.github
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Never bake runtime state or secrets into an image (mounted at runtime).
+state/
+secrets/
+.env
+.env.*
+*.env
+
+# Large / non-runtime trees.
+tests/
+upgrade-spec/
+frontend/
+backend/
+launcher/
+docs/
+*.md
+!README.md

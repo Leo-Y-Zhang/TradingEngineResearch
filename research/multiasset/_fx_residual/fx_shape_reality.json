@@ -1,0 +1,61 @@
+{
+  "prereg": "research/multiasset/fx_shape_reality_prereg.md",
+  "what_this_changes": "Nothing. No panel series, gate, ledger row, live path or headline number is touched. 0.7834 is unaffected.",
+  "draws": 10000,
+  "seed": 20260731,
+  "C0_rebuild_reproduces_committed": {
+    "committed_pct_yr": {
+      "EURUSD": 0.743,
+      "GBPUSD": 0.49,
+      "JPYUSD": 0.216
+    },
+    "rebuilt_pct_yr": {
+      "EURUSD": 0.7427,
+      "GBPUSD": 0.4905,
+      "JPYUSD": 0.2164
+    },
+    "worst_abs_diff_pp": 0.0005,
+    "tolerance_pp": 0.02,
+    "passed": true
+  },
+  "observed": {
+    "per_leg_asymmetry_pct_yr": {
+      "EURUSD": 0.7639,
+      "GBPUSD": 0.5728,
+      "JPYUSD": 0.3045
+    },
+    "pooled_S_pct_yr": 0.5471,
+    "n_months": {
+      "EURUSD": 242,
+      "GBPUSD": 235,
+      "JPYUSD": 232
+    }
+  },
+  "N1_circular_shift": {
+    "p": 0.23078,
+    "null_median": 0.4201,
+    "null_q95": 0.7039
+  },
+  "N2_block_bootstrap": {
+    "p": 0.49025,
+    "null_median": 0.54,
+    "null_q95": 1.0329
+  },
+  "verdict": "ARTEFACT",
+  "minimum_detectable_pct_yr": 0.7039,
+  "C1_power": {
+    "injected_pct_yr": 0.5,
+    "S": 1.0471,
+    "verdict": "UNDETERMINED",
+    "passed": false
+  },
+  "C2_size": {
+    "S": 0.5617,
+    "verdict": "ARTEFACT",
+    "passed": true
+  },
+  "C3_determinism": {
+    "passed": true
+  },
+  "controls_all_passed": false
+}

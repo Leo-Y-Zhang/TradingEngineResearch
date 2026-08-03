@@ -1,0 +1,3986 @@
+{
+  "bond_bull": {
+    "ew": {
+      "excl_bond_bull": {
+        "compound_annual_spliced": 0.0974574524,
+        "max_drawdown_spliced": -0.1899200328,
+        "mean_excess_annual": 0.0336470277,
+        "months": 255,
+        "sharpe": 0.4386678173
+      },
+      "full": {
+        "compound_annual_spliced": 0.1059771087,
+        "max_drawdown_spliced": -0.2664212868,
+        "mean_excess_annual": 0.0587307266,
+        "months": 738,
+        "sharpe": 0.6677549488
+      },
+      "inside_bond_bull": {
+        "compound_annual_spliced": 0.1105017079,
+        "max_drawdown_spliced": -0.2664212868,
+        "mean_excess_annual": 0.0719736733,
+        "months": 483,
+        "sharpe": 0.7722854884
+      },
+      "post_2021_12": {
+        "compound_annual_spliced": 0.1008928119,
+        "max_drawdown_spliced": -0.1413480752,
+        "mean_excess_annual": 0.0594556504,
+        "months": 54,
+        "sharpe": 0.7038313238
+      },
+      "pre_1981_10": {
+        "compound_annual_spliced": 0.0965363482,
+        "max_drawdown_spliced": -0.151979448,
+        "mean_excess_annual": 0.0267133679,
+        "months": 201,
+        "sharpe": 0.3581969048
+      }
+    },
+    "rp_bucket": {
+      "excl_bond_bull": {
+        "compound_annual_spliced": 0.0717465337,
+        "max_drawdown_spliced": -0.1384910295,
+        "mean_excess_annual": 0.0084661095,
+        "months": 255,
+        "sharpe": 0.151262623
+      },
+      "full": {
+        "compound_annual_spliced": 0.076049631,
+        "max_drawdown_spliced": -0.1236382008,
+        "mean_excess_annual": 0.0286003361,
+        "months": 738,
+        "sharpe": 0.5512594559
+      },
+      "inside_bond_bull": {
+        "compound_annual_spliced": 0.0783284167,
+        "max_drawdown_spliced": -0.0877567244,
+        "mean_excess_annual": 0.0392302073,
+        "months": 483,
+        "sharpe": 0.7945718218
+      },
+      "post_2021_12": {
+        "compound_annual_spliced": 0.0557553784,
+        "max_drawdown_spliced": -0.1007316536,
+        "mean_excess_annual": 0.0152420923,
+        "months": 54,
+        "sharpe": 0.2817633874
+      },
+      "pre_1981_10": {
+        "compound_annual_spliced": 0.0760837906,
+        "max_drawdown_spliced": -0.0989066371,
+        "mean_excess_annual": 0.0066456962,
+        "months": 201,
+        "sharpe": 0.1174507732
+      }
+    },
+    "rp_naive": {
+      "excl_bond_bull": {
+        "compound_annual_spliced": 0.0727590586,
+        "max_drawdown_spliced": -0.1639284593,
+        "mean_excess_annual": 0.0096355047,
+        "months": 255,
+        "sharpe": 0.1602605568
+      },
+      "full": {
+        "compound_annual_spliced": 0.0879712414,
+        "max_drawdown_spliced": -0.1460338236,
+        "mean_excess_annual": 0.0402566231,
+        "months": 738,
+        "sharpe": 0.648282724
+      },
+      "inside_bond_bull": {
+        "compound_annual_spliced": 0.0960893317,
+        "max_drawdown_spliced": -0.1460338236,
+        "mean_excess_annual": 0.0564230521,
+        "months": 483,
+        "sharpe": 0.9002646646
+      },
+      "post_2021_12": {
+        "compound_annual_spliced": 0.0732892499,
+        "max_drawdown_spliced": -0.1141162266,
+        "mean_excess_annual": 0.0324811652,
+        "months": 54,
+        "sharpe": 0.4961485668
+      },
+      "pre_1981_10": {
+        "compound_annual_spliced": 0.0726166638,
+        "max_drawdown_spliced": -0.0862356285,
+        "mean_excess_annual": 0.0034978646,
+        "months": 201,
+        "sharpe": 0.059635838
+      }
+    }
+  },
+  "breakeven_cost_roundtrip": null,
+  "commit_of_prereg": "d895110",
+  "decades": {
+    "ew": {
+      "1960s": {
+        "mean_annual": 0.0155576438,
+        "months": 60,
+        "sharpe": 0.2711163
+      },
+      "1970s": {
+        "mean_annual": 0.0391396185,
+        "months": 120,
+        "sharpe": 0.4920342956
+      },
+      "1980s": {
+        "mean_annual": 0.0849323486,
+        "months": 120,
+        "sharpe": 0.9474003398
+      },
+      "1990s": {
+        "mean_annual": 0.0945911078,
+        "months": 120,
+        "sharpe": 0.9693497754
+      },
+      "2000s": {
+        "mean_annual": 0.0392999173,
+        "months": 120,
+        "sharpe": 0.3877100206
+      },
+      "2010s": {
+        "mean_annual": 0.0437775192,
+        "months": 120,
+        "sharpe": 0.6110480996
+      },
+      "2020s": {
+        "mean_annual": 0.0794994392,
+        "months": 78,
+        "sharpe": 0.7852668939
+      }
+    },
+    "rp_bucket": {
+      "1960s": {
+        "mean_annual": -0.0009686189,
+        "months": 60,
+        "sharpe": -0.0193890987
+      },
+      "1970s": {
+        "mean_annual": 0.0091648896,
+        "months": 120,
+        "sharpe": 0.1551466637
+      },
+      "1980s": {
+        "mean_annual": 0.0573334126,
+        "months": 120,
+        "sharpe": 0.8634858374
+      },
+      "1990s": {
+        "mean_annual": 0.0476276006,
+        "months": 120,
+        "sharpe": 0.873241761
+      },
+      "2000s": {
+        "mean_annual": 0.0333032281,
+        "months": 120,
+        "sharpe": 0.7967310151
+      },
+      "2010s": {
+        "mean_annual": 0.0173127305,
+        "months": 120,
+        "sharpe": 0.5483436999
+      },
+      "2020s": {
+        "mean_annual": 0.017899254,
+        "months": 78,
+        "sharpe": 0.3567220935
+      }
+    },
+    "rp_naive": {
+      "1960s": {
+        "mean_annual": -0.0163870144,
+        "months": 60,
+        "sharpe": -0.3668120887
+      },
+      "1970s": {
+        "mean_annual": 0.0171218218,
+        "months": 120,
+        "sharpe": 0.2866805308
+      },
+      "1980s": {
+        "mean_annual": 0.0710027376,
+        "months": 120,
+        "sharpe": 0.9128302413
+      },
+      "1990s": {
+        "mean_annual": 0.0706009907,
+        "months": 120,
+        "sharpe": 1.0214302562
+      },
+      "2000s": {
+        "mean_annual": 0.0386920123,
+        "months": 120,
+        "sharpe": 0.648323529
+      },
+      "2010s": {
+        "mean_annual": 0.0344294454,
+        "months": 120,
+        "sharpe": 0.7840361121
+      },
+      "2020s": {
+        "mean_annual": 0.0368072795,
+        "months": 78,
+        "sharpe": 0.573302853
+      }
+    }
+  },
+  "diagnostics": {
+    "attribution": {
+      "ew": {
+        "0.10": {
+          "arithmetic_total": 0.1069345556,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1056477767,
+          "financing": -0.0041594229,
+          "levered_gross_excess": 0.0649343913,
+          "trading_cost": -0.0002457088,
+          "variance_drag": 0.0012867789
+        },
+        "0.15": {
+          "arithmetic_total": 0.1302841469,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1229548756,
+          "financing": -0.0131541729,
+          "levered_gross_excess": 0.097401587,
+          "trading_cost": -0.0003685633,
+          "variance_drag": 0.0073292713
+        },
+        "0.20": {
+          "arithmetic_total": 0.1532437638,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1364077074,
+          "financing": -0.0225388972,
+          "levered_gross_excess": 0.1298687826,
+          "trading_cost": -0.0004914177,
+          "variance_drag": 0.0168360564
+        },
+        "0.25": {
+          "arithmetic_total": 0.1762033807,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1461410645,
+          "financing": -0.0319236215,
+          "levered_gross_excess": 0.1623359783,
+          "trading_cost": -0.0006142721,
+          "variance_drag": 0.0300623162
+        },
+        "0.30": {
+          "arithmetic_total": 0.1996818318,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1525588685,
+          "financing": -0.0412549834,
+          "levered_gross_excess": 0.195242467,
+          "trading_cost": -0.0007109479,
+          "variance_drag": 0.0471229633
+        },
+        "0.40": {
+          "arithmetic_total": 0.2502569579,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.158102079,
+          "financing": -0.0595157711,
+          "levered_gross_excess": 0.2642577824,
+          "trading_cost": -0.0008903495,
+          "variance_drag": 0.0921548789
+        }
+      },
+      "rp_naive": {
+        "0.10": {
+          "arithmetic_total": 0.0936076358,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.0910974991,
+          "financing": -0.0120174499,
+          "levered_gross_excess": 0.0596600529,
+          "trading_cost": -0.0004402634,
+          "variance_drag": 0.0025101366
+        },
+        "0.15": {
+          "arithmetic_total": 0.1097760095,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1003181421,
+          "financing": -0.0255209594,
+          "levered_gross_excess": 0.0895481188,
+          "trading_cost": -0.0006564461,
+          "variance_drag": 0.0094578673
+        },
+        "0.20": {
+          "arithmetic_total": 0.1267771134,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1072035401,
+          "financing": -0.0388676449,
+          "levered_gross_excess": 0.1200768396,
+          "trading_cost": -0.0008373774,
+          "variance_drag": 0.0195735733
+        },
+        "0.25": {
+          "arithmetic_total": 0.1453818289,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1128379782,
+          "financing": -0.051989638,
+          "levered_gross_excess": 0.1519656887,
+          "trading_cost": -0.0009995179,
+          "variance_drag": 0.0325438507
+        },
+        "0.30": {
+          "arithmetic_total": 0.1641353815,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1152012274,
+          "financing": -0.0650331019,
+          "levered_gross_excess": 0.1839291896,
+          "trading_cost": -0.0011660023,
+          "variance_drag": 0.0489341541
+        },
+        "0.40": {
+          "arithmetic_total": 0.2015516155,
+          "cash_contribution": 0.0464052961,
+          "compound_total": 0.1110672648,
+          "financing": -0.0899721383,
+          "levered_gross_excess": 0.2465296543,
+          "trading_cost": -0.0014111966,
+          "variance_drag": 0.0904843507
+        }
+      }
+    },
+    "block_detail": {
+      "commodity": {
+        "block_mean_excess_annual": 0.1273181008,
+        "block_sharpe": 0.6834178829,
+        "mean_block_vol": 0.1802170912,
+        "mean_block_weight": 0.0368906072,
+        "sum_of_member_vols": 0.2686909264
+      },
+      "equity": {
+        "block_mean_excess_annual": 0.0904101934,
+        "block_sharpe": 0.6564341196,
+        "mean_block_vol": 0.1347753157,
+        "mean_block_weight": 0.2040986251,
+        "sum_of_member_vols": 0.1698993611
+      },
+      "fx": {
+        "block_mean_excess_annual": -0.0013669362,
+        "block_sharpe": -0.0200651581,
+        "mean_block_vol": 0.0610415471,
+        "mean_block_weight": 0.366083703,
+        "sum_of_member_vols": 0.0887046211
+      },
+      "rates": {
+        "block_mean_excess_annual": 0.0138788663,
+        "block_sharpe": 0.1925298748,
+        "mean_block_vol": 0.0682901808,
+        "mean_block_weight": 0.3929270646,
+        "sum_of_member_vols": 0.0794714123
+      }
+    },
+    "compound_by_decade_tau15": {
+      "bill_rate": {
+        "1960s": 0.0517148682,
+        "1970s": 0.0651178719,
+        "1980s": 0.092044816,
+        "1990s": 0.049941446,
+        "2000s": 0.0275191636,
+        "2010s": 0.0056388665,
+        "2020s": 0.0287385323
+      },
+      "ew": {
+        "1960s": {
+          "compound_annual": 0.0157395788,
+          "max_drawdown": -0.3738622794,
+          "months": 48
+        },
+        "1970s": {
+          "compound_annual": 0.1036106116,
+          "max_drawdown": -0.3994244521,
+          "months": 120
+        },
+        "1980s": {
+          "compound_annual": 0.2300259886,
+          "max_drawdown": -0.229453336,
+          "months": 120
+        },
+        "1990s": {
+          "compound_annual": 0.1959013272,
+          "max_drawdown": -0.1883339615,
+          "months": 120
+        },
+        "2000s": {
+          "compound_annual": 0.0787632646,
+          "max_drawdown": -0.472873856,
+          "months": 120
+        },
+        "2010s": {
+          "compound_annual": 0.0585700326,
+          "max_drawdown": -0.2804063859,
+          "months": 120
+        },
+        "2020s": {
+          "compound_annual": 0.1276277806,
+          "max_drawdown": -0.2886415552,
+          "months": 78
+        }
+      },
+      "rp_naive": {
+        "1960s": {
+          "compound_annual": -0.1011568267,
+          "max_drawdown": -0.3842288584,
+          "months": 48
+        },
+        "1970s": {
+          "compound_annual": 0.0535093865,
+          "max_drawdown": -0.3937819938,
+          "months": 120
+        },
+        "1980s": {
+          "compound_annual": 0.2194337021,
+          "max_drawdown": -0.1965209409,
+          "months": 120
+        },
+        "1990s": {
+          "compound_annual": 0.1914631406,
+          "max_drawdown": -0.2437433867,
+          "months": 120
+        },
+        "2000s": {
+          "compound_annual": 0.0964602357,
+          "max_drawdown": -0.4535836135,
+          "months": 120
+        },
+        "2010s": {
+          "compound_annual": 0.0601731515,
+          "max_drawdown": -0.2595506997,
+          "months": 120
+        },
+        "2020s": {
+          "compound_annual": 0.0713867791,
+          "max_drawdown": -0.3508604425,
+          "months": 78
+        }
+      }
+    },
+    "diagnostic_zero_financing": {
+      "0.10": {
+        "ew_sharpe": 0.5904753184,
+        "rp_sharpe": 0.5400432195,
+        "volmatched_active_annual": -0.0055250168,
+        "volmatched_active_tstat": -1.0935056727
+      },
+      "0.15": {
+        "ew_sharpe": 0.5904753184,
+        "rp_sharpe": 0.5405953019,
+        "volmatched_active_annual": -0.0081968013,
+        "volmatched_active_tstat": -1.0816456762
+      },
+      "0.20": {
+        "ew_sharpe": 0.5904753184,
+        "rp_sharpe": 0.5458067699,
+        "volmatched_active_annual": -0.0097871984,
+        "volmatched_active_tstat": -0.96832483
+      },
+      "0.25": {
+        "ew_sharpe": 0.5904753184,
+        "rp_sharpe": 0.5565404609,
+        "volmatched_active_annual": -0.0092942124,
+        "volmatched_active_tstat": -0.7189079028
+      },
+      "0.30": {
+        "ew_sharpe": 0.592402415,
+        "rp_sharpe": 0.5642610776,
+        "volmatched_active_annual": -0.0092409771,
+        "volmatched_active_tstat": -0.5846066329
+      },
+      "0.40": {
+        "ew_sharpe": 0.6057651562,
+        "rp_sharpe": 0.5775830177,
+        "volmatched_active_annual": -0.0122526979,
+        "volmatched_active_tstat": -0.5905776154
+      }
+    },
+    "effective_n_correlation": {
+      "block_commodity": 2.6682555989,
+      "block_equity": 2.0261941658,
+      "block_fx": 1.9207907309,
+      "block_rates": 1.1661858566,
+      "universe_18": 5.2602648349
+    },
+    "rates_excluded_matched_window": {
+      "ew": {
+        "months": 630,
+        "sharpe_full_universe_same_window": 0.6896277336,
+        "sharpe_no_rates": 0.6701576069
+      },
+      "rp_bucket": {
+        "months": 630,
+        "sharpe_full_universe_same_window": 0.5906259467,
+        "sharpe_no_rates": 0.5224169173
+      },
+      "rp_naive": {
+        "months": 630,
+        "sharpe_full_universe_same_window": 0.7173046741,
+        "sharpe_no_rates": 0.6731292192
+      }
+    },
+    "unlevered_active_zero_cost": {
+      "arith_active_annual": -0.018362202,
+      "arith_active_tstat": -3.5545969701,
+      "bench_sharpe": 0.668222778,
+      "bench_vol": 0.0879485505,
+      "geometric_excess_annual": -0.0171247159,
+      "jensen_alpha_annual": 0.001496847,
+      "jensen_alpha_tstat": 0.4865185664,
+      "jensen_beta": 0.6620842095,
+      "months": 738,
+      "strat_sharpe": 0.6507526146,
+      "strat_vol": 0.0620927551,
+      "variance_drag_annual": -0.0019397186,
+      "volmatched_active_annual": -0.0015364755,
+      "volmatched_active_tstat": -0.3457343246
+    }
+  },
+  "dsr": {
+    "bars": {
+      "304": 0.5839944549,
+      "32": 0.4801226201,
+      "46": 0.4988123315,
+      "56": 0.5085652376
+    },
+    "clears": {
+      "ew": {
+        "10bps": {
+          "304": 1,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        },
+        "2bps": {
+          "304": 1,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        }
+      },
+      "rp_bucket": {
+        "10bps": {
+          "304": 0,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        },
+        "2bps": {
+          "304": 0,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        }
+      },
+      "rp_naive": {
+        "10bps": {
+          "304": 1,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        },
+        "2bps": {
+          "304": 1,
+          "32": 1,
+          "46": 1,
+          "56": 1
+        }
+      }
+    },
+    "sharpe_needed_for_30pct_half_kelly": 0.894427191,
+    "years": 61.5
+  },
+  "financing_sensitivity": {
+    "legacy_flat_6pct": {
+      "0.10": {
+        "compound_annual": 0.0864358073,
+        "financing_drag_annual": 0.0162609517,
+        "max_drawdown": -0.3426097205,
+        "sharpe_net": 0.3902568856
+      },
+      "0.15": {
+        "compound_annual": 0.0939451597,
+        "financing_drag_annual": 0.0311832073,
+        "max_drawdown": -0.6714323664,
+        "sharpe_net": 0.3491416174
+      },
+      "0.20": {
+        "compound_annual": 0.0990511307,
+        "financing_drag_annual": 0.0459622809,
+        "max_drawdown": -0.8492516494,
+        "sharpe_net": 0.3334819097
+      },
+      "0.25": {
+        "compound_annual": 0.102756285,
+        "financing_drag_annual": 0.0605719593,
+        "max_drawdown": -0.9350119281,
+        "sharpe_net": 0.3311769394
+      },
+      "0.30": {
+        "compound_annual": 0.1031117047,
+        "financing_drag_annual": 0.0751283278,
+        "max_drawdown": -0.9738291848,
+        "sharpe_net": 0.3301329231
+      },
+      "0.40": {
+        "compound_annual": 0.0967576377,
+        "financing_drag_annual": 0.1017110997,
+        "max_drawdown": -0.995246115,
+        "sharpe_net": 0.3358558589
+      }
+    },
+    "optimistic_bill_plus_50bp": {
+      "0.10": {
+        "compound_annual": 0.0998499932,
+        "financing_drag_annual": 0.0040058166,
+        "max_drawdown": -0.3040766209,
+        "sharpe_net": 0.5029817914
+      },
+      "0.15": {
+        "compound_annual": 0.1191431427,
+        "financing_drag_annual": 0.0085069865,
+        "max_drawdown": -0.4369243064,
+        "sharpe_net": 0.4883521513
+      },
+      "0.20": {
+        "compound_annual": 0.1361884335,
+        "financing_drag_annual": 0.0129558816,
+        "max_drawdown": -0.5505533485,
+        "sharpe_net": 0.4860620699
+      },
+      "0.25": {
+        "compound_annual": 0.1519812384,
+        "financing_drag_annual": 0.0173298793,
+        "max_drawdown": -0.6467456536,
+        "sharpe_net": 0.4923061076
+      },
+      "0.30": {
+        "compound_annual": 0.1645311718,
+        "financing_drag_annual": 0.0216777006,
+        "max_drawdown": -0.7272549764,
+        "sharpe_net": 0.4970422416
+      },
+      "0.40": {
+        "compound_annual": 0.1798999413,
+        "financing_drag_annual": 0.0299907128,
+        "max_drawdown": -0.8479375652,
+        "sharpe_net": 0.5066703068
+      }
+    },
+    "primary_bill_plus_150bp": {
+      "0.10": {
+        "compound_annual": 0.0910974991,
+        "financing_drag_annual": 0.0120174499,
+        "max_drawdown": -0.3145563575,
+        "sharpe_net": 0.429013713
+      },
+      "0.15": {
+        "compound_annual": 0.1003181421,
+        "financing_drag_annual": 0.0255209594,
+        "max_drawdown": -0.4535836135,
+        "sharpe_net": 0.3841201652
+      },
+      "0.20": {
+        "compound_annual": 0.1072035401,
+        "financing_drag_annual": 0.0388676449,
+        "max_drawdown": -0.5705055056,
+        "sharpe_net": 0.3668363436
+      },
+      "0.25": {
+        "compound_annual": 0.1128379782,
+        "financing_drag_annual": 0.051989638,
+        "max_drawdown": -0.6677847584,
+        "sharpe_net": 0.3640570317
+      },
+      "0.30": {
+        "compound_annual": 0.1152012274,
+        "financing_drag_annual": 0.0650331019,
+        "max_drawdown": -0.7477623664,
+        "sharpe_net": 0.3627940357
+      },
+      "0.40": {
+        "compound_annual": 0.1110672648,
+        "financing_drag_annual": 0.0899721383,
+        "max_drawdown": -0.9058022813,
+        "sharpe_net": 0.3650127301
+      }
+    },
+    "retail_bill_plus_300bp": {
+      "0.10": {
+        "compound_annual": 0.0780819685,
+        "financing_drag_annual": 0.0240348998,
+        "max_drawdown": -0.3300008712,
+        "sharpe_net": 0.3185489214
+      },
+      "0.15": {
+        "compound_annual": 0.0726092724,
+        "financing_drag_annual": 0.0510419187,
+        "max_drawdown": -0.4919904519,
+        "sharpe_net": 0.228547381
+      },
+      "0.20": {
+        "compound_annual": 0.0649707856,
+        "financing_drag_annual": 0.0777352898,
+        "max_drawdown": -0.6847764755,
+        "sharpe_net": 0.1887996984
+      },
+      "0.25": {
+        "compound_annual": 0.0563717555,
+        "financing_drag_annual": 0.1039792761,
+        "max_drawdown": -0.8256903777,
+        "sharpe_net": 0.1723663129
+      },
+      "0.30": {
+        "compound_annual": 0.0447454781,
+        "financing_drag_annual": 0.1300662038,
+        "max_drawdown": -0.9070019001,
+        "sharpe_net": 0.1620224328
+      },
+      "0.40": {
+        "compound_annual": 0.0146286441,
+        "financing_drag_annual": 0.1799442765,
+        "max_drawdown": -0.9792167203,
+        "sharpe_net": 0.1530522499
+      }
+    }
+  },
+  "fine_grid": {
+    "ew": {
+      "boundary_tau_mdd_50": 0.16,
+      "compound_at_boundary": 0.1259284945,
+      "curve": [
+        {
+          "compound": 0.079869694,
+          "mdd": -0.1718475182,
+          "ruin": 0,
+          "tau": 0.05
+        },
+        {
+          "compound": 0.0858927177,
+          "mdd": -0.2045214162,
+          "ruin": 0,
+          "tau": 0.06
+        },
+        {
+          "compound": 0.0914383781,
+          "mdd": -0.2363808746,
+          "ruin": 0,
+          "tau": 0.07
+        },
+        {
+          "compound": 0.0966356541,
+          "mdd": -0.2677295991,
+          "ruin": 0,
+          "tau": 0.08
+        },
+        {
+          "compound": 0.1014022906,
+          "mdd": -0.2984450912,
+          "ruin": 0,
+          "tau": 0.09
+        },
+        {
+          "compound": 0.1056477767,
+          "mdd": -0.3298776192,
+          "ruin": 0,
+          "tau": 0.1
+        },
+        {
+          "compound": 0.1095568625,
+          "mdd": -0.3602725,
+          "ruin": 0,
+          "tau": 0.11
+        },
+        {
+          "compound": 0.1131873323,
+          "mdd": -0.3899062435,
+          "ruin": 0,
+          "tau": 0.12
+        },
+        {
+          "compound": 0.1165990245,
+          "mdd": -0.4185486821,
+          "ruin": 0,
+          "tau": 0.13
+        },
+        {
+          "compound": 0.1198443107,
+          "mdd": -0.4461967843,
+          "ruin": 0,
+          "tau": 0.14
+        },
+        {
+          "compound": 0.1229548756,
+          "mdd": -0.472873856,
+          "ruin": 0,
+          "tau": 0.15
+        },
+        {
+          "compound": 0.1259284945,
+          "mdd": -0.4986029561,
+          "ruin": 0,
+          "tau": 0.16
+        },
+        {
+          "compound": 0.1287629072,
+          "mdd": -0.5234068912,
+          "ruin": 0,
+          "tau": 0.17
+        },
+        {
+          "compound": 0.131455815,
+          "mdd": -0.54730821,
+          "ruin": 0,
+          "tau": 0.18
+        },
+        {
+          "compound": 0.1340048773,
+          "mdd": -0.5703291992,
+          "ruin": 0,
+          "tau": 0.19
+        },
+        {
+          "compound": 0.1364077074,
+          "mdd": -0.5924918779,
+          "ruin": 0,
+          "tau": 0.2
+        },
+        {
+          "compound": 0.1386618689,
+          "mdd": -0.6138179943,
+          "ruin": 0,
+          "tau": 0.21
+        },
+        {
+          "compound": 0.1407648702,
+          "mdd": -0.6343290209,
+          "ruin": 0,
+          "tau": 0.22
+        },
+        {
+          "compound": 0.1427141602,
+          "mdd": -0.654046151,
+          "ruin": 0,
+          "tau": 0.23
+        },
+        {
+          "compound": 0.1445071215,
+          "mdd": -0.6729902951,
+          "ruin": 0,
+          "tau": 0.24
+        },
+        {
+          "compound": 0.1461410645,
+          "mdd": -0.6911820776,
+          "ruin": 0,
+          "tau": 0.25
+        },
+        {
+          "compound": 0.1476132197,
+          "mdd": -0.7086418339,
+          "ruin": 0,
+          "tau": 0.26
+        },
+        {
+          "compound": 0.1489207296,
+          "mdd": -0.7253896073,
+          "ruin": 0,
+          "tau": 0.27
+        },
+        {
+          "compound": 0.1501857946,
+          "mdd": -0.741445147,
+          "ruin": 0,
+          "tau": 0.28
+        },
+        {
+          "compound": 0.1514294057,
+          "mdd": -0.7568279052,
+          "ruin": 0,
+          "tau": 0.29
+        },
+        {
+          "compound": 0.1525588685,
+          "mdd": -0.7715570353,
+          "ruin": 0,
+          "tau": 0.3
+        },
+        {
+          "compound": 0.153493523,
+          "mdd": -0.7856513902,
+          "ruin": 0,
+          "tau": 0.31
+        },
+        {
+          "compound": 0.1542508009,
+          "mdd": -0.7991295204,
+          "ruin": 0,
+          "tau": 0.32
+        },
+        {
+          "compound": 0.1552772585,
+          "mdd": -0.8120096728,
+          "ruin": 0,
+          "tau": 0.33
+        },
+        {
+          "compound": 0.1562392261,
+          "mdd": -0.8243097893,
+          "ruin": 0,
+          "tau": 0.34
+        },
+        {
+          "compound": 0.1570225459,
+          "mdd": -0.8360475061,
+          "ruin": 0,
+          "tau": 0.35
+        },
+        {
+          "compound": 0.1576230105,
+          "mdd": -0.8472401526,
+          "ruin": 0,
+          "tau": 0.36
+        },
+        {
+          "compound": 0.1580361478,
+          "mdd": -0.8579047512,
+          "ruin": 0,
+          "tau": 0.37
+        },
+        {
+          "compound": 0.1582571839,
+          "mdd": -0.8680580165,
+          "ruin": 0,
+          "tau": 0.38
+        },
+        {
+          "compound": 0.1582809997,
+          "mdd": -0.8777163557,
+          "ruin": 0,
+          "tau": 0.39
+        },
+        {
+          "compound": 0.158102079,
+          "mdd": -0.8868958679,
+          "ruin": 0,
+          "tau": 0.4
+        },
+        {
+          "compound": 0.1577144464,
+          "mdd": -0.8956123447,
+          "ruin": 0,
+          "tau": 0.41
+        },
+        {
+          "compound": 0.1571115927,
+          "mdd": -0.9038812706,
+          "ruin": 0,
+          "tau": 0.42
+        },
+        {
+          "compound": 0.156276095,
+          "mdd": -0.9117178233,
+          "ruin": 0,
+          "tau": 0.43
+        },
+        {
+          "compound": 0.1551316109,
+          "mdd": -0.9191368746,
+          "ruin": 0,
+          "tau": 0.44
+        },
+        {
+          "compound": 0.1536814743,
+          "mdd": -0.926152991,
+          "ruin": 0,
+          "tau": 0.45
+        },
+        {
+          "compound": 0.1519709701,
+          "mdd": -0.9327804351,
+          "ruin": 0,
+          "tau": 0.46
+        },
+        {
+          "compound": 0.1499279591,
+          "mdd": -0.9390331665,
+          "ruin": 0,
+          "tau": 0.47
+        },
+        {
+          "compound": 0.1476145865,
+          "mdd": -0.9449248432,
+          "ruin": 0,
+          "tau": 0.48
+        },
+        {
+          "compound": 0.1450165201,
+          "mdd": -0.9511180432,
+          "ruin": 0,
+          "tau": 0.49
+        },
+        {
+          "compound": 0.1420717738,
+          "mdd": -0.9588260999,
+          "ruin": 0,
+          "tau": 0.5
+        },
+        {
+          "compound": 0.1389220476,
+          "mdd": -0.965580971,
+          "ruin": 0,
+          "tau": 0.51
+        },
+        {
+          "compound": 0.1358311453,
+          "mdd": -0.9710189327,
+          "ruin": 0,
+          "tau": 0.52
+        },
+        {
+          "compound": 0.1324898802,
+          "mdd": -0.9757657054,
+          "ruin": 0,
+          "tau": 0.53
+        },
+        {
+          "compound": 0.1290311856,
+          "mdd": -0.9797065721,
+          "ruin": 0,
+          "tau": 0.54
+        },
+        {
+          "compound": 0.1249597972,
+          "mdd": -0.9833526517,
+          "ruin": 0,
+          "tau": 0.55
+        },
+        {
+          "compound": 0.120324005,
+          "mdd": -0.986595035,
+          "ruin": 0,
+          "tau": 0.56
+        },
+        {
+          "compound": 0.1149852756,
+          "mdd": -0.9895133959,
+          "ruin": 0,
+          "tau": 0.57
+        },
+        {
+          "compound": 0.1088513348,
+          "mdd": -0.9920698353,
+          "ruin": 0,
+          "tau": 0.58
+        },
+        {
+          "compound": 0.1021793821,
+          "mdd": -0.9941750723,
+          "ruin": 0,
+          "tau": 0.59
+        },
+        {
+          "compound": 0.0947622734,
+          "mdd": -0.9959531777,
+          "ruin": 0,
+          "tau": 0.6
+        }
+      ],
+      "mdd_at_boundary": -0.4986029561
+    },
+    "rp_bucket": {
+      "boundary_tau_mdd_50": 0.15,
+      "compound_at_boundary": 0.0789180397,
+      "curve": [
+        {
+          "compound": 0.0701293757,
+          "mdd": -0.1579235357,
+          "ruin": 0,
+          "tau": 0.05
+        },
+        {
+          "compound": 0.072324839,
+          "mdd": -0.1930320483,
+          "ruin": 0,
+          "tau": 0.06
+        },
+        {
+          "compound": 0.0738274843,
+          "mdd": -0.2269233878,
+          "ruin": 0,
+          "tau": 0.07
+        },
+        {
+          "compound": 0.0750071015,
+          "mdd": -0.2596305062,
+          "ruin": 0,
+          "tau": 0.08
+        },
+        {
+          "compound": 0.0759472709,
+          "mdd": -0.2911857645,
+          "ruin": 0,
+          "tau": 0.09
+        },
+        {
+          "compound": 0.0767599589,
+          "mdd": -0.3218338932,
+          "ruin": 0,
+          "tau": 0.1
+        },
+        {
+          "compound": 0.0774467856,
+          "mdd": -0.3514759861,
+          "ruin": 0,
+          "tau": 0.11
+        },
+        {
+          "compound": 0.078006881,
+          "mdd": -0.3800335149,
+          "ruin": 0,
+          "tau": 0.12
+        },
+        {
+          "compound": 0.078439373,
+          "mdd": -0.4075379366,
+          "ruin": 0,
+          "tau": 0.13
+        },
+        {
+          "compound": 0.078743386,
+          "mdd": -0.435580275,
+          "ruin": 0,
+          "tau": 0.14
+        },
+        {
+          "compound": 0.0789180397,
+          "mdd": -0.4716710034,
+          "ruin": 0,
+          "tau": 0.15
+        },
+        {
+          "compound": 0.0789624479,
+          "mdd": -0.5060891081,
+          "ruin": 0,
+          "tau": 0.16
+        },
+        {
+          "compound": 0.0788757169,
+          "mdd": -0.5388617187,
+          "ruin": 0,
+          "tau": 0.17
+        },
+        {
+          "compound": 0.0786569436,
+          "mdd": -0.5700197113,
+          "ruin": 0,
+          "tau": 0.18
+        },
+        {
+          "compound": 0.0783052144,
+          "mdd": -0.5995973456,
+          "ruin": 0,
+          "tau": 0.19
+        },
+        {
+          "compound": 0.0778196022,
+          "mdd": -0.6282473983,
+          "ruin": 0,
+          "tau": 0.2
+        },
+        {
+          "compound": 0.0771991651,
+          "mdd": -0.6610666058,
+          "ruin": 0,
+          "tau": 0.21
+        },
+        {
+          "compound": 0.0764429432,
+          "mdd": -0.6913785887,
+          "ruin": 0,
+          "tau": 0.22
+        },
+        {
+          "compound": 0.0755499563,
+          "mdd": -0.719342227,
+          "ruin": 0,
+          "tau": 0.23
+        },
+        {
+          "compound": 0.0745192005,
+          "mdd": -0.7451089057,
+          "ruin": 0,
+          "tau": 0.24
+        },
+        {
+          "compound": 0.0733024588,
+          "mdd": -0.7688226737,
+          "ruin": 0,
+          "tau": 0.25
+        },
+        {
+          "compound": 0.0719184141,
+          "mdd": -0.7906204147,
+          "ruin": 0,
+          "tau": 0.26
+        },
+        {
+          "compound": 0.0706790847,
+          "mdd": -0.8106320298,
+          "ruin": 0,
+          "tau": 0.27
+        },
+        {
+          "compound": 0.0697513701,
+          "mdd": -0.828980629,
+          "ruin": 0,
+          "tau": 0.28
+        },
+        {
+          "compound": 0.0687625438,
+          "mdd": -0.8458085263,
+          "ruin": 0,
+          "tau": 0.29
+        },
+        {
+          "compound": 0.0678633284,
+          "mdd": -0.8612436891,
+          "ruin": 0,
+          "tau": 0.3
+        },
+        {
+          "compound": 0.0667999429,
+          "mdd": -0.8753321145,
+          "ruin": 0,
+          "tau": 0.31
+        },
+        {
+          "compound": 0.0655520707,
+          "mdd": -0.888173705,
+          "ruin": 0,
+          "tau": 0.32
+        },
+        {
+          "compound": 0.0639678201,
+          "mdd": -0.8993072377,
+          "ruin": 0,
+          "tau": 0.33
+        },
+        {
+          "compound": 0.0624351453,
+          "mdd": -0.9082624902,
+          "ruin": 0,
+          "tau": 0.34
+        },
+        {
+          "compound": 0.0610558841,
+          "mdd": -0.9159397038,
+          "ruin": 0,
+          "tau": 0.35
+        },
+        {
+          "compound": 0.0602998788,
+          "mdd": -0.9205544857,
+          "ruin": 0,
+          "tau": 0.36
+        },
+        {
+          "compound": 0.0593256691,
+          "mdd": -0.9249753994,
+          "ruin": 0,
+          "tau": 0.37
+        },
+        {
+          "compound": 0.0584087699,
+          "mdd": -0.9291031373,
+          "ruin": 0,
+          "tau": 0.38
+        },
+        {
+          "compound": 0.0578741118,
+          "mdd": -0.9330294972,
+          "ruin": 0,
+          "tau": 0.39
+        },
+        {
+          "compound": 0.0575458131,
+          "mdd": -0.9367851176,
+          "ruin": 0,
+          "tau": 0.4
+        },
+        {
+          "compound": 0.0576662386,
+          "mdd": -0.9403905526,
+          "ruin": 0,
+          "tau": 0.41
+        },
+        {
+          "compound": 0.0578366496,
+          "mdd": -0.9439203959,
+          "ruin": 0,
+          "tau": 0.42
+        },
+        {
+          "compound": 0.0579508189,
+          "mdd": -0.947252533,
+          "ruin": 0,
+          "tau": 0.43
+        },
+        {
+          "compound": 0.0581346353,
+          "mdd": -0.9503010415,
+          "ruin": 0,
+          "tau": 0.44
+        },
+        {
+          "compound": 0.0581082704,
+          "mdd": -0.9534593579,
+          "ruin": 0,
+          "tau": 0.45
+        },
+        {
+          "compound": 0.0578284053,
+          "mdd": -0.9564783672,
+          "ruin": 0,
+          "tau": 0.46
+        },
+        {
+          "compound": 0.0575380647,
+          "mdd": -0.9593278617,
+          "ruin": 0,
+          "tau": 0.47
+        },
+        {
+          "compound": 0.0573890532,
+          "mdd": -0.9619799439,
+          "ruin": 0,
+          "tau": 0.48
+        },
+        {
+          "compound": 0.0573104785,
+          "mdd": -0.9643828814,
+          "ruin": 0,
+          "tau": 0.49
+        },
+        {
+          "compound": 0.0570890762,
+          "mdd": -0.9667092931,
+          "ruin": 0,
+          "tau": 0.5
+        },
+        {
+          "compound": 0.056473663,
+          "mdd": -0.9691249732,
+          "ruin": 0,
+          "tau": 0.51
+        },
+        {
+          "compound": 0.0558590173,
+          "mdd": -0.9711870174,
+          "ruin": 0,
+          "tau": 0.52
+        },
+        {
+          "compound": 0.0552087795,
+          "mdd": -0.972967784,
+          "ruin": 0,
+          "tau": 0.53
+        },
+        {
+          "compound": 0.0548334977,
+          "mdd": -0.9743668496,
+          "ruin": 0,
+          "tau": 0.54
+        },
+        {
+          "compound": 0.0550686284,
+          "mdd": -0.9752273147,
+          "ruin": 0,
+          "tau": 0.55
+        },
+        {
+          "compound": 0.0557048628,
+          "mdd": -0.9757716,
+          "ruin": 0,
+          "tau": 0.56
+        },
+        {
+          "compound": 0.0560673413,
+          "mdd": -0.9761331643,
+          "ruin": 0,
+          "tau": 0.57
+        },
+        {
+          "compound": 0.0565647265,
+          "mdd": -0.9758833683,
+          "ruin": 0,
+          "tau": 0.58
+        },
+        {
+          "compound": 0.0568825038,
+          "mdd": -0.9761644134,
+          "ruin": 0,
+          "tau": 0.59
+        },
+        {
+          "compound": 0.0570169086,
+          "mdd": -0.9764184915,
+          "ruin": 0,
+          "tau": 0.6
+        }
+      ],
+      "mdd_at_boundary": -0.4716710034
+    },
+    "rp_naive": {
+      "boundary_tau_mdd_50": 0.16,
+      "compound_at_boundary": 0.1020034932,
+      "curve": [
+        {
+          "compound": 0.075915512,
+          "mdd": -0.1519437103,
+          "ruin": 0,
+          "tau": 0.05
+        },
+        {
+          "compound": 0.0800209999,
+          "mdd": -0.186076502,
+          "ruin": 0,
+          "tau": 0.06
+        },
+        {
+          "compound": 0.0835731904,
+          "mdd": -0.2194658975,
+          "ruin": 0,
+          "tau": 0.07
+        },
+        {
+          "compound": 0.0864537186,
+          "mdd": -0.2521842833,
+          "ruin": 0,
+          "tau": 0.08
+        },
+        {
+          "compound": 0.0888680635,
+          "mdd": -0.2838740798,
+          "ruin": 0,
+          "tau": 0.09
+        },
+        {
+          "compound": 0.0910974991,
+          "mdd": -0.3145563575,
+          "ruin": 0,
+          "tau": 0.1
+        },
+        {
+          "compound": 0.0931944263,
+          "mdd": -0.3442520676,
+          "ruin": 0,
+          "tau": 0.11
+        },
+        {
+          "compound": 0.0951578278,
+          "mdd": -0.3729820332,
+          "ruin": 0,
+          "tau": 0.12
+        },
+        {
+          "compound": 0.0969861994,
+          "mdd": -0.4007669419,
+          "ruin": 0,
+          "tau": 0.13
+        },
+        {
+          "compound": 0.0986780317,
+          "mdd": -0.4276273377,
+          "ruin": 0,
+          "tau": 0.14
+        },
+        {
+          "compound": 0.1003181421,
+          "mdd": -0.4535836135,
+          "ruin": 0,
+          "tau": 0.15
+        },
+        {
+          "compound": 0.1020034932,
+          "mdd": -0.4786560045,
+          "ruin": 0,
+          "tau": 0.16
+        },
+        {
+          "compound": 0.103565545,
+          "mdd": -0.5028645805,
+          "ruin": 0,
+          "tau": 0.17
+        },
+        {
+          "compound": 0.1049598762,
+          "mdd": -0.5262292399,
+          "ruin": 0,
+          "tau": 0.18
+        },
+        {
+          "compound": 0.1061529403,
+          "mdd": -0.5487697029,
+          "ruin": 0,
+          "tau": 0.19
+        },
+        {
+          "compound": 0.1072035401,
+          "mdd": -0.5705055056,
+          "ruin": 0,
+          "tau": 0.2
+        },
+        {
+          "compound": 0.1081729796,
+          "mdd": -0.5914559939,
+          "ruin": 0,
+          "tau": 0.21
+        },
+        {
+          "compound": 0.1095214135,
+          "mdd": -0.611640318,
+          "ruin": 0,
+          "tau": 0.22
+        },
+        {
+          "compound": 0.1107672312,
+          "mdd": -0.6310774268,
+          "ruin": 0,
+          "tau": 0.23
+        },
+        {
+          "compound": 0.111873299,
+          "mdd": -0.6497860632,
+          "ruin": 0,
+          "tau": 0.24
+        },
+        {
+          "compound": 0.1128379782,
+          "mdd": -0.6677847584,
+          "ruin": 0,
+          "tau": 0.25
+        },
+        {
+          "compound": 0.1136589916,
+          "mdd": -0.6850918282,
+          "ruin": 0,
+          "tau": 0.26
+        },
+        {
+          "compound": 0.1143237951,
+          "mdd": -0.7017253677,
+          "ruin": 0,
+          "tau": 0.27
+        },
+        {
+          "compound": 0.1147646359,
+          "mdd": -0.7177032478,
+          "ruin": 0,
+          "tau": 0.28
+        },
+        {
+          "compound": 0.1150576923,
+          "mdd": -0.7330431107,
+          "ruin": 0,
+          "tau": 0.29
+        },
+        {
+          "compound": 0.1152012274,
+          "mdd": -0.7477623664,
+          "ruin": 0,
+          "tau": 0.3
+        },
+        {
+          "compound": 0.1151210458,
+          "mdd": -0.7650276998,
+          "ruin": 0,
+          "tau": 0.31
+        },
+        {
+          "compound": 0.1148347202,
+          "mdd": -0.7843776637,
+          "ruin": 0,
+          "tau": 0.32
+        },
+        {
+          "compound": 0.11440257,
+          "mdd": -0.8024067488,
+          "ruin": 0,
+          "tau": 0.33
+        },
+        {
+          "compound": 0.1141616185,
+          "mdd": -0.8191829348,
+          "ruin": 0,
+          "tau": 0.34
+        },
+        {
+          "compound": 0.1139045055,
+          "mdd": -0.8347723625,
+          "ruin": 0,
+          "tau": 0.35
+        },
+        {
+          "compound": 0.1135508527,
+          "mdd": -0.8507286195,
+          "ruin": 0,
+          "tau": 0.36
+        },
+        {
+          "compound": 0.1129523916,
+          "mdd": -0.8675764705,
+          "ruin": 0,
+          "tau": 0.37
+        },
+        {
+          "compound": 0.112287361,
+          "mdd": -0.8824049995,
+          "ruin": 0,
+          "tau": 0.38
+        },
+        {
+          "compound": 0.1116630139,
+          "mdd": -0.8948698471,
+          "ruin": 0,
+          "tau": 0.39
+        },
+        {
+          "compound": 0.1110672648,
+          "mdd": -0.9058022813,
+          "ruin": 0,
+          "tau": 0.4
+        },
+        {
+          "compound": 0.1101874091,
+          "mdd": -0.9158631942,
+          "ruin": 0,
+          "tau": 0.41
+        },
+        {
+          "compound": 0.1091708104,
+          "mdd": -0.9252223115,
+          "ruin": 0,
+          "tau": 0.42
+        },
+        {
+          "compound": 0.1083891508,
+          "mdd": -0.9322424073,
+          "ruin": 0,
+          "tau": 0.43
+        },
+        {
+          "compound": 0.1078067167,
+          "mdd": -0.9376460727,
+          "ruin": 0,
+          "tau": 0.44
+        },
+        {
+          "compound": 0.1073501174,
+          "mdd": -0.9421301658,
+          "ruin": 0,
+          "tau": 0.45
+        },
+        {
+          "compound": 0.1071918099,
+          "mdd": -0.9460156631,
+          "ruin": 0,
+          "tau": 0.46
+        },
+        {
+          "compound": 0.1068841195,
+          "mdd": -0.9496432877,
+          "ruin": 0,
+          "tau": 0.47
+        },
+        {
+          "compound": 0.106280117,
+          "mdd": -0.9531977335,
+          "ruin": 0,
+          "tau": 0.48
+        },
+        {
+          "compound": 0.1051849606,
+          "mdd": -0.956700322,
+          "ruin": 0,
+          "tau": 0.49
+        },
+        {
+          "compound": 0.1038081261,
+          "mdd": -0.960043403,
+          "ruin": 0,
+          "tau": 0.5
+        },
+        {
+          "compound": 0.1025651111,
+          "mdd": -0.9626762387,
+          "ruin": 0,
+          "tau": 0.51
+        },
+        {
+          "compound": 0.1015635973,
+          "mdd": -0.9642482641,
+          "ruin": 0,
+          "tau": 0.52
+        },
+        {
+          "compound": 0.1012322425,
+          "mdd": -0.9654083293,
+          "ruin": 0,
+          "tau": 0.53
+        },
+        {
+          "compound": 0.101221368,
+          "mdd": -0.9665700713,
+          "ruin": 0,
+          "tau": 0.54
+        },
+        {
+          "compound": 0.101399325,
+          "mdd": -0.9675092896,
+          "ruin": 0,
+          "tau": 0.55
+        },
+        {
+          "compound": 0.1014966374,
+          "mdd": -0.9684635046,
+          "ruin": 0,
+          "tau": 0.56
+        },
+        {
+          "compound": 0.1024557382,
+          "mdd": -0.9683904411,
+          "ruin": 0,
+          "tau": 0.57
+        },
+        {
+          "compound": 0.1036679086,
+          "mdd": -0.9678579747,
+          "ruin": 0,
+          "tau": 0.58
+        },
+        {
+          "compound": 0.1047227345,
+          "mdd": -0.9673606587,
+          "ruin": 0,
+          "tau": 0.59
+        },
+        {
+          "compound": 0.1057467105,
+          "mdd": -0.9669246561,
+          "ruin": 0,
+          "tau": 0.6
+        }
+      ],
+      "mdd_at_boundary": -0.4786560045
+    }
+  },
+  "ladder": {
+    "ew": {
+      "10bps": {
+        "0.10": {
+          "best_month": 0.102576973,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1056477767,
+          "cost_drag_annual": 0.0002457088,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2012-02-29",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0041594229,
+          "longest_underwater_months": 51,
+          "max_drawdown": -0.3298776192,
+          "max_leverage": 3.6848907907,
+          "mean_leverage": 1.2512965737,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 36,
+          "months_underwater": 52,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.5516808748,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.4914176739,
+          "vol_annual": 0.1099257632,
+          "worst_month": -0.1548836694,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.1531936914,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1229548756,
+          "cost_drag_annual": 0.0003685633,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2014-02-28",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0131541729,
+          "longest_underwater_months": 75,
+          "max_drawdown": -0.472873856,
+          "max_leverage": 5.5273361861,
+          "mean_leverage": 1.8769448605,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 60,
+          "months_underwater": 76,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.5096734634,
+          "target_vol": 0.15,
+          "turnover_per_year": 0.7371265109,
+          "vol_annual": 0.1646282936,
+          "worst_month": -0.2332160605,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.2038104098,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1364077074,
+          "cost_drag_annual": 0.0004914177,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-10-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0225388972,
+          "longest_underwater_months": 119,
+          "max_drawdown": -0.5924918779,
+          "max_leverage": 7.3697815815,
+          "mean_leverage": 2.5025931474,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 104,
+          "months_underwater": 120,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.4868873204,
+          "target_vol": 0.2,
+          "turnover_per_year": 0.9828353479,
+          "vol_annual": 0.2194131198,
+          "worst_month": -0.3115484515,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2544271282,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1461410645,
+          "cost_drag_annual": 0.0006142721,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-12-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0319236215,
+          "longest_underwater_months": 121,
+          "max_drawdown": -0.6911820776,
+          "max_leverage": 9.2122269769,
+          "mean_leverage": 3.1282414342,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 106,
+          "months_underwater": 122,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.4732156346,
+          "target_vol": 0.25,
+          "turnover_per_year": 1.2285441848,
+          "vol_annual": 0.2742271651,
+          "worst_month": -0.3898808425,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.3050438466,
+          "cap_binding_months": 4,
+          "compound_annual": 0.1525588685,
+          "cost_drag_annual": 0.0007109479,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2021-02-28",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0412549834,
+          "longest_underwater_months": 159,
+          "max_drawdown": -0.7715570353,
+          "max_leverage": 10.0,
+          "mean_leverage": 3.7503322264,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 144,
+          "months_underwater": 160,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5946210427,
+          "sharpe_net": 0.46612559,
+          "target_vol": 0.3,
+          "turnover_per_year": 1.421895822,
+          "vol_annual": 0.3287393428,
+          "worst_month": -0.4682132335,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.4062772833,
+          "cap_binding_months": 7,
+          "compound_annual": 0.158102079,
+          "cost_drag_annual": 0.0008903495,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-09-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0595157711,
+          "longest_underwater_months": 214,
+          "max_drawdown": -0.8868958679,
+          "max_leverage": 10.0,
+          "mean_leverage": 4.9677180716,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 199,
+          "months_underwater": 215,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.6078643622,
+          "sharpe_net": 0.4684734235,
+          "target_vol": 0.4,
+          "turnover_per_year": 1.7806989287,
+          "vol_annual": 0.4350143509,
+          "worst_month": -0.6248780156,
+          "years": 60.5
+        }
+      },
+      "2bps": {
+        "0.10": {
+          "best_month": 0.1027361866,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1058647845,
+          "cost_drag_annual": 4.91418e-05,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2012-02-29",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0041594229,
+          "longest_underwater_months": 51,
+          "max_drawdown": -0.3294784111,
+          "max_leverage": 3.6848907907,
+          "mean_leverage": 1.2512965737,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 36,
+          "months_underwater": 52,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.5535241868,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.4914176739,
+          "vol_annual": 0.1099157455,
+          "worst_month": -0.1546908793,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.1534325118,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1232865608,
+          "cost_drag_annual": 7.37127e-05,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2014-02-28",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0131541729,
+          "longest_underwater_months": 75,
+          "max_drawdown": -0.4723779902,
+          "max_leverage": 5.5273361861,
+          "mean_leverage": 1.8769448605,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 60,
+          "months_underwater": 76,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.5115130522,
+          "target_vol": 0.15,
+          "turnover_per_year": 0.7371265109,
+          "vol_annual": 0.1646130793,
+          "worst_month": -0.2329268752,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.2041288369,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1368572202,
+          "cost_drag_annual": 9.82835e-05,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-10-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0225388972,
+          "longest_underwater_months": 119,
+          "max_drawdown": -0.5919500016,
+          "max_leverage": 7.3697815815,
+          "mean_leverage": 2.5025931474,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 104,
+          "months_underwater": 120,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.4887247714,
+          "target_vol": 0.2,
+          "turnover_per_year": 0.9828353479,
+          "vol_annual": 0.2193927523,
+          "worst_month": -0.3111628712,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2548251621,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1467110195,
+          "cost_drag_annual": 0.0001228544,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-12-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0319236215,
+          "longest_underwater_months": 121,
+          "max_drawdown": -0.690633037,
+          "max_leverage": 9.2122269769,
+          "mean_leverage": 3.1282414342,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 106,
+          "months_underwater": 122,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5927804457,
+          "sharpe_net": 0.4750518029,
+          "target_vol": 0.25,
+          "turnover_per_year": 1.2285441848,
+          "vol_annual": 0.2742016471,
+          "worst_month": -0.3893988671,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.3055214873,
+          "cap_binding_months": 4,
+          "compound_annual": 0.1532258777,
+          "cost_drag_annual": 0.0001421896,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2021-02-28",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0412549834,
+          "longest_underwater_months": 159,
+          "max_drawdown": -0.771029679,
+          "max_leverage": 10.0,
+          "mean_leverage": 3.7503322264,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 144,
+          "months_underwater": 160,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5946210427,
+          "sharpe_net": 0.4678925891,
+          "target_vol": 0.3,
+          "turnover_per_year": 1.421895822,
+          "vol_annual": 0.3287132953,
+          "worst_month": -0.4676348631,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.4069141376,
+          "cap_binding_months": 7,
+          "compound_annual": 0.1589599939,
+          "cost_drag_annual": 0.0001780699,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-09-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0595157711,
+          "longest_underwater_months": 214,
+          "max_drawdown": -0.8864658877,
+          "max_leverage": 10.0,
+          "mean_leverage": 4.9677180716,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 199,
+          "months_underwater": 215,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.6078643622,
+          "sharpe_net": 0.4701441695,
+          "target_vol": 0.4,
+          "turnover_per_year": 1.7806989287,
+          "vol_annual": 0.4349832001,
+          "worst_month": -0.624106855,
+          "years": 60.5
+        }
+      }
+    },
+    "rp_bucket": {
+      "10bps": {
+        "0.10": {
+          "best_month": 0.0989577498,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0767599589,
+          "cost_drag_annual": 0.0005461974,
+          "dd_peak": "2020-12-31",
+          "dd_recovery": "2025-09-30",
+          "dd_trough": "2022-10-31",
+          "financing_drag_annual": 0.0177416282,
+          "longest_underwater_months": 93,
+          "max_drawdown": -0.3218338932,
+          "max_leverage": 4.0693014976,
+          "mean_leverage": 2.1827752162,
+          "months": 726,
+          "months_peak_to_trough": 22,
+          "months_trough_to_recovery": 35,
+          "months_underwater": 57,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.3136810385,
+          "target_vol": 0.1,
+          "turnover_per_year": 1.092394766,
+          "vol_annual": 0.1075302389,
+          "worst_month": -0.1435239834,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.1449546496,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0789180397,
+          "cost_drag_annual": 0.0008192961,
+          "dd_peak": "2012-09-30",
+          "dd_recovery": "2026-02-28",
+          "dd_trough": "2022-10-31",
+          "financing_drag_annual": 0.0341124424,
+          "longest_underwater_months": 160,
+          "max_drawdown": -0.4716710034,
+          "max_leverage": 6.1039522463,
+          "mean_leverage": 3.2741628243,
+          "months": 726,
+          "months_peak_to_trough": 121,
+          "months_trough_to_recovery": 40,
+          "months_underwater": 161,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.266975403,
+          "target_vol": 0.15,
+          "turnover_per_year": 1.638592149,
+          "vol_annual": 0.1609078941,
+          "worst_month": -0.2195314607,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.1909515494,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0778196022,
+          "cost_drag_annual": 0.0010923948,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1982-11-30",
+          "dd_trough": "1980-02-29",
+          "financing_drag_annual": 0.0504832565,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.6282473983,
+          "max_leverage": 8.1386029951,
+          "mean_leverage": 4.3655504324,
+          "months": 726,
+          "months_peak_to_trough": 86,
+          "months_trough_to_recovery": 33,
+          "months_underwater": 119,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.2436225853,
+          "target_vol": 0.2,
+          "turnover_per_year": 2.184789532,
+          "vol_annual": 0.2143599085,
+          "worst_month": -0.2955389381,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2377212771,
+          "cap_binding_months": 2,
+          "compound_annual": 0.0733024588,
+          "cost_drag_annual": 0.0013636223,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1983-06-30",
+          "dd_trough": "1980-02-29",
+          "financing_drag_annual": 0.0668489419,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.7688226737,
+          "max_leverage": 10.0,
+          "mean_leverage": 5.456596125,
+          "months": 726,
+          "months_peak_to_trough": 86,
+          "months_trough_to_recovery": 40,
+          "months_underwater": 126,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4853471477,
+          "sharpe_net": 0.2294455813,
+          "target_vol": 0.25,
+          "turnover_per_year": 2.7272446895,
+          "vol_annual": 0.267810683,
+          "worst_month": -0.3715464154,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.2848535879,
+          "cap_binding_months": 81,
+          "compound_annual": 0.0678633284,
+          "cost_drag_annual": 0.0015437122,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1984-10-31",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.0816087172,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.8612436891,
+          "max_leverage": 10.0,
+          "mean_leverage": 6.4405811452,
+          "months": 726,
+          "months_peak_to_trough": 87,
+          "months_trough_to_recovery": 55,
+          "months_underwater": 142,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4891293223,
+          "sharpe_net": 0.2260363845,
+          "target_vol": 0.3,
+          "turnover_per_year": 3.0874244505,
+          "vol_annual": 0.3173484354,
+          "worst_month": -0.4475538928,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.3749391487,
+          "cap_binding_months": 193,
+          "compound_annual": 0.0575458131,
+          "cost_drag_annual": 0.0017878854,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1985-02-28",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.1055607927,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.9367851176,
+          "max_leverage": 10.0,
+          "mean_leverage": 8.0373861791,
+          "months": 726,
+          "months_peak_to_trough": 87,
+          "months_trough_to_recovery": 59,
+          "months_underwater": 146,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5031607503,
+          "sharpe_net": 0.2349674562,
+          "target_vol": 0.4,
+          "turnover_per_year": 3.5757708352,
+          "vol_annual": 0.4015762096,
+          "worst_month": -0.5211697163,
+          "years": 60.5
+        }
+      },
+      "2bps": {
+        "0.10": {
+          "best_month": 0.0989826524,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0772301378,
+          "cost_drag_annual": 0.0001092395,
+          "dd_peak": "2020-12-31",
+          "dd_recovery": "2025-09-30",
+          "dd_trough": "2022-10-31",
+          "financing_drag_annual": 0.0177416282,
+          "longest_underwater_months": 93,
+          "max_drawdown": -0.3213264035,
+          "max_leverage": 4.0693014976,
+          "mean_leverage": 2.1827752162,
+          "months": 726,
+          "months_peak_to_trough": 22,
+          "months_trough_to_recovery": 35,
+          "months_underwater": 57,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.3178018102,
+          "target_vol": 0.1,
+          "turnover_per_year": 1.092394766,
+          "vol_annual": 0.1075143893,
+          "worst_month": -0.1434993602,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.1449920035,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0796271387,
+          "cost_drag_annual": 0.0001638592,
+          "dd_peak": "2012-09-30",
+          "dd_recovery": "2026-02-28",
+          "dd_trough": "2022-10-31",
+          "financing_drag_annual": 0.0341124424,
+          "longest_underwater_months": 160,
+          "max_drawdown": -0.4676756463,
+          "max_leverage": 6.1039522463,
+          "mean_leverage": 3.2741628243,
+          "months": 726,
+          "months_peak_to_trough": 121,
+          "months_trough_to_recovery": 40,
+          "months_underwater": 161,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.2710904288,
+          "target_vol": 0.15,
+          "turnover_per_year": 1.638592149,
+          "vol_annual": 0.1608854356,
+          "worst_month": -0.219494526,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.1910013546,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0787684818,
+          "cost_drag_annual": 0.000218479,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1982-11-30",
+          "dd_trough": "1980-02-29",
+          "financing_drag_annual": 0.0504832565,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.6256442922,
+          "max_leverage": 8.1386029951,
+          "mean_leverage": 4.3655504324,
+          "months": 726,
+          "months_peak_to_trough": 86,
+          "months_trough_to_recovery": 33,
+          "months_underwater": 119,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4855010615,
+          "sharpe_net": 0.2477347381,
+          "target_vol": 0.2,
+          "turnover_per_year": 2.184789532,
+          "vol_annual": 0.2143308543,
+          "worst_month": -0.2954896917,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2377427763,
+          "cap_binding_months": 2,
+          "compound_annual": 0.0744892853,
+          "cost_drag_annual": 0.0002727245,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1983-06-30",
+          "dd_trough": "1980-02-29",
+          "financing_drag_annual": 0.0668489419,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.7667881373,
+          "max_leverage": 10.0,
+          "mean_leverage": 5.456596125,
+          "months": 726,
+          "months_peak_to_trough": 86,
+          "months_trough_to_recovery": 40,
+          "months_underwater": 126,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4853471477,
+          "sharpe_net": 0.233551316,
+          "target_vol": 0.25,
+          "turnover_per_year": 2.7272446895,
+          "vol_annual": 0.2677745351,
+          "worst_month": -0.3714848575,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.284879387,
+          "cap_binding_months": 81,
+          "compound_annual": 0.0692064361,
+          "cost_drag_annual": 0.0003087424,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1984-10-31",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.0816087172,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.8597342733,
+          "max_leverage": 10.0,
+          "mean_leverage": 6.4405811452,
+          "months": 726,
+          "months_peak_to_trough": 87,
+          "months_trough_to_recovery": 55,
+          "months_underwater": 142,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.4891293223,
+          "sharpe_net": 0.2299530989,
+          "target_vol": 0.3,
+          "turnover_per_year": 3.0874244505,
+          "vol_annual": 0.3173141736,
+          "worst_month": -0.4474800233,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.3750387591,
+          "cap_binding_months": 193,
+          "compound_annual": 0.0590862896,
+          "cost_drag_annual": 0.0003575771,
+          "dd_peak": "1972-12-31",
+          "dd_recovery": "1985-01-31",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.1055607927,
+          "longest_underwater_months": 165,
+          "max_drawdown": -0.9359627758,
+          "max_leverage": 10.0,
+          "mean_leverage": 8.0373861791,
+          "months": 726,
+          "months_peak_to_trough": 87,
+          "months_trough_to_recovery": 58,
+          "months_underwater": 145,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5031607503,
+          "sharpe_net": 0.2385444254,
+          "target_vol": 0.4,
+          "turnover_per_year": 3.5757708352,
+          "vol_annual": 0.4015514309,
+          "worst_month": -0.5210843684,
+          "years": 60.5
+        }
+      }
+    },
+    "rp_naive": {
+      "10bps": {
+        "0.10": {
+          "best_month": 0.1132349649,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0910974991,
+          "cost_drag_annual": 0.0004402634,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2011-04-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0120174499,
+          "longest_underwater_months": 59,
+          "max_drawdown": -0.3145563575,
+          "max_leverage": 6.8349535339,
+          "mean_leverage": 1.8011633269,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 26,
+          "months_underwater": 42,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5441507403,
+          "sharpe_net": 0.429013713,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.8805267101,
+          "vol_annual": 0.11020964,
+          "worst_month": -0.1345349973,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.163384786,
+          "cap_binding_months": 1,
+          "compound_annual": 0.1003181421,
+          "cost_drag_annual": 0.0006564461,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2012-09-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0255209594,
+          "longest_underwater_months": 72,
+          "max_drawdown": -0.4535836135,
+          "max_leverage": 10.0,
+          "mean_leverage": 2.7013972903,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 43,
+          "months_underwater": 59,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5446772793,
+          "sharpe_net": 0.3841201652,
+          "target_vol": 0.15,
+          "turnover_per_year": 1.3128921891,
+          "vol_annual": 0.165014995,
+          "worst_month": -0.2026930523,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.2135346072,
+          "cap_binding_months": 2,
+          "compound_annual": 0.1072035401,
+          "cost_drag_annual": 0.0008373774,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2014-06-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0388676449,
+          "longest_underwater_months": 116,
+          "max_drawdown": -0.5705055056,
+          "max_leverage": 10.0,
+          "mean_leverage": 3.5911763268,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 64,
+          "months_underwater": 80,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5497047801,
+          "sharpe_net": 0.3668363436,
+          "target_vol": 0.2,
+          "turnover_per_year": 1.6747548213,
+          "vol_annual": 0.2190593818,
+          "worst_month": -0.2708511073,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2636844283,
+          "cap_binding_months": 7,
+          "compound_annual": 0.1128379782,
+          "cost_drag_annual": 0.0009995179,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-12-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.051989638,
+          "longest_underwater_months": 121,
+          "max_drawdown": -0.6677847584,
+          "max_leverage": 10.0,
+          "mean_leverage": 4.4659758689,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 106,
+          "months_underwater": 122,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5602992844,
+          "sharpe_net": 0.3640570317,
+          "target_vol": 0.25,
+          "turnover_per_year": 1.9990358267,
+          "vol_annual": 0.2717935578,
+          "worst_month": -0.3390091623,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.3138342495,
+          "cap_binding_months": 8,
+          "compound_annual": 0.1152012274,
+          "cost_drag_annual": 0.0011660023,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2018-01-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0650331019,
+          "longest_underwater_months": 132,
+          "max_drawdown": -0.7477623664,
+          "max_leverage": 10.0,
+          "mean_leverage": 5.3355401278,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 107,
+          "months_underwater": 123,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5679390456,
+          "sharpe_net": 0.3627940357,
+          "target_vol": 0.3,
+          "turnover_per_year": 2.3320045146,
+          "vol_annual": 0.3244033271,
+          "worst_month": -0.4071672173,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.4141338918,
+          "cap_binding_months": 90,
+          "compound_annual": 0.1110672648,
+          "cost_drag_annual": 0.0014111966,
+          "dd_peak": "1966-01-31",
+          "dd_recovery": "1985-12-31",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.0899721383,
+          "longest_underwater_months": 238,
+          "max_drawdown": -0.9058022813,
+          "max_leverage": 10.0,
+          "mean_leverage": 6.9981425511,
+          "months": 726,
+          "months_peak_to_trough": 170,
+          "months_trough_to_recovery": 69,
+          "months_underwater": 239,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5809844836,
+          "sharpe_net": 0.3650127301,
+          "target_vol": 0.4,
+          "turnover_per_year": 2.8223931649,
+          "vol_annual": 0.4248812113,
+          "worst_month": -0.5434833272,
+          "years": 60.5
+        }
+      },
+      "2bps": {
+        "0.10": {
+          "best_month": 0.1132626694,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0914818458,
+          "cost_drag_annual": 8.80527e-05,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2011-04-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0120174499,
+          "longest_underwater_months": 59,
+          "max_drawdown": -0.3136456978,
+          "max_leverage": 6.8349535339,
+          "mean_leverage": 1.8011633269,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 26,
+          "months_underwater": 42,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5441507403,
+          "sharpe_net": 0.4322885807,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.8805267101,
+          "vol_annual": 0.1101903557,
+          "worst_month": -0.1341522628,
+          "years": 60.5
+        },
+        "0.15": {
+          "best_month": 0.1634263428,
+          "cap_binding_months": 1,
+          "compound_annual": 0.1008981515,
+          "cost_drag_annual": 0.0001312892,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2012-09-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0255209594,
+          "longest_underwater_months": 71,
+          "max_drawdown": -0.4524487719,
+          "max_leverage": 10.0,
+          "mean_leverage": 2.7013972903,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 43,
+          "months_underwater": 59,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5446772793,
+          "sharpe_net": 0.3873674038,
+          "target_vol": 0.15,
+          "turnover_per_year": 1.3128921891,
+          "vol_annual": 0.1649871782,
+          "worst_month": -0.2021189505,
+          "years": 60.5
+        },
+        "0.20": {
+          "best_month": 0.2135900162,
+          "cap_binding_months": 2,
+          "compound_annual": 0.1079492153,
+          "cost_drag_annual": 0.0001674755,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2014-06-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0388676449,
+          "longest_underwater_months": 116,
+          "max_drawdown": -0.5692598094,
+          "max_leverage": 10.0,
+          "mean_leverage": 3.5911763268,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 64,
+          "months_underwater": 80,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5497047801,
+          "sharpe_net": 0.3699367331,
+          "target_vol": 0.2,
+          "turnover_per_year": 1.6747548213,
+          "vol_annual": 0.219033461,
+          "worst_month": -0.2700856382,
+          "years": 60.5
+        },
+        "0.25": {
+          "best_month": 0.2637536896,
+          "cap_binding_months": 7,
+          "compound_annual": 0.1137374483,
+          "cost_drag_annual": 0.0001999036,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-11-30",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.051989638,
+          "longest_underwater_months": 120,
+          "max_drawdown": -0.6665156803,
+          "max_leverage": 10.0,
+          "mean_leverage": 4.4659758689,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 105,
+          "months_underwater": 121,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5602992844,
+          "sharpe_net": 0.3670419752,
+          "target_vol": 0.25,
+          "turnover_per_year": 1.9990358267,
+          "vol_annual": 0.2717604957,
+          "worst_month": -0.338052326,
+          "years": 60.5
+        },
+        "0.30": {
+          "best_month": 0.3139173629,
+          "cap_binding_months": 8,
+          "compound_annual": 0.1162598736,
+          "cost_drag_annual": 0.0002332005,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2018-01-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0650331019,
+          "longest_underwater_months": 132,
+          "max_drawdown": -0.7465350843,
+          "max_leverage": 10.0,
+          "mean_leverage": 5.3355401278,
+          "months": 726,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 107,
+          "months_underwater": 123,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5679390456,
+          "sharpe_net": 0.3657123384,
+          "target_vol": 0.3,
+          "turnover_per_year": 2.3320045146,
+          "vol_annual": 0.3243637965,
+          "worst_month": -0.4060190137,
+          "years": 60.5
+        },
+        "0.40": {
+          "best_month": 0.4142447097,
+          "cap_binding_months": 90,
+          "compound_annual": 0.1123676758,
+          "cost_drag_annual": 0.0002822393,
+          "dd_peak": "1966-01-31",
+          "dd_recovery": "1985-12-31",
+          "dd_trough": "1980-03-31",
+          "financing_drag_annual": 0.0899721383,
+          "longest_underwater_months": 238,
+          "max_drawdown": -0.9040511704,
+          "max_leverage": 10.0,
+          "mean_leverage": 6.9981425511,
+          "months": 726,
+          "months_peak_to_trough": 170,
+          "months_trough_to_recovery": 69,
+          "months_underwater": 239,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5809844836,
+          "sharpe_net": 0.3677091787,
+          "target_vol": 0.4,
+          "turnover_per_year": 2.8223931649,
+          "vol_annual": 0.4248342331,
+          "worst_month": -0.5419523891,
+          "years": 60.5
+        }
+      }
+    }
+  },
+  "matched_vol_active": {
+    "0.10": {
+      "arith_active_annual": -0.0133269199,
+      "arith_active_tstat": -2.644061035,
+      "bench_sharpe": 0.5516808748,
+      "bench_vol": 0.1097178864,
+      "geometric_excess_annual": -0.0139520606,
+      "jensen_alpha_annual": -0.0100721798,
+      "jensen_alpha_tstat": -2.0310683319,
+      "jensen_beta": 0.9462286496,
+      "months": 726,
+      "strat_sharpe": 0.429013713,
+      "strat_vol": 0.1100252469,
+      "variance_drag_annual": 3.37702e-05,
+      "volmatched_active_annual": -0.0134587817,
+      "volmatched_active_tstat": -2.6735839495
+    },
+    "0.15": {
+      "arith_active_annual": -0.0205081374,
+      "arith_active_tstat": -2.7158425851,
+      "bench_sharpe": 0.5096734634,
+      "bench_vol": 0.1645737062,
+      "geometric_excess_annual": -0.0217060875,
+      "jensen_alpha_annual": -0.0159811571,
+      "jensen_alpha_tstat": -2.151259259,
+      "jensen_beta": 0.9460295384,
+      "months": 726,
+      "strat_sharpe": 0.3841201652,
+      "strat_vol": 0.1649762734,
+      "variance_drag_annual": 6.6333e-05,
+      "volmatched_active_annual": -0.0206627716,
+      "volmatched_active_tstat": -2.7393247199
+    },
+    "0.20": {
+      "arith_active_annual": -0.0264666504,
+      "arith_active_tstat": -2.636262062,
+      "bench_sharpe": 0.4868873204,
+      "bench_vol": 0.2194316082,
+      "geometric_excess_annual": -0.0280047529,
+      "jensen_alpha_annual": -0.0204415172,
+      "jensen_alpha_tstat": -2.0750294263,
+      "jensen_beta": 0.9436052077,
+      "months": 726,
+      "strat_sharpe": 0.3668363436,
+      "strat_vol": 0.2190944782,
+      "variance_drag_annual": -7.39201e-05,
+      "volmatched_active_annual": -0.0263429789,
+      "volmatched_active_tstat": -2.6222357435
+    },
+    "0.25": {
+      "arith_active_annual": -0.0308215519,
+      "arith_active_tstat": -2.4027740839,
+      "bench_sharpe": 0.4732156346,
+      "bench_vol": 0.2742895103,
+      "geometric_excess_annual": -0.0319332207,
+      "jensen_alpha_annual": -0.022585833,
+      "jensen_alpha_tstat": -1.8059629532,
+      "jensen_beta": 0.9365497661,
+      "months": 726,
+      "strat_sharpe": 0.3640570317,
+      "strat_vol": 0.2718709548,
+      "variance_drag_annual": -0.0006604597,
+      "volmatched_active_annual": -0.0299410597,
+      "volmatched_active_tstat": -2.3264132653
+    },
+    "0.30": {
+      "arith_active_annual": -0.0355464503,
+      "arith_active_tstat": -2.2608728502,
+      "bench_sharpe": 0.46612559,
+      "bench_vol": 0.3288309825,
+      "geometric_excess_annual": -0.0358176894,
+      "jensen_alpha_annual": -0.0250939661,
+      "jensen_alpha_tstat": -1.6425014214,
+      "jensen_beta": 0.9318063646,
+      "months": 726,
+      "strat_sharpe": 0.3627940357,
+      "strat_vol": 0.3245094292,
+      "variance_drag_annual": -0.0014117227,
+      "volmatched_active_annual": -0.0339786165,
+      "volmatched_active_tstat": -2.1507812811
+    },
+    "0.40": {
+      "arith_active_annual": -0.0487053424,
+      "arith_active_tstat": -2.3644315594,
+      "bench_sharpe": 0.4684734235,
+      "bench_vol": 0.435140291,
+      "geometric_excess_annual": -0.0451113009,
+      "jensen_alpha_annual": -0.0328409566,
+      "jensen_alpha_tstat": -1.6444135463,
+      "jensen_beta": 0.9221768139,
+      "months": 726,
+      "strat_sharpe": 0.3650127301,
+      "strat_vol": 0.4250435851,
+      "variance_drag_annual": -0.0043425118,
+      "volmatched_active_annual": -0.0450199162,
+      "volmatched_active_tstat": -2.1657890229
+    }
+  },
+  "mean_bill_rate_annual": 0.0463088852,
+  "mean_eligible_by_decade": {
+    "1960s": 3.4166666667,
+    "1970s": 5.2083333333,
+    "1980s": 7.3166666667,
+    "1990s": 10.3583333333,
+    "2000s": 15.1916666667,
+    "2010s": 18.0,
+    "2020s": 18.0
+  },
+  "pnl_concentration": {
+    "ew": {
+      "block_share": {
+        "commodity": 0.19721917,
+        "equity": 0.7661585458,
+        "fx": -0.0134181783,
+        "rates": 0.0500404625
+      },
+      "top_cell": "SPX 1966-08",
+      "top_cell_abs_share": 0.0028325056,
+      "top_cell_share": -0.0205482225,
+      "top_instrument": "N225",
+      "top_instrument_share": 0.2317437211
+    },
+    "rp_bucket": {
+      "block_share": {
+        "commodity": 0.2554172255,
+        "equity": 0.6315783906,
+        "fx": -0.0710247235,
+        "rates": 0.1840291074
+      },
+      "top_cell": "USDX 1978-10",
+      "top_cell_abs_share": 0.00217144,
+      "top_cell_share": -0.0248037747,
+      "top_instrument": "N225",
+      "top_instrument_share": 0.2174798359
+    },
+    "rp_naive": {
+      "block_share": {
+        "commodity": 0.1762310212,
+        "equity": 0.7533325781,
+        "fx": -0.0342268752,
+        "rates": 0.104663276
+      },
+      "top_cell": "US10Y_TR 1966-02",
+      "top_cell_abs_share": 0.0018300526,
+      "top_cell_share": -0.0159497534,
+      "top_instrument": "N225",
+      "top_instrument_share": 0.2090069015
+    }
+  },
+  "prereg": "research/sleeves/riskparity_prereg.md",
+  "rates_excess_by_segment": {
+    "US10Y_TR": {
+      "full_mean_annual": 0.0131421793,
+      "full_sharpe": 0.1685140539,
+      "inside_mean_annual": 0.0427233179,
+      "inside_sharpe": 0.5404686474,
+      "outside_mean_annual": -0.0359564115,
+      "outside_sharpe": -0.4846822926
+    },
+    "US30Y_TR": {
+      "full_mean_annual": 0.0308482987,
+      "full_sharpe": 0.2288568955,
+      "inside_mean_annual": 0.0667877843,
+      "inside_sharpe": 0.5034118857,
+      "outside_mean_annual": -0.1269587152,
+      "outside_sharpe": -0.9391434909
+    },
+    "US5Y_TR": {
+      "full_mean_annual": 0.0091342628,
+      "full_sharpe": 0.1725795702,
+      "inside_mean_annual": 0.0276070192,
+      "inside_sharpe": 0.5543322462,
+      "outside_mean_annual": -0.021526704,
+      "outside_sharpe": -0.3794343071
+    }
+  },
+  "rates_excluded": {
+    "ew": {
+      "compound_annual": 0.1225156349,
+      "first": "1974-01-31",
+      "ladder_10bps": {
+        "0.10": {
+          "best_month": 0.0939095013,
+          "cap_binding_months": 0,
+          "compound_annual": 0.118937232,
+          "cost_drag_annual": 0.0001626192,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2013-10-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0012420804,
+          "longest_underwater_months": 71,
+          "max_drawdown": -0.3345660587,
+          "max_leverage": 1.6148323291,
+          "mean_leverage": 0.9402774555,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 56,
+          "months_underwater": 72,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6917649083,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.3252384915,
+          "vol_annual": 0.108611671,
+          "worst_month": -0.1840550442,
+          "years": 51.5
+        },
+        "0.15": {
+          "best_month": 0.1402717438,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1473862859,
+          "cost_drag_annual": 0.0002439289,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-08-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0062468317,
+          "longest_underwater_months": 117,
+          "max_drawdown": -0.476834044,
+          "max_leverage": 2.4222484936,
+          "mean_leverage": 1.4104161833,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 102,
+          "months_underwater": 118,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6647487829,
+          "target_vol": 0.15,
+          "turnover_per_year": 0.4878577372,
+          "vol_annual": 0.1622865749,
+          "worst_month": -0.2793699645,
+          "years": 51.5
+        },
+        "0.20": {
+          "best_month": 0.1865811463,
+          "cap_binding_months": 0,
+          "compound_annual": 0.170465717,
+          "cost_drag_annual": 0.0003252385,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-12-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0132083237,
+          "longest_underwater_months": 121,
+          "max_drawdown": -0.5955328101,
+          "max_leverage": 3.2296646582,
+          "mean_leverage": 1.880554911,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 106,
+          "months_underwater": 122,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6421195825,
+          "target_vol": 0.2,
+          "turnover_per_year": 0.650476983,
+          "vol_annual": 0.216072739,
+          "worst_month": -0.3746848848,
+          "years": 51.5
+        },
+        "0.25": {
+          "best_month": 0.2328905488,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1897698634,
+          "cost_drag_annual": 0.0004065481,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2018-01-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0202604046,
+          "longest_underwater_months": 122,
+          "max_drawdown": -0.6928190724,
+          "max_leverage": 4.0370808227,
+          "mean_leverage": 2.3506936388,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 107,
+          "months_underwater": 123,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6281976797,
+          "target_vol": 0.25,
+          "turnover_per_year": 0.8130962287,
+          "vol_annual": 0.269895179,
+          "worst_month": -0.4699998051,
+          "years": 51.5
+        },
+        "0.30": {
+          "best_month": 0.2791999514,
+          "cap_binding_months": 0,
+          "compound_annual": 0.204809707,
+          "cost_drag_annual": 0.0004878577,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2024-03-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0273124855,
+          "longest_underwater_months": 196,
+          "max_drawdown": -0.7715774326,
+          "max_leverage": 4.8444969872,
+          "mean_leverage": 2.8208323665,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 181,
+          "months_underwater": 197,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6189164112,
+          "target_vol": 0.3,
+          "turnover_per_year": 0.9757154745,
+          "vol_annual": 0.3237340883,
+          "worst_month": -0.5653147255,
+          "years": 51.5
+        },
+        "0.40": {
+          "best_month": 0.3718187564,
+          "cap_binding_months": 0,
+          "compound_annual": 0.2183719083,
+          "cost_drag_annual": 0.000650477,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-08-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0414166473,
+          "longest_underwater_months": 213,
+          "max_drawdown": -0.8838282975,
+          "max_leverage": 6.4593293163,
+          "mean_leverage": 3.761109822,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 198,
+          "months_underwater": 214,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.7049065777,
+          "sharpe_net": 0.6073148256,
+          "target_vol": 0.4,
+          "turnover_per_year": 1.300953966,
+          "vol_annual": 0.4314366515,
+          "worst_month": -0.7559445661,
+          "years": 51.5
+        }
+      },
+      "max_drawdown": -0.3766165805,
+      "months": 630,
+      "sharpe": 0.6701576069,
+      "vol_annual": 0.1168311769
+    },
+    "rp_bucket": {
+      "compound_annual": 0.0808855184,
+      "first": "1974-01-31",
+      "ladder_10bps": {
+        "0.10": {
+          "best_month": 0.1161154619,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0887395169,
+          "cost_drag_annual": 0.0004319639,
+          "dd_peak": "2011-04-30",
+          "dd_recovery": "2024-08-31",
+          "dd_trough": "2016-01-31",
+          "financing_drag_annual": 0.0108183791,
+          "longest_underwater_months": 159,
+          "max_drawdown": -0.3015406094,
+          "max_leverage": 3.4027760305,
+          "mean_leverage": 1.713244584,
+          "months": 618,
+          "months_peak_to_trough": 57,
+          "months_trough_to_recovery": 103,
+          "months_underwater": 160,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5456742054,
+          "sharpe_net": 0.4392187245,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.8639277177,
+          "vol_annual": 0.1079935721,
+          "worst_month": -0.1600750249,
+          "years": 51.5
+        },
+        "0.15": {
+          "best_month": 0.1698669658,
+          "cap_binding_months": 0,
+          "compound_annual": 0.0982814423,
+          "cost_drag_annual": 0.0006479458,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-09-30",
+          "dd_trough": "2022-09-30",
+          "financing_drag_annual": 0.0235480031,
+          "longest_underwater_months": 214,
+          "max_drawdown": -0.4602981387,
+          "max_leverage": 5.1041640457,
+          "mean_leverage": 2.569866876,
+          "months": 618,
+          "months_peak_to_trough": 179,
+          "months_trough_to_recovery": 36,
+          "months_underwater": 215,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5456742054,
+          "sharpe_net": 0.3934893805,
+          "target_vol": 0.15,
+          "turnover_per_year": 1.2958915766,
+          "vol_annual": 0.1611729062,
+          "worst_month": -0.244358023,
+          "years": 51.5
+        },
+        "0.20": {
+          "best_month": 0.2236184697,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1043798462,
+          "cost_drag_annual": 0.0008639277,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2026-01-31",
+          "dd_trough": "2022-09-30",
+          "financing_drag_annual": 0.0363973375,
+          "longest_underwater_months": 218,
+          "max_drawdown": -0.6419413848,
+          "max_leverage": 6.805552061,
+          "mean_leverage": 3.4264891679,
+          "months": 618,
+          "months_peak_to_trough": 179,
+          "months_trough_to_recovery": 40,
+          "months_underwater": 219,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5456742054,
+          "sharpe_net": 0.3700563524,
+          "target_vol": 0.2,
+          "turnover_per_year": 1.7278554355,
+          "vol_annual": 0.214434093,
+          "worst_month": -0.3286410211,
+          "years": 51.5
+        },
+        "0.25": {
+          "best_month": 0.2773699737,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1069268242,
+          "cost_drag_annual": 0.0010799096,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": null,
+          "dd_trough": "2022-09-30",
+          "financing_drag_annual": 0.0492466719,
+          "longest_underwater_months": 224,
+          "max_drawdown": -0.7750142998,
+          "max_leverage": 8.5069400762,
+          "mean_leverage": 4.2831114599,
+          "months": 618,
+          "months_peak_to_trough": 179,
+          "months_trough_to_recovery": null,
+          "months_underwater": 224,
+          "recovered": 0,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5456742054,
+          "sharpe_net": 0.3559965355,
+          "target_vol": 0.25,
+          "turnover_per_year": 2.1598192943,
+          "vol_annual": 0.267728062,
+          "worst_month": -0.4129240192,
+          "years": 51.5
+        },
+        "0.30": {
+          "best_month": 0.3311214776,
+          "cap_binding_months": 2,
+          "compound_annual": 0.1055720685,
+          "cost_drag_annual": 0.0012929029,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": null,
+          "dd_trough": "2022-09-30",
+          "financing_drag_annual": 0.0620867937,
+          "longest_underwater_months": 224,
+          "max_drawdown": -0.8666312072,
+          "max_leverage": 10.0,
+          "mean_leverage": 5.1391195786,
+          "months": 618,
+          "months_peak_to_trough": 179,
+          "months_trough_to_recovery": null,
+          "months_underwater": 224,
+          "recovered": 0,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.545515337,
+          "sharpe_net": 0.3464593193,
+          "target_vol": 0.3,
+          "turnover_per_year": 2.5858058828,
+          "vol_annual": 0.3209826762,
+          "worst_month": -0.4972070174,
+          "years": 51.5
+        },
+        "0.40": {
+          "best_month": 0.4386244855,
+          "cap_binding_months": 82,
+          "compound_annual": 0.0982347695,
+          "cost_drag_annual": 0.0015557001,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": null,
+          "dd_trough": "2022-09-30",
+          "financing_drag_annual": 0.0847832461,
+          "longest_underwater_months": 224,
+          "max_drawdown": -0.9366079253,
+          "max_leverage": 10.0,
+          "mean_leverage": 6.6522164047,
+          "months": 618,
+          "months_peak_to_trough": 179,
+          "months_trough_to_recovery": null,
+          "months_underwater": 224,
+          "recovered": 0,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.5574803948,
+          "sharpe_net": 0.3493738073,
+          "target_vol": 0.4,
+          "turnover_per_year": 3.111400137,
+          "vol_annual": 0.4174757649,
+          "worst_month": -0.6657730136,
+          "years": 51.5
+        }
+      },
+      "max_drawdown": -0.1683668244,
+      "months": 630,
+      "sharpe": 0.5224169173,
+      "vol_annual": 0.0690862399
+    },
+    "rp_naive": {
+      "compound_annual": 0.1081500569,
+      "first": "1974-01-31",
+      "ladder_10bps": {
+        "0.10": {
+          "best_month": 0.0994699152,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1163580873,
+          "cost_drag_annual": 0.0002658683,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2014-02-28",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0036660064,
+          "longest_underwater_months": 75,
+          "max_drawdown": -0.3587861176,
+          "max_leverage": 2.2078466564,
+          "mean_leverage": 1.1942298195,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 60,
+          "months_underwater": 76,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.6756859211,
+          "target_vol": 0.1,
+          "turnover_per_year": 0.5317366469,
+          "vol_annual": 0.1077600465,
+          "worst_month": -0.1768168772,
+          "years": 51.5
+        },
+        "0.15": {
+          "best_month": 0.1454223644,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1412969748,
+          "cost_drag_annual": 0.0003988025,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2017-10-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0118710941,
+          "longest_underwater_months": 119,
+          "max_drawdown": -0.5053783809,
+          "max_leverage": 3.3117699846,
+          "mean_leverage": 1.7913447292,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 104,
+          "months_underwater": 120,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.6359303273,
+          "target_vol": 0.15,
+          "turnover_per_year": 0.7976049704,
+          "vol_annual": 0.1609515059,
+          "worst_month": -0.2685127139,
+          "years": 51.5
+        },
+        "0.20": {
+          "best_month": 0.1913748136,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1622577858,
+          "cost_drag_annual": 0.0005317366,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2018-01-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0208268946,
+          "longest_underwater_months": 122,
+          "max_drawdown": -0.623618223,
+          "max_leverage": 4.4156933128,
+          "mean_leverage": 2.3884596389,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 107,
+          "months_underwater": 123,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.6125104376,
+          "target_vol": 0.2,
+          "turnover_per_year": 1.0634732939,
+          "vol_annual": 0.2142298207,
+          "worst_month": -0.3602085507,
+          "years": 51.5
+        },
+        "0.25": {
+          "best_month": 0.2373272628,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1796675224,
+          "cost_drag_annual": 0.0006646708,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2024-07-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0297836182,
+          "longest_underwater_months": 200,
+          "max_drawdown": -0.7179653328,
+          "max_leverage": 5.519616641,
+          "mean_leverage": 2.9855745486,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 185,
+          "months_underwater": 201,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.598455241,
+          "target_vol": 0.25,
+          "turnover_per_year": 1.3293416173,
+          "vol_annual": 0.2675410536,
+          "worst_month": -0.4519043875,
+          "years": 51.5
+        },
+        "0.30": {
+          "best_month": 0.2832797121,
+          "cap_binding_months": 0,
+          "compound_annual": 0.1930426335,
+          "cost_drag_annual": 0.000797605,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-05-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0387403419,
+          "longest_underwater_months": 210,
+          "max_drawdown": -0.7923502096,
+          "max_leverage": 6.6235399692,
+          "mean_leverage": 3.5826894584,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 195,
+          "months_underwater": 211,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.5890851099,
+          "target_vol": 0.3,
+          "turnover_per_year": 1.5952099408,
+          "vol_annual": 0.3208688473,
+          "worst_month": -0.5436002243,
+          "years": 51.5
+        },
+        "0.40": {
+          "best_month": 0.3751846105,
+          "cap_binding_months": 0,
+          "compound_annual": 0.2048838368,
+          "cost_drag_annual": 0.0010634733,
+          "dd_peak": "2007-10-31",
+          "dd_recovery": "2025-12-31",
+          "dd_trough": "2009-02-28",
+          "financing_drag_annual": 0.0566537892,
+          "longest_underwater_months": 217,
+          "max_drawdown": -0.8945354647,
+          "max_leverage": 8.8313866256,
+          "mean_leverage": 4.7769192778,
+          "months": 618,
+          "months_peak_to_trough": 16,
+          "months_trough_to_recovery": 202,
+          "months_underwater": 218,
+          "recovered": 1,
+          "ruin": 0,
+          "ruin_date": null,
+          "sharpe_gross": 0.712792999,
+          "sharpe_net": 0.577372446,
+          "target_vol": 0.4,
+          "turnover_per_year": 2.1269465877,
+          "vol_annual": 0.4275493287,
+          "worst_month": -0.7269918978,
+          "years": 51.5
+        }
+      },
+      "max_drawdown": -0.2804542306,
+      "months": 630,
+      "sharpe": 0.6731292192,
+      "vol_annual": 0.0937170093
+    }
+  },
+  "rp_selected": "rp_naive",
+  "sample": {
+    "first": "1965-01-31",
+    "last": "2026-06-30",
+    "mean_eligible": 11.298102981,
+    "months": 738,
+    "n_instruments": 18,
+    "years": 61.5
+  },
+  "survivable": {
+    "mdd_le_35pct": {
+      "best_month": 0.102576973,
+      "book": "ew",
+      "cap_binding_months": 0,
+      "compound_annual": 0.1056477767,
+      "cost_drag_annual": 0.0002457088,
+      "dd_peak": "2007-10-31",
+      "dd_recovery": "2012-02-29",
+      "dd_trough": "2009-02-28",
+      "financing_drag_annual": 0.0041594229,
+      "longest_underwater_months": 51,
+      "max_drawdown": -0.3298776192,
+      "max_leverage": 3.6848907907,
+      "mean_leverage": 1.2512965737,
+      "months": 726,
+      "months_peak_to_trough": 16,
+      "months_trough_to_recovery": 36,
+      "months_underwater": 52,
+      "recovered": 1,
+      "ruin": 0,
+      "ruin_date": null,
+      "sharpe_gross": 0.5927804457,
+      "sharpe_net": 0.5516808748,
+      "target_vol": 0.1,
+      "turnover_per_year": 0.4914176739,
+      "vol_annual": 0.1099257632,
+      "worst_month": -0.1548836694,
+      "years": 60.5
+    },
+    "mdd_le_50pct": {
+      "best_month": 0.1531936914,
+      "book": "ew",
+      "cap_binding_months": 0,
+      "compound_annual": 0.1229548756,
+      "cost_drag_annual": 0.0003685633,
+      "dd_peak": "2007-10-31",
+      "dd_recovery": "2014-02-28",
+      "dd_trough": "2009-02-28",
+      "financing_drag_annual": 0.0131541729,
+      "longest_underwater_months": 75,
+      "max_drawdown": -0.472873856,
+      "max_leverage": 5.5273361861,
+      "mean_leverage": 1.8769448605,
+      "months": 726,
+      "months_peak_to_trough": 16,
+      "months_trough_to_recovery": 60,
+      "months_underwater": 76,
+      "recovered": 1,
+      "ruin": 0,
+      "ruin_date": null,
+      "sharpe_gross": 0.5927804457,
+      "sharpe_net": 0.5096734634,
+      "target_vol": 0.15,
+      "turnover_per_year": 0.7371265109,
+      "vol_annual": 0.1646282936,
+      "worst_month": -0.2332160605,
+      "years": 60.5
+    },
+    "mdd_le_60pct": {
+      "best_month": 0.2038104098,
+      "book": "ew",
+      "cap_binding_months": 0,
+      "compound_annual": 0.1364077074,
+      "cost_drag_annual": 0.0004914177,
+      "dd_peak": "2007-10-31",
+      "dd_recovery": "2017-10-31",
+      "dd_trough": "2009-02-28",
+      "financing_drag_annual": 0.0225388972,
+      "longest_underwater_months": 119,
+      "max_drawdown": -0.5924918779,
+      "max_leverage": 7.3697815815,
+      "mean_leverage": 2.5025931474,
+      "months": 726,
+      "months_peak_to_trough": 16,
+      "months_trough_to_recovery": 104,
+      "months_underwater": 120,
+      "recovered": 1,
+      "ruin": 0,
+      "ruin_date": null,
+      "sharpe_gross": 0.5927804457,
+      "sharpe_net": 0.4868873204,
+      "target_vol": 0.2,
+      "turnover_per_year": 0.9828353479,
+      "vol_annual": 0.2194131198,
+      "worst_month": -0.3115484515,
+      "years": 60.5
+    }
+  },
+  "top3_share_by_decade": {
+    "ew": {
+      "1960s": 0.8958333333,
+      "1970s": 0.59875,
+      "1980s": 0.4117063492,
+      "1990s": 0.2908964646,
+      "2000s": 0.2033119658,
+      "2010s": 0.1666666667,
+      "2020s": 0.1666666667
+    },
+    "rp_bucket": {
+      "1960s": 0.9493590034,
+      "1970s": 0.825270093,
+      "1980s": 0.662946899,
+      "1990s": 0.6798705376,
+      "2000s": 0.5481649303,
+      "2010s": 0.4421013456,
+      "2020s": 0.4394502037
+    },
+    "rp_naive": {
+      "1960s": 0.9527685197,
+      "1970s": 0.7971927333,
+      "1980s": 0.5544090962,
+      "1990s": 0.5113317694,
+      "2000s": 0.3904787857,
+      "2010s": 0.3513264638,
+      "2020s": 0.3462391465
+    }
+  },
+  "unlevered": {
+    "ew": {
+      "10bps": {
+        "compound_annual_total": 0.1059771087,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.2664212868,
+        "mean_excess_annual": 0.0587307266,
+        "sharpe": 0.6677549488,
+        "turnover_per_year": 0.0769962197,
+        "vol_annual": 0.0879525142
+      },
+      "2bps": {
+        "compound_annual_total": 0.1060112238,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.2662764295,
+        "mean_excess_annual": 0.0587615251,
+        "sharpe": 0.6681292677,
+        "turnover_per_year": 0.0769962197,
+        "vol_annual": 0.0879493355
+      },
+      "gross_sharpe": 0.668222778
+    },
+    "rp_bucket": {
+      "10bps": {
+        "compound_annual_total": 0.076049631,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.1236382008,
+        "mean_excess_annual": 0.0286003361,
+        "sharpe": 0.5512594559,
+        "turnover_per_year": 0.3704085012,
+        "vol_annual": 0.0518818059
+      },
+      "2bps": {
+        "compound_annual_total": 0.076208131,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.1235151263,
+        "mean_excess_annual": 0.0287484995,
+        "sharpe": 0.5541108807,
+        "turnover_per_year": 0.3704085012,
+        "vol_annual": 0.0518822144
+      },
+      "gross_sharpe": 0.5548233725
+    },
+    "rp_naive": {
+      "10bps": {
+        "compound_annual_total": 0.0879712414,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.1460338236,
+        "mean_excess_annual": 0.0402566231,
+        "sharpe": 0.648282724,
+        "turnover_per_year": 0.3007992383,
+        "vol_annual": 0.0620973252
+      },
+      "2bps": {
+        "compound_annual_total": 0.0881015052,
+        "financing_charged": 0.0,
+        "max_drawdown_total": -0.1456013706,
+        "mean_excess_annual": 0.0403769428,
+        "sharpe": 0.6502587138,
+        "turnover_per_year": 0.3007992383,
+        "vol_annual": 0.062093659
+      },
+      "gross_sharpe": 0.6507526146
+    }
+  },
+  "unlevered_active": {
+    "arith_active_annual": -0.0184741035,
+    "arith_active_tstat": -3.577638314,
+    "bench_sharpe": 0.6677549488,
+    "bench_vol": 0.0879525142,
+    "geometric_excess_annual": -0.0172399363,
+    "jensen_alpha_annual": 0.0013700549,
+    "jensen_alpha_tstat": 0.4453972324,
+    "jensen_beta": 0.6621162453,
+    "months": 738,
+    "strat_sharpe": 0.648282724,
+    "strat_vol": 0.0620973252,
+    "variance_drag_annual": -0.0019397835,
+    "volmatched_active_annual": -0.0017126311,
+    "volmatched_active_tstat": -0.3855046221
+  },
+  "verification": {
+    "cap_binding_months_by_tau": {
+      "ew": {
+        "0.10": 0,
+        "0.15": 0,
+        "0.20": 0,
+        "0.25": 0,
+        "0.30": 4,
+        "0.40": 7
+      },
+      "rp_bucket": {
+        "0.10": 0,
+        "0.15": 0,
+        "0.20": 0,
+        "0.25": 2,
+        "0.30": 81,
+        "0.40": 193
+      },
+      "rp_naive": {
+        "0.10": 0,
+        "0.15": 1,
+        "0.20": 2,
+        "0.25": 7,
+        "0.30": 8,
+        "0.40": 90
+      }
+    },
+    "dsr_anchor_40yr_n32": 0.5970964146,
+    "dsr_anchor_7yr_n32": 1.4881138751,
+    "ew_daily_matches_recorded_0.7065": 1,
+    "ew_daily_rebalanced_months": 739,
+    "ew_daily_rebalanced_sharpe": 0.6853783194,
+    "ew_matches_recorded_0.7065": 0,
+    "ew_monthly_vs_daily_gap": 0.0176233706,
+    "financing_zero_at_k1": 0.0,
+    "k1_net_excess_identity_max_err": 0.0,
+    "leverage_invariance_gross_sharpe": {
+      "ew": [
+        0.5927804457,
+        0.5927804457,
+        0.5927804457,
+        0.5927804457,
+        0.5946210427,
+        0.6078643622
+      ],
+      "rp_bucket": [
+        0.4855010615,
+        0.4855010615,
+        0.4855010615,
+        0.4853471477,
+        0.4891293223,
+        0.5031607503
+      ],
+      "rp_naive": [
+        0.5441507403,
+        0.5446772793,
+        0.5497047801,
+        0.5602992844,
+        0.5679390456,
+        0.5809844836
+      ]
+    },
+    "leverage_invariance_nocap": {
+      "ew": [
+        0.5927804457,
+        0.5927804457,
+        0.5927804457,
+        0.5927804457,
+        0.5927804457,
+        0.5927804457
+      ],
+      "rp_bucket": [
+        0.4855010615,
+        0.4855010615,
+        0.4855010615,
+        0.4855010615,
+        0.4855010615,
+        0.4855010615
+      ],
+      "rp_naive": [
+        0.5441507403,
+        0.5441507403,
+        0.5441507403,
+        0.5441507403,
+        0.5441507403,
+        0.5441507403
+      ]
+    },
+    "leverage_invariance_nocap_ok": {
+      "ew": 1,
+      "rp_bucket": 1,
+      "rp_naive": 1
+    },
+    "leverage_invariance_ok": {
+      "ew": 0,
+      "rp_bucket": 0,
+      "rp_naive": 0
+    },
+    "our_ew": {
+      "10bps": 0.6677549488,
+      "2bps": 0.6681292677
+    },
+    "pit_audit_dates": [
+      "1965-01-31",
+      "1972-09-30",
+      "1980-05-31",
+      "1988-01-31",
+      "1995-09-30",
+      "2003-05-31",
+      "2011-01-31",
+      "2018-09-30",
+      "2026-05-31"
+    ],
+    "pit_audit_max_weight_diff": 0.0,
+    "pit_audit_ok": 1,
+    "sign_flip_control": [
+      {
+        "seed": 11,
+        "sharpe": -0.3632953015,
+        "weight_max_diff": 0.0
+      },
+      {
+        "seed": 23,
+        "sharpe": 0.0562286271,
+        "weight_max_diff": 0.0
+      },
+      {
+        "seed": 47,
+        "sharpe": 0.0267231261,
+        "weight_max_diff": 0.0
+      },
+      {
+        "seed": 91,
+        "sharpe": 0.3776699093,
+        "weight_max_diff": 0.0
+      }
+    ],
+    "sign_flip_mean_sharpe": 0.0243315902,
+    "sign_flip_weights_identical": 1,
+    "trend_benchmark_gross": 0.6695648984,
+    "trend_benchmark_reproduction": {
+      "10bps": 0.669113556,
+      "2bps": 0.6694746877
+    },
+    "weights_sum_to_one_max_err": {
+      "ew": 0.0,
+      "rp_bucket": 0.0,
+      "rp_naive": 0.0
+    }
+  },
+  "weight_concentration": {
+    "ew": {
+      "block_share_mean": {
+        "commodity": 0.084416186,
+        "equity": 0.4679235324,
+        "fx": 0.142181817,
+        "rates": 0.3054784646
+      },
+      "effective_n_mean": 11.298102981,
+      "effective_n_min": 3.0,
+      "mean_instrument_weight_by_key": {
+        "ASX200": 0.0321763076,
+        "COPPER_F": 0.0210779886,
+        "DAX": 0.0400353862,
+        "EURUSD": 0.0176904547,
+        "FTSE100": 0.0479396319,
+        "GBPUSD": 0.017775143,
+        "GOLD_F": 0.0210779886,
+        "HSI": 0.0418420709,
+        "JPYUSD": 0.0261788328,
+        "N225": 0.1049276303,
+        "NASDAQ": 0.0802663837,
+        "SILVER_F": 0.0210779886,
+        "SPX": 0.1207361218,
+        "US10Y_TR": 0.1207361218,
+        "US30Y_TR": 0.0640062211,
+        "US5Y_TR": 0.1207361218,
+        "USDX": 0.0805373864,
+        "WTI_F": 0.0211822204
+      },
+      "months": 738,
+      "top1_max": 0.3333333333,
+      "top1_mean": 0.1207361218,
+      "top3_max": 1.0,
+      "top3_mean": 0.3622083653,
+      "top5_mean": 0.547673382
+    },
+    "rp_bucket": {
+      "block_share_mean": {
+        "commodity": 0.0368906072,
+        "equity": 0.2040986251,
+        "fx": 0.366083703,
+        "rates": 0.3929270646
+      },
+      "effective_n_mean": 6.3385195097,
+      "effective_n_min": 2.5582909584,
+      "mean_instrument_weight_by_key": {
+        "ASX200": 0.0133783207,
+        "COPPER_F": 0.008897754,
+        "DAX": 0.0116001637,
+        "EURUSD": 0.0411327874,
+        "FTSE100": 0.0197475428,
+        "GBPUSD": 0.040841478,
+        "GOLD_F": 0.0136868489,
+        "HSI": 0.0099802713,
+        "JPYUSD": 0.0615286882,
+        "N225": 0.0507487527,
+        "NASDAQ": 0.0289663792,
+        "SILVER_F": 0.0074491355,
+        "SPX": 0.0696771948,
+        "US10Y_TR": 0.1372811653,
+        "US30Y_TR": 0.0487290942,
+        "US5Y_TR": 0.2069168052,
+        "USDX": 0.2225807495,
+        "WTI_F": 0.0068568689
+      },
+      "months": 738,
+      "top1_max": 0.5225560121,
+      "top1_mean": 0.2884136229,
+      "top3_max": 1.0,
+      "top3_mean": 0.6371830796,
+      "top5_mean": 0.8124693063
+    },
+    "rp_naive": {
+      "block_share_mean": {
+        "commodity": 0.0416647618,
+        "equity": 0.3103177776,
+        "fx": 0.1877645789,
+        "rates": 0.4602528817
+      },
+      "effective_n_mean": 8.4777769888,
+      "effective_n_min": 2.061132073,
+      "mean_instrument_weight_by_key": {
+        "ASX200": 0.0292257914,
+        "COPPER_F": 0.0101908908,
+        "DAX": 0.0239504541,
+        "EURUSD": 0.0240838495,
+        "FTSE100": 0.039182495,
+        "GBPUSD": 0.0236658443,
+        "GOLD_F": 0.0155817143,
+        "HSI": 0.0206474324,
+        "JPYUSD": 0.0332070683,
+        "N225": 0.0694058487,
+        "NASDAQ": 0.0465856927,
+        "SILVER_F": 0.0083943806,
+        "SPX": 0.0813200633,
+        "US10Y_TR": 0.1608864217,
+        "US30Y_TR": 0.0578646554,
+        "US5Y_TR": 0.2415018046,
+        "USDX": 0.1068078168,
+        "WTI_F": 0.0074977761
+      },
+      "months": 738,
+      "top1_max": 0.5858142006,
+      "top1_mean": 0.2457988335,
+      "top3_max": 1.0,
+      "top3_mean": 0.5375900087,
+      "top5_mean": 0.7060809692
+    }
+  }
+}

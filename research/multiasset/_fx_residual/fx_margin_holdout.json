@@ -1,0 +1,174 @@
+{
+  "prereg": "research/multiasset/fx_margin_holdout_prereg.md",
+  "k_frozen": 0.345139,
+  "what_this_changes": "Nothing. No panel series, strategy, gate or headline number.",
+  "fee_check": {
+    "verified_pct_yr": {
+      "FXF": 0.4,
+      "FXA": 0.4,
+      "FXC": 0.4
+    },
+    "all_equal_to_original_three": true,
+    "note": "registered invalidating condition; it did not fire"
+  },
+  "holdout_etf_spans": {
+    "FXF": {
+      "first": "2006-06-26",
+      "last": "2026-07-31",
+      "n_daily": 5056
+    },
+    "FXA": {
+      "first": "2006-06-26",
+      "last": "2026-07-31",
+      "n_daily": 5056
+    },
+    "FXC": {
+      "first": "2006-06-26",
+      "last": "2026-07-31",
+      "n_daily": 5056
+    }
+  },
+  "holdout": {
+    "CHFUSD": {
+      "etf": "FXF",
+      "n": 239,
+      "first": "2006-07-31",
+      "last": "2026-06-30",
+      "measured_residual_pct_yr": 0.3002,
+      "predicted_frozen_k_pct_yr": 0.035,
+      "predicted_null_k0_pct_yr": -0.0836,
+      "abs_err_frozen_k_pp": 0.2652,
+      "abs_err_null_pp": 0.3838,
+      "H1_within_0.35pp": true,
+      "k_hat": 0.3038,
+      "k_hat_se": 0.6986,
+      "k_hat_ci95": [
+        -1.0655,
+        1.673
+      ],
+      "k_hat_in_0_1": true,
+      "ci_overlaps_frozen": true,
+      "overnight_sd_pp": 1.0095
+    },
+    "AUDUSD": {
+      "etf": "FXA",
+      "n": 239,
+      "first": "2006-07-31",
+      "last": "2026-06-30",
+      "measured_residual_pct_yr": 1.0783,
+      "predicted_frozen_k_pct_yr": 1.354,
+      "predicted_null_k0_pct_yr": 0.2946,
+      "abs_err_frozen_k_pp": 0.2757,
+      "abs_err_null_pp": 0.7837,
+      "H1_within_0.35pp": true,
+      "k_hat": 0.2113,
+      "k_hat_se": 0.1471,
+      "k_hat_ci95": [
+        -0.077,
+        0.4995
+      ],
+      "k_hat_in_0_1": true,
+      "ci_overlaps_frozen": true,
+      "overnight_sd_pp": 1.8806
+    },
+    "CADUSD": {
+      "etf": "FXC",
+      "n": 239,
+      "first": "2006-07-31",
+      "last": "2026-06-30",
+      "measured_residual_pct_yr": 0.7778,
+      "predicted_frozen_k_pct_yr": 0.6541,
+      "predicted_null_k0_pct_yr": 0.0436,
+      "abs_err_frozen_k_pp": 0.1237,
+      "abs_err_null_pp": 0.7342,
+      "H1_within_0.35pp": true,
+      "k_hat": 0.3561,
+      "k_hat_se": 0.1901,
+      "k_hat_ci95": [
+        -0.0165,
+        0.7286
+      ],
+      "k_hat_in_0_1": true,
+      "ci_overlaps_frozen": true,
+      "overnight_sd_pp": 1.5203
+    }
+  },
+  "H2_beats_null": {
+    "prediction": "mean absolute prediction error across the holdout is strictly lower with frozen k than with k=0",
+    "passed": true,
+    "mae_frozen_k_pp": 0.2215,
+    "mae_null_pp": 0.6339,
+    "improvement_pp": 0.4124
+  },
+  "H1_point_accuracy": {
+    "prediction": "frozen-k prediction within 0.35 pp/yr of measured on every holdout leg",
+    "passed": true,
+    "CHFUSD": 0.2652,
+    "AUDUSD": 0.2757,
+    "CADUSD": 0.1237
+  },
+  "H3_identification": {
+    "prediction": "k estimated on AUD and CAD is positive and its 95% CI overlaps the frozen 0.345 (CHF excluded in advance: negative rates make k unidentifiable)",
+    "passed": true,
+    "AUDUSD": {
+      "k_hat": 0.2113,
+      "ci": [
+        -0.077,
+        0.4995
+      ],
+      "overlaps": true
+    },
+    "CADUSD": {
+      "k_hat": 0.3561,
+      "ci": [
+        -0.0165,
+        0.7286
+      ],
+      "overlaps": true
+    }
+  },
+  "H4_plausibility": {
+    "prediction": "every per-leg k_hat lies in (0, 1)",
+    "passed": true,
+    "violations": {},
+    "note": "a violation on an identified leg (AUD/CAD) counts against the model; on CHF it is noise, as registered"
+  },
+  "registered_verdict": "SUPPORTED",
+  "decision_rule": "SUPPORTED requires H2 (beats the null out of sample) AND H3 for both AUD and CAD. H1/H4 inform but cannot rescue.",
+  "adversarial_constant_margin_comparator": {
+    "status": "POST-HOC. Run because the registered rule passed; it can only weaken.",
+    "m_constant_pct_yr": 0.483,
+    "fitted_on": "the ORIGINAL three remainders, same information the frozen k used",
+    "level_mae_pp": {
+      "proportional": 0.2215,
+      "constant": 0.217
+    },
+    "proportional_beats_constant_on_level": false,
+    "mean_abs_regime_asymmetry_pp": {
+      "none": 0.3543,
+      "proportional": 0.4823,
+      "constant": 0.3543
+    },
+    "per_leg_regime_asymmetry_pp": {
+      "CHFUSD": {
+        "none": 0.6099,
+        "proportional": 0.1313,
+        "constant": 0.6099
+      },
+      "AUDUSD": {
+        "none": 0.1809,
+        "proportional": 0.9426,
+        "constant": 0.1809
+      },
+      "CADUSD": {
+        "none": 0.2722,
+        "proportional": 0.373,
+        "constant": 0.2722
+      }
+    },
+    "proportional_beats_doing_nothing_on_shape": false,
+    "reading": "A constant margin shifts both rate buckets equally, so it CANNOT change the regime asymmetry -- 'constant' and 'none' are identical there by construction. That makes regime shape the only dimension separating the two models, and it is the dimension the registered rule failed to test."
+  },
+  "verdict": "NOT SUPPORTED - registered rule passed but is overturned by the adversarial comparator",
+  "verdict_note": "The registered rule returned SUPPORTED. It is not believed, and the reason is recorded rather than the verdict quietly changed: a fitted CONSTANT margin predicts the holdout levels at least as well, and the proportional correction makes the regime asymmetry WORSE than doing nothing on AUD and CAD -- the two legs with the rate variation needed to identify k at all."
+}

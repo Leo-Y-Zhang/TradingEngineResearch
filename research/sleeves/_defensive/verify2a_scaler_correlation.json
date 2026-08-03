@@ -1,0 +1,15 @@
+{
+  "question": "Does the SHARED vol-targeting machinery alone create co-movement? Direct test: correlate the two books' k(t) scalers (VERIFY-2(a)).",
+  "convention": "Both scalers are DECISION-dated: k at month-end t is computed from book returns realised at or before t and scales the weights held during t+1.",
+  "months": 630,
+  "first": "1974-01-31",
+  "last": "2026-06-30",
+  "pearson": 0.24454733819677585,
+  "spearman": 0.004725323546988505,
+  "abs_return_proxy_pearson_same_overlap": 0.2862793348256424,
+  "abs_return_proxy_months": 629,
+  "sources": {
+    "trend_scaler": "research\\sleeves\\_multiasset_trend\\primary_20pct_monthly.csv",
+    "defensive_scaler": "run_defensive(DefensiveConfig('PRIMARY'), vol_target=0.20) recomputed in-process (deterministic; not persisted by the defensive study)"
+  }
+}

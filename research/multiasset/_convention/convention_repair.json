@@ -1,0 +1,671 @@
+{
+  "prereg": "research/multiasset/convention_repair_prereg.md",
+  "dividend_sources": {
+    "SPX": {
+      "reference": "FRENCH_US",
+      "fx_leg": null,
+      "price_partner": "SPX",
+      "n_measured_months": 1170,
+      "first_measured": "1928-12-31",
+      "last_measured": "2026-05-31",
+      "mean_q_pct_yr": 3.626,
+      "note": "CRSP value-weighted US total return minus the S&P 500 price return. The only equity instrument measured over the WHOLE sample."
+    },
+    "NASDAQ": {
+      "reference": "QQQ",
+      "fx_leg": null,
+      "price_partner": "NDX",
+      "n_measured_months": 317,
+      "first_measured": "2000-02-29",
+      "last_measured": "2026-06-30",
+      "mean_q_pct_yr": 0.5289,
+      "note": "Nasdaq-100 TR ETF against the Nasdaq-100 PRICE index. Paired index-to-index so the yield is clean; the Composite-vs-100 composition gap is carried as bias."
+    },
+    "FTSE100": {
+      "reference": "EWU",
+      "fx_leg": "GBPUSD",
+      "price_partner": "FTSE100",
+      "n_measured_months": 260,
+      "first_measured": "2004-11-30",
+      "last_measured": "2026-06-30",
+      "mean_q_pct_yr": 3.0635,
+      "note": "MSCI UK TR ETF, USD, de-dollarised."
+    },
+    "N225": {
+      "reference": "EWJ",
+      "fx_leg": "JPYUSD",
+      "price_partner": "N225",
+      "n_measured_months": 345,
+      "first_measured": "1997-10-31",
+      "last_measured": "2026-06-30",
+      "mean_q_pct_yr": 0.7628,
+      "note": "MSCI Japan TR ETF, USD, de-dollarised. 31 of its 61 years predate the ETF -- the largest single BRACKETED quantity in the repair.",
+      "measurement_rejected": true,
+      "rejected_because": "control D: an unmatched country-ETF pair whose measured gap is below the price-index floor, so composition drift is not separable from the dividend"
+    },
+    "HSI": {
+      "reference": "EWH",
+      "fx_leg": null,
+      "price_partner": "HSI",
+      "n_measured_months": 353,
+      "first_measured": "1997-02-28",
+      "last_measured": "2026-06-30",
+      "mean_q_pct_yr": 2.3204,
+      "note": "MSCI Hong Kong TR ETF. HKD is pegged to USD so no FX leg is applied; the peg band is a disclosed residual."
+    },
+    "ASX200": {
+      "reference": "EWA",
+      "fx_leg": "AUDUSD",
+      "price_partner": "ASX200",
+      "n_measured_months": 231,
+      "first_measured": "2007-04-30",
+      "last_measured": "2026-06-30",
+      "mean_q_pct_yr": 3.7456,
+      "note": "MSCI Australia TR ETF, USD."
+    },
+    "DAX": {
+      "reference": null,
+      "note": "TOTAL-RETURN index: dividend credit is zero and the charge is the full bill.",
+      "n_measured_months": 1183
+    }
+  },
+  "bracket_ordering": {
+    "pairs_checked": 16562,
+    "ordered": true
+  },
+  "fx_carry_annual_mean_pct": {
+    "EURUSD": -0.0054,
+    "GBPUSD": 0.0142,
+    "JPYUSD": -0.0173
+  },
+  "controls": {
+    "D_index_type": {
+      "question": "Does the DAX behave like a total-return index and every other equity index like a price index?",
+      "rows": {
+        "NASDAQ": {
+          "etf": "QQQ",
+          "n": 328,
+          "first": "1999-03-31",
+          "gap_pct_yr": 0.294,
+          "is_total_return_index": false,
+          "index_matched": true,
+          "predicted": "matched pair: no floor",
+          "passes": true
+        },
+        "FTSE100": {
+          "etf": "EWU",
+          "n": 271,
+          "first": "2003-12-31",
+          "gap_pct_yr": 3.2204,
+          "is_total_return_index": false,
+          "index_matched": false,
+          "predicted": "> 0.8%/yr",
+          "passes": true
+        },
+        "N225": {
+          "etf": "EWJ",
+          "n": 356,
+          "first": "1996-11-30",
+          "gap_pct_yr": -0.0273,
+          "is_total_return_index": false,
+          "index_matched": false,
+          "predicted": "> 0.8%/yr",
+          "passes": false
+        },
+        "DAX": {
+          "etf": "EWG",
+          "n": 271,
+          "first": "2003-12-31",
+          "gap_pct_yr": -1.5265,
+          "is_total_return_index": true,
+          "index_matched": false,
+          "predicted": "< 0.5%/yr",
+          "passes": true
+        },
+        "HSI": {
+          "etf": "EWH",
+          "n": 364,
+          "first": "1996-03-31",
+          "gap_pct_yr": 2.3301,
+          "is_total_return_index": false,
+          "index_matched": false,
+          "predicted": "> 0.8%/yr",
+          "passes": true
+        },
+        "ASX200": {
+          "etf": "EWA",
+          "n": 242,
+          "first": "2006-05-31",
+          "gap_pct_yr": 3.7705,
+          "is_total_return_index": false,
+          "index_matched": false,
+          "predicted": "> 0.8%/yr",
+          "passes": true
+        }
+      },
+      "passes": false,
+      "amendment_2026_07_31": "POST-HOC and disclosed as such. The registered rule -- every price index shows a gap above 0.8 pct/yr -- treats two structurally different pairs alike. An index-MATCHED pair (QQQ against the Nasdaq-100 price index) has zero composition risk, so its gap IS the index's dividend yield and a low-yielding index legitimately reads low. An UNMATCHED pair (MSCI Japan against the Nikkei 225) can drift by more than the dividend it is meant to measure. The rule is therefore applied only to unmatched pairs, and an unmatched pair that fails has its measurement REJECTED rather than the threshold weakened. index_matched is a property of the pair, declared on the registry and verifiable from construction, not fitted to a result.",
+      "measurement_rejected": [
+        "N225"
+      ],
+      "resolution": "FALSIFIED for N225; measurement rejected and the instrument bracketed over the whole sample with the headline charging it the full bill. Threshold untouched."
+    },
+    "E_bias_budget": {
+      "question": "How much does an ETF-implied dividend yield understate the true one, measured where the true answer is independently known?",
+      "n": 389,
+      "us_residual_pct_yr": -0.1455,
+      "measures": "fee + index composition ONLY. A US fund holding US stocks suffers no foreign dividend withholding, so this pair CANNOT see the withholding a country ETF pays.",
+      "withholding_budget_frac_of_q": 0.15,
+      "passes": true,
+      "predicted": "negative, between -0.3% and -1.5%/yr"
+    },
+    "B_rates_unchanged": {
+      "question": "Did the block the panel already converted correctly stay byte-identical?",
+      "keys": 3,
+      "cells_compared": 2141,
+      "max_abs_diff": 0.0,
+      "passes": true
+    },
+    "F_no_invented_correction": {
+      "question": "With nothing registered to correct, does the pipeline return the panel unchanged?",
+      "max_abs_diff": NaN,
+      "passes": true
+    },
+    "A_us_equity": {
+      "question": "Does the corrected SPX match SPY minus the bill, and does the UNCORRECTED one fail the same test?",
+      "corrected": {
+        "n": 401,
+        "first": "1993-02-28",
+        "last": "2026-06-30",
+        "gap_pct_yr": 0.2439,
+        "abs_gap_pct_yr": 0.2439,
+        "tolerance_pct_yr": 0.25,
+        "corr": 0.9975,
+        "passes": true
+      },
+      "old_panel": {
+        "n": 401,
+        "first": "1993-02-28",
+        "last": "2026-06-30",
+        "gap_pct_yr": 0.7483,
+        "abs_gap_pct_yr": 0.7483,
+        "tolerance_pct_yr": 0.25,
+        "corr": 0.99735,
+        "passes": false
+      },
+      "corr_floor": 0.98,
+      "passes": true,
+      "old_must_fail": true
+    },
+    "C_fx_residual_regime": {
+      "question": "Is the residual gap on EUR and GBP a zero-rate ETF-fee artefact? If so it concentrates in months when the foreign rate is near zero.",
+      "rows": {
+        "JPYUSD": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_when_foreign_rate_at_or_below_0.5pct": 0.4782,
+          "gap_when_foreign_rate_above_0.5pct": 0.5573
+        },
+        "GBPUSD": {
+          "n_low_rate_months": 34,
+          "n_normal_months": 201,
+          "gap_when_foreign_rate_at_or_below_0.5pct": 0.552,
+          "gap_when_foreign_rate_above_0.5pct": 0.9098
+        },
+        "EURUSD": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_when_foreign_rate_at_or_below_0.5pct": 0.4774,
+          "gap_when_foreign_rate_above_0.5pct": 1.3937
+        }
+      },
+      "passes": true,
+      "note": "Diagnostic, not a gate. It explains a residual; it does not excuse one."
+    },
+    "C_fx_carry": {
+      "question": "Does the corrected FX match a currency-deposit ETF, and does the spot-only version fail on the leg where the differential is large and one-signed?",
+      "rows": {
+        "JPYUSD": {
+          "etf": "FXY",
+          "corrected": {
+            "n": 232,
+            "first": "2007-02-28",
+            "last": "2026-06-30",
+            "gap_pct_yr": 0.496,
+            "abs_gap_pct_yr": 0.496,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.9491,
+            "passes": true
+          },
+          "old_panel": {
+            "n": 232,
+            "first": "2007-02-28",
+            "last": "2026-06-30",
+            "gap_pct_yr": 1.9618,
+            "abs_gap_pct_yr": 1.9618,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.94762,
+            "passes": false
+          },
+          "discriminating": true
+        },
+        "GBPUSD": {
+          "etf": "FXB",
+          "corrected": {
+            "n": 235,
+            "first": "2006-07-31",
+            "last": "2026-02-28",
+            "gap_pct_yr": 0.858,
+            "abs_gap_pct_yr": 0.858,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.97319,
+            "passes": false
+          },
+          "old_panel": {
+            "n": 240,
+            "first": "2006-07-31",
+            "last": "2026-06-30",
+            "gap_pct_yr": 0.8126,
+            "abs_gap_pct_yr": 0.8126,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.97266,
+            "passes": false
+          },
+          "discriminating": false
+        },
+        "EURUSD": {
+          "etf": "FXE",
+          "corrected": {
+            "n": 242,
+            "first": "2005-12-31",
+            "last": "2026-02-28",
+            "gap_pct_yr": 0.9356,
+            "abs_gap_pct_yr": 0.9356,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.96232,
+            "passes": false
+          },
+          "old_panel": {
+            "n": 246,
+            "first": "2005-12-31",
+            "last": "2026-06-30",
+            "gap_pct_yr": 1.483,
+            "abs_gap_pct_yr": 1.483,
+            "tolerance_pct_yr": 0.75,
+            "corr": 0.97178,
+            "passes": false
+          },
+          "discriminating": false
+        }
+      },
+      "passes": true
+    }
+  },
+  "all_controls_pass": false,
+  "all_controls_pass_or_resolved": true,
+  "measured_fraction": {
+    "n_live_cells": 9379,
+    "frac_measured": 0.335857,
+    "n_measured": 3150,
+    "frac_bracketed": 0.175072,
+    "n_bracketed": 1642,
+    "frac_exempt": 0.049259,
+    "n_exempt": 462,
+    "frac_already_excess": 0.228276,
+    "n_already_excess": 2141,
+    "frac_uncorrected": 0.211536,
+    "n_uncorrected": 1984
+  },
+  "measured_fraction_by_block": {
+    "equity": {
+      "n_live_cells": 4435,
+      "frac_measured": 0.525592,
+      "n_measured": 2331,
+      "frac_bracketed": 0.370237,
+      "n_bracketed": 1642,
+      "frac_exempt": 0.104171,
+      "n_exempt": 462,
+      "frac_already_excess": 0.0,
+      "n_already_excess": 0,
+      "frac_uncorrected": 0.0,
+      "n_uncorrected": 0
+    },
+    "rates": {
+      "n_live_cells": 2141,
+      "frac_measured": 0.0,
+      "n_measured": 0,
+      "frac_bracketed": 0.0,
+      "n_bracketed": 0,
+      "frac_exempt": 0.0,
+      "n_exempt": 0,
+      "frac_already_excess": 1.0,
+      "n_already_excess": 2141,
+      "frac_uncorrected": 0.0,
+      "n_uncorrected": 0
+    },
+    "commodity": {
+      "n_live_cells": 1241,
+      "frac_measured": 0.0,
+      "n_measured": 0,
+      "frac_bracketed": 0.0,
+      "n_bracketed": 0,
+      "frac_exempt": 0.0,
+      "n_exempt": 0,
+      "frac_already_excess": 0.0,
+      "n_already_excess": 0,
+      "frac_uncorrected": 1.0,
+      "n_uncorrected": 1241
+    },
+    "fx": {
+      "n_live_cells": 1562,
+      "frac_measured": 0.524328,
+      "n_measured": 819,
+      "frac_bracketed": 0.0,
+      "n_bracketed": 0,
+      "frac_exempt": 0.0,
+      "n_exempt": 0,
+      "frac_already_excess": 0.0,
+      "n_already_excess": 0,
+      "frac_uncorrected": 0.475672,
+      "n_uncorrected": 743
+    }
+  },
+  "per_instrument": {
+    "old": {
+      "SPX": {
+        "ann_pct": 7.87,
+        "sharpe": 0.426
+      },
+      "NASDAQ": {
+        "ann_pct": 12.259,
+        "sharpe": 0.593
+      },
+      "FTSE100": {
+        "ann_pct": 6.647,
+        "sharpe": 0.4531
+      },
+      "N225": {
+        "ann_pct": 8.343,
+        "sharpe": 0.444
+      },
+      "DAX": {
+        "ann_pct": 10.386,
+        "sharpe": 0.5222
+      },
+      "HSI": {
+        "ann_pct": 8.785,
+        "sharpe": 0.3499
+      },
+      "ASX200": {
+        "ann_pct": 6.251,
+        "sharpe": 0.4702
+      },
+      "US5Y_TR": {
+        "ann_pct": 0.913,
+        "sharpe": 0.1726
+      },
+      "US10Y_TR": {
+        "ann_pct": 1.314,
+        "sharpe": 0.1685
+      },
+      "US30Y_TR": {
+        "ann_pct": 3.085,
+        "sharpe": 0.2289
+      },
+      "GOLD_F": {
+        "ann_pct": 11.755,
+        "sharpe": 0.7079
+      },
+      "WTI_F": {
+        "ann_pct": 13.149,
+        "sharpe": 0.3227
+      },
+      "SILVER_F": {
+        "ann_pct": 14.447,
+        "sharpe": 0.4622
+      },
+      "COPPER_F": {
+        "ann_pct": 10.78,
+        "sharpe": 0.4257
+      },
+      "USDX": {
+        "ann_pct": 0.031,
+        "sharpe": 0.0038
+      },
+      "EURUSD": {
+        "ann_pct": 0.457,
+        "sharpe": 0.0516
+      },
+      "GBPUSD": {
+        "ann_pct": -0.782,
+        "sharpe": -0.0912
+      },
+      "JPYUSD": {
+        "ann_pct": -0.638,
+        "sharpe": -0.0627
+      }
+    },
+    "conservative": {
+      "SPX": {
+        "ann_pct": 6.875,
+        "sharpe": 0.4595
+      },
+      "NASDAQ": {
+        "ann_pct": 7.965,
+        "sharpe": 0.3839
+      },
+      "FTSE100": {
+        "ann_pct": 4.752,
+        "sharpe": 0.3242
+      },
+      "N225": {
+        "ann_pct": 3.701,
+        "sharpe": 0.1967
+      },
+      "DAX": {
+        "ann_pct": 7.345,
+        "sharpe": 0.3698
+      },
+      "HSI": {
+        "ann_pct": 7.399,
+        "sharpe": 0.2954
+      },
+      "ASX200": {
+        "ann_pct": 5.854,
+        "sharpe": 0.4415
+      },
+      "US5Y_TR": {
+        "ann_pct": 0.913,
+        "sharpe": 0.1726
+      },
+      "US10Y_TR": {
+        "ann_pct": 1.314,
+        "sharpe": 0.1685
+      },
+      "US30Y_TR": {
+        "ann_pct": 3.085,
+        "sharpe": 0.2289
+      },
+      "GOLD_F": {
+        "ann_pct": 11.755,
+        "sharpe": 0.7079
+      },
+      "WTI_F": {
+        "ann_pct": 13.149,
+        "sharpe": 0.3227
+      },
+      "SILVER_F": {
+        "ann_pct": 14.447,
+        "sharpe": 0.4622
+      },
+      "COPPER_F": {
+        "ann_pct": 10.78,
+        "sharpe": 0.4257
+      },
+      "USDX": {
+        "ann_pct": 0.031,
+        "sharpe": 0.0038
+      },
+      "EURUSD": {
+        "ann_pct": -0.198,
+        "sharpe": -0.0222
+      },
+      "GBPUSD": {
+        "ann_pct": -0.375,
+        "sharpe": -0.0436
+      },
+      "JPYUSD": {
+        "ann_pct": -2.205,
+        "sharpe": -0.2436
+      }
+    },
+    "central": {
+      "SPX": {
+        "ann_pct": 6.879,
+        "sharpe": 0.4598
+      },
+      "NASDAQ": {
+        "ann_pct": 8.451,
+        "sharpe": 0.4072
+      },
+      "FTSE100": {
+        "ann_pct": 6.622,
+        "sharpe": 0.4514
+      },
+      "N225": {
+        "ann_pct": 3.701,
+        "sharpe": 0.1967
+      },
+      "DAX": {
+        "ann_pct": 7.345,
+        "sharpe": 0.3698
+      },
+      "HSI": {
+        "ann_pct": 8.233,
+        "sharpe": 0.3282
+      },
+      "ASX200": {
+        "ann_pct": 7.78,
+        "sharpe": 0.5839
+      },
+      "US5Y_TR": {
+        "ann_pct": 0.913,
+        "sharpe": 0.1726
+      },
+      "US10Y_TR": {
+        "ann_pct": 1.314,
+        "sharpe": 0.1685
+      },
+      "US30Y_TR": {
+        "ann_pct": 3.085,
+        "sharpe": 0.2289
+      },
+      "GOLD_F": {
+        "ann_pct": 11.755,
+        "sharpe": 0.7079
+      },
+      "WTI_F": {
+        "ann_pct": 13.149,
+        "sharpe": 0.3227
+      },
+      "SILVER_F": {
+        "ann_pct": 14.447,
+        "sharpe": 0.4622
+      },
+      "COPPER_F": {
+        "ann_pct": 10.78,
+        "sharpe": 0.4257
+      },
+      "USDX": {
+        "ann_pct": 0.031,
+        "sharpe": 0.0038
+      },
+      "EURUSD": {
+        "ann_pct": -0.198,
+        "sharpe": -0.0222
+      },
+      "GBPUSD": {
+        "ann_pct": -0.375,
+        "sharpe": -0.0436
+      },
+      "JPYUSD": {
+        "ann_pct": -2.205,
+        "sharpe": -0.2436
+      }
+    },
+    "realistic": {
+      "SPX": {
+        "ann_pct": 7.025,
+        "sharpe": 0.4695
+      },
+      "NASDAQ": {
+        "ann_pct": 8.654,
+        "sharpe": 0.417
+      },
+      "FTSE100": {
+        "ann_pct": 7.3,
+        "sharpe": 0.4974
+      },
+      "N225": {
+        "ann_pct": 6.913,
+        "sharpe": 0.3664
+      },
+      "DAX": {
+        "ann_pct": 7.345,
+        "sharpe": 0.3698
+      },
+      "HSI": {
+        "ann_pct": 8.778,
+        "sharpe": 0.3498
+      },
+      "ASX200": {
+        "ann_pct": 8.548,
+        "sharpe": 0.6409
+      },
+      "US5Y_TR": {
+        "ann_pct": 0.913,
+        "sharpe": 0.1726
+      },
+      "US10Y_TR": {
+        "ann_pct": 1.314,
+        "sharpe": 0.1685
+      },
+      "US30Y_TR": {
+        "ann_pct": 3.085,
+        "sharpe": 0.2289
+      },
+      "GOLD_F": {
+        "ann_pct": 11.755,
+        "sharpe": 0.7079
+      },
+      "WTI_F": {
+        "ann_pct": 13.149,
+        "sharpe": 0.3227
+      },
+      "SILVER_F": {
+        "ann_pct": 14.447,
+        "sharpe": 0.4622
+      },
+      "COPPER_F": {
+        "ann_pct": 10.78,
+        "sharpe": 0.4257
+      },
+      "USDX": {
+        "ann_pct": 0.031,
+        "sharpe": 0.0038
+      },
+      "EURUSD": {
+        "ann_pct": -0.198,
+        "sharpe": -0.0222
+      },
+      "GBPUSD": {
+        "ann_pct": -0.375,
+        "sharpe": -0.0436
+      },
+      "JPYUSD": {
+        "ann_pct": -2.205,
+        "sharpe": -0.2436
+      }
+    }
+  }
+}

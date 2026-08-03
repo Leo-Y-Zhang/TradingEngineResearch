@@ -1,0 +1,46 @@
+{
+  "source": "re-run of the registered lowvol_retest code path (run_band defaults)",
+  "band": "B2_200k_1M",
+  "reproduction_gate": "PASSED",
+  "tolerance": 1e-09,
+  "checks": [
+    {
+      "name": "n_months",
+      "regenerated": 213.0,
+      "registered": 213.0
+    },
+    {
+      "name": "gross_sharpe",
+      "regenerated": 1.1349669000723814,
+      "registered": 1.1349669000723817
+    },
+    {
+      "name": "gross_vol",
+      "regenerated": 0.14610443395961278,
+      "registered": 0.14610443395961276
+    },
+    {
+      "name": "bench_sharpe",
+      "regenerated": 0.3744105151772061,
+      "registered": 0.37441051517720614
+    },
+    {
+      "name": "bench_vol",
+      "regenerated": 0.22266837078815405,
+      "registered": 0.22266837078815405
+    },
+    {
+      "name": "net_cons_sharpe",
+      "regenerated": 0.877853588402183,
+      "registered": 0.8778535884021832
+    },
+    {
+      "name": "net_real_sharpe",
+      "regenerated": 0.9068698748639891,
+      "registered": 0.9068698748639893
+    }
+  ],
+  "n_months": 213,
+  "first_month": "1998-04-30",
+  "last_month": "2015-12-31"
+}

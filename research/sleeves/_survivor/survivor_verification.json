@@ -1,0 +1,1140 @@
+{
+  "_meta": {
+    "claim": "trend+passive inverse-vol, Sharpe 0.9033, n=738",
+    "bootstrap": {
+      "seed": 20260728,
+      "n": 10000,
+      "block_months": 12
+    }
+  },
+  "A0_baseline": {
+    "n": 738,
+    "years": 61.5,
+    "sharpe_book": 0.9033140238851138,
+    "sharpe_trend": 0.6116253670229176,
+    "sharpe_passive": 0.6691135560076179,
+    "vol_book": 0.08993042798970893,
+    "vol_trend": 0.22801287445503043,
+    "vol_passive": 0.08787305250840342,
+    "weights_capital": {
+      "trend": 0.2781797003529549,
+      "passive": 0.7218202996470451
+    },
+    "rho_trend_passive": 0.005110282142560822,
+    "reproduces_0.9033": true
+  },
+  "A1_is_it_just_passive": {
+    "capital_weight_passive": 0.7218202996470451,
+    "risk_share": {
+      "trend": 0.49999999999999994,
+      "passive": 0.5000000000000001
+    },
+    "return_contribution_annual": {
+      "trend": 0.038794512064942895,
+      "passive": 0.04244090471215157
+    },
+    "return_share": {
+      "trend": 0.4775566323663103,
+      "passive": 0.5224433676336897
+    },
+    "book_mean_annual": 0.08123541677709446,
+    "variance_share": {
+      "trend": 0.4974578500323031,
+      "passive": 0.4974578500323033,
+      "interaction": 0.005084299935393557
+    },
+    "book_vs_passive": {
+      "annual": 0.021061748311613292,
+      "tstat": 2.354510173240478
+    },
+    "trend_vs_passive": {
+      "annual": -0.013108047217615508,
+      "tstat": -0.30999099641046973
+    },
+    "spanning_alpha_annual": 0.13867880013721665,
+    "spanning_beta": 0.013260152997303513,
+    "spanning_alpha_tstat_nw": 4.632705704569233,
+    "sharpe_gain_over_passive": 0.23420046787749593,
+    "sharpe_gain_boot_ci95": [
+      0.03177563856754068,
+      0.44085778669046416
+    ],
+    "p_sharpe_gain_le_zero": 0.0118,
+    "causal_weights_rolling60m": {
+      "n": 702,
+      "sharpe": 0.9236094098268615,
+      "vm": {
+        "annual": 0.021255491254454927,
+        "tstat": 2.299601876260305
+      },
+      "mean_passive_weight": 0.7213263652966133
+    },
+    "causal_weights_expanding": {
+      "n": 702,
+      "sharpe": 0.927268350369054,
+      "vm": {
+        "annual": 0.0210567561856494,
+        "tstat": 2.3925589005969323
+      },
+      "mean_passive_weight": 0.7338216640691133
+    },
+    "fixed_weight_grid": {
+      "passive_0.5000": {
+        "sharpe": 0.8099396833093525,
+        "vm": {
+          "annual": 0.017235576967621735,
+          "tstat": 0.955059119765154
+        }
+      },
+      "passive_0.6000": {
+        "sharpe": 0.8624817767478913,
+        "vm": {
+          "annual": 0.02041599332672232,
+          "tstat": 1.4872090703349443
+        }
+      },
+      "passive_0.7218": {
+        "sharpe": 0.9033119732283631,
+        "vm": {
+          "annual": 0.02106203623041836,
+          "tstat": 2.3543460016778193
+        }
+      },
+      "passive_0.8000": {
+        "sharpe": 0.8921277122954226,
+        "vm": {
+          "annual": 0.018730840386594526,
+          "tstat": 3.020769239142
+        }
+      },
+      "passive_0.9000": {
+        "sharpe": 0.8112598608307349,
+        "vm": {
+          "annual": 0.011715550148803442,
+          "tstat": 3.8917339796575185
+        }
+      }
+    }
+  },
+  "A2_decades": {
+    "by_decade": {
+      "1960": {
+        "n": 60,
+        "book": 0.8229390711026436,
+        "trend": 0.6531124101749877,
+        "passive": 0.27111630002667386,
+        "book_annual": 0.04909830172825215,
+        "vm_vs_passive": {
+          "annual": 0.03292292451068817,
+          "tstat": 1.162881999764204
+        }
+      },
+      "1970": {
+        "n": 120,
+        "book": 0.7870444337138247,
+        "trend": 0.48228355018287594,
+        "passive": 0.4920342955562852,
+        "book_annual": 0.05861797200727421,
+        "vm_vs_passive": {
+          "annual": 0.021971943742465482,
+          "tstat": 0.8876253646484624
+        }
+      },
+      "1980": {
+        "n": 120,
+        "book": 1.156007907077399,
+        "trend": 0.8773364789748886,
+        "passive": 0.9474003398294334,
+        "book_annual": 0.12090130861726492,
+        "vm_vs_passive": {
+          "annual": 0.021817262419516037,
+          "tstat": 1.0979829798844885
+        }
+      },
+      "1990": {
+        "n": 120,
+        "book": 1.0096904053048603,
+        "trend": 0.7716768047244152,
+        "passive": 0.969349775418425,
+        "book_annual": 0.11718726414049377,
+        "vm_vs_passive": {
+          "annual": 0.004682037211860212,
+          "tstat": 0.34640937856491844
+        }
+      },
+      "2000": {
+        "n": 120,
+        "book": 1.051021437240125,
+        "trend": 0.9079522449217393,
+        "passive": 0.39336855586767705,
+        "book_annual": 0.09032624962924216,
+        "vm_vs_passive": {
+          "annual": 0.05651960676294592,
+          "tstat": 2.4301337260766225
+        }
+      },
+      "2010": {
+        "n": 120,
+        "book": 0.45808696033676627,
+        "trend": 0.04949592709576331,
+        "passive": 0.6110480996344375,
+        "book_annual": 0.03433787914656104,
+        "vm_vs_passive": {
+          "annual": -0.011465860349882926,
+          "tstat": -0.5637280912205217
+        }
+      },
+      "2020": {
+        "n": 78,
+        "book": 0.9544841959334576,
+        "trend": 0.38535452084309313,
+        "passive": 0.7852668939177366,
+        "book_annual": 0.08258152119102873,
+        "vm_vs_passive": {
+          "annual": 0.014640600935915536,
+          "tstat": 0.7080066679215377
+        }
+      }
+    },
+    "n_below_target": 3,
+    "rolling10y_min": 0.39152225042358396,
+    "rolling10y_min_at": "2020-03-31",
+    "rolling10y_frac_below_target": 0.42487883683360256,
+    "rolling10y_median": 0.9314604416691238,
+    "rolling10y_passive_median": 0.6799968125072289,
+    "rolling10y_beats_passive_frac": 0.8788368336025848,
+    "eras": {
+      "1965-2009": {
+        "n": 540,
+        "book": 0.9806432743814082,
+        "trend": 0.7543640414637489,
+        "passive": 0.6632698983185533,
+        "vm_vs_passive": {
+          "annual": 0.029600785730406177,
+          "tstat": 2.7457646487490948
+        }
+      },
+      "2010-2026": {
+        "n": 198,
+        "book": 0.6685360966350792,
+        "trend": 0.19499698207841457,
+        "passive": 0.6850046146355117,
+        "vm_vs_passive": {
+          "annual": -0.0013140342621618378,
+          "tstat": -0.08872989470869204
+        }
+      },
+      "1996-2026": {
+        "n": 366,
+        "book": 0.8617452292355609,
+        "trend": 0.5383187461285394,
+        "passive": 0.6559426913888863,
+        "vm_vs_passive": {
+          "annual": 0.01869080606464999,
+          "tstat": 1.4794475651907353
+        }
+      },
+      "2000-2026": {
+        "n": 318,
+        "book": 0.8187724447226256,
+        "trend": 0.4835207839536364,
+        "passive": 0.561064353380598,
+        "vm_vs_passive": {
+          "annual": 0.021182288614663883,
+          "tstat": 1.560574692233272
+        }
+      }
+    }
+  },
+  "A3_bond_bull": {
+    "passive_leg_rebuild_max_abs_err": 9.974659986866641e-17,
+    "book_full": 0.9033140238851138,
+    "book_ex_bull": 0.8244833612293164,
+    "trend_ex_bull": 0.562829544372386,
+    "passive_ex_bull": 0.43866781726285314,
+    "n_outside_bull": 255,
+    "book_ex_bull_vm_vs_passive": {
+      "annual": 0.028249416111698435,
+      "tstat": 1.7692712212023471
+    },
+    "attribution": {
+      "equity": {
+        "instruments": [
+          "SPX",
+          "NASDAQ",
+          "FTSE100",
+          "N225",
+          "DAX",
+          "HSI",
+          "ASX200"
+        ],
+        "trend_pnl_annual": 0.06674326837963032,
+        "passive_pnl_annual": 0.043633301054175185,
+        "passive_share": 0.7416145847275232,
+        "trend_share": 0.4356069164283328,
+        "trend_pnl_in_bull": 0.07217473280900435,
+        "trend_pnl_ex_bull": 0.056455435754580646,
+        "passive_pnl_in_bull": 0.04532263141651643,
+        "passive_pnl_ex_bull": 0.04043351060315235
+      },
+      "rates": {
+        "instruments": [
+          "US5Y_TR",
+          "US10Y_TR",
+          "US30Y_TR"
+        ],
+        "trend_pnl_annual": 0.05152772355811802,
+        "passive_pnl_annual": 0.004030612288891571,
+        "passive_share": 0.06850641108067039,
+        "trend_share": 0.3363010729719328,
+        "trend_pnl_in_bull": 0.04587235956961429,
+        "trend_pnl_ex_bull": 0.0622396482892839,
+        "passive_pnl_in_bull": 0.013277910247737537,
+        "passive_pnl_ex_bull": -0.013484857962569614
+      },
+      "commodity": {
+        "instruments": [
+          "GOLD_F",
+          "WTI_F",
+          "SILVER_F",
+          "COPPER_F"
+        ],
+        "trend_pnl_annual": 0.01506074545686106,
+        "passive_pnl_annual": 0.011692454852919856,
+        "passive_share": 0.1987311260137567,
+        "trend_share": 0.09829552922489958,
+        "trend_pnl_in_bull": 0.016469882913749064,
+        "trend_pnl_ex_bull": 0.0123916733326379,
+        "passive_pnl_in_bull": 0.014197199504460103,
+        "passive_pnl_ex_bull": 0.006948173807061273
+      },
+      "fx": {
+        "instruments": [
+          "USDX",
+          "EURUSD",
+          "GBPUSD",
+          "JPYUSD"
+        ],
+        "trend_pnl_annual": 0.019887290730282902,
+        "passive_pnl_annual": -0.0005208194450049819,
+        "passive_share": -0.008852121821950243,
+        "trend_share": 0.12979648137483502,
+        "trend_pnl_in_bull": 0.02288877038443015,
+        "trend_pnl_ex_bull": 0.01420213515007459,
+        "passive_pnl_in_bull": -0.0006951974183880894,
+        "passive_pnl_ex_bull": -0.00019052704836168408
+      }
+    },
+    "ex_rates_attribution": {
+      "n": 738,
+      "sharpe": 0.7905182535568926,
+      "weights": {
+        "trend": 0.3207252824881777,
+        "passive": 0.6792747175118223
+      },
+      "sharpe_trend": 0.5025519207748929,
+      "sharpe_passive": 0.6629289559187957,
+      "vm_vs_passive": {
+        "annual": 0.010556026116160735,
+        "tstat": 1.2903544930832032
+      }
+    },
+    "ex_rates_rerun": {
+      "n": 630,
+      "sharpe": 0.856381877189434,
+      "first_month": "1974-01-31",
+      "weights": {
+        "trend": 0.28214341530213344,
+        "passive": 0.7178565846978666
+      },
+      "sharpe_trend": 0.5544889890554313,
+      "sharpe_passive": 0.6718704429563923,
+      "vm_vs_passive": {
+        "annual": 0.022046234453158158,
+        "tstat": 1.5613004696587838
+      },
+      "ex_bull": 0.9870709710551749
+    }
+  },
+  "A4_survivorship": {
+    "n_instruments": 18,
+    "jackknife": {
+      "SPX": {
+        "sharpe": 0.901740119257771,
+        "passive_pnl_share": 0.1448542257762355,
+        "trend_pnl_share": 0.10144867465236229,
+        "own_annual_return": 0.07870486579104409
+      },
+      "NASDAQ": {
+        "sharpe": 0.8525265374427026,
+        "passive_pnl_share": 0.1737390410064368,
+        "trend_pnl_share": 0.1321463024042288,
+        "own_annual_return": 0.12259255432807552
+      },
+      "FTSE100": {
+        "sharpe": 0.9342921131816582,
+        "passive_pnl_share": 0.052687864999422004,
+        "trend_pnl_share": 0.014265082926995958,
+        "own_annual_return": 0.06647191330760813
+      },
+      "N225": {
+        "sharpe": 0.8407927643997949,
+        "passive_pnl_share": 0.19574260090881132,
+        "trend_pnl_share": 0.09592097775224516,
+        "own_annual_return": 0.08331902185714035
+      },
+      "DAX": {
+        "sharpe": 0.9051529193627131,
+        "passive_pnl_share": 0.07052523552076306,
+        "trend_pnl_share": 0.031034971960153354,
+        "own_annual_return": 0.10385857680864435
+      },
+      "HSI": {
+        "sharpe": 0.9111286705399537,
+        "passive_pnl_share": 0.07165392449587474,
+        "trend_pnl_share": 0.04037432854608842,
+        "own_annual_return": 0.08785160292749614
+      },
+      "ASX200": {
+        "sharpe": 0.909035178263053,
+        "passive_pnl_share": 0.032411692019979704,
+        "trend_pnl_share": 0.02041657818625878,
+        "own_annual_return": 0.06250539901467905
+      },
+      "US5Y_TR": {
+        "sharpe": 0.8741672796098104,
+        "passive_pnl_share": 0.010086336032143758,
+        "trend_pnl_share": 0.14590466735813618,
+        "own_annual_return": 0.009134262777904101
+      },
+      "US10Y_TR": {
+        "sharpe": 0.890873457663676,
+        "passive_pnl_share": 0.009946153254638733,
+        "trend_pnl_share": 0.12362726642345513,
+        "own_annual_return": 0.013142179315060776
+      },
+      "US30Y_TR": {
+        "sharpe": 0.8912087941778605,
+        "passive_pnl_share": 0.048473921793887896,
+        "trend_pnl_share": 0.06676913919034146,
+        "own_annual_return": 0.030848298734056076
+      },
+      "GOLD_F": {
+        "sharpe": 0.8859245259699646,
+        "passive_pnl_share": 0.04255506160167664,
+        "trend_pnl_share": 0.040952589350057814,
+        "own_annual_return": 0.11755431631911523
+      },
+      "WTI_F": {
+        "sharpe": 0.8806802946322614,
+        "passive_pnl_share": 0.0522894074615581,
+        "trend_pnl_share": 0.01782441832735291,
+        "own_annual_return": 0.13148535683191365
+      },
+      "SILVER_F": {
+        "sharpe": 0.9032826513594195,
+        "passive_pnl_share": 0.058012358151781566,
+        "trend_pnl_share": 0.015876195186773957,
+        "own_annual_return": 0.14447165731917488
+      },
+      "COPPER_F": {
+        "sharpe": 0.8937676394500506,
+        "passive_pnl_share": 0.045874298798740394,
+        "trend_pnl_share": 0.023642326360714925,
+        "own_annual_return": 0.10779837844512685
+      },
+      "USDX": {
+        "sharpe": 0.8708517902003468,
+        "passive_pnl_share": 0.0020159669178544727,
+        "trend_pnl_share": 0.08054233079221271,
+        "own_annual_return": 0.00031371613053901695
+      },
+      "EURUSD": {
+        "sharpe": 0.9085156704566536,
+        "passive_pnl_share": -0.00012573167325926766,
+        "trend_pnl_share": 0.008720244264876236,
+        "own_annual_return": 0.004555974289379454
+      },
+      "GBPUSD": {
+        "sharpe": 0.9069632660305316,
+        "passive_pnl_share": -0.0050812881625601014,
+        "trend_pnl_share": 0.008644374781831254,
+        "own_annual_return": -0.007815914005122765
+      },
+      "JPYUSD": {
+        "sharpe": 0.8972117486204836,
+        "passive_pnl_share": -0.005661068903985341,
+        "trend_pnl_share": 0.03188953153591482,
+        "own_annual_return": -0.006361325354214678
+      }
+    },
+    "jackknife_min": 0.8407927643997949,
+    "jackknife_max": 0.9342921131816582,
+    "drop_top_passive_contributors": {
+      "1": {
+        "dropped": [
+          "N225"
+        ],
+        "sharpe": 0.8407927643997949
+      },
+      "2": {
+        "dropped": [
+          "N225",
+          "NASDAQ"
+        ],
+        "sharpe": 0.7737612121958999
+      },
+      "3": {
+        "dropped": [
+          "N225",
+          "NASDAQ",
+          "SPX"
+        ],
+        "sharpe": 0.7114136732527089
+      },
+      "5": {
+        "dropped": [
+          "N225",
+          "NASDAQ",
+          "SPX",
+          "HSI",
+          "DAX"
+        ],
+        "sharpe": 0.6658452611181196
+      }
+    },
+    "add_back_prereg_exclusions": {
+      "NATGAS_F": {
+        "n": 738,
+        "sharpe": 0.9036901742842092,
+        "sharpe_trend": 0.6126601840307159,
+        "sharpe_passive": 0.6731776618324582,
+        "vm_vs_passive": {
+          "annual": 0.020986308101387616,
+          "tstat": 2.319142862656559
+        }
+      },
+      "DJIA": {
+        "n": 738,
+        "sharpe": 0.9071452547017349,
+        "sharpe_trend": 0.6131384715217942,
+        "sharpe_passive": 0.6742978072038466,
+        "vm_vs_passive": {
+          "annual": 0.02114162285658032,
+          "tstat": 2.3388231854700074
+        }
+      },
+      "NATGAS_F+DJIA": {
+        "n": 738,
+        "sharpe": 0.9080213993854506,
+        "sharpe_trend": 0.6138415293538756,
+        "sharpe_passive": 0.6788241356364945,
+        "vm_vs_passive": {
+          "annual": 0.02102361758254892,
+          "tstat": 2.3032025775480744
+        }
+      }
+    },
+    "n_series_ending_before_2026": 0,
+    "instrument_last_observation": {
+      "SPX": "2026-06-30",
+      "DJIA": "2026-06-30",
+      "NASDAQ": "2026-06-30",
+      "FTSE100": "2026-06-30",
+      "N225": "2026-06-30",
+      "DAX": "2026-06-30",
+      "HSI": "2026-06-30",
+      "ASX200": "2026-06-30",
+      "US5Y_TR": "2026-06-30",
+      "US10Y_TR": "2026-06-30",
+      "US30Y_TR": "2026-06-30",
+      "US_CASH_13W": "2026-06-30",
+      "GOLD_F": "2026-06-30",
+      "WTI_F": "2026-06-30",
+      "SILVER_F": "2026-06-30",
+      "COPPER_F": "2026-06-30",
+      "NATGAS_F": "2026-06-30",
+      "USDX": "2026-06-30",
+      "EURUSD": "2026-06-30",
+      "GBPUSD": "2026-06-30",
+      "JPYUSD": "2026-06-30",
+      "SPY": "2026-06-30",
+      "TLT": "2026-06-30",
+      "GLD": "2026-06-30",
+      "DBC": "2026-06-30",
+      "EFA": "2026-06-30",
+      "EEM": "2026-06-30",
+      "IEF": "2026-06-30",
+      "BIL": "2026-06-30",
+      "IEI": "2026-06-30",
+      "SLV": "2026-06-30"
+    },
+    "all_instruments_alive_today": true
+  },
+  "A5_dating_delisting": {
+    "alignment_probes": {
+      "trend": {
+        "name": "trend",
+        "reference": "SPX",
+        "rho": {
+          "-2": 0.08268891231089205,
+          "-1": 0.038790363703603815,
+          "0": -0.02790337173730948,
+          "1": -0.0863856627845077,
+          "2": 0.009764173587768628
+        },
+        "n_overlap": {
+          "-2": 738,
+          "-1": 738,
+          "0": 738,
+          "1": 737,
+          "2": 736
+        },
+        "best_lag": 1,
+        "rho_at_zero": -0.02790337173730948,
+        "max_abs_rho": 0.0863856627845077,
+        "has_power": false,
+        "verdict": "uninformative",
+        "suggested_shift_months": 0,
+        "notes": [
+          "|rho| peaks at k=+1 but only at 0.0864; below the 0.20 materiality floor or within 2 SE of lag 0, so the probe has no power here"
+        ]
+      },
+      "passive": {
+        "name": "passive",
+        "reference": "SPX",
+        "rho": {
+          "-2": -0.05434430292573975,
+          "-1": 0.03465199089091009,
+          "0": 0.8268976223913396,
+          "1": 0.04850650636179576,
+          "2": 0.010738636317289059
+        },
+        "n_overlap": {
+          "-2": 738,
+          "-1": 738,
+          "0": 738,
+          "1": 737,
+          "2": 736
+        },
+        "best_lag": 0,
+        "rho_at_zero": 0.8268976223913396,
+        "max_abs_rho": 0.8268976223913396,
+        "has_power": true,
+        "verdict": "aligned",
+        "suggested_shift_months": 0,
+        "notes": []
+      },
+      "book": {
+        "name": "book",
+        "reference": "SPX",
+        "rho": {
+          "-2": 0.019991649116564907,
+          "-1": 0.051799400845402487,
+          "0": 0.5635361732518811,
+          "1": -0.02680398297493226,
+          "2": 0.014467090473732078
+        },
+        "n_overlap": {
+          "-2": 738,
+          "-1": 738,
+          "0": 738,
+          "1": 737,
+          "2": 736
+        },
+        "best_lag": 0,
+        "rho_at_zero": 0.5635361732518811,
+        "max_abs_rho": 0.5635361732518811,
+        "has_power": true,
+        "verdict": "aligned",
+        "suggested_shift_months": 0,
+        "notes": []
+      }
+    },
+    "lookahead_ladder": {
+      "0": {
+        "sharpe_trend": 4.366044308057442,
+        "sharpe_passive": 0.6679569145976895,
+        "sharpe_book": 3.6153663594868415,
+        "n": 739
+      },
+      "1": {
+        "sharpe_trend": 0.6116253670229177,
+        "sharpe_passive": 0.669113556007618,
+        "sharpe_book": 0.9033140238851141,
+        "n": 738
+      },
+      "2": {
+        "sharpe_trend": 0.3992119991813363,
+        "sharpe_passive": 0.6653889505021584,
+        "sharpe_book": 0.7303985978501949,
+        "n": 737
+      }
+    },
+    "trend_module_imports_delisting": false,
+    "panel_note": "18 exchange indices / continuous futures / FX spot from one vendor; none delist, the sleeve never imports research.delisting, and every series in the file runs to 2026-06-30"
+  },
+  "A6_leverage_bug": {
+    "policy_in_headline": "cap",
+    "headline_is_post_fix": false,
+    "months_with_no_vol_estimate": 12,
+    "gross_leverage_in_those_months": [
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.000000000000002
+    ],
+    "sharpe_book_registered": 0.9033140238851138,
+    "sharpe_book_repaired": 0.9054712048872966,
+    "delta": 0.002157181002182762,
+    "n_repaired": 726,
+    "vm_repaired": {
+      "annual": 0.020957327953941868,
+      "tstat": 2.3247568913381977
+    },
+    "vol_target_grid": {
+      "0.10": {
+        "sharpe_book": 0.9024371116037754,
+        "sharpe_trend": 0.6104128099348097,
+        "vm": {
+          "annual": 0.016547024076047745,
+          "tstat": 2.3182247664803777
+        }
+      },
+      "0.20": {
+        "sharpe_book": 0.9033140238851141,
+        "sharpe_trend": 0.6116253670229177,
+        "vm": {
+          "annual": 0.021061748311613317,
+          "tstat": 2.3545101732404787
+        }
+      },
+      "0.40": {
+        "sharpe_book": 0.8950696703548775,
+        "sharpe_trend": 0.6082776410845437,
+        "vm": {
+          "annual": 0.023522421102158308,
+          "tstat": 2.34873433061678
+        }
+      },
+      "0.60": {
+        "sharpe_book": 0.8824923570556578,
+        "sharpe_trend": 0.5969886070315071,
+        "vm": {
+          "annual": 0.023176362571967712,
+          "tstat": 2.2543365156666173
+        }
+      }
+    }
+  },
+  "A7_costs": {
+    "headline_cost_bps": 10.0,
+    "convention": "half-spread x turnover, charged to BOTH legs",
+    "trend_turnover_units_per_year": 27.52114020076756,
+    "passive_turnover_as_charged_per_year": 0.07699621967914652,
+    "passive_true_rebalance_turnover_per_year": 0.38486523245621973,
+    "unpriced_rebalance_cost_at_10bps_annual": 0.00015393450638853662,
+    "annual_cost_at_10bps_trend": 0.013760570100383781,
+    "grid": {
+      "0": {
+        "sharpe_book": 0.9464581475098724,
+        "sharpe_trend": 0.6722810095266831,
+        "sharpe_passive": 0.6695648984146517,
+        "weight_passive": 0.7217329408124245,
+        "vm": {
+          "annual": 0.024896440376111696,
+          "tstat": 2.786155601339904
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.9464581475098724
+      },
+      "1": {
+        "sharpe_book": 0.9421468034585487,
+        "sharpe_trend": 0.6662199594436289,
+        "sharpe_passive": 0.6695197966744374,
+        "weight_passive": 0.7217395799771393,
+        "vm": {
+          "annual": 0.024513235545634435,
+          "tstat": 2.7430581010927355
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.942021528935289
+      },
+      "2": {
+        "sharpe_book": 0.9378346966213704,
+        "sharpe_trend": 0.6601577921497014,
+        "sharpe_passive": 0.6694746877076732,
+        "weight_passive": 0.7217466854549055,
+        "vm": {
+          "annual": 0.024129966759657506,
+          "tstat": 2.699942872354014
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.9375841736850041
+      },
+      "5": {
+        "sharpe_book": 0.9248941028378151,
+        "sharpe_trend": 0.6419650146087315,
+        "sharpe_passive": 0.6693393174638932,
+        "weight_passive": 0.721770798457746,
+        "vm": {
+          "annual": 0.022979796181184953,
+          "tstat": 2.5705014275370606
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.9242679885961548
+      },
+      "10": {
+        "sharpe_book": 0.9033140238851138,
+        "sharpe_trend": 0.6116253670229174,
+        "sharpe_passive": 0.6691135560076179,
+        "weight_passive": 0.7218202996470451,
+        "vm": {
+          "annual": 0.021061748311613296,
+          "tstat": 2.3545101732404783
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.9020624208366623
+      },
+      "15": {
+        "sharpe_book": 0.8817217067602495,
+        "sharpe_trend": 0.5812674172085772,
+        "sharpe_passive": 0.6688876142439637,
+        "weight_passive": 0.7218814225543203,
+        "vm": {
+          "annual": 0.019142541013856772,
+          "tstat": 2.1383143844569776
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.8798452060390781
+      },
+      "20": {
+        "sharpe_book": 0.86012094719967,
+        "sharpe_trend": 0.5508965160250318,
+        "sharpe_passive": 0.6686614923715057,
+        "weight_passive": 0.7219541404104665,
+        "vm": {
+          "annual": 0.017222418677651716,
+          "tstat": 1.9220461292093902
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.8576201054822519
+      },
+      "30": {
+        "sharpe_book": 0.8169092619404429,
+        "sharpe_trend": 0.4901372370143343,
+        "sharpe_passive": 0.6682087090966512,
+        "weight_passive": 0.7221342293837499,
+        "vm": {
+          "annual": 0.013380406114744114,
+          "tstat": 1.4898157484067545
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.8131612698882542
+      },
+      "50": {
+        "sharpe_book": 0.7305507802080972,
+        "sharpe_trend": 0.3686976570006363,
+        "sharpe_passive": 0.6673009900267961,
+        "weight_passive": 0.7226318292344646,
+        "vm": {
+          "annual": 0.005696128741096516,
+          "tstat": 0.6301533829298016
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.7243136435161373
+      },
+      "75": {
+        "sharpe_book": 0.623030749929674,
+        "sharpe_trend": 0.21747868789974883,
+        "sharpe_passive": 0.6661623218198226,
+        "weight_passive": 0.7235068290324131,
+        "vm": {
+          "annual": -0.0038898019992061857,
+          "tstat": -0.4255159929974112
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.6136890068589018
+      },
+      "100": {
+        "sharpe_book": 0.5164061518453084,
+        "sharpe_trend": 0.06749760948265761,
+        "sharpe_passive": 0.6650192113291779,
+        "weight_passive": 0.7246542771274203,
+        "vm": {
+          "annual": -0.013426677921450806,
+          "tstat": -1.4477647175975816
+        },
+        "sharpe_book_with_true_rebalance_cost": 0.5039634562831244
+      }
+    },
+    "breakeven_bps_for_sharpe_0894": 11.814712105244496
+  },
+  "A8_confidence": {
+    "sharpe": 0.9033140238851138,
+    "boot_mean": 0.9057081539672985,
+    "boot_ci95": [
+      0.6590618445899799,
+      1.1546430601189868
+    ],
+    "p_below_0894": 0.4677,
+    "p_below_075": 0.1063,
+    "p_below_passive_alone": 0.0297,
+    "p_below_060": 0.0084,
+    "lo2002_se": 0.13852464577204193,
+    "lo2002_ci95": [
+      0.6318057181719117,
+      1.174822329598316
+    ],
+    "p_below_0894_lo": 0.4731963935271385,
+    "p_below_075_lo": 0.13419809317983789,
+    "passive_boot_ci95": [
+      0.3868231292577801,
+      0.9664508576473942
+    ],
+    "dsr_bars": {
+      "47": 0.4998908832867545,
+      "105": 0.5381989159601129,
+      "145": 0.5526207710534065,
+      "1000": 0.6304010930783246
+    },
+    "ledger_cumulative_trials": 47
+  },
+  "A9_return_conventions": {
+    "panel_convention": "price / futures / spot returns are treated as ALREADY excess; only the three rates series have cash subtracted",
+    "equity_instruments_treated_as_excess": [
+      "SPX",
+      "NASDAQ",
+      "FTSE100",
+      "N225",
+      "DAX",
+      "HSI",
+      "ASX200"
+    ],
+    "measured_gaps": {
+      "SPY_vs_SPX": {
+        "n": 401,
+        "from": "1993-02-28",
+        "to": "2026-06-30",
+        "total_return_annual": 0.11416330291866786,
+        "panel_series_annual": 0.09630994139962673,
+        "gap_annual": 0.01785336151904114,
+        "cash_annual": 0.02533678720441232,
+        "panel_overstates_true_excess_by": 0.007483425685371178
+      },
+      "GLD_vs_GOLD_F": {
+        "n": 260,
+        "from": "2004-11-30",
+        "to": "2026-06-30",
+        "total_return_annual": 0.1126954090081343,
+        "panel_series_annual": 0.11845710744526616,
+        "gap_annual": -0.00576169843713186,
+        "cash_annual": 0.01786423058094909,
+        "panel_overstates_true_excess_by": 0.02362592901808095
+      },
+      "SLV_vs_SILVER_F": {
+        "n": 242,
+        "from": "2006-05-31",
+        "to": "2026-06-30",
+        "total_return_annual": 0.11967753770418538,
+        "panel_series_annual": 0.1263796355228114,
+        "gap_annual": -0.006702097818626035,
+        "cash_annual": 0.016693434753965473,
+        "panel_overstates_true_excess_by": 0.02339553257259151
+      },
+      "TLT_vs_US30Y_TR": {
+        "n": 287,
+        "from": "2002-08-31",
+        "to": "2026-06-30",
+        "total_return_annual": 0.045158777490510706,
+        "panel_series_annual": 0.046324857574785744,
+        "gap_annual": -0.0011660800842750291,
+        "cash_annual": 0.017290298951594684,
+        "panel_overstates_true_excess_by": 0.018456379035869712
+      },
+      "IEF_vs_US10Y_TR": {
+        "n": 287,
+        "from": "2002-08-31",
+        "to": "2026-06-30",
+        "total_return_annual": 0.03726066220099272,
+        "panel_series_annual": 0.032590057493295244,
+        "gap_annual": 0.00467060470769747,
+        "cash_annual": 0.017290298951594684,
+        "panel_overstates_true_excess_by": 0.012619694243897214
+      },
+      "IEI_vs_US5Y_TR": {
+        "n": 234,
+        "from": "2007-01-31",
+        "to": "2026-06-30",
+        "total_return_annual": 0.028996967919151663,
+        "panel_series_annual": 0.02421281899230518,
+        "gap_annual": 0.004784148926846481,
+        "cash_annual": 0.015546894021794933,
+        "panel_overstates_true_excess_by": 0.010762745094948453
+      },
+      "DBC_vs_WTI_F": {
+        "n": 245,
+        "from": "2006-02-28",
+        "to": "2026-06-30",
+        "total_return_annual": 0.03392250648089275,
+        "panel_series_annual": 0.11738711649213648,
+        "gap_annual": -0.08346461001124376,
+        "cash_annual": 0.017029008410953374,
+        "panel_overstates_true_excess_by": 0.10049361842219715
+      }
+    },
+    "equity_drag_sensitivity_bps": {
+      "0": {
+        "sharpe_book": 0.9033140238851141,
+        "sharpe_trend": 0.6116253670229177,
+        "sharpe_passive": 0.669113556007618,
+        "vm": {
+          "annual": 0.021061748311613317,
+          "tstat": 2.3545101732404787
+        }
+      },
+      "75": {
+        "sharpe_book": 0.8575366675924839,
+        "sharpe_trend": 0.5796541759469714,
+        "sharpe_passive": 0.6292002833641657,
+        "vm": {
+          "annual": 0.020428565141120725,
+          "tstat": 2.2853656976039605
+        }
+      },
+      "150": {
+        "sharpe_book": 0.8249855639057175,
+        "sharpe_trend": 0.5655666620086962,
+        "sharpe_passive": 0.5892820686200099,
+        "vm": {
+          "annual": 0.020949299108692733,
+          "tstat": 2.349735494844824
+        }
+      },
+      "250": {
+        "sharpe_book": 0.781553778324829,
+        "sharpe_trend": 0.5432856621839861,
+        "sharpe_passive": 0.5360510380492711,
+        "vm": {
+          "annual": 0.021540858461275972,
+          "tstat": 2.398518112522179
+        }
+      },
+      "400": {
+        "sharpe_book": 0.6947268671720335,
+        "sharpe_trend": 0.4906909889160454,
+        "sharpe_passive": 0.45619266999751135,
+        "vm": {
+          "annual": 0.020679929226412402,
+          "tstat": 2.3044307510454014
+        }
+      }
+    },
+    "breakeven_equity_drag_bps_for_0894": 16.342738643288612,
+    "full_correction_cash_minus_measured_div": {
+      "measured_dividend_yield_annual": 0.01785336151904114,
+      "n": 738,
+      "sharpe_book": 0.7565088371812154,
+      "sharpe_trend": 0.5342428151360052,
+      "sharpe_passive": 0.5083223504487541,
+      "weights": {
+        "trend": 0.27763580680267025,
+        "passive": 0.7223641931973297
+      },
+      "vm": {
+        "annual": 0.021774145868961134,
+        "tstat": 2.3986441902904594
+      },
+      "mean_charge_annual": 0.027231426621666346
+    }
+  },
+  "A10_honest_number": {
+    "unlevered_cagr_total": 0.130707563706713,
+    "unlevered_max_dd": -0.15662127825385375,
+    "cash_mean_annual": 0.04630888522745908,
+    "ladder_observed_path": {
+      "optimistic_bill_plus_50bp": {
+        "dd35": {
+          "leverage": 2.15,
+          "cagr": 0.2151890026758978,
+          "max_dd": -0.3438325450286642
+        },
+        "dd50": {
+          "leverage": 3.1,
+          "cagr": 0.2787203728597274,
+          "max_dd": -0.4938514601965118
+        },
+        "peak": {
+          "leverage": 6.0,
+          "cagr": 0.40315705302220906
+        },
+        "ruin_leverage": 6.55
+      },
+      "primary_bill_plus_150bp": {
+        "dd35": {
+          "leverage": 2.15,
+          "cagr": 0.20148906492030227,
+          "max_dd": -0.3454103586456011
+        },
+        "dd50": {
+          "leverage": 3.1,
+          "cagr": 0.25257083555080584,
+          "max_dd": -0.4964500189358103
+        },
+        "peak": {
+          "leverage": 5.75,
+          "cagr": 0.3365031299320007
+        },
+        "ruin_leverage": 6.5
+      },
+      "retail_bill_plus_300bp": {
+        "dd35": {
+          "leverage": 2.15,
+          "cagr": 0.18120437720365912,
+          "max_dd": -0.3477736350605898
+        },
+        "dd50": {
+          "leverage": 3.05,
+          "cagr": 0.2127442424500603,
+          "max_dd": -0.4924273353006424
+        },
+        "peak": {
+          "leverage": 5.2,
+          "cagr": 0.24958015393519095
+        },
+        "ruin_leverage": 6.5
+      }
+    },
+    "bootstrap_p95_primary_financing": {
+      "dd35": {
+        "leverage": 1.45,
+        "cagr": 0.15941947191368033,
+        "dd_observed": -0.2312715614787827
+      },
+      "dd50": {
+        "leverage": 2.1,
+        "cagr": 0.19859862262493921,
+        "dd_observed": -0.3373376813733058
+      }
+    },
+    "iteration11_reconciliation_factor": 0.877,
+    "dd50_boot_after_reconciliation": 0.1741709920420717,
+    "dd35_boot_after_reconciliation": 0.13981087686829766,
+    "after_A9_correction_ladder": {
+      "dd35": {
+        "leverage": 2.05,
+        "cagr": 0.16123446485115678,
+        "max_dd": -0.34494903835403856
+      },
+      "dd50": {
+        "leverage": 2.95,
+        "cagr": 0.19433704708889898,
+        "max_dd": -0.49499985688700354
+      },
+      "peak": {
+        "leverage": 5.15,
+        "cagr": 0.23662664620428275
+      },
+      "ruin_leverage": 6.2
+    },
+    "after_A9_correction_dd50_reconciled": 0.17043359029696442
+  }
+}

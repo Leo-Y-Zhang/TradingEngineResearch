@@ -1,0 +1,263 @@
+{
+  "recorded": {
+    "published_book": 0.9033,
+    "constant_charge_best_supported": 0.8206,
+    "half_kelly_30pct_needs": 0.894
+  },
+  "reproduction_anchor": {
+    "measured_old_panel_sharpe": 0.903314,
+    "recorded_published": 0.9033,
+    "reproduces": true
+  },
+  "runs": {
+    "old_panel": {
+      "name": "old_panel",
+      "n_months": 738,
+      "sharpe_book": 0.903314,
+      "sharpe_trend": 0.6116,
+      "sharpe_passive": 0.6691,
+      "weight_trend": 0.27818,
+      "weight_passive": 0.72182,
+      "vol_matched_active_pct_yr": 2.1062,
+      "vol_matched_active_tstat": 2.355,
+      "boot_ci95": [
+        0.6591,
+        1.1546
+      ],
+      "p_below_0894": 0.4677,
+      "p_below_075": 0.1063,
+      "sharpe_by_decade": {
+        "1960": {
+          "n": 60,
+          "sharpe": 0.8229
+        },
+        "1970": {
+          "n": 120,
+          "sharpe": 0.787
+        },
+        "1980": {
+          "n": 120,
+          "sharpe": 1.156
+        },
+        "1990": {
+          "n": 120,
+          "sharpe": 1.0097
+        },
+        "2000": {
+          "n": 120,
+          "sharpe": 1.051
+        },
+        "2010": {
+          "n": 120,
+          "sharpe": 0.4581
+        },
+        "2020": {
+          "n": 78,
+          "sharpe": 0.9545
+        }
+      },
+      "sharpe_since_2010": 0.6685,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.45,
+          "cagr_pct": 15.942,
+          "cagr_after_reconciliation_pct": 13.981
+        },
+        "dd50": {
+          "leverage": 2.1,
+          "cagr_pct": 19.86,
+          "cagr_after_reconciliation_pct": 17.417
+        }
+      }
+    },
+    "conservative": {
+      "name": "conservative",
+      "n_months": 738,
+      "sharpe_book": 0.74989,
+      "sharpe_trend": 0.5469,
+      "sharpe_passive": 0.4788,
+      "weight_trend": 0.28028,
+      "weight_passive": 0.71972,
+      "vol_matched_active_pct_yr": 2.3784,
+      "vol_matched_active_tstat": 2.623,
+      "boot_ci95": [
+        0.5044,
+        0.9994
+      ],
+      "p_below_0894": 0.8722,
+      "p_below_075": 0.4929,
+      "sharpe_by_decade": {
+        "1960": {
+          "n": 60,
+          "sharpe": 0.6992
+        },
+        "1970": {
+          "n": 120,
+          "sharpe": 0.5868
+        },
+        "1980": {
+          "n": 120,
+          "sharpe": 0.8102
+        },
+        "1990": {
+          "n": 120,
+          "sharpe": 0.7629
+        },
+        "2000": {
+          "n": 120,
+          "sharpe": 0.9472
+        },
+        "2010": {
+          "n": 120,
+          "sharpe": 0.5505
+        },
+        "2020": {
+          "n": 78,
+          "sharpe": 0.9229
+        }
+      },
+      "sharpe_since_2010": 0.7071,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.35,
+          "cagr_pct": 13.006,
+          "cagr_after_reconciliation_pct": 11.406
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 15.587,
+          "cagr_after_reconciliation_pct": 13.669
+        }
+      }
+    },
+    "central": {
+      "name": "central",
+      "n_months": 738,
+      "sharpe_book": 0.783398,
+      "sharpe_trend": 0.5708,
+      "sharpe_passive": 0.5078,
+      "weight_trend": 0.28043,
+      "weight_passive": 0.71957,
+      "vol_matched_active_pct_yr": 2.4352,
+      "vol_matched_active_tstat": 2.684,
+      "boot_ci95": [
+        0.5389,
+        1.035
+      ],
+      "p_below_0894": 0.8037,
+      "p_below_075": 0.3896,
+      "sharpe_by_decade": {
+        "1960": {
+          "n": 60,
+          "sharpe": 0.6993
+        },
+        "1970": {
+          "n": 120,
+          "sharpe": 0.6231
+        },
+        "1980": {
+          "n": 120,
+          "sharpe": 0.8189
+        },
+        "1990": {
+          "n": 120,
+          "sharpe": 0.8538
+        },
+        "2000": {
+          "n": 120,
+          "sharpe": 1.0021
+        },
+        "2010": {
+          "n": 120,
+          "sharpe": 0.5503
+        },
+        "2020": {
+          "n": 78,
+          "sharpe": 0.9238
+        }
+      },
+      "sharpe_since_2010": 0.7074,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.4,
+          "cagr_pct": 13.758,
+          "cagr_after_reconciliation_pct": 12.066
+        },
+        "dd50": {
+          "leverage": 1.95,
+          "cagr_pct": 16.329,
+          "cagr_after_reconciliation_pct": 14.321
+        }
+      }
+    },
+    "realistic": {
+      "name": "realistic",
+      "n_months": 738,
+      "sharpe_book": 0.846385,
+      "sharpe_trend": 0.6125,
+      "sharpe_passive": 0.5616,
+      "weight_trend": 0.2812,
+      "weight_passive": 0.7188,
+      "vol_matched_active_pct_yr": 2.5351,
+      "vol_matched_active_tstat": 2.79,
+      "boot_ci95": [
+        0.5999,
+        1.0993
+      ],
+      "p_below_0894": 0.6379,
+      "p_below_075": 0.2213,
+      "sharpe_by_decade": {
+        "1960": {
+          "n": 60,
+          "sharpe": 0.8038
+        },
+        "1970": {
+          "n": 120,
+          "sharpe": 0.7888
+        },
+        "1980": {
+          "n": 120,
+          "sharpe": 0.8901
+        },
+        "1990": {
+          "n": 120,
+          "sharpe": 0.8848
+        },
+        "2000": {
+          "n": 120,
+          "sharpe": 1.0542
+        },
+        "2010": {
+          "n": 120,
+          "sharpe": 0.5753
+        },
+        "2020": {
+          "n": 78,
+          "sharpe": 0.9599
+        }
+      },
+      "sharpe_since_2010": 0.7365,
+      "leverage_ladder": {
+        "dd35": {
+          "leverage": 1.4,
+          "cagr_pct": 14.712,
+          "cagr_after_reconciliation_pct": 12.902
+        },
+        "dd50": {
+          "leverage": 2.0,
+          "cagr_pct": 17.94,
+          "cagr_after_reconciliation_pct": 15.733
+        }
+      }
+    }
+  },
+  "verdict": {
+    "central_below_0894": true,
+    "central_below_constant_charge_0.8206": true,
+    "bracket": [
+      0.74989,
+      0.783398,
+      0.846385
+    ]
+  }
+}

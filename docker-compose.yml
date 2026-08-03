@@ -1,0 +1,49 @@
+# TradingEngineResearch (TradingEngineResearch v6) — reproducible deploy (ROADMAP Phase 6, item 6).
+#
+#   cp .env.example .env           # then edit (set ENGINE_UNIVERSE, mode, etc.)
+#   docker compose up --build      # combined loop + API on 127.0.0.1:8000
+#   docker compose --profile postgres up --build   # + Postgres state backend
+#
+# The API is UNAUTHENTICATED by design (deployment hardening is a follow-up): the
+# port is published to LOOPBACK ONLY (127.0.0.1). Do not expose it publicly.
+
+services:
+  tradingengineresearch:
+    build: .
+    image: tradingengineresearch:latest
+    command: ["combined"]            # scheduled loop + API in one process (one state writer)
+    env_file: [.env]
+    environment:
+      # The app binds all interfaces INSIDE the container; the host publishes the port to
+      # LOOPBACK ONLY (below), so the unauthenticated API is never reachable off-host.
+      ENGINE_API_HOST: "0.0.0.0"
+    ports:
+      - "127.0.0.1:8000:8000"        # loopback only — unauthenticated API
+    volumes:
+      - engine-state:/app/state          # durable LoopState + persisted learning state
+      - ./secrets:/app/secrets:ro     # encrypted vault (read-only)
+    restart: unless-stopped
+    stop_grace_period: 30s
+
+  # Optional Postgres state backend. Enable with: --profile postgres
+  # and set ENGINE_PERSISTENCE__BACKEND=sqlite is NOT enough — use a Postgres URL:
+  #   ENGINE_PERSISTENCE__BACKEND=sqlite   (SqlStateStore; swap the URL for Postgres)
+  #   ENGINE_PERSISTENCE__DATABASE_URL=postgresql+psycopg://tradingengineresearch:${POSTGRES_PASSWORD}@db:5432/tradingengineresearch
+  db:
+    image: postgres:16
+    profiles: ["postgres"]
+    environment:
+      POSTGRES_USER: tradingengineresearch
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+      POSTGRES_DB: tradingengineresearch
+    volumes:
+      - tf-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tradingengineresearch"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  engine-state:
+  tf-pgdata:

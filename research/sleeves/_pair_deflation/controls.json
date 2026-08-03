@@ -1,0 +1,138 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "bar @ 7yr, n_trials=32",
+      "got": 1.488113875131617,
+      "want": 1.488,
+      "tol": 0.0005,
+      "ok": true
+    },
+    {
+      "label": "bar @ 40yr, n_trials=32",
+      "got": 0.5970964145697264,
+      "want": 0.597,
+      "tol": 0.0005,
+      "ok": true
+    },
+    {
+      "label": "bar @ 17.75yr, n_trials=38 (low-vol B2)",
+      "got": 0.9233854510551396,
+      "want": 0.9234,
+      "tol": 5e-05,
+      "ok": true
+    },
+    {
+      "label": "bar @ 17.75yr, n_trials=47 (programme ledger)",
+      "got": 0.9443077723019092,
+      "want": 0.9233854510551396,
+      "tol": 0.15,
+      "ok": true
+    },
+    {
+      "label": "claim: pair Sharpe",
+      "got": 1.2165535517187802,
+      "want": 1.2165535517187802,
+      "tol": 1e-09,
+      "ok": true
+    },
+    {
+      "label": "claim: pair vol",
+      "got": 0.11314524062947205,
+      "want": 0.11314524062947205,
+      "tol": 1e-09,
+      "ok": true
+    },
+    {
+      "label": "claim: pair CAGR",
+      "got": 0.13951395796202615,
+      "want": 0.13951395796202615,
+      "tol": 1e-09,
+      "ok": true
+    },
+    {
+      "label": "claim: pair max DD",
+      "got": -0.19078661607361447,
+      "want": -0.19078661607361447,
+      "tol": 1e-09,
+      "ok": true
+    },
+    {
+      "label": "claim: weight lowvol",
+      "got": 0.6075611495217327,
+      "want": 0.6075611495217327,
+      "tol": 1e-12,
+      "ok": true
+    },
+    {
+      "label": "claim: n_months",
+      "got": 213.0,
+      "want": 213.0,
+      "tol": 0,
+      "ok": true
+    },
+    {
+      "label": "low-vol registered, standalone Sharpe",
+      "got": 0.877853588402183,
+      "want": 0.877853588402183,
+      "tol": 1e-09,
+      "ok": true
+    },
+    {
+      "label": "low-vol CORRECTED, standalone Sharpe (total basis)",
+      "got": 0.6138478845083756,
+      "want": 0.6138,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "trend standalone Sharpe (full 738mo)",
+      "got": 0.6116253670229176,
+      "want": 0.6116,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "passive MONTHLY Sharpe",
+      "got": 0.6691135560076179,
+      "want": 0.6691,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "passive DAILY Sharpe",
+      "got": 0.7064764801178273,
+      "want": 0.7065,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "corrected low-vol Sharpe, EXCESS basis",
+      "got": 0.4868894080769178,
+      "want": 0.4869,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "v2 corrected pair Sharpe [equal weight]",
+      "got": 0.9259603726095635,
+      "want": 0.926,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "v2 corrected pair Sharpe [inverse vol]",
+      "got": 0.9211519718636167,
+      "want": 0.9212,
+      "tol": 0.001,
+      "ok": true
+    },
+    {
+      "label": "v2 corrected pair window start is 1998-05",
+      "got": 5.0,
+      "want": 5.0,
+      "tol": 0,
+      "ok": true
+    }
+  ]
+}

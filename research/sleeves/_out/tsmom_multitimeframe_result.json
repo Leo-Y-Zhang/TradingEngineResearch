@@ -1,0 +1,574 @@
+{
+  "sleeve": "time_series_momentum_multi_timeframe",
+  "dev_cutoff": "2015-12-31",
+  "lookbacks": [
+    21,
+    63,
+    252
+  ],
+  "target_vols": [
+    0.15,
+    0.3,
+    0.45
+  ],
+  "liquid_spread_substitute_bps": 20.0,
+  "starting_equity": 1000000.0,
+  "small_account_equity": 100000.0,
+  "configurations": [
+    {
+      "label": "PRIMARY (rule 3 literal: hold only while the spread resolves)",
+      "mode": "measured_only",
+      "gate_eligible": true,
+      "monthly_universe_retention": 0.5415094339622643,
+      "n_rebalances": 213,
+      "first_rebalance": "1998-04-30",
+      "last_rebalance": "2015-12-31",
+      "n_distinct_tickers": 2864,
+      "universe_size_target": 200,
+      "mean_instruments": 204.53170731707317,
+      "mean_single_names": 195.10731707317072,
+      "mean_sector_baskets": 9.424390243902439,
+      "n_cells_measured_spread": 42600,
+      "n_cells_substituted_spread": 0,
+      "median_spread_bps": 95.3006501764003,
+      "daily_returns_capped": 254,
+      "names_with_terminal_return": 949,
+      "breadth": {
+        "nominal_instruments": 204.53170731707317,
+        "effective_independent_instruments": 13.479209700678409,
+        "signal_flips_per_year": {
+          "21": 5.8123807342950915,
+          "63": 3.8702389130600716,
+          "252": 2.253568429890848
+        },
+        "flips_per_year_all_timeframes": 11.936188077246012,
+        "bets_per_year": 160.89038211993642,
+        "naive_bets_per_year": 7363.141463414635
+      },
+      "benchmark": {
+        "net_return": -0.02710139441176529,
+        "gross_return": 0.0458557282779648,
+        "vol": 0.2212077915540139,
+        "sharpe": -0.01348724271433429,
+        "max_drawdown": 0.7411716762774299,
+        "turnover_per_year": 10.868912629127752,
+        "decades": {
+          "1998-2005": {
+            "return": -0.04803560046983979,
+            "vol": 0.21868091979801596,
+            "sharpe": -0.11593695045563053
+          },
+          "2006-2015": {
+            "return": -0.01218182059003825,
+            "vol": 0.2229966882667937,
+            "sharpe": 0.05680496544338941
+          }
+        }
+      },
+      "targets": [
+        {
+          "target_vol": 0.15,
+          "gross_return": -0.001058746254943621,
+          "gross_vol": 0.17652245847078504,
+          "gross_sharpe": 0.0829243386009037,
+          "net_return": -0.18844510393694736,
+          "net_vol": 0.18657515100354916,
+          "net_sharpe": -1.0245263403968805,
+          "max_drawdown": 0.9713484900597569,
+          "turnover_per_year": 34.47503827400496,
+          "cost_drag": 0.18738635768200373,
+          "excess_vs_net_benchmark": -0.16134370952518207,
+          "excess_vs_gross_benchmark": -0.23430083221491216,
+          "small_account_net_return": -0.313239950299827,
+          "small_account_net_sharpe": -1.685145586575809,
+          "mean_leverage": 2.1938164298170344,
+          "mean_gross_exposure": 2.1159515301214475,
+          "mean_net_exposure": 0.7182384668757473,
+          "terminal_returns_booked": 147,
+          "decades": {
+            "1998-2005": {
+              "return": -0.237976924881797,
+              "vol": 0.1898476903275283,
+              "sharpe": -1.3346770840690418
+            },
+            "2006-2015": {
+              "return": -0.1518884680197382,
+              "vol": 0.18423931553196518,
+              "sharpe": -0.8011833179041273
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": -0.05356349703058694,
+              "vol": 0.17906772054552947,
+              "sharpe": -0.2169303488857797
+            },
+            "2006-2015": {
+              "return": 0.037398201968966704,
+              "vol": 0.17471674891698452,
+              "sharpe": 0.29795166385202976
+            }
+          }
+        },
+        {
+          "target_vol": 0.3,
+          "gross_return": -0.03699710027465475,
+          "gross_vol": 0.34861903706680697,
+          "gross_sharpe": 0.06902279819729988,
+          "net_return": -0.5411520860503488,
+          "net_vol": 0.41163586159752763,
+          "net_sharpe": -1.6770354152436917,
+          "max_drawdown": 0.9999982215924532,
+          "turnover_per_year": 68.28528577429411,
+          "cost_drag": 0.5041549857756941,
+          "excess_vs_net_benchmark": -0.5140506916385835,
+          "excess_vs_gross_benchmark": -0.5870078143283136,
+          "small_account_net_return": -0.6558476818470514,
+          "small_account_net_sharpe": -2.117268820752656,
+          "mean_leverage": 4.247960630641573,
+          "mean_gross_exposure": 4.097203529857627,
+          "mean_net_exposure": 1.4201605552551644,
+          "terminal_returns_booked": 147,
+          "decades": {
+            "1998-2005": {
+              "return": -0.4696263130473156,
+              "vol": 0.38528053867483975,
+              "sharpe": -1.4458864627088455
+            },
+            "2006-2015": {
+              "return": -0.585378315408202,
+              "vol": 0.42909168960157584,
+              "sharpe": -1.826088668054074
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": -0.1350987291068978,
+              "vol": 0.36141525252220025,
+              "sharpe": -0.2165660277428543
+            },
+            "2006-2015": {
+              "return": 0.038182375813748504,
+              "vol": 0.33937944828948624,
+              "sharpe": 0.28186479712887913
+            }
+          }
+        },
+        {
+          "target_vol": 0.45,
+          "gross_return": -0.09697679219965982,
+          "gross_vol": 0.49803713052067977,
+          "gross_sharpe": 0.05005706458653051,
+          "net_return": -0.763565405189416,
+          "net_vol": 0.6144224992892489,
+          "net_sharpe": -2.0176404379752535,
+          "max_drawdown": 0.999999999977149,
+          "turnover_per_year": 93.50588062899061,
+          "cost_drag": 0.6665886129897561,
+          "excess_vs_net_benchmark": -0.7364640107776507,
+          "excess_vs_gross_benchmark": -0.8094211334673808,
+          "small_account_net_return": -0.7882481207607104,
+          "small_account_net_sharpe": -2.132150697425108,
+          "mean_leverage": 5.708181080824002,
+          "mean_gross_exposure": 5.506866498422475,
+          "mean_net_exposure": 2.0023008381677188,
+          "terminal_returns_booked": 147,
+          "decades": {
+            "1998-2005": {
+              "return": -0.7501083490860477,
+              "vol": 0.602243780863986,
+              "sharpe": -1.9806885628427306
+            },
+            "2006-2015": {
+              "return": -0.7725472920483133,
+              "vol": 0.6229123857771723,
+              "sharpe": -2.0427356787933295
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": -0.24101428434594852,
+              "vol": 0.5247728491689596,
+              "sharpe": -0.25404915790847715
+            },
+            "2006-2015": {
+              "return": 0.019759229066322215,
+              "vol": 0.478427111634121,
+              "sharpe": 0.2835281549343925
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "PRIMARY-STICKY (erratum 1, rule-3 compliant: last measured spread, <=1yr old)",
+      "mode": "sticky_measured",
+      "gate_eligible": true,
+      "monthly_universe_retention": 0.9241981132075472,
+      "n_rebalances": 213,
+      "first_rebalance": "1998-04-30",
+      "last_rebalance": "2015-12-31",
+      "n_distinct_tickers": 1105,
+      "universe_size_target": 200,
+      "mean_instruments": 206.53170731707317,
+      "mean_single_names": 197.8780487804878,
+      "mean_sector_baskets": 8.653658536585366,
+      "n_cells_measured_spread": 42600,
+      "n_cells_substituted_spread": 0,
+      "median_spread_bps": 89.96868862814115,
+      "daily_returns_capped": 64,
+      "names_with_terminal_return": 267,
+      "breadth": {
+        "nominal_instruments": 206.53170731707317,
+        "effective_independent_instruments": 10.064122544406237,
+        "signal_flips_per_year": {
+          "21": 5.990429234338746,
+          "63": 3.2009860788863107,
+          "252": 1.4045823665893273
+        },
+        "flips_per_year_all_timeframes": 10.595997679814385,
+        "bets_per_year": 106.63941912989613,
+        "naive_bets_per_year": 7435.141463414635
+      },
+      "benchmark": {
+        "net_return": 0.012903969578535346,
+        "gross_return": 0.03182981084165237,
+        "vol": 0.2472087324856535,
+        "sharpe": 0.17548302848239647,
+        "max_drawdown": 0.7444621947260774,
+        "turnover_per_year": 2.4498706766526226,
+        "decades": {
+          "1998-2005": {
+            "return": -0.01951727092374811,
+            "vol": 0.2608352820191291,
+            "sharpe": 0.05441904743621947
+          },
+          "2006-2015": {
+            "return": 0.0362225733114625,
+            "vol": 0.23725451838237424,
+            "sharpe": 0.26891404182890194
+          }
+        }
+      },
+      "targets": [
+        {
+          "target_vol": 0.15,
+          "gross_return": 0.051557618457064525,
+          "gross_vol": 0.16776132046645165,
+          "gross_sharpe": 0.38379753133741484,
+          "net_return": -0.07499585074406712,
+          "net_vol": 0.17157642000639836,
+          "net_sharpe": -0.3682221696130547,
+          "max_drawdown": 0.8045702681299167,
+          "turnover_per_year": 22.486070837994877,
+          "cost_drag": 0.12655346920113164,
+          "excess_vs_net_benchmark": -0.08789982032260246,
+          "excess_vs_gross_benchmark": -0.10682566158571949,
+          "small_account_net_return": -0.09489297732431912,
+          "small_account_net_sharpe": -0.4900571976368719,
+          "mean_leverage": 1.905065387217611,
+          "mean_gross_exposure": 1.8443486257732498,
+          "mean_net_exposure": 0.6271623692291813,
+          "terminal_returns_booked": 61,
+          "decades": {
+            "1998-2005": {
+              "return": -0.11536360267197787,
+              "vol": 0.16780690378163976,
+              "sharpe": -0.6461009339689587
+            },
+            "2006-2015": {
+              "return": -0.04566255285289855,
+              "vol": 0.17417064456029435,
+              "sharpe": -0.18100093656506033
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": 0.01612143281238465,
+              "vol": 0.16443859262325744,
+              "sharpe": 0.17973511263217443
+            },
+            "2006-2015": {
+              "return": 0.07708251172383274,
+              "vol": 0.17006310574276268,
+              "sharpe": 0.5218981505279944
+            }
+          }
+        },
+        {
+          "target_vol": 0.3,
+          "gross_return": 0.08055213331662192,
+          "gross_vol": 0.3335915982425937,
+          "gross_sharpe": 0.4000068302367741,
+          "net_return": -0.18336067229543873,
+          "net_vol": 0.34158488671174553,
+          "net_sharpe": -0.4207663040260914,
+          "max_drawdown": 0.9776061349659969,
+          "turnover_per_year": 43.408649755306875,
+          "cost_drag": 0.26391280561206065,
+          "excess_vs_net_benchmark": -0.19626464187397408,
+          "excess_vs_gross_benchmark": -0.2151904831370911,
+          "small_account_net_return": -0.31074318798456024,
+          "small_account_net_sharpe": -0.852391860922613,
+          "mean_leverage": 3.713711550170428,
+          "mean_gross_exposure": 3.595587119026948,
+          "mean_net_exposure": 1.2488800773875615,
+          "terminal_returns_booked": 61,
+          "decades": {
+            "1998-2005": {
+              "return": -0.2444832345562895,
+              "vol": 0.3371984168229212,
+              "sharpe": -0.6610612531311975
+            },
+            "2006-2015": {
+              "return": -0.13767984040835335,
+              "vol": 0.34464447840576834,
+              "sharpe": -0.25628945253260577
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": 0.01514270644372595,
+              "vol": 0.33046503163595886,
+              "sharpe": 0.2118627586399035
+            },
+            "2006-2015": {
+              "return": 0.12880537009385207,
+              "vol": 0.3357989816132832,
+              "sharpe": 0.5295257809373692
+            }
+          }
+        },
+        {
+          "target_vol": 0.45,
+          "gross_return": 0.06576658938090074,
+          "gross_vol": 0.48313596497512057,
+          "gross_sharpe": 0.3755593972193807,
+          "net_return": -0.3337450732964894,
+          "net_vol": 0.4992981818409373,
+          "net_sharpe": -0.5599995100975779,
+          "max_drawdown": 0.9993651335893808,
+          "turnover_per_year": 58.088697636446355,
+          "cost_drag": 0.39951166267739013,
+          "excess_vs_net_benchmark": -0.34664904287502474,
+          "excess_vs_gross_benchmark": -0.36557488413814176,
+          "small_account_net_return": -0.5135343901271329,
+          "small_account_net_sharpe": -1.083869625692459,
+          "mean_leverage": 5.077705045941768,
+          "mean_gross_exposure": 4.917079008408096,
+          "mean_net_exposure": 1.7774646589483614,
+          "terminal_returns_booked": 61,
+          "decades": {
+            "1998-2005": {
+              "return": -0.3660574278247509,
+              "vol": 0.49828704123297557,
+              "sharpe": -0.6615541192913604
+            },
+            "2006-2015": {
+              "return": -0.31016365110947475,
+              "vol": 0.5000915402316298,
+              "sharpe": -0.4891077612707966
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": -0.02519563836413352,
+              "vol": 0.48844774916544437,
+              "sharpe": 0.19490190206962688
+            },
+            "2006-2015": {
+              "return": 0.13440855759266612,
+              "vol": 0.4794453998257825,
+              "sharpe": 0.5043081280827294
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "SENSITIVITY-B (flat 20bps liquid-name schedule; NOT gate-eligible)",
+      "mode": "liquid_schedule",
+      "gate_eligible": false,
+      "monthly_universe_retention": 0.949622641509434,
+      "n_rebalances": 213,
+      "first_rebalance": "1998-04-30",
+      "last_rebalance": "2015-12-31",
+      "n_distinct_tickers": 864,
+      "universe_size_target": 200,
+      "mean_instruments": 205.77560975609757,
+      "mean_single_names": 197.25853658536585,
+      "mean_sector_baskets": 8.517073170731708,
+      "n_cells_measured_spread": 10852,
+      "n_cells_substituted_spread": 31748,
+      "median_spread_bps": 20.0,
+      "daily_returns_capped": 30,
+      "names_with_terminal_return": 164,
+      "breadth": {
+        "nominal_instruments": 205.77560975609757,
+        "effective_independent_instruments": 9.29312252154297,
+        "signal_flips_per_year": {
+          "21": 6.002757019516796,
+          "63": 3.187694986577668,
+          "252": 1.354712326779366
+        },
+        "flips_per_year_all_timeframes": 10.54516433287383,
+        "bets_per_year": 97.99750415520143,
+        "naive_bets_per_year": 7407.921951219512
+      },
+      "benchmark": {
+        "net_return": 0.019065859965241794,
+        "gross_return": 0.025472663391647554,
+        "vol": 0.26017189707403204,
+        "sharpe": 0.2026195879263888,
+        "max_drawdown": 0.7467240801695705,
+        "turnover_per_year": 1.963650308614122,
+        "decades": {
+          "1998-2005": {
+            "return": -0.00649095654998022,
+            "vol": 0.28089367720668357,
+            "sharpe": 0.11662185386361483
+          },
+          "2006-2015": {
+            "return": 0.03733637658901556,
+            "vol": 0.2446865290281189,
+            "sharpe": 0.27250823115391953
+          }
+        }
+      },
+      "targets": [
+        {
+          "target_vol": 0.15,
+          "gross_return": 0.062125546195550996,
+          "gross_vol": 0.16646653480201373,
+          "gross_sharpe": 0.4455168023041533,
+          "net_return": -0.004389902067018725,
+          "net_vol": 0.16743100903785224,
+          "net_sharpe": 0.05763499244141044,
+          "max_drawdown": 0.4615086645957024,
+          "turnover_per_year": 21.19371289540519,
+          "cost_drag": 0.06651544826256972,
+          "excess_vs_net_benchmark": -0.02345576203226052,
+          "excess_vs_gross_benchmark": -0.02986256545866628,
+          "small_account_net_return": -0.012129656462791849,
+          "small_account_net_sharpe": 0.011197625392050343,
+          "mean_leverage": 1.8286386905778347,
+          "mean_gross_exposure": 1.7717411879999794,
+          "mean_net_exposure": 0.60417971792848,
+          "terminal_returns_booked": 55,
+          "decades": {
+            "1998-2005": {
+              "return": -0.02443121986542518,
+              "vol": 0.16082937985140686,
+              "sharpe": -0.07319433738511932
+            },
+            "2006-2015": {
+              "return": 0.009876146741317537,
+              "vol": 0.1719244666942692,
+              "sharpe": 0.14330365581516125
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": 0.03785338464722687,
+              "vol": 0.1604541017528415,
+              "sharpe": 0.31196961848550464
+            },
+            "2006-2015": {
+              "return": 0.07944410441428218,
+              "vol": 0.17057066631489914,
+              "sharpe": 0.5336779397911844
+            }
+          }
+        },
+        {
+          "target_vol": 0.3,
+          "gross_return": 0.10094435570974403,
+          "gross_vol": 0.3309805616321046,
+          "gross_sharpe": 0.4568519469294983,
+          "net_return": -0.05234756461870427,
+          "net_vol": 0.3333394765083414,
+          "net_sharpe": 0.006254221382461249,
+          "max_drawdown": 0.8101884988606729,
+          "turnover_per_year": 41.04770508733349,
+          "cost_drag": 0.1532919203284483,
+          "excess_vs_net_benchmark": -0.07141342458394606,
+          "excess_vs_gross_benchmark": -0.07782022801035182,
+          "small_account_net_return": -0.06408770782099837,
+          "small_account_net_sharpe": -0.03081314163966419,
+          "mean_leverage": 3.5798565941734872,
+          "mean_gross_exposure": 3.4684064975248465,
+          "mean_net_exposure": 1.2000243951686598,
+          "terminal_returns_booked": 55,
+          "decades": {
+            "1998-2005": {
+              "return": -0.07808662611390471,
+              "vol": 0.3220899632242597,
+              "sharpe": -0.09054593823328755
+            },
+            "2006-2015": {
+              "return": -0.03391334199948548,
+              "vol": 0.34104622448518024,
+              "sharpe": 0.0702183615079654
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": 0.0616634981528672,
+              "vol": 0.3211658016437485,
+              "sharpe": 0.3476634623488958
+            },
+            "2006-2015": {
+              "return": 0.12928787655500695,
+              "vol": 0.3377302138333177,
+              "sharpe": 0.5296565538167163
+            }
+          }
+        },
+        {
+          "target_vol": 0.45,
+          "gross_return": 0.10470567824199861,
+          "gross_vol": 0.4805993698754895,
+          "gross_sharpe": 0.4492069920114489,
+          "net_return": -0.11152334691475085,
+          "net_vol": 0.48423743092907046,
+          "net_sharpe": -0.00010289841024230675,
+          "max_drawdown": 0.9469030039056027,
+          "turnover_per_year": 54.82157165653962,
+          "cost_drag": 0.21622902515674947,
+          "excess_vs_net_benchmark": -0.13058920687999265,
+          "excess_vs_gross_benchmark": -0.1369960103063984,
+          "small_account_net_return": -0.13915235594826258,
+          "small_account_net_sharpe": -0.0643303856111423,
+          "mean_leverage": 4.938432083006048,
+          "mean_gross_exposure": 4.785091958338928,
+          "mean_net_exposure": 1.7211523901502246,
+          "terminal_returns_booked": 55,
+          "decades": {
+            "1998-2005": {
+              "return": -0.13833295924575773,
+              "vol": 0.47967954859144973,
+              "sharpe": -0.06848425219135515
+            },
+            "2006-2015": {
+              "return": -0.0922717756446989,
+              "vol": 0.48749082778783853,
+              "sharpe": 0.04697301054014655
+            }
+          },
+          "decades_gross": {
+            "1998-2005": {
+              "return": 0.06304524110176346,
+              "vol": 0.47796447470912556,
+              "sharpe": 0.3687825907727428
+            },
+            "2006-2015": {
+              "return": 0.134820059222712,
+              "vol": 0.4825214414803526,
+              "sharpe": 0.5048707523004958
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

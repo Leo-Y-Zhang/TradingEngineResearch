@@ -1,0 +1,1351 @@
+{
+  "arithmetic_inputs": {
+    "efficiency_measured": 0.7099341721050855,
+    "measured_peak_compound_original_18": 0.1583,
+    "n_eff_original_18_measured": 5.260264834883752,
+    "per_bet_sharpe_implied": 0.2911673070721098,
+    "portfolio_sharpe_original_18_measured": 0.6678,
+    "theoretical_peak_s2_over_2": 0.22297841999999995
+  },
+  "control": {
+    "abs_error": 1.624833600999409e-11,
+    "measured": 5.260264834883752,
+    "recorded_iteration_11": 5.2602648349,
+    "reproduced": true,
+    "tolerance": 0.005,
+    "universe": "original_18",
+    "window": "1996+"
+  },
+  "coverage": {
+    "BUND_ETF": {
+      "annual_sharpe": 0.061104782076284385,
+      "first_month": "2008-01-31",
+      "mean_excess_annual_pct": 0.696047867696862,
+      "months": 222,
+      "vol_annual_pct": 11.391053924845071
+    },
+    "CARBON": {
+      "annual_sharpe": 0.6025244371572032,
+      "first_month": "2020-08-31",
+      "mean_excess_annual_pct": 14.151360685800315,
+      "months": 71,
+      "vol_annual_pct": 23.48678296363956
+    },
+    "CATTLE_F": {
+      "annual_sharpe": 0.35451781471144983,
+      "first_month": "2001-03-31",
+      "mean_excess_annual_pct": 6.356337182340313,
+      "months": 304,
+      "vol_annual_pct": 17.929528273533677
+    },
+    "COCOA_F": {
+      "annual_sharpe": 0.36411000150767364,
+      "first_month": "2000-01-31",
+      "mean_excess_annual_pct": 13.265622318657819,
+      "months": 318,
+      "vol_annual_pct": 36.433007233332596
+    },
+    "COFFEE_F": {
+      "annual_sharpe": 0.2700410010979217,
+      "first_month": "2000-01-31",
+      "mean_excess_annual_pct": 8.858229907092802,
+      "months": 318,
+      "vol_annual_pct": 32.80327754332628
+    },
+    "CORN_F": {
+      "annual_sharpe": 0.2550471807782145,
+      "first_month": "2000-07-31",
+      "mean_excess_annual_pct": 7.275255545011181,
+      "months": 312,
+      "vol_annual_pct": 28.525136105455083
+    },
+    "COTTON_F": {
+      "annual_sharpe": 0.19829886549510212,
+      "first_month": "2000-01-31",
+      "mean_excess_annual_pct": 6.069197203671075,
+      "months": 318,
+      "vol_annual_pct": 30.606313296436795
+    },
+    "CREDIT_SPREAD": {
+      "annual_sharpe": 0.1470261458326932,
+      "first_month": "2007-04-30",
+      "mean_excess_annual_pct": 1.7218962267854159,
+      "months": 231,
+      "vol_annual_pct": 11.711496734361987
+    },
+    "FREIGHT": {
+      "annual_sharpe": 0.1543072924938217,
+      "first_month": "2018-03-31",
+      "mean_excess_annual_pct": 10.879813049974404,
+      "months": 100,
+      "vol_annual_pct": 70.50744572172451
+    },
+    "GILT_ETF": {
+      "annual_sharpe": 0.043787252417437486,
+      "first_month": "2008-01-31",
+      "mean_excess_annual_pct": 0.32907808085225076,
+      "months": 222,
+      "vol_annual_pct": 7.51538547600674
+    },
+    "HOGS_F": {
+      "annual_sharpe": 0.25450500368320905,
+      "first_month": "2000-12-31",
+      "mean_excess_annual_pct": 9.518701876627834,
+      "months": 307,
+      "vol_annual_pct": 37.400843751096076
+    },
+    "HYG": {
+      "annual_sharpe": 0.3738938301268922,
+      "first_month": "2007-04-30",
+      "mean_excess_annual_pct": 3.8248139217288486,
+      "months": 231,
+      "vol_annual_pct": 10.229679159002922
+    },
+    "JGB_ETF": {
+      "annual_sharpe": -0.7158859762083352,
+      "first_month": "2016-06-30",
+      "mean_excess_annual_pct": -4.613834730649403,
+      "months": 121,
+      "vol_annual_pct": 6.444929617264491
+    },
+    "LQD": {
+      "annual_sharpe": 0.39268607848352616,
+      "first_month": "2002-08-31",
+      "mean_excess_annual_pct": 3.1024571058209336,
+      "months": 287,
+      "vol_annual_pct": 7.900603754026607
+    },
+    "REIT": {
+      "annual_sharpe": 0.36845335404604973,
+      "first_month": "2004-10-31",
+      "mean_excess_annual_pct": 7.932084324150433,
+      "months": 261,
+      "vol_annual_pct": 21.528055687502494
+    },
+    "SOYBEAN_F": {
+      "annual_sharpe": 0.2545331559564987,
+      "first_month": "2000-09-30",
+      "mean_excess_annual_pct": 6.4879816427666395,
+      "months": 310,
+      "vol_annual_pct": 25.489730869779
+    },
+    "SUGAR_F": {
+      "annual_sharpe": 0.28046743561211424,
+      "first_month": "2000-03-31",
+      "mean_excess_annual_pct": 9.260607239340994,
+      "months": 316,
+      "vol_annual_pct": 33.018475813885175
+    },
+    "VIX_ETF": {
+      "annual_sharpe": -0.7629265020783238,
+      "first_month": "2011-01-31",
+      "mean_excess_annual_pct": -48.42281415290687,
+      "months": 186,
+      "vol_annual_pct": 63.46982837926852
+    },
+    "WHEAT_F": {
+      "annual_sharpe": 0.25816544494868165,
+      "first_month": "2000-07-31",
+      "mean_excess_annual_pct": 7.826375861121335,
+      "months": 312,
+      "vol_annual_pct": 30.315350153375743
+    }
+  },
+  "definition": "N_eff = (sum eigenvalues)^2 / sum(eigenvalues^2) of the Pearson correlation matrix of month-end excess returns",
+  "headline": {
+    "expanded": 8.382651121174975,
+    "gain": 3.2538190694693228,
+    "n_instruments_expanded": 37,
+    "n_instruments_original": 18,
+    "original_18": 5.128832051705652,
+    "window": "2011+"
+  },
+  "n_eff_by_window": {
+    "1996+": {
+      "block_agriculture": {
+        "complete": 4.8572061107135625,
+        "gain_vs_original_same_window": -0.403409169423111,
+        "mean_abs_corr": 0.22377617900976568,
+        "months": 366,
+        "months_complete": 310,
+        "n_instruments": 7,
+        "pairwise": 4.856855665460641
+      },
+      "block_credit": {
+        "complete": 1.6610930621842215,
+        "gain_vs_original_same_window": -3.5991717726995303,
+        "mean_abs_corr": 0.5833089197508804,
+        "months": 366,
+        "months_complete": 231,
+        "n_instruments": 3,
+        "pairwise": 1.6610930621842215
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.3820542247460577,
+        "gain_vs_original_same_window": -3.842148039065176,
+        "mean_abs_corr": 0.7465127374332216,
+        "months": 366,
+        "months_complete": 121,
+        "n_instruments": 3,
+        "pairwise": 1.4181167958185759
+      },
+      "block_livestock": {
+        "complete": 1.9620078257501616,
+        "gain_vs_original_same_window": -3.2982570091335903,
+        "mean_abs_corr": 0.1391543242207489,
+        "months": 366,
+        "months_complete": 304,
+        "n_instruments": 2,
+        "pairwise": 1.9620078257501616
+      },
+      "block_real_assets": {
+        "complete": 2.6894690096223743,
+        "gain_vs_original_same_window": -2.5007810600372298,
+        "mean_abs_corr": 0.18514665608307104,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 3,
+        "pairwise": 2.759483774846522
+      },
+      "expanded_37": {
+        "complete": 7.0061312010799535,
+        "gain_vs_original_same_window": 3.3914803021312183,
+        "mean_abs_corr": 0.22943135886703878,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 37,
+        "pairwise": 8.65174513701497
+      },
+      "expanded_long_history_only": {
+        "complete": 7.592570804004184,
+        "gain_vs_original_same_window": 3.0643166146479173,
+        "mean_abs_corr": 0.2309124560341523,
+        "months": 366,
+        "months_complete": 222,
+        "n_instruments": 33,
+        "pairwise": 8.324581449531669
+      },
+      "expanded_no_livestock": {
+        "complete": 6.39071588848585,
+        "gain_vs_original_same_window": 2.6558131640350604,
+        "mean_abs_corr": 0.2468855961889345,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 35,
+        "pairwise": 7.916077998918812
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.580910406304038,
+        "gain_vs_original_same_window": 1.7811654600368048,
+        "mean_abs_corr": 0.26682320067376103,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 32,
+        "pairwise": 7.0414302949205565
+      },
+      "expanded_no_vol": {
+        "complete": 6.986373886917925,
+        "gain_vs_original_same_window": 3.5439616963683553,
+        "mean_abs_corr": 0.2254720545485208,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 36,
+        "pairwise": 8.804226531252107
+      },
+      "orig_plus_agriculture": {
+        "complete": 7.521329020522242,
+        "gain_vs_original_same_window": 2.798694886008872,
+        "mean_abs_corr": 0.2290946179972259,
+        "months": 366,
+        "months_complete": 271,
+        "n_instruments": 25,
+        "pairwise": 8.058959720892624
+      },
+      "orig_plus_credit": {
+        "complete": 4.664747947864128,
+        "gain_vs_original_same_window": -0.2097989247444758,
+        "mean_abs_corr": 0.3346567493009789,
+        "months": 366,
+        "months_complete": 231,
+        "n_instruments": 21,
+        "pairwise": 5.050465910139276
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.965002168685278,
+        "gain_vs_original_same_window": 0.12929771031649295,
+        "mean_abs_corr": 0.30149035106314137,
+        "months": 366,
+        "months_complete": 121,
+        "n_instruments": 21,
+        "pairwise": 5.389562545200245
+      },
+      "orig_plus_livestock": {
+        "complete": 5.813007489642317,
+        "gain_vs_original_same_window": 0.9501710812471611,
+        "mean_abs_corr": 0.267230809027338,
+        "months": 366,
+        "months_complete": 271,
+        "n_instruments": 20,
+        "pairwise": 6.210435916130913
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.727802066648567,
+        "gain_vs_original_same_window": 0.7415240688218763,
+        "mean_abs_corr": 0.28672530464297663,
+        "months": 366,
+        "months_complete": 71,
+        "n_instruments": 21,
+        "pairwise": 6.001788903705628
+      },
+      "orig_plus_volatility": {
+        "complete": 5.072816316522978,
+        "gain_vs_original_same_window": -0.0660412281657834,
+        "mean_abs_corr": 0.31739187455442114,
+        "months": 366,
+        "months_complete": 186,
+        "n_instruments": 19,
+        "pairwise": 5.194223606717968
+      },
+      "original_18": {
+        "complete": 4.922585356144363,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.30953751523147754,
+        "months": 366,
+        "months_complete": 271,
+        "n_instruments": 18,
+        "pairwise": 5.260264834883752
+      }
+    },
+    "2001+": {
+      "block_agriculture": {
+        "complete": 4.836957095982365,
+        "gain_vs_original_same_window": -0.17613188373147093,
+        "mean_abs_corr": 0.22577334996006132,
+        "months": 303,
+        "months_complete": 303,
+        "n_instruments": 7,
+        "pairwise": 4.836957095982365
+      },
+      "block_credit": {
+        "complete": 1.6610930621842215,
+        "gain_vs_original_same_window": -3.3519959175296146,
+        "mean_abs_corr": 0.5833089197508804,
+        "months": 303,
+        "months_complete": 231,
+        "n_instruments": 3,
+        "pairwise": 1.6610930621842215
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.3820542247460577,
+        "gain_vs_original_same_window": -3.59497218389526,
+        "mean_abs_corr": 0.7465127374332216,
+        "months": 303,
+        "months_complete": 121,
+        "n_instruments": 3,
+        "pairwise": 1.4181167958185759
+      },
+      "block_livestock": {
+        "complete": 1.961735018953626,
+        "gain_vs_original_same_window": -3.05135396076021,
+        "mean_abs_corr": 0.1396627466964234,
+        "months": 303,
+        "months_complete": 303,
+        "n_instruments": 2,
+        "pairwise": 1.961735018953626
+      },
+      "block_real_assets": {
+        "complete": 2.6894690096223743,
+        "gain_vs_original_same_window": -2.253605204867314,
+        "mean_abs_corr": 0.18514665608307104,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 3,
+        "pairwise": 2.759483774846522
+      },
+      "expanded_37": {
+        "complete": 7.0061312010799535,
+        "gain_vs_original_same_window": 3.438399228560418,
+        "mean_abs_corr": 0.23307083815816154,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 37,
+        "pairwise": 8.451488208274254
+      },
+      "expanded_long_history_only": {
+        "complete": 7.592570804004184,
+        "gain_vs_original_same_window": 3.0870059039414572,
+        "mean_abs_corr": 0.23550316286727307,
+        "months": 303,
+        "months_complete": 222,
+        "n_instruments": 33,
+        "pairwise": 8.100094883655293
+      },
+      "expanded_no_livestock": {
+        "complete": 6.39071588848585,
+        "gain_vs_original_same_window": 2.714340706568315,
+        "mean_abs_corr": 0.2509664214705164,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 35,
+        "pairwise": 7.727429686282151
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.580910406304038,
+        "gain_vs_original_same_window": 1.852451857881551,
+        "mean_abs_corr": 0.2714757147385376,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 32,
+        "pairwise": 6.865540837595387
+      },
+      "expanded_no_vol": {
+        "complete": 6.986373886917925,
+        "gain_vs_original_same_window": 3.5756833571624833,
+        "mean_abs_corr": 0.22931950408485058,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 36,
+        "pairwise": 8.58877233687632
+      },
+      "orig_plus_agriculture": {
+        "complete": 7.521329020522242,
+        "gain_vs_original_same_window": 2.72021950659731,
+        "mean_abs_corr": 0.23718825480569677,
+        "months": 303,
+        "months_complete": 271,
+        "n_instruments": 25,
+        "pairwise": 7.733308486311146
+      },
+      "orig_plus_credit": {
+        "complete": 4.664747947864128,
+        "gain_vs_original_same_window": -0.14903223527533704,
+        "mean_abs_corr": 0.34493208259739283,
+        "months": 303,
+        "months_complete": 231,
+        "n_instruments": 21,
+        "pairwise": 4.864056744438499
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.965002168685278,
+        "gain_vs_original_same_window": 0.18426441763867452,
+        "mean_abs_corr": 0.3117656843595554,
+        "months": 303,
+        "months_complete": 121,
+        "n_instruments": 21,
+        "pairwise": 5.197353397352511
+      },
+      "orig_plus_livestock": {
+        "complete": 5.813007489642317,
+        "gain_vs_original_same_window": 0.9175725710831335,
+        "mean_abs_corr": 0.2786080257962656,
+        "months": 303,
+        "months_complete": 271,
+        "n_instruments": 20,
+        "pairwise": 5.9306615507969695
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.727802066648567,
+        "gain_vs_original_same_window": 0.7361951309887313,
+        "mean_abs_corr": 0.2970006379393906,
+        "months": 303,
+        "months_complete": 71,
+        "n_instruments": 21,
+        "pairwise": 5.749284110702567
+      },
+      "orig_plus_volatility": {
+        "complete": 5.072816316522978,
+        "gain_vs_original_same_window": -0.05333415996897539,
+        "mean_abs_corr": 0.3300107049184383,
+        "months": 303,
+        "months_complete": 186,
+        "n_instruments": 19,
+        "pairwise": 4.959754819744861
+      },
+      "original_18": {
+        "complete": 4.922585356144363,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.3236409138736144,
+        "months": 303,
+        "months_complete": 271,
+        "n_instruments": 18,
+        "pairwise": 5.013088979713836
+      }
+    },
+    "2008+": {
+      "block_agriculture": {
+        "complete": 4.558208697115029,
+        "gain_vs_original_same_window": -0.20214616013418052,
+        "mean_abs_corr": 0.25633380951773493,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 7,
+        "pairwise": 4.558208697115029
+      },
+      "block_credit": {
+        "complete": 1.6548301907446068,
+        "gain_vs_original_same_window": -3.105524666504603,
+        "mean_abs_corr": 0.5871634227017507,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 3,
+        "pairwise": 1.6548301907446068
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.3820542247460577,
+        "gain_vs_original_same_window": -3.3427597362136696,
+        "mean_abs_corr": 0.7467631814334973,
+        "months": 221,
+        "months_complete": 121,
+        "n_instruments": 3,
+        "pairwise": 1.4175951210355404
+      },
+      "block_livestock": {
+        "complete": 1.9616856060522008,
+        "gain_vs_original_same_window": -2.7986692511970093,
+        "mean_abs_corr": 0.1397546533924144,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 2,
+        "pairwise": 1.9616856060522008
+      },
+      "block_real_assets": {
+        "complete": 2.6894690096223743,
+        "gain_vs_original_same_window": -2.000871082402688,
+        "mean_abs_corr": 0.18514665608307104,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 3,
+        "pairwise": 2.759483774846522
+      },
+      "expanded_37": {
+        "complete": 7.0061312010799535,
+        "gain_vs_original_same_window": 3.2026021440785275,
+        "mean_abs_corr": 0.2458253003547755,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 37,
+        "pairwise": 7.962957001327737
+      },
+      "expanded_long_history_only": {
+        "complete": 7.557968023239218,
+        "gain_vs_original_same_window": 2.7976131659900085,
+        "mean_abs_corr": 0.25159117768345657,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 33,
+        "pairwise": 7.557968023239218
+      },
+      "expanded_no_livestock": {
+        "complete": 6.39071588848585,
+        "gain_vs_original_same_window": 2.5413317213159594,
+        "mean_abs_corr": 0.26285138766550864,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 35,
+        "pairwise": 7.301686578565169
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.580910406304038,
+        "gain_vs_original_same_window": 1.7744934831903008,
+        "mean_abs_corr": 0.28170493835266236,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 32,
+        "pairwise": 6.534848340439511
+      },
+      "expanded_no_vol": {
+        "complete": 6.986373886917925,
+        "gain_vs_original_same_window": 3.3069039409978433,
+        "mean_abs_corr": 0.24280279269269955,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 36,
+        "pairwise": 8.067258798247053
+      },
+      "orig_plus_agriculture": {
+        "complete": 7.148051887089088,
+        "gain_vs_original_same_window": 2.3876970298398783,
+        "mean_abs_corr": 0.2543982740608418,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 25,
+        "pairwise": 7.148051887089088
+      },
+      "orig_plus_credit": {
+        "complete": 4.624608630155294,
+        "gain_vs_original_same_window": -0.13574622709391537,
+        "mean_abs_corr": 0.3567592377884038,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 21,
+        "pairwise": 4.624608630155294
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.965002168685278,
+        "gain_vs_original_same_window": 0.20355862682654013,
+        "mean_abs_corr": 0.31922559056649397,
+        "months": 221,
+        "months_complete": 121,
+        "n_instruments": 21,
+        "pairwise": 4.96391348407575
+      },
+      "orig_plus_livestock": {
+        "complete": 5.597460555651915,
+        "gain_vs_original_same_window": 0.8371056984027048,
+        "mean_abs_corr": 0.29224481452721546,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 20,
+        "pairwise": 5.597460555651915
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.727802066648567,
+        "gain_vs_original_same_window": 0.7016733448695325,
+        "mean_abs_corr": 0.3063581229934028,
+        "months": 221,
+        "months_complete": 71,
+        "n_instruments": 21,
+        "pairwise": 5.462028202118742
+      },
+      "orig_plus_volatility": {
+        "complete": 5.072816316522978,
+        "gain_vs_original_same_window": -0.023891117091656255,
+        "mean_abs_corr": 0.33896769052091025,
+        "months": 221,
+        "months_complete": 186,
+        "n_instruments": 19,
+        "pairwise": 4.736463740157554
+      },
+      "original_18": {
+        "complete": 4.76035485724921,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.3336516624881419,
+        "months": 221,
+        "months_complete": 221,
+        "n_instruments": 18,
+        "pairwise": 4.76035485724921
+      }
+    },
+    "2011+": {
+      "block_agriculture": {
+        "complete": 5.122946797434653,
+        "gain_vs_original_same_window": -0.005885254270999063,
+        "mean_abs_corr": 0.18565419266807898,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 7,
+        "pairwise": 5.122946797434653
+      },
+      "block_credit": {
+        "complete": 1.8120228534720921,
+        "gain_vs_original_same_window": -3.3168091982335604,
+        "mean_abs_corr": 0.4872084544286099,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 3,
+        "pairwise": 1.8120228534720921
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.3820542247460577,
+        "gain_vs_original_same_window": -3.733101060986159,
+        "mean_abs_corr": 0.7572121996338262,
+        "months": 185,
+        "months_complete": 121,
+        "n_instruments": 3,
+        "pairwise": 1.3957309907194937
+      },
+      "block_livestock": {
+        "complete": 1.964435141357833,
+        "gain_vs_original_same_window": -3.1643969103478193,
+        "mean_abs_corr": 0.1345524766881879,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 2,
+        "pairwise": 1.964435141357833
+      },
+      "block_real_assets": {
+        "complete": 2.6894690096223743,
+        "gain_vs_original_same_window": -2.3693482768591303,
+        "mean_abs_corr": 0.18514665608307104,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 3,
+        "pairwise": 2.759483774846522
+      },
+      "expanded_37": {
+        "complete": 7.0061312010799535,
+        "gain_vs_original_same_window": 3.2538190694693228,
+        "mean_abs_corr": 0.22886918769959927,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 37,
+        "pairwise": 8.382651121174975
+      },
+      "expanded_long_history_only": {
+        "complete": 8.120726073656202,
+        "gain_vs_original_same_window": 2.99189402195055,
+        "mean_abs_corr": 0.2302254366932846,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 33,
+        "pairwise": 8.120726073656202
+      },
+      "expanded_no_livestock": {
+        "complete": 6.39071588848585,
+        "gain_vs_original_same_window": 2.5357207536289375,
+        "mean_abs_corr": 0.2462727612022278,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 35,
+        "pairwise": 7.66455280533459
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.580910406304038,
+        "gain_vs_original_same_window": 1.633276531837092,
+        "mean_abs_corr": 0.2693173204932303,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 32,
+        "pairwise": 6.762108583542744
+      },
+      "expanded_no_vol": {
+        "complete": 6.986373886917925,
+        "gain_vs_original_same_window": 3.3984750734930635,
+        "mean_abs_corr": 0.22489626691046022,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 36,
+        "pairwise": 8.527307125198716
+      },
+      "orig_plus_agriculture": {
+        "complete": 8.030288940490877,
+        "gain_vs_original_same_window": 2.9014568887852246,
+        "mean_abs_corr": 0.22132420600377475,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 25,
+        "pairwise": 8.030288940490877
+      },
+      "orig_plus_credit": {
+        "complete": 4.860000042321664,
+        "gain_vs_original_same_window": -0.26883200938398844,
+        "mean_abs_corr": 0.34115097636664804,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 21,
+        "pairwise": 4.860000042321664
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.965002168685278,
+        "gain_vs_original_same_window": 0.08474088658276369,
+        "mean_abs_corr": 0.30421572465662944,
+        "months": 185,
+        "months_complete": 121,
+        "n_instruments": 21,
+        "pairwise": 5.213572938288416
+      },
+      "orig_plus_livestock": {
+        "complete": 6.053405779660127,
+        "gain_vs_original_same_window": 0.924573727954475,
+        "mean_abs_corr": 0.267354667158296,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 20,
+        "pairwise": 6.053405779660127
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.727802066648567,
+        "gain_vs_original_same_window": 0.7227214045097474,
+        "mean_abs_corr": 0.28972066423420323,
+        "months": 185,
+        "months_complete": 71,
+        "n_instruments": 21,
+        "pairwise": 5.8515534562154
+      },
+      "orig_plus_volatility": {
+        "complete": 5.061009418888228,
+        "gain_vs_original_same_window": -0.06782263281742384,
+        "mean_abs_corr": 0.317766105346314,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 19,
+        "pairwise": 5.061009418888228
+      },
+      "original_18": {
+        "complete": 5.128832051705652,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.30997441540908943,
+        "months": 185,
+        "months_complete": 185,
+        "n_instruments": 18,
+        "pairwise": 5.128832051705652
+      }
+    },
+    "2016+": {
+      "block_agriculture": {
+        "complete": 5.505929674667988,
+        "gain_vs_original_same_window": 0.6417053380227475,
+        "mean_abs_corr": 0.16230573311226393,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 7,
+        "pairwise": 5.505929674667988
+      },
+      "block_credit": {
+        "complete": 1.786236094078175,
+        "gain_vs_original_same_window": -3.0779882425670655,
+        "mean_abs_corr": 0.4982757519115369,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 3,
+        "pairwise": 1.786236094078175
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.3993995558449845,
+        "gain_vs_original_same_window": -3.464824780800256,
+        "mean_abs_corr": 0.7548347092727766,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 3,
+        "pairwise": 1.3993995558449845
+      },
+      "block_livestock": {
+        "complete": 1.940632573656992,
+        "gain_vs_original_same_window": -2.9235917629882486,
+        "mean_abs_corr": 0.17490509176307775,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 2,
+        "pairwise": 1.940632573656992
+      },
+      "block_real_assets": {
+        "complete": 2.6894690096223743,
+        "gain_vs_original_same_window": -2.1047405617987187,
+        "mean_abs_corr": 0.18514665608307104,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 3,
+        "pairwise": 2.759483774846522
+      },
+      "expanded_37": {
+        "complete": 7.0061312010799535,
+        "gain_vs_original_same_window": 3.117165635024917,
+        "mean_abs_corr": 0.234819564851388,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 37,
+        "pairwise": 7.981389971670158
+      },
+      "expanded_long_history_only": {
+        "complete": 7.694217761950822,
+        "gain_vs_original_same_window": 2.829993425305581,
+        "mean_abs_corr": 0.23846954681938254,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 33,
+        "pairwise": 7.694217761950822
+      },
+      "expanded_no_livestock": {
+        "complete": 6.39071588848585,
+        "gain_vs_original_same_window": 2.4581744723528116,
+        "mean_abs_corr": 0.25085559747539843,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 35,
+        "pairwise": 7.322398808998052
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.580910406304038,
+        "gain_vs_original_same_window": 1.535004069282233,
+        "mean_abs_corr": 0.27873288121963224,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 32,
+        "pairwise": 6.399228405927474
+      },
+      "expanded_no_vol": {
+        "complete": 6.986373886917925,
+        "gain_vs_original_same_window": 3.225237592855108,
+        "mean_abs_corr": 0.23168951004362234,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 36,
+        "pairwise": 8.089461929500349
+      },
+      "orig_plus_agriculture": {
+        "complete": 7.8521065636506915,
+        "gain_vs_original_same_window": 2.987882227005451,
+        "mean_abs_corr": 0.22308445033396743,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 25,
+        "pairwise": 7.8521065636506915
+      },
+      "orig_plus_credit": {
+        "complete": 4.601111845991237,
+        "gain_vs_original_same_window": -0.2631124906540041,
+        "mean_abs_corr": 0.35913886398811745,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 21,
+        "pairwise": 4.601111845991237
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.909614059072141,
+        "gain_vs_original_same_window": 0.04538972242690065,
+        "mean_abs_corr": 0.32709036312838546,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 21,
+        "pairwise": 4.909614059072141
+      },
+      "orig_plus_livestock": {
+        "complete": 5.714970582279489,
+        "gain_vs_original_same_window": 0.850746245634248,
+        "mean_abs_corr": 0.2873231286733835,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 20,
+        "pairwise": 5.714970582279489
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.727802066648567,
+        "gain_vs_original_same_window": 0.6409322678869751,
+        "mean_abs_corr": 0.30763240452146273,
+        "months": 120,
+        "months_complete": 71,
+        "n_instruments": 21,
+        "pairwise": 5.505156604532216
+      },
+      "orig_plus_volatility": {
+        "complete": 4.856820389051464,
+        "gain_vs_original_same_window": -0.007403947593776827,
+        "mean_abs_corr": 0.33218966186589854,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 19,
+        "pairwise": 4.856820389051464
+      },
+      "original_18": {
+        "complete": 4.864224336645241,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.3296651847351037,
+        "months": 120,
+        "months_complete": 120,
+        "n_instruments": 18,
+        "pairwise": 4.864224336645241
+      }
+    },
+    "2020+": {
+      "block_agriculture": {
+        "complete": 5.612149350226818,
+        "gain_vs_original_same_window": 1.4294313082694954,
+        "mean_abs_corr": 0.15402829783698074,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 7,
+        "pairwise": 5.612149350226818
+      },
+      "block_credit": {
+        "complete": 1.8921459395434386,
+        "gain_vs_original_same_window": -2.2905721024138836,
+        "mean_abs_corr": 0.4475231343422756,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 3,
+        "pairwise": 1.8921459395434386
+      },
+      "block_foreign_sovereign": {
+        "complete": 1.330729763991691,
+        "gain_vs_original_same_window": -2.8519882779656314,
+        "mean_abs_corr": 0.7911504223044724,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 3,
+        "pairwise": 1.330729763991691
+      },
+      "block_livestock": {
+        "complete": 1.9969944285198682,
+        "gain_vs_original_same_window": -2.185723613437454,
+        "mean_abs_corr": 0.03879494173204828,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 2,
+        "pairwise": 1.9969944285198682
+      },
+      "block_real_assets": {
+        "complete": 2.688049325598492,
+        "gain_vs_original_same_window": -1.4946687163588304,
+        "mean_abs_corr": 0.2127979819898199,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 3,
+        "pairwise": 2.688049325598492
+      },
+      "expanded_37": {
+        "complete": 6.953767504527294,
+        "gain_vs_original_same_window": 2.7710494625699713,
+        "mean_abs_corr": 0.2636798965374827,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 37,
+        "pairwise": 6.953767504527294
+      },
+      "expanded_long_history_only": {
+        "complete": 6.674554934789052,
+        "gain_vs_original_same_window": 2.4918368928317296,
+        "mean_abs_corr": 0.26621219273937186,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 33,
+        "pairwise": 6.674554934789052
+      },
+      "expanded_no_livestock": {
+        "complete": 6.342088131036244,
+        "gain_vs_original_same_window": 2.159370089078921,
+        "mean_abs_corr": 0.2843154203350842,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 35,
+        "pairwise": 6.342088131036244
+      },
+      "expanded_no_rollcontam": {
+        "complete": 5.533833236283699,
+        "gain_vs_original_same_window": 1.3511151943263764,
+        "mean_abs_corr": 0.31527003322174846,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 32,
+        "pairwise": 5.533833236283699
+      },
+      "expanded_no_vol": {
+        "complete": 6.934224778731585,
+        "gain_vs_original_same_window": 2.751506736774263,
+        "mean_abs_corr": 0.26210066583642255,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 36,
+        "pairwise": 6.934224778731585
+      },
+      "orig_plus_agriculture": {
+        "complete": 6.8696926577366195,
+        "gain_vs_original_same_window": 2.686974615779297,
+        "mean_abs_corr": 0.2549065768944649,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 25,
+        "pairwise": 6.8696926577366195
+      },
+      "orig_plus_credit": {
+        "complete": 4.070025028277158,
+        "gain_vs_original_same_window": -0.11269301368016471,
+        "mean_abs_corr": 0.3972789675438145,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 21,
+        "pairwise": 4.070025028277158
+      },
+      "orig_plus_foreign_sovereign": {
+        "complete": 4.0670981890289255,
+        "gain_vs_original_same_window": -0.11561985292839694,
+        "mean_abs_corr": 0.3975100911446179,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 21,
+        "pairwise": 4.0670981890289255
+      },
+      "orig_plus_livestock": {
+        "complete": 4.984323423540372,
+        "gain_vs_original_same_window": 0.80160538158305,
+        "mean_abs_corr": 0.3261360051809047,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 20,
+        "pairwise": 4.984323423540372
+      },
+      "orig_plus_real_assets": {
+        "complete": 4.7020861448482885,
+        "gain_vs_original_same_window": 0.519368102890966,
+        "mean_abs_corr": 0.35568284740663814,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 21,
+        "pairwise": 4.7020861448482885
+      },
+      "orig_plus_volatility": {
+        "complete": 4.285299084696824,
+        "gain_vs_original_same_window": 0.10258104273950153,
+        "mean_abs_corr": 0.3799175475154922,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 19,
+        "pairwise": 4.285299084696824
+      },
+      "original_18": {
+        "complete": 4.182718041957322,
+        "gain_vs_original_same_window": 0.0,
+        "mean_abs_corr": 0.3840632244739218,
+        "months": 70,
+        "months_complete": 70,
+        "n_instruments": 18,
+        "pairwise": 4.182718041957322
+      }
+    }
+  },
+  "per_block": {
+    "agriculture": {
+      "2011+": {
+        "block_alone_neff": 5.122946797434653,
+        "efficiency_pct": 41.44938412550321,
+        "marginal_vs_original": 2.9014568887852246,
+        "n_added": 7,
+        "orig_plus_block_neff": 8.030288940490877
+      },
+      "2020+": {
+        "block_alone_neff": 5.612149350226818,
+        "efficiency_pct": 38.38535165398996,
+        "marginal_vs_original": 2.686974615779297,
+        "n_added": 7,
+        "orig_plus_block_neff": 6.8696926577366195
+      },
+      "instruments": [
+        "CORN_F",
+        "WHEAT_F",
+        "SOYBEAN_F",
+        "SUGAR_F",
+        "COFFEE_F",
+        "COTTON_F",
+        "COCOA_F"
+      ]
+    },
+    "commodity": {
+      "2011+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "2020+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "instruments": [
+        "GOLD_F",
+        "WTI_F",
+        "SILVER_F",
+        "COPPER_F"
+      ]
+    },
+    "credit": {
+      "2011+": {
+        "block_alone_neff": 1.8120228534720921,
+        "efficiency_pct": -8.961066979466281,
+        "marginal_vs_original": -0.26883200938398844,
+        "n_added": 3,
+        "orig_plus_block_neff": 4.860000042321664
+      },
+      "2020+": {
+        "block_alone_neff": 1.8921459395434386,
+        "efficiency_pct": -3.7564337893388235,
+        "marginal_vs_original": -0.11269301368016471,
+        "n_added": 3,
+        "orig_plus_block_neff": 4.070025028277158
+      },
+      "instruments": [
+        "HYG",
+        "LQD",
+        "CREDIT_SPREAD"
+      ]
+    },
+    "equity": {
+      "2011+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "2020+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "instruments": [
+        "SPX",
+        "NASDAQ",
+        "FTSE100",
+        "N225",
+        "DAX",
+        "HSI",
+        "ASX200"
+      ]
+    },
+    "foreign_sovereign": {
+      "2011+": {
+        "block_alone_neff": 1.3957309907194937,
+        "efficiency_pct": 2.8246962194254563,
+        "marginal_vs_original": 0.08474088658276369,
+        "n_added": 3,
+        "orig_plus_block_neff": 5.213572938288416
+      },
+      "2020+": {
+        "block_alone_neff": 1.330729763991691,
+        "efficiency_pct": -3.853995097613231,
+        "marginal_vs_original": -0.11561985292839694,
+        "n_added": 3,
+        "orig_plus_block_neff": 4.0670981890289255
+      },
+      "instruments": [
+        "GILT_ETF",
+        "BUND_ETF",
+        "JGB_ETF"
+      ]
+    },
+    "fx": {
+      "2011+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "2020+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "instruments": [
+        "USDX",
+        "EURUSD",
+        "GBPUSD",
+        "JPYUSD"
+      ]
+    },
+    "livestock": {
+      "2011+": {
+        "block_alone_neff": 1.964435141357833,
+        "efficiency_pct": 46.22868639772375,
+        "marginal_vs_original": 0.924573727954475,
+        "n_added": 2,
+        "orig_plus_block_neff": 6.053405779660127
+      },
+      "2020+": {
+        "block_alone_neff": 1.9969944285198682,
+        "efficiency_pct": 40.0802690791525,
+        "marginal_vs_original": 0.80160538158305,
+        "n_added": 2,
+        "orig_plus_block_neff": 4.984323423540372
+      },
+      "instruments": [
+        "CATTLE_F",
+        "HOGS_F"
+      ]
+    },
+    "rates": {
+      "2011+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "2020+": {
+        "block_alone_neff": null,
+        "efficiency_pct": null,
+        "marginal_vs_original": null,
+        "n_added": 0,
+        "orig_plus_block_neff": null
+      },
+      "instruments": [
+        "US5Y_TR",
+        "US10Y_TR",
+        "US30Y_TR"
+      ]
+    },
+    "real_assets": {
+      "2011+": {
+        "block_alone_neff": 2.759483774846522,
+        "efficiency_pct": 24.09071348365825,
+        "marginal_vs_original": 0.7227214045097474,
+        "n_added": 3,
+        "orig_plus_block_neff": 5.8515534562154
+      },
+      "2020+": {
+        "block_alone_neff": 2.688049325598492,
+        "efficiency_pct": 17.312270096365534,
+        "marginal_vs_original": 0.519368102890966,
+        "n_added": 3,
+        "orig_plus_block_neff": 4.7020861448482885
+      },
+      "instruments": [
+        "REIT",
+        "FREIGHT",
+        "CARBON"
+      ]
+    },
+    "volatility": {
+      "2011+": {
+        "block_alone_neff": null,
+        "efficiency_pct": -6.7822632817423845,
+        "marginal_vs_original": -0.06782263281742384,
+        "n_added": 1,
+        "orig_plus_block_neff": 5.061009418888228
+      },
+      "2020+": {
+        "block_alone_neff": null,
+        "efficiency_pct": 10.258104273950153,
+        "marginal_vs_original": 0.10258104273950153,
+        "n_added": 1,
+        "orig_plus_block_neff": 4.285299084696824
+      },
+      "instruments": [
+        "VIX_ETF"
+      ]
+    }
+  },
+  "projection": {
+    "expanded_2011": {
+      "expected_measured_peak_pct": 25.226366240765962,
+      "kelly_full_pct": 35.5333877871594,
+      "kelly_half_pct": 26.650040840369545,
+      "n_eff": 8.382651121174975,
+      "portfolio_sharpe": 0.8430111243294408
+    },
+    "expanded_2020": {
+      "expected_measured_peak_pct": 20.926349347789007,
+      "kelly_full_pct": 29.47646439632357,
+      "kelly_half_pct": 22.107348297242677,
+      "n_eff": 6.953767504527294,
+      "portfolio_sharpe": 0.7678081061870026
+    },
+    "original_18_1996": {
+      "expected_measured_peak_pct": 15.830000000000002,
+      "kelly_full_pct": 22.297842,
+      "kelly_half_pct": 16.723381499999995,
+      "n_eff": 5.260264834883752,
+      "portfolio_sharpe": 0.6678
+    },
+    "original_18_2011": {
+      "expected_measured_peak_pct": 15.4344722037735,
+      "kelly_full_pct": 21.740708942080428,
+      "kelly_half_pct": 16.305531706560323,
+      "n_eff": 5.128832051705652,
+      "portfolio_sharpe": 0.6594044122096914
+    }
+  },
+  "projection_note": "COUNTERFACTUAL: holds per-bet Sharpe fixed at the original panel's 0.2912. breadth_ladder.py measures that it does not hold. Judge on the ladder.",
+  "required_for_30pct": {
+    "n_eff_full_kelly": 7.077274341010786,
+    "n_eff_full_kelly_measured_efficiency": 9.96891630110629,
+    "n_eff_half_kelly": 9.436365788014381,
+    "n_eff_half_kelly_measured_efficiency": 13.291888401475054
+  }
+}

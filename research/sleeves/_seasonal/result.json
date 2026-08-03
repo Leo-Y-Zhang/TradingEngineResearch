@@ -1,0 +1,4680 @@
+{
+  "universe": [
+    "SPX",
+    "NASDAQ",
+    "FTSE100",
+    "N225",
+    "DAX",
+    "HSI",
+    "ASX200",
+    "US5Y_TR",
+    "US10Y_TR",
+    "US30Y_TR",
+    "GOLD_F",
+    "WTI_F",
+    "SILVER_F",
+    "COPPER_F",
+    "USDX",
+    "EURUSD",
+    "GBPUSD",
+    "JPYUSD"
+  ],
+  "daily_rows": 25305,
+  "monthly_rows": 1183,
+  "verification": {
+    "dsr_anchor_7yr": 1.4881,
+    "dsr_anchor_40yr": 0.5971,
+    "dsr_anchors_ok": true,
+    "positions_independent_of_returns": true,
+    "oracle_gross_sharpe": 3.977,
+    "oracle_net_10bps_sharpe": 3.822,
+    "oracle_control_ok": true,
+    "compound_exact": true,
+    "tom_days_per_month_min": 4,
+    "tom_days_per_month_max": 4,
+    "tom_window_shape_ok": true,
+    "halloween_months_per_year": 6,
+    "halloween_shape_ok": true,
+    "date_scramble_drift_baseline": {
+      "E1_TOM": {
+        "mean": 0.4384,
+        "sd": 0.1496,
+        "runs": [
+          0.2751,
+          0.4976,
+          0.616,
+          0.365
+        ]
+      },
+      "E2_HALLOWEEN": {
+        "mean": 0.738,
+        "sd": 0.0525,
+        "runs": [
+          0.7049,
+          0.7613,
+          0.8003,
+          0.6854
+        ]
+      },
+      "E4_COMPOSITE": {
+        "mean": 0.6016,
+        "sd": 0.1891,
+        "runs": [
+          0.4758,
+          0.745,
+          0.7809,
+          0.4047
+        ]
+      }
+    },
+    "all_ok": true
+  },
+  "primaries": {
+    "E1_TOM": {
+      "10%": {
+        "effect": "E1_TOM",
+        "vol_target": 0.1,
+        "days": 16000,
+        "days_in_market_pct": 18.32,
+        "cap_binding_days": 52,
+        "mean_gross_leverage": 0.8379228893962399,
+        "bench_leverage": 1.2619762893313955,
+        "turnover_per_year": 108.34344238433945,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.6719501989586205,
+          "vol": 0.11057042993754472,
+          "mean_annual": 0.07429782239547339,
+          "geo_annual": 0.0704370050699338,
+          "tstat": 4.899840272878082
+        },
+        "net_2bps": {
+          "sharpe": 0.570294462646475,
+          "vol": 0.11056124848329424,
+          "mean_annual": 0.0630524677933037,
+          "geo_annual": 0.0585218123231762,
+          "tstat": 4.137515428338705,
+          "max_drawdown": -0.46094989926175545,
+          "skew": 0.33417304262833025,
+          "worst_month": -0.11182055790597811,
+          "bench_sharpe": 0.6882967669712622,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.01376464516653389,
+            "arith_active_annual": -0.01308995153237414,
+            "arith_active_tstat": -0.8498122079398573,
+            "volmatched_active_annual": -0.013046482090054108,
+            "volmatched_active_tstat": -0.8472246292764198,
+            "bench_leverage_applied": 0.9994291034786522,
+            "variance_drag_annual": -6.984499568607212e-06,
+            "jensen_alpha_annual": 0.031676089046065704,
+            "jensen_beta": 0.41207488578783275,
+            "jensen_alpha_tstat": 2.362544669449089,
+            "strat_vol": 0.11056124848329424,
+            "bench_vol": 0.11062440357046881,
+            "strat_sharpe": 0.570294462646475,
+            "bench_sharpe": 0.6882967669712622
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.2700065141294048,
+              "mean_annual": 0.02503178205384952
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.195931988844851,
+              "mean_annual": 0.024587355459948914
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.0865672105233848,
+              "mean_annual": 0.10835842319813804
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.20659922918747,
+              "mean_annual": 0.14061284038117622
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.8899529588703228,
+              "mean_annual": 0.097763165928788
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.2656658409019439,
+              "mean_annual": -0.027318449640911992
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.432500457085841,
+              "mean_annual": 0.04759478696450001
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.12196341529696186,
+            "full_kelly_growth": 0.16261788706261582,
+            "implied_vol": 0.2851472313232375
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.16385967744466715,
+          "vol": 0.11066708935697882,
+          "mean_annual": 0.018133873565774707,
+          "geo_annual": 0.012114124416181633,
+          "tstat": 1.1590256945222142,
+          "max_drawdown": -0.6548726160189132,
+          "skew": 0.26634722960927604,
+          "worst_month": -0.1173763820219681,
+          "bench_sharpe": 0.6880507661628148,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.06014335853120176,
+            "arith_active_annual": -0.057981388751034105,
+            "arith_active_tstat": -3.7314817350252727,
+            "volmatched_active_annual": -0.05801070205530325,
+            "volmatched_active_tstat": -3.7327078041506256,
+            "bench_leverage_applied": 1.0003851172994338,
+            "variance_drag_annual": 4.713887112905643e-06,
+            "jensen_alpha_annual": -0.013416428707481078,
+            "jensen_beta": 0.41450691113611815,
+            "jensen_alpha_tstat": -0.9765056945450358,
+            "strat_vol": 0.11066708935697882,
+            "bench_vol": 0.11062448595369707,
+            "strat_sharpe": 0.16385967744466715,
+            "bench_sharpe": 0.6880507661628148
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.39684076430220644,
+              "mean_annual": -0.037238910836472704
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": -0.16701408479764526,
+              "mean_annual": -0.020866610596235822
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7647632847212298,
+              "mean_annual": 0.07611835003656489
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.8669048878584521,
+              "mean_annual": 0.10052204462280842
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5014205700736456,
+              "mean_annual": 0.05483973696585827
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.8129573413893055,
+              "mean_annual": -0.08409211049317607
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.04449580771819249,
+              "mean_annual": 0.004861426833711336
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.010068747709601384,
+            "full_kelly_growth": 0.013424996946135179,
+            "implied_vol": 0.08192983872233357
+          }
+        },
+        "breakeven_roundtrip_bps": 13.061563227187351,
+        "publication_split": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.021812508876821356,
+          "post_sharpe": 0.26644346767232996,
+          "pre_mean_annual": -0.0024065677251217145,
+          "post_mean_annual": 0.029530785083719348,
+          "pre_tstat": -0.0880226415829812,
+          "post_tstat": 1.5664371751604742,
+          "decay_sharpe_points": 0.2882559765491513,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.578675700362461,
+          "post_sharpe": -0.44037566945801365,
+          "pre_mean_annual": -0.06282937088585124,
+          "post_mean_annual": -0.05533705247210892,
+          "pre_tstat": -2.595047876845619,
+          "post_tstat": -2.7611369471455087,
+          "decay_sharpe_points": 0.1383000309044473,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.6116642161231325,
+          "post_sharpe": 0.7268302915328092,
+          "pre_mean_annual": 0.06039954225213034,
+          "post_mean_annual": 0.08483516606577599,
+          "pre_tstat": 2.532297339996039,
+          "post_tstat": 4.420629307620016,
+          "decay_sharpe_points": 0.11516607540967672,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.022724034393280395,
+          "top_cell": "USDX 1978-11",
+          "top_cell_abs_share": 0.003042587827220632,
+          "top_instrument_share": 0.17008008131959088,
+          "top_instrument": "SPX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1701,
+          "NASDAQ": 0.1511,
+          "FTSE100": 0.0795,
+          "N225": 0.1202,
+          "DAX": 0.0498,
+          "HSI": 0.0638,
+          "ASX200": 0.0343,
+          "US5Y_TR": 0.0974,
+          "US10Y_TR": 0.0745,
+          "US30Y_TR": 0.0611,
+          "GOLD_F": 0.0307,
+          "WTI_F": 0.0132,
+          "SILVER_F": 0.0247,
+          "COPPER_F": 0.0348,
+          "USDX": 0.0241,
+          "EURUSD": -0.0082,
+          "GBPUSD": -0.0197,
+          "JPYUSD": -0.0012
+        },
+        "per_block_pnl_share": {
+          "equity": 0.6687,
+          "rates": 0.233,
+          "commodity": 0.1034,
+          "fx": -0.005
+        }
+      },
+      "20%": {
+        "effect": "E1_TOM",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 18.32,
+        "cap_binding_days": 857,
+        "mean_gross_leverage": 1.485561685313129,
+        "bench_leverage": 2.2692829255122295,
+        "turnover_per_year": 191.34281325529028,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.7451353456372465,
+          "vol": 0.19882749846017586,
+          "mean_annual": 0.14815339678731224,
+          "geo_annual": 0.1365821481549059,
+          "tstat": 5.3812544410217065
+        },
+        "net_2bps": {
+          "sharpe": 0.6455031299557029,
+          "vol": 0.19860157736701636,
+          "mean_annual": 0.12819793980454874,
+          "geo_annual": 0.11435471406552733,
+          "tstat": 4.652595518817881,
+          "max_drawdown": -0.6598683077980572,
+          "skew": 0.21497533530576754,
+          "worst_month": -0.17381584145134388,
+          "bench_sharpe": 0.6995857455461945,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.011792706896622873,
+            "arith_active_annual": -0.011227512892380102,
+            "arith_active_tstat": -0.40992898694570096,
+            "volmatched_active_annual": -0.010740892764405627,
+            "volmatched_active_tstat": -0.39281977626366554,
+            "bench_leverage_applied": 0.9965098185549216,
+            "variance_drag_annual": -0.00013838584907737393,
+            "jensen_alpha_annual": 0.0681199836128262,
+            "jensen_beta": 0.4308966191583033,
+            "jensen_alpha_tstat": 2.8381245079973922,
+            "strat_vol": 0.19860157736701636,
+            "bench_vol": 0.19929716061906583,
+            "strat_sharpe": 0.6455031299557029,
+            "bench_sharpe": 0.6995857455461945
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.4229138749420969,
+              "mean_annual": 0.0668579408158867
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.20535940787653892,
+              "mean_annual": 0.042739138682749485
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.0920460837609496,
+              "mean_annual": 0.2197465923572801
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.221965619665796,
+              "mean_annual": 0.28103355997464335
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.9245053100084787,
+              "mean_annual": 0.1819808759394093
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.17326499391360595,
+              "mean_annual": -0.02574109947837646
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.40129715192607285,
+              "mean_annual": 0.08418173116321062
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.1562528590434784,
+            "full_kelly_growth": 0.20833714539130455,
+            "implied_vol": 0.32275156497785146
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.24549268629767773,
+          "vol": 0.19777915647816235,
+          "mean_annual": 0.04855333641751283,
+          "geo_annual": 0.029537205257750655,
+          "tstat": 1.7525547299082527,
+          "max_drawdown": -0.8137148838900736,
+          "skew": 0.20161114490011678,
+          "worst_month": -0.18070562552469716,
+          "bench_sharpe": 0.6993406627876688,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.0965555387362035,
+            "arith_active_annual": -0.0908231103578435,
+            "arith_active_tstat": -3.313481406495062,
+            "volmatched_active_annual": -0.08976166995951132,
+            "volmatched_active_tstat": -3.286590070036609,
+            "bench_leverage_applied": 0.9923843631912714,
+            "variance_drag_annual": -0.00030133568753163385,
+            "jensen_alpha_annual": -0.011348437038525993,
+            "jensen_beta": 0.4297840477493813,
+            "jensen_alpha_tstat": -0.4706329394880325,
+            "strat_vol": 0.19777915647816235,
+            "bench_vol": 0.19929692951040842,
+            "strat_sharpe": 0.24549268629767773,
+            "bench_sharpe": 0.6993406627876688
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.15203989903386914,
+              "mean_annual": -0.023931142060673323
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": -0.19076125956199114,
+              "mean_annual": -0.03954395618082124
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7730840322454107,
+              "mean_annual": 0.15486050375946409
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.8808032698480613,
+              "mean_annual": 0.2010910628634238
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5342417236249737,
+              "mean_annual": 0.10447872711681083
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.7550319560684888,
+              "mean_annual": -0.11202889683808749
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.008180467929325402,
+              "mean_annual": 0.0017032491639985717
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.022599997134618754,
+            "full_kelly_growth": 0.030133329512825005,
+            "implied_vol": 0.12274634314883887
+          }
+        },
+        "breakeven_roundtrip_bps": 14.533179250924327,
+        "publication_split": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.04336041020074132,
+          "post_sharpe": 0.35451502065367035,
+          "pre_mean_annual": 0.00840967179264779,
+          "post_mean_annual": 0.07082714189502236,
+          "pre_tstat": 0.1756771241159599,
+          "post_tstat": 2.1102623732428065,
+          "decay_sharpe_points": 0.311154610452929,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.5448675114331823,
+          "post_sharpe": -0.37200364447301665,
+          "pre_mean_annual": -0.10255596341223919,
+          "post_mean_annual": -0.08266272654586693,
+          "pre_tstat": -2.418657662346164,
+          "post_tstat": -2.346143658999644,
+          "decay_sharpe_points": 0.1728638669601657,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.6274947793873259,
+          "post_sharpe": 0.7360073760594895,
+          "pre_mean_annual": 0.11181719434599713,
+          "post_mean_annual": 0.15466776194185733,
+          "pre_tstat": 2.5947928242361735,
+          "post_tstat": 4.4776627928793795,
+          "decay_sharpe_points": 0.10851259667216362,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.014445889097249765,
+          "top_cell": "USDX 1978-11",
+          "top_cell_abs_share": 0.00209937882695232,
+          "top_instrument_share": 0.167852214676776,
+          "top_instrument": "SPX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1679,
+          "NASDAQ": 0.1504,
+          "FTSE100": 0.0802,
+          "N225": 0.1168,
+          "DAX": 0.0503,
+          "HSI": 0.0614,
+          "ASX200": 0.0366,
+          "US5Y_TR": 0.0966,
+          "US10Y_TR": 0.0808,
+          "US30Y_TR": 0.0654,
+          "GOLD_F": 0.0285,
+          "WTI_F": 0.0164,
+          "SILVER_F": 0.0228,
+          "COPPER_F": 0.0307,
+          "USDX": 0.0157,
+          "EURUSD": -0.0089,
+          "GBPUSD": -0.0133,
+          "JPYUSD": 0.0017
+        },
+        "per_block_pnl_share": {
+          "equity": 0.6636,
+          "rates": 0.2428,
+          "commodity": 0.0985,
+          "fx": -0.0049
+        }
+      },
+      "40%": {
+        "effect": "E1_TOM",
+        "vol_target": 0.4,
+        "days": 16000,
+        "days_in_market_pct": 18.32,
+        "cap_binding_days": 2711,
+        "mean_gross_leverage": 1.8264240157000864,
+        "bench_leverage": 2.924602449750127,
+        "turnover_per_year": 234.1945960066428,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.8009362498277283,
+          "vol": 0.25624455308632965,
+          "mean_annual": 0.20523555138774713,
+          "geo_annual": 0.18775721674528492,
+          "tstat": 5.7300146877592475
+        },
+        "net_2bps": {
+          "sharpe": 0.7064597615991749,
+          "vol": 0.25579069101860463,
+          "mean_annual": 0.18070583059629167,
+          "geo_annual": 0.15940865519904374,
+          "tstat": 5.053304325083818,
+          "max_drawdown": -0.6790123287623604,
+          "skew": 0.3823138434469996,
+          "worst_month": -0.22678937037321623,
+          "bench_sharpe": 0.707048828429052,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": 0.0005020773650503962,
+            "arith_active_annual": -0.0011238650563958849,
+            "arith_active_tstat": -0.031039133708672794,
+            "volmatched_active_annual": -0.00015067781147038396,
+            "volmatched_active_tstat": -0.004172048304776222,
+            "bench_leverage_applied": 0.9946478090862321,
+            "variance_drag_annual": -0.00035301945056745963,
+            "jensen_alpha_annual": 0.10263752068520038,
+            "jensen_beta": 0.42934851554835873,
+            "jensen_alpha_tstat": 3.2547935469640517,
+            "strat_vol": 0.25579069101860463,
+            "bench_vol": 0.257167098426121,
+            "strat_sharpe": 0.7064597615991749,
+            "bench_sharpe": 0.707048828429052
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.4673748271004066,
+              "mean_annual": 0.08081545413736121
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.32070857382612367,
+              "mean_annual": 0.07616203184647448
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.126999550783537,
+              "mean_annual": 0.3456409142363729
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.1948582696118966,
+              "mean_annual": 0.34573925410802947
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.9092891104621612,
+              "mean_annual": 0.24633401024011264
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.028764238306194897,
+              "mean_annual": -0.0050903935068668865
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.371904591983677,
+              "mean_annual": 0.09433060672394791
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.18715702303453613,
+            "full_kelly_growth": 0.2495426973793815,
+            "implied_vol": 0.35322988079958745
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.3261641710095197,
+          "vol": 0.25398057181014816,
+          "mean_annual": 0.08283936265698078,
+          "geo_annual": 0.05236975842005429,
+          "tstat": 2.3315357005996984,
+          "max_drawdown": -0.8578449120948677,
+          "skew": 0.38186628051570276,
+          "worst_month": -0.23305939743488302,
+          "bench_sharpe": 0.7068043369647673,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.10646433903328037,
+            "arith_active_annual": -0.09892702123952044,
+            "arith_active_tstat": -2.742564814407834,
+            "volmatched_active_annual": -0.09667520700322346,
+            "volmatched_active_tstat": -2.696110878477328,
+            "bench_leverage_applied": 0.987611492356149,
+            "variance_drag_annual": -0.000814233975046489,
+            "jensen_alpha_annual": 0.005357860652699902,
+            "jensen_beta": 0.42626970038860024,
+            "jensen_alpha_tstat": 0.1710436636514159,
+            "strat_vol": 0.25398057181014816,
+            "bench_vol": 0.25716648072231885,
+            "strat_sharpe": 0.3261641710095197,
+            "bench_sharpe": 0.7068043369647673
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.09841106979755929,
+              "mean_annual": -0.01689711177644251
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": -0.09104325903893985,
+              "mean_annual": -0.0214634066621314
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.8116032573582652,
+              "mean_annual": 0.24722854893328805
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.8581653826384846,
+              "mean_annual": 0.24650245364575682
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5508645820204517,
+              "mean_annual": 0.14815275422354832
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.5751684054627503,
+              "mean_annual": -0.10112046513786899
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.013567448713865074,
+              "mean_annual": -0.003415978555207648
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.0398936499188727,
+            "full_kelly_growth": 0.05319153322516361,
+            "implied_vol": 0.16308208550475986
+          }
+        },
+        "breakeven_roundtrip_bps": 16.297207249518262,
+        "publication_split": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.1712820778639618,
+          "post_sharpe": 0.4113462715351248,
+          "pre_mean_annual": 0.04327821966169337,
+          "post_mean_annual": 0.1047899546564757,
+          "pre_tstat": 0.7119431722037314,
+          "post_tstat": 2.4111599605298175,
+          "decay_sharpe_points": 0.24006419367116302,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.41609648666258664,
+          "post_sharpe": -0.3298541492881561,
+          "pre_mean_annual": -0.10172081921736872,
+          "post_mean_annual": -0.09387563735697832,
+          "pre_tstat": -1.8892744066697715,
+          "post_tstat": -1.9990498225167825,
+          "decay_sharpe_points": 0.08624233737443054,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.6376647087757114,
+          "post_sharpe": 0.7422071256035838,
+          "pre_mean_annual": 0.1468178934746266,
+          "post_mean_annual": 0.20115763491117003,
+          "pre_tstat": 2.635050550720887,
+          "post_tstat": 4.516288210327956,
+          "decay_sharpe_points": 0.10454241682787246,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.010525118725628597,
+          "top_cell": "USDX 1978-11",
+          "top_cell_abs_share": 0.001662214695240645,
+          "top_instrument_share": 0.1751683219709451,
+          "top_instrument": "SPX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1752,
+          "NASDAQ": 0.1436,
+          "FTSE100": 0.0754,
+          "N225": 0.1151,
+          "DAX": 0.0488,
+          "HSI": 0.0567,
+          "ASX200": 0.0364,
+          "US5Y_TR": 0.1003,
+          "US10Y_TR": 0.0864,
+          "US30Y_TR": 0.0715,
+          "GOLD_F": 0.0277,
+          "WTI_F": 0.0151,
+          "SILVER_F": 0.0215,
+          "COPPER_F": 0.0259,
+          "USDX": 0.0115,
+          "EURUSD": -0.0067,
+          "GBPUSD": -0.0079,
+          "JPYUSD": 0.0036
+        },
+        "per_block_pnl_share": {
+          "equity": 0.651,
+          "rates": 0.2583,
+          "commodity": 0.0902,
+          "fx": 0.0005
+        }
+      }
+    },
+    "E2_HALLOWEEN": {
+      "10%": {
+        "effect": "E2_HALLOWEEN",
+        "vol_target": 0.1,
+        "days": 16000,
+        "days_in_market_pct": 49.63,
+        "cap_binding_days": 0,
+        "mean_gross_leverage": 1.3317772497949545,
+        "bench_leverage": 1.2595832771678421,
+        "turnover_per_year": 6.032243650029219,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.5838589893009507,
+          "vol": 0.1103607616688088,
+          "mean_annual": 0.06443512276643383,
+          "geo_annual": 0.0599666225747647,
+          "tstat": 4.50253111583934
+        },
+        "net_2bps": {
+          "sharpe": 0.5782199411319131,
+          "vol": 0.11035284478124137,
+          "mean_annual": 0.06380821541314853,
+          "geo_annual": 0.05930607371948416,
+          "tstat": 4.45741674145224,
+          "max_drawdown": -0.2872132894604651,
+          "skew": 0.1290754505636459,
+          "worst_month": -0.1534348762758424,
+          "bench_sharpe": 0.6882702646520729,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.012847939072753022,
+            "arith_active_annual": -0.012186555262142207,
+            "arith_active_tstat": -0.8932449706151606,
+            "volmatched_active_annual": -0.012144366269545594,
+            "volmatched_active_tstat": -0.8904253578268194,
+            "bench_leverage_applied": 0.9994448434777587,
+            "variance_drag_annual": -6.766191455254925e-06,
+            "jensen_alpha_annual": 0.018408766248107004,
+            "jensen_beta": 0.597402278625507,
+            "jensen_alpha_tstat": 1.5571848823816636,
+            "strat_vol": 0.11035284478124137,
+            "bench_vol": 0.11041414191227164,
+            "strat_sharpe": 0.5782199411319131,
+            "bench_sharpe": 0.6882702646520729
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.4218301512035799,
+              "mean_annual": -0.04149093779582229
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.37945986237333784,
+              "mean_annual": 0.044948857312295136
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7528808608716931,
+              "mean_annual": 0.08651183478139902
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.9053212461356166,
+              "mean_annual": 0.09692744734249834
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.6432056410928726,
+              "mean_annual": 0.07399457775125635
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8585808092680094,
+              "mean_annual": 0.08181709093704786
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.36832518678776893,
+              "mean_annual": 0.04321337326287672
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.1253768626209724,
+            "full_kelly_growth": 0.16716915016129652,
+            "implied_vol": 0.28910997056595655
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.5555854222337357,
+          "vol": 0.11033512318150585,
+          "mean_annual": 0.06130058600000819,
+          "geo_annual": 0.056666020081191565,
+          "tstat": 4.276940309943218,
+          "max_drawdown": -0.2900345763796529,
+          "skew": 0.12764715781577693,
+          "worst_month": -0.15357128194806235,
+          "bench_sharpe": 0.6880242616377585,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.015459076630365318,
+            "arith_active_annual": -0.01466707938075977,
+            "arith_active_tstat": -1.0750418024516204,
+            "volmatched_active_annual": -0.014612655659658521,
+            "volmatched_active_tstat": -1.0714751625748562,
+            "bench_leverage_applied": 0.999283593607511,
+            "variance_drag_annual": -8.730797450664293e-06,
+            "jensen_alpha_annual": 0.015932907875102695,
+            "jensen_beta": 0.5971972140714336,
+            "jensen_alpha_tstat": 1.3467722572655096,
+            "strat_vol": 0.11033512318150585,
+            "bench_vol": 0.11041422463785813,
+            "strat_sharpe": 0.5555854222337357,
+            "bench_sharpe": 0.6880242616377585
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.4602715502573533,
+              "mean_annual": -0.045442842779876313
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.3585076569638102,
+              "mean_annual": 0.042384117532025846
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7382178634246392,
+              "mean_annual": 0.08479025131562723
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.8870038831286319,
+              "mean_annual": 0.0948816495093299
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.6202798458996871,
+              "mean_annual": 0.07127401477749641
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8213139365212121,
+              "mean_annual": 0.0785706093064578
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.35367889483677023,
+              "mean_annual": 0.0414305450398241
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.1157531855244894,
+            "full_kelly_growth": 0.15433758069931922,
+            "implied_vol": 0.2777927111168679
+          }
+        },
+        "breakeven_roundtrip_bps": 201.77505262161628,
+        "publication_split": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.4774470365240507,
+          "post_sharpe": 0.6740553675693177,
+          "pre_mean_annual": 0.05289963712985413,
+          "post_mean_annual": 0.07395915861728117,
+          "pre_tstat": 2.682288269229465,
+          "post_tstat": 3.70020213266666,
+          "decay_sharpe_points": 0.19660833104526704,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": -0.19043566311894383,
+          "post_sharpe": -0.08280943337707362,
+          "pre_mean_annual": -0.01887393450005161,
+          "post_mean_annual": -0.008191749107637637,
+          "pre_tstat": -1.211133946016336,
+          "post_tstat": -0.32986170732680875,
+          "decay_sharpe_points": 0.10762622974187021,
+          "survived_publication": true
+        },
+        "publication_split_benchmark": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.6511756690777379,
+          "post_sharpe": 0.7423074015381194,
+          "pre_mean_annual": 0.0718250275387752,
+          "post_mean_annual": 0.08220980335356656,
+          "pre_tstat": 3.858357937945794,
+          "post_tstat": 3.3013073221569043,
+          "decay_sharpe_points": 0.09113173246038142,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.027149016326972798,
+          "top_cell": "US5Y_TR 1965-12",
+          "top_cell_abs_share": 0.004471858645747732,
+          "top_instrument_share": 0.20628322415253614,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1796,
+          "NASDAQ": 0.1805,
+          "FTSE100": 0.0875,
+          "N225": 0.2063,
+          "DAX": 0.0954,
+          "HSI": 0.0584,
+          "ASX200": 0.0622,
+          "US5Y_TR": -0.033,
+          "US10Y_TR": -0.0354,
+          "US30Y_TR": 0.0354,
+          "GOLD_F": 0.0585,
+          "WTI_F": 0.028,
+          "SILVER_F": 0.0485,
+          "COPPER_F": 0.0484,
+          "USDX": -0.0,
+          "EURUSD": 0.0029,
+          "GBPUSD": -0.0023,
+          "JPYUSD": -0.0208
+        },
+        "per_block_pnl_share": {
+          "equity": 0.8699,
+          "rates": -0.0331,
+          "commodity": 0.1834,
+          "fx": -0.0202
+        }
+      },
+      "20%": {
+        "effect": "E2_HALLOWEEN",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 49.63,
+        "cap_binding_days": 214,
+        "mean_gross_leverage": 2.583272244564344,
+        "bench_leverage": 2.508679841030355,
+        "turnover_per_year": 11.510657758059072,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.613808818248988,
+          "vol": 0.21980271019619455,
+          "mean_annual": 0.13491684179345098,
+          "geo_annual": 0.11695530756991232,
+          "tstat": 4.807678870054878
+        },
+        "net_2bps": {
+          "sharpe": 0.6084310763719758,
+          "vol": 0.21976427686732442,
+          "mean_annual": 0.1337114155224951,
+          "geo_annual": 0.11562847638547054,
+          "tstat": 4.765207542371178,
+          "max_drawdown": -0.4975477299222535,
+          "skew": 0.4254867662327547,
+          "worst_month": -0.3203904333094667,
+          "bench_sharpe": 0.7023028807953121,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.022712188315771445,
+            "arith_active_annual": -0.02109066967665582,
+            "arith_active_tstat": -0.7902408883486864,
+            "volmatched_active_annual": -0.020629669217325383,
+            "volmatched_active_tstat": -0.7742902579836479,
+            "bench_leverage_applied": 0.9970220009715156,
+            "variance_drag_annual": -0.00014447147891548037,
+            "jensen_alpha_annual": 0.04001749852714388,
+            "jensen_beta": 0.6052497088447815,
+            "jensen_alpha_tstat": 1.7410232244321555,
+            "strat_vol": 0.21976427686732442,
+            "bench_vol": 0.22042068946641324,
+            "strat_sharpe": 0.6084310763719758,
+            "bench_sharpe": 0.7023028807953121
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.2439273690561708,
+              "mean_annual": -0.03822838472473451
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4054215845792167,
+              "mean_annual": 0.09657912061400148
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7695481733482427,
+              "mean_annual": 0.18025493152321387
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.9173834208186913,
+              "mean_annual": 0.19788726203015178
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.6377733162613155,
+              "mean_annual": 0.14741813887186325
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8414923760727535,
+              "mean_annual": 0.1604195617956164
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.3707643535493879,
+              "mean_annual": 0.08838084818790556
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.13882064051068538,
+            "full_kelly_growth": 0.1850941873475805,
+            "implied_vol": 0.3042155381859879
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.586839165859708,
+          "vol": 0.2196337905460881,
+          "mean_annual": 0.12888971043867217,
+          "geo_annual": 0.11032999714026756,
+          "tstat": 4.595052834956419,
+          "max_drawdown": -0.501527470570658,
+          "skew": 0.4250939006428108,
+          "worst_month": -0.3206029846454931,
+          "bench_sharpe": 0.7020580142368877,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.027949579100753436,
+            "arith_active_annual": -0.0258581514844805,
+            "arith_active_tstat": -0.9699248911541813,
+            "volmatched_active_annual": -0.025305952411435014,
+            "volmatched_active_tstat": -0.9511598211534205,
+            "bench_leverage_applied": 0.9964316206622634,
+            "variance_drag_annual": -0.00017306082594848414,
+            "jensen_alpha_annual": 0.03529183436411972,
+            "jensen_beta": 0.6048411584583498,
+            "jensen_alpha_tstat": 1.5371830889674403,
+            "strat_vol": 0.2196337905460881,
+            "bench_vol": 0.22042033391123395,
+            "strat_sharpe": 0.586839165859708,
+            "bench_sharpe": 0.7020580142368877
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.27864259396412205,
+              "mean_annual": -0.04374196428028218
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.38448410179971815,
+              "mean_annual": 0.09140526219856682
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7551435475380865,
+              "mean_annual": 0.17678010519539472
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.8991797271652413,
+              "mean_annual": 0.19374360899987841
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.6147564681869806,
+              "mean_annual": 0.14191842454417075
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8058799460456231,
+              "mean_annual": 0.15415895880059183
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.3562274166168407,
+              "mean_annual": 0.0847657604769965
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.12914257747009417,
+            "full_kelly_growth": 0.1721901032934589,
+            "implied_vol": 0.293419582929854
+          }
+        },
+        "breakeven_roundtrip_bps": 216.7108865541717,
+        "publication_split": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.533423337496298,
+          "post_sharpe": 0.6659548369589495,
+          "pre_mean_annual": 0.1168275612926906,
+          "post_mean_annual": 0.14706498959401176,
+          "pre_tstat": 3.066195305586182,
+          "post_tstat": 3.647652093406971,
+          "decay_sharpe_points": 0.13253149946265153,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": -0.15680371433375767,
+          "post_sharpe": -0.08992017299163035,
+          "pre_mean_annual": -0.030368325658459733,
+          "post_mean_annual": -0.017677954627652877,
+          "pre_tstat": -1.019293087570239,
+          "post_tstat": -0.358354393438051,
+          "decay_sharpe_points": 0.06688354134212732,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.6710776709958408,
+          "post_sharpe": 0.7474350746032182,
+          "pre_mean_annual": 0.14772301871885474,
+          "post_mean_annual": 0.16533291477860837,
+          "pre_tstat": 3.9745920980928497,
+          "post_tstat": 3.3237344263559554,
+          "decay_sharpe_points": 0.07635740360737742,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.018361726717305862,
+          "top_cell": "USDX 1978-11",
+          "top_cell_abs_share": 0.0031308486002639686,
+          "top_instrument_share": 0.20041140046208666,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.174,
+          "NASDAQ": 0.1754,
+          "FTSE100": 0.085,
+          "N225": 0.2004,
+          "DAX": 0.0921,
+          "HSI": 0.0559,
+          "ASX200": 0.0602,
+          "US5Y_TR": -0.0149,
+          "US10Y_TR": -0.0236,
+          "US30Y_TR": 0.0351,
+          "GOLD_F": 0.0579,
+          "WTI_F": 0.027,
+          "SILVER_F": 0.0477,
+          "COPPER_F": 0.047,
+          "USDX": -0.0007,
+          "EURUSD": 0.0038,
+          "GBPUSD": -0.0023,
+          "JPYUSD": -0.02
+        },
+        "per_block_pnl_share": {
+          "equity": 0.843,
+          "rates": -0.0034,
+          "commodity": 0.1796,
+          "fx": -0.0192
+        }
+      },
+      "40%": {
+        "effect": "E2_HALLOWEEN",
+        "vol_target": 0.4,
+        "days": 16000,
+        "days_in_market_pct": 49.63,
+        "cap_binding_days": 3267,
+        "mean_gross_leverage": 4.282709534636859,
+        "bench_leverage": 4.386757537678106,
+        "turnover_per_year": 18.413579653259536,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.6655089105242216,
+          "vol": 0.38435402556557857,
+          "mean_annual": 0.255791028809747,
+          "geo_annual": 0.20182379239724085,
+          "tstat": 5.193157525782517
+        },
+        "net_2bps": {
+          "sharpe": 0.6605832864676769,
+          "vol": 0.38426383808294884,
+          "mean_annual": 0.2538382690315176,
+          "geo_annual": 0.1995418688973326,
+          "tstat": 5.154397421530193,
+          "max_drawdown": -0.6811261020607714,
+          "skew": 0.9322732282305665,
+          "worst_month": -0.4352613509968011,
+          "bench_sharpe": 0.7239111724757424,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.024637806954535185,
+            "arith_active_annual": -0.02621077801281428,
+            "arith_active_tstat": -0.5823590285105983,
+            "volmatched_active_annual": -0.024334616535138756,
+            "volmatched_active_tstat": -0.5427752811024064,
+            "bench_leverage_applied": 0.9933005968151767,
+            "variance_drag_annual": -0.0009992555202702237,
+            "jensen_alpha_annual": 0.07920229222388903,
+            "jensen_beta": 0.6235906840275144,
+            "jensen_alpha_tstat": 2.0251810189031443,
+            "strat_vol": 0.38426383808294884,
+            "bench_vol": 0.38685553931510297,
+            "strat_sharpe": 0.6605832864676769,
+            "bench_sharpe": 0.7239111724757424
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.07973586720443289,
+              "mean_annual": -0.02032732350790188
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4366395932092488,
+              "mean_annual": 0.16987621605030956
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.817609714260359,
+              "mean_annual": 0.3762641362843362
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.9379824897925777,
+              "mean_annual": 0.4045922443936063
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5967521793902839,
+              "mean_annual": 0.22563762656827707
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.9246766216298505,
+              "mean_annual": 0.2392547146934561
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.5584766626635359,
+              "mean_annual": 0.2359374846717497
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.16363885438516385,
+            "full_kelly_growth": 0.21818513918021848,
+            "implied_vol": 0.33029164323383847
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.640800264965478,
+          "vol": 0.3839374659619635,
+          "mean_annual": 0.24602722991860043,
+          "geo_annual": 0.19043890372930372,
+          "tstat": 4.9991290772641355,
+          "max_drawdown": -0.6856334518360738,
+          "skew": 0.9338848003384151,
+          "worst_month": -0.43533951961223794,
+          "bench_sharpe": 0.7236680096305469,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.03362605741039057,
+            "arith_active_annual": -0.0339262956616946,
+            "arith_active_tstat": -0.7544232822170219,
+            "volmatched_active_annual": -0.03181603189668954,
+            "volmatched_active_tstat": -0.7105951658941678,
+            "bench_leverage_applied": 0.9924620925540021,
+            "variance_drag_annual": -0.0011238387574950028,
+            "jensen_alpha_annual": 0.07162734672342799,
+            "jensen_beta": 0.6229601246623768,
+            "jensen_alpha_tstat": 1.8336068156150784,
+            "strat_vol": 0.3839374659619635,
+            "bench_vol": 0.3868535320819546,
+            "strat_sharpe": 0.640800264965478,
+            "bench_sharpe": 0.7236680096305469
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.11158239309359787,
+              "mean_annual": -0.02850116600910772
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.41708928281865837,
+              "mean_annual": 0.16202789697359793
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.8037139180214082,
+              "mean_annual": 0.36960803471139725
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.9200656385246482,
+              "mean_annual": 0.3963085985465622
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5747046957611743,
+              "mean_annual": 0.21696656858212532
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8907415915351321,
+              "mean_annual": 0.2312200666262757
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.5432231418308735,
+              "mean_annual": 0.22907560758655007
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.15398436734243506,
+            "full_kelly_growth": 0.20531248978991343,
+            "implied_vol": 0.320400132482739
+          }
+        },
+        "breakeven_roundtrip_bps": 245.8326007146698,
+        "publication_split": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.5965067917683333,
+          "post_sharpe": 0.7224196371804812,
+          "pre_mean_annual": 0.24236070993921416,
+          "post_mean_annual": 0.2515519522004649,
+          "pre_tstat": 3.4486120252334636,
+          "post_tstat": 3.995998746295434,
+          "decay_sharpe_points": 0.12591284541214787,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": -0.07735453429419685,
+          "post_sharpe": -0.12643235876825593,
+          "pre_mean_annual": -0.026403944131221872,
+          "post_mean_annual": -0.03997098046846563,
+          "pre_tstat": -0.5004285851409961,
+          "post_tstat": -0.504459743414799,
+          "decay_sharpe_points": -0.049077824474059076,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.7008924678687137,
+          "post_sharpe": 0.7566613195582467,
+          "pre_mean_annual": 0.27080596436564847,
+          "post_mean_annual": 0.29373709570984763,
+          "pre_tstat": 4.148981736164681,
+          "post_tstat": 3.3645374538805255,
+          "decay_sharpe_points": 0.05576885168953294,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.015189910294325487,
+          "top_cell": "SPX 1973-11",
+          "top_cell_abs_share": 0.0027897648710611843,
+          "top_instrument_share": 0.19902584716602015,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1706,
+          "NASDAQ": 0.1678,
+          "FTSE100": 0.0902,
+          "N225": 0.199,
+          "DAX": 0.0924,
+          "HSI": 0.057,
+          "ASX200": 0.0605,
+          "US5Y_TR": -0.0142,
+          "US10Y_TR": -0.0205,
+          "US30Y_TR": 0.0263,
+          "GOLD_F": 0.0532,
+          "WTI_F": 0.0313,
+          "SILVER_F": 0.0471,
+          "COPPER_F": 0.0476,
+          "USDX": 0.0063,
+          "EURUSD": 0.0052,
+          "GBPUSD": 0.0012,
+          "JPYUSD": -0.0212
+        },
+        "per_block_pnl_share": {
+          "equity": 0.8376,
+          "rates": -0.0084,
+          "commodity": 0.1793,
+          "fx": -0.0085
+        }
+      }
+    },
+    "E3_JANUARY": {
+      "10%": {
+        "effect": "E3_JANUARY",
+        "vol_target": 0.1,
+        "days": 16000,
+        "days_in_market_pct": 8.34,
+        "cap_binding_days": 0,
+        "mean_gross_leverage": 0.2535909354426397,
+        "bench_leverage": 2.1829536603016235,
+        "turnover_per_year": 5.988380096525681,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.35158191996140076,
+          "vol": 0.1912635972591586,
+          "mean_annual": 0.06724482274309909,
+          "geo_annual": 0.05352855576780484,
+          "tstat": 2.846926795612671
+        },
+        "net_2bps": {
+          "sharpe": 0.3486324641806714,
+          "vol": 0.19101479378935318,
+          "mean_annual": 0.066593958253745,
+          "geo_annual": 0.05287663166520232,
+          "tstat": 2.823809435634993,
+          "max_drawdown": -0.5077073554877957,
+          "skew": 8.086216733276595,
+          "worst_month": -0.4304373891815142,
+          "bench_sharpe": 0.6986087963793296,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.0688128868563227,
+            "arith_active_annual": -0.06731853299077502,
+            "arith_active_tstat": -2.1431860689959623,
+            "volmatched_active_annual": -0.0668506569260809,
+            "volmatched_active_tstat": -2.132463904535647,
+            "bench_leverage_applied": 0.9965061058879131,
+            "variance_drag_annual": -0.00012815172772780853,
+            "jensen_alpha_annual": 0.03904379241858144,
+            "jensen_beta": 0.20573260626492143,
+            "jensen_alpha_tstat": 1.6892134553416456,
+            "strat_vol": 0.19101479378935318,
+            "bench_vol": 0.19168451920237256,
+            "strat_sharpe": 0.3486324641806714,
+            "bench_sharpe": 0.6986087963793296
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.4976364486944589,
+              "mean_annual": 0.13072645499167593
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.3871661665985481,
+              "mean_annual": 0.11266331334377824
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6459599714214663,
+              "mean_annual": 0.12396410766080411
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.5889592692371188,
+              "mean_annual": 0.07146937984636248
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.17447361626521385,
+              "mean_annual": -0.031017393318446117
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.24024950720825386,
+              "mean_annual": 0.025984106954897845
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.493126355385478,
+              "mean_annual": 0.06409313653863612
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.04557922315525767,
+            "full_kelly_growth": 0.060772297540343564,
+            "implied_vol": 0.1743162320903357
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.3367392728344864,
+          "vol": 0.19002981077226824,
+          "mean_annual": 0.06399050029632868,
+          "geo_annual": 0.050270382964971536,
+          "tstat": 2.73045262129411,
+          "max_drawdown": -0.5168117580676964,
+          "skew": 8.05079307921164,
+          "worst_month": -0.4315326583685183,
+          "bench_sharpe": 0.6983636355442066,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.07136674340968552,
+            "arith_active_annual": -0.06987486405535095,
+            "arith_active_tstat": -2.230298180470214,
+            "volmatched_active_annual": -0.06871940921637018,
+            "volmatched_active_tstat": -2.204129218434733,
+            "bench_leverage_applied": 0.9913685302798322,
+            "variance_drag_annual": -0.00031577635674995535,
+            "jensen_alpha_annual": 0.036561519893679166,
+            "jensen_beta": 0.2048997553287231,
+            "jensen_alpha_tstat": 1.5916283777220077,
+            "strat_vol": 0.19002981077226824,
+            "bench_vol": 0.1916843282473661,
+            "strat_sharpe": 0.3367392728344864,
+            "bench_sharpe": 0.6983636355442066
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.48584973658085817,
+              "mean_annual": 0.12682442604629807
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.3815268437961017,
+              "mean_annual": 0.11048358775330801
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6359239698386931,
+              "mean_annual": 0.12125578433595514
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.5712354349276535,
+              "mean_annual": 0.0686449291835128
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.1919369118117638,
+              "mean_annual": -0.03405924846512163
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.2240652024566383,
+              "mean_annual": 0.024167090363337418
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.47843847276973056,
+              "mean_annual": 0.061785902578764595
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.042522501700912006,
+            "full_kelly_growth": 0.05669666893454934,
+            "implied_vol": 0.1683696364172432
+          }
+        },
+        "breakeven_roundtrip_bps": 186.29948089735808,
+        "publication_split": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.4353131038275708,
+          "post_sharpe": 0.3239394656261111,
+          "pre_mean_annual": 0.14019090095255093,
+          "post_mean_annual": 0.047518136458102406,
+          "pre_tstat": 1.526223934512942,
+          "post_tstat": 2.372952349603495,
+          "decay_sharpe_points": -0.11137363820145973,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.25553542231521637,
+          "post_sharpe": -0.46705549967736576,
+          "pre_mean_annual": 0.08204587705075023,
+          "post_mean_annual": -0.1013105849605827,
+          "pre_tstat": 0.8846345631585021,
+          "post_tstat": -3.261242464004407,
+          "decay_sharpe_points": -0.7225909219925821,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.3607253493814214,
+          "post_sharpe": 0.7612192896126044,
+          "pre_mean_annual": 0.05865127056775567,
+          "post_mean_annual": 0.15012451663830345,
+          "pre_tstat": 0.9891336123483175,
+          "post_tstat": 5.246153674081438,
+          "decay_sharpe_points": 0.400493940231183,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.13182641314760338,
+          "top_cell": "SPX 1967-01",
+          "top_cell_abs_share": 0.057704262268986305,
+          "top_instrument_share": 0.330377734468982,
+          "top_instrument": "SPX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.3304,
+          "NASDAQ": 0.2729,
+          "FTSE100": 0.0294,
+          "N225": 0.251,
+          "DAX": 0.0494,
+          "HSI": 0.0224,
+          "ASX200": 0.0446,
+          "US5Y_TR": 0.0,
+          "US10Y_TR": 0.0,
+          "US30Y_TR": 0.0,
+          "GOLD_F": 0.0,
+          "WTI_F": 0.0,
+          "SILVER_F": 0.0,
+          "COPPER_F": 0.0,
+          "USDX": 0.0,
+          "EURUSD": 0.0,
+          "GBPUSD": 0.0,
+          "JPYUSD": 0.0
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": 0.0,
+          "commodity": 0.0,
+          "fx": 0.0
+        }
+      },
+      "20%": {
+        "effect": "E3_JANUARY",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 8.34,
+        "cap_binding_days": 218,
+        "mean_gross_leverage": 0.4802227527389081,
+        "bench_leverage": 4.064679182358525,
+        "turnover_per_year": 11.200463804436,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.36607889584282166,
+          "vol": 0.35613452372364535,
+          "mean_annual": 0.1303733332162613,
+          "geo_annual": 0.08492803711310765,
+          "tstat": 2.9726007573743534
+        },
+        "net_2bps": {
+          "sharpe": 0.36309887264562285,
+          "vol": 0.35559182556951646,
+          "mean_annual": 0.1291149909862904,
+          "geo_annual": 0.08367149001400878,
+          "tstat": 2.9488680057396586,
+          "max_drawdown": -0.7978327194337078,
+          "skew": 7.762365956734226,
+          "worst_month": -0.7129215699235298,
+          "bench_sharpe": 0.7201804117774494,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.12714599133384505,
+            "arith_active_annual": -0.12886511263032474,
+            "arith_active_tstat": -2.2096647527660584,
+            "volmatched_active_annual": -0.12697527637705894,
+            "volmatched_active_tstat": -2.1862926358588703,
+            "bench_leverage_applied": 0.9926744883548294,
+            "variance_drag_annual": -0.0009365568490448846,
+            "jensen_alpha_annual": 0.07338798141472215,
+            "jensen_beta": 0.21601281955597726,
+            "jensen_alpha_tstat": 1.7119551992251736,
+            "strat_vol": 0.35559182556951646,
+            "bench_vol": 0.35821594061396983,
+            "strat_sharpe": 0.36309887264562285,
+            "bench_sharpe": 0.7201804117774494
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.5014330650805514,
+              "mean_annual": 0.24379059335884504
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4001195851332691,
+              "mean_annual": 0.20555450934090597
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6382552109065079,
+              "mean_annual": 0.2608621914472462
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.607186519791131,
+              "mean_annual": 0.12558898110837716
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.22620723119637964,
+              "mean_annual": -0.06652428177255251
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.26330676355545235,
+              "mean_annual": 0.05744584066002335
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.4854607594231291,
+              "mean_annual": 0.13875428788005284
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.049440296743695836,
+            "full_kelly_growth": 0.06592039565826112,
+            "implied_vol": 0.18154943632281142
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.35106971433504736,
+          "vol": 0.35343869607615297,
+          "mean_annual": 0.12408162206640666,
+          "geo_annual": 0.07865129790683983,
+          "tstat": 2.8529829820483013,
+          "max_drawdown": -0.8051705480805774,
+          "skew": 7.733293400979512,
+          "worst_month": -0.7140262049077221,
+          "bench_sharpe": 0.7199369535034779,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.13206102619023855,
+            "arith_active_annual": -0.13381009164100982,
+            "arith_active_tstat": -2.3007581260126893,
+            "volmatched_active_annual": -0.13037195603690055,
+            "volmatched_active_tstat": -2.258716397391332,
+            "bench_leverage_applied": 0.9866682975009818,
+            "variance_drag_annual": -0.0016992873477153156,
+            "jensen_alpha_annual": 0.06865360872345715,
+            "jensen_beta": 0.21492746915410302,
+            "jensen_alpha_tstat": 1.6121656866393854,
+            "strat_vol": 0.35343869607615297,
+            "bench_vol": 0.358214302589165,
+            "strat_sharpe": 0.35106971433504736,
+            "bench_sharpe": 0.7199369535034779
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.49081731800941375,
+              "mean_annual": 0.23686751796333522
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.3939869239190156,
+              "mean_annual": 0.20130182018920406
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6293509995072952,
+              "mean_annual": 0.2552849854577854
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.5871691006553991,
+              "mean_annual": 0.12017236877090923
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.24511215217129417,
+              "mean_annual": -0.07195649384193818
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.24736045443152435,
+              "mean_annual": 0.05375339833738706
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.47204297217421465,
+              "mean_annual": 0.13392618504491308
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.04621872912123441,
+            "full_kelly_growth": 0.06162497216164588,
+            "implied_vol": 0.17553485716752368
+          }
+        },
+        "breakeven_roundtrip_bps": 173.8451755944367,
+        "publication_split": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.44029949699242976,
+          "post_sharpe": 0.3384071841276818,
+          "pre_mean_annual": 0.25212255063857114,
+          "post_mean_annual": 0.09640280747407406,
+          "pre_tstat": 1.5448008348721616,
+          "post_tstat": 2.4836434290668232,
+          "decay_sharpe_points": -0.10189231286474798,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.23659076926897554,
+          "post_sharpe": -0.46086404680965026,
+          "pre_mean_annual": 0.13519472628804927,
+          "post_mean_annual": -0.18777993521935674,
+          "pre_tstat": 0.8186349159334348,
+          "post_tstat": -3.2042814073861265,
+          "decay_sharpe_points": -0.6974548160786258,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.3904711552850156,
+          "post_sharpe": 0.7813471207343827,
+          "pre_mean_annual": 0.11850773420679965,
+          "post_mean_annual": 0.2880225739625003,
+          "pre_tstat": 1.070724174387492,
+          "post_tstat": 5.382700773035198,
+          "decay_sharpe_points": 0.39087596544936715,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.12236192247246991,
+          "top_cell": "SPX 1967-01",
+          "top_cell_abs_share": 0.049844238587941785,
+          "top_instrument_share": 0.31456532980314894,
+          "top_instrument": "SPX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.3146,
+          "NASDAQ": 0.2805,
+          "FTSE100": 0.0289,
+          "N225": 0.2699,
+          "DAX": 0.0468,
+          "HSI": 0.0172,
+          "ASX200": 0.0422,
+          "US5Y_TR": 0.0,
+          "US10Y_TR": 0.0,
+          "US30Y_TR": 0.0,
+          "GOLD_F": 0.0,
+          "WTI_F": 0.0,
+          "SILVER_F": 0.0,
+          "COPPER_F": 0.0,
+          "USDX": 0.0,
+          "EURUSD": 0.0,
+          "GBPUSD": 0.0,
+          "JPYUSD": 0.0
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": 0.0,
+          "commodity": 0.0,
+          "fx": 0.0
+        }
+      },
+      "40%": {
+        "effect": "E3_JANUARY",
+        "vol_target": 0.4,
+        "days": 16000,
+        "days_in_market_pct": 8.34,
+        "cap_binding_days": 836,
+        "mean_gross_leverage": 0.7439195155829472,
+        "bench_leverage": 5.380851135876816,
+        "turnover_per_year": 17.262195443055052,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.4006108114194143,
+          "vol": 0.47145340887429926,
+          "mean_annual": 0.18886933267558198,
+          "geo_annual": 0.10898073998837772,
+          "tstat": 3.2764154366489016
+        },
+        "net_2bps": {
+          "sharpe": 0.39708541197323044,
+          "vol": 0.4706876868674333,
+          "mean_annual": 0.18690321405048166,
+          "geo_annual": 0.10700193458503882,
+          "tstat": 3.2475841342940925,
+          "max_drawdown": -0.9074247121481819,
+          "skew": 5.754461547708914,
+          "worst_month": -0.7301126641344828,
+          "bench_sharpe": 0.7354434423210783,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.1543889943277234,
+            "arith_active_annual": -0.1628296027392211,
+            "arith_active_tstat": -2.137332048296258,
+            "volmatched_active_annual": -0.1592609586374492,
+            "volmatched_active_tstat": -2.1027469640426855,
+            "bench_leverage_applied": 0.9897960845238103,
+            "variance_drag_annual": -0.0022957238206674085,
+            "jensen_alpha_annual": 0.10086581983756551,
+            "jensen_beta": 0.24600892476341815,
+            "jensen_alpha_tstat": 1.7963071420657548,
+            "strat_vol": 0.4706876868674333,
+            "bench_vol": 0.4755400574188779,
+            "strat_sharpe": 0.39708541197323044,
+            "bench_sharpe": 0.7354434423210783
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.5135046649330217,
+              "mean_annual": 0.26113257434073406
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4545950538473849,
+              "mean_annual": 0.27484235033970444
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6582794976096445,
+              "mean_annual": 0.4023662472799652
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.6506537549539123,
+              "mean_annual": 0.17663630631340166
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.2793152705441162,
+              "mean_annual": -0.10119700349712887
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.3285139306602062,
+              "mean_annual": 0.13699883305755053
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.47554690705176866,
+              "mean_annual": 0.19978511346003236
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.0591288091507313,
+            "full_kelly_growth": 0.07883841220097507,
+            "implied_vol": 0.19854270598661522
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.38284532491737416,
+          "vol": 0.46765293422015963,
+          "mean_annual": 0.17903873955008046,
+          "geo_annual": 0.09910354723454,
+          "tstat": 3.131133939116251,
+          "max_drawdown": -0.9181897901850734,
+          "skew": 5.731162086387642,
+          "worst_month": -0.7311932941079184,
+          "bench_sharpe": 0.7352012084732279,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.16214250031553412,
+            "arith_active_annual": -0.17057640384794365,
+            "arith_active_tstat": -2.2443915404834076,
+            "volmatched_active_annual": -0.16478026283463182,
+            "volmatched_active_tstat": -2.1889607193211646,
+            "bench_leverage_applied": 0.983421367401374,
+            "variance_drag_annual": -0.003717934597923772,
+            "jensen_alpha_annual": 0.0935460583061217,
+            "jensen_beta": 0.2445336904260707,
+            "jensen_alpha_tstat": 1.676486657252272,
+            "strat_vol": 0.46765293422015963,
+            "bench_vol": 0.47553668216087436,
+            "strat_sharpe": 0.38284532491737416,
+            "bench_sharpe": 0.7352012084732279
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.5006871083812663,
+              "mean_annual": 0.2527331491678761
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.44505630126874457,
+              "mean_annual": 0.2676032058320517
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.6488759554620074,
+              "mean_annual": 0.3936776127488086
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.6282580338798951,
+              "mean_annual": 0.16850074782449873
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.29975303938710934,
+              "mean_annual": -0.10842432167342127
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.313050889308057,
+              "mean_annual": 0.12971600881286674
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.458631660779349,
+              "mean_annual": 0.19117313874523162
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.05496395355415867,
+            "full_kelly_growth": 0.0732852714055449,
+            "implied_vol": 0.19142266245868708
+          }
+        },
+        "breakeven_roundtrip_bps": 161.83480262439357,
+        "publication_split": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.4412152314228286,
+          "post_sharpe": 0.37006645608040745,
+          "pre_mean_annual": 0.2692880753898602,
+          "post_mean_annual": 0.15952939467382443,
+          "pre_tstat": 1.548095373769158,
+          "post_tstat": 2.729080382433781,
+          "decay_sharpe_points": -0.07114877534242114,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.17057029060795179,
+          "post_sharpe": -0.39834789079297367,
+          "pre_mean_annual": 0.10642338193594819,
+          "post_mean_annual": -0.22340679330483976,
+          "pre_tstat": 0.5938214763858484,
+          "post_tstat": -2.73769918088855,
+          "decay_sharpe_points": -0.5689181814009254,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.41108575430347644,
+          "post_sharpe": 0.7956996918375132,
+          "pre_mean_annual": 0.16561028553230564,
+          "post_mean_annual": 0.38939177108846823,
+          "pre_tstat": 1.1277892261225622,
+          "post_tstat": 5.4802392939011675,
+          "decay_sharpe_points": 0.3846139375340368,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.08528585148601371,
+          "top_cell": "SPX 1967-01",
+          "top_cell_abs_share": 0.03285176476887585,
+          "top_instrument_share": 0.29751210738192396,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.2384,
+          "NASDAQ": 0.2838,
+          "FTSE100": 0.0392,
+          "N225": 0.2975,
+          "DAX": 0.0623,
+          "HSI": 0.0294,
+          "ASX200": 0.0494,
+          "US5Y_TR": 0.0,
+          "US10Y_TR": 0.0,
+          "US30Y_TR": 0.0,
+          "GOLD_F": 0.0,
+          "WTI_F": 0.0,
+          "SILVER_F": 0.0,
+          "COPPER_F": 0.0,
+          "USDX": 0.0,
+          "EURUSD": 0.0,
+          "GBPUSD": 0.0,
+          "JPYUSD": 0.0
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": 0.0,
+          "commodity": 0.0,
+          "fx": 0.0
+        }
+      }
+    },
+    "E4_COMPOSITE": {
+      "10%": {
+        "effect": "E4_COMPOSITE",
+        "vol_target": 0.1,
+        "days": 15980,
+        "days_in_market_pct": 58.78,
+        "cap_binding_days": 3,
+        "mean_gross_leverage": 1.029356884929265,
+        "bench_leverage": 1.5783096192208064,
+        "turnover_per_year": 50.02189208232689,
+        "months": 736,
+        "years": 61.33,
+        "gross": {
+          "sharpe": 0.5998853850806037,
+          "vol": 0.1383735070919474,
+          "mean_annual": 0.08300824458680651,
+          "geo_annual": 0.07716519537838103,
+          "tstat": 4.5462968358211215
+        },
+        "net_2bps": {
+          "sharpe": 0.5629630799169103,
+          "vol": 0.13818514296990986,
+          "mean_annual": 0.07779313368509905,
+          "geo_annual": 0.07161111763111018,
+          "tstat": 4.261630744073591,
+          "max_drawdown": -0.4386570434868139,
+          "skew": 5.7980713116473295,
+          "worst_month": -0.17242502091863932,
+          "bench_sharpe": 0.6926826520427533,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.01818778637049287,
+            "arith_active_annual": -0.018158822587190215,
+            "arith_active_tstat": -0.9784053626078674,
+            "volmatched_active_annual": -0.017925317620205165,
+            "volmatched_active_tstat": -0.9670673558239774,
+            "bench_leverage_applied": 0.9975664387047782,
+            "variance_drag_annual": -4.663935886251979e-05,
+            "jensen_alpha_annual": 0.03256434488801265,
+            "jensen_beta": 0.47136911590147934,
+            "jensen_alpha_tstat": 2.0576192289466784,
+            "strat_vol": 0.13818514296990986,
+            "bench_vol": 0.13852224534470794,
+            "strat_sharpe": 0.5629630799169103,
+            "bench_sharpe": 0.6926826520427533
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": -0.09238734204592351,
+              "mean_annual": -0.00746658078512781
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.3410874429305168,
+              "mean_annual": 0.07054337284719642
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.8608941748965618,
+              "mean_annual": 0.1350623020033186
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.230549625905626,
+              "mean_annual": 0.13157787366869758
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5113855540862046,
+              "mean_annual": 0.06249584292267156
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.3475745237501955,
+              "mean_annual": 0.03791012991359869
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.590385272129409,
+              "mean_annual": 0.06638545532195345
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.11884778600607508,
+            "full_kelly_growth": 0.15846371467476678,
+            "implied_vol": 0.28148153995845515
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.41419225643193514,
+          "vol": 0.1374982400996498,
+          "mean_annual": 0.056950706322293945,
+          "geo_annual": 0.04966562450324974,
+          "tstat": 3.1155882708557074,
+          "max_drawdown": -0.4801150899495602,
+          "skew": 5.704361735243045,
+          "worst_month": -0.17428584423359728,
+          "bench_sharpe": 0.692436743557176,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.04009640912762141,
+            "arith_active_annual": -0.03896720283645725,
+            "arith_active_tstat": -2.1130689262350537,
+            "volmatched_active_annual": -0.03825812729715032,
+            "volmatched_active_tstat": -2.082707874984457,
+            "bench_leverage_applied": 0.992607475021861,
+            "variance_drag_annual": -0.00014132654966695322,
+            "jensen_alpha_annual": 0.011737699633392211,
+            "jensen_beta": 0.47137189587891143,
+            "jensen_alpha_tstat": 0.7440201244911062,
+            "strat_vol": 0.1374982400996498,
+            "bench_vol": 0.13852226943648757,
+            "strat_sharpe": 0.41419225643193514,
+            "bench_sharpe": 0.692436743557176
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": -0.3315187935534363,
+              "mean_annual": -0.02669643591662412
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.24155597770337367,
+              "mean_annual": 0.04966168355349585
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.7678725655049355,
+              "mean_annual": 0.11950967866898404
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.053903899416922,
+              "mean_annual": 0.11206198065052783
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.34916613418079695,
+              "mean_annual": 0.042408052522442896
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.07996015460626106,
+              "mean_annual": 0.008715686248434263
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.4092826314355786,
+              "mean_annual": 0.045913632552645675
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.06433320948306671,
+            "full_kelly_growth": 0.08577761264408895,
+            "implied_vol": 0.20709612821596757
+          }
+        },
+        "breakeven_roundtrip_bps": 30.4511242514198,
+        "concentration": {
+          "top_cell_share": 0.046891517011533164,
+          "top_cell": "NASDAQ 1975-01",
+          "top_cell_abs_share": 0.008998221754693815,
+          "top_instrument_share": 0.21576872845931222,
+          "top_instrument": "NASDAQ"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.2136,
+          "NASDAQ": 0.2158,
+          "FTSE100": 0.0672,
+          "N225": 0.1903,
+          "DAX": 0.072,
+          "HSI": 0.0593,
+          "ASX200": 0.0554,
+          "US5Y_TR": 0.0045,
+          "US10Y_TR": 0.0032,
+          "US30Y_TR": 0.0278,
+          "GOLD_F": 0.0289,
+          "WTI_F": 0.0179,
+          "SILVER_F": 0.0241,
+          "COPPER_F": 0.0309,
+          "USDX": 0.0146,
+          "EURUSD": -0.0038,
+          "GBPUSD": -0.0077,
+          "JPYUSD": -0.014
+        },
+        "per_block_pnl_share": {
+          "equity": 0.8736,
+          "rates": 0.0356,
+          "commodity": 0.1017,
+          "fx": -0.0109
+        }
+      },
+      "20%": {
+        "effect": "E4_COMPOSITE",
+        "vol_target": 0.2,
+        "days": 15980,
+        "days_in_market_pct": 58.78,
+        "cap_binding_days": 261,
+        "mean_gross_leverage": 1.9414629292302197,
+        "bench_leverage": 2.818698362721026,
+        "turnover_per_year": 92.7563152858915,
+        "months": 736,
+        "years": 61.33,
+        "gross": {
+          "sharpe": 0.6616287247545635,
+          "vol": 0.24712082669596436,
+          "mean_annual": 0.16350223742714443,
+          "geo_annual": 0.14597078814017803,
+          "tstat": 4.955253088759043
+        },
+        "net_2bps": {
+          "sharpe": 0.6230886284706609,
+          "vol": 0.24680828497094476,
+          "mean_annual": 0.15378343577774203,
+          "geo_annual": 0.13504333720273826,
+          "tstat": 4.664502230331042,
+          "max_drawdown": -0.6912213049530573,
+          "skew": 4.1119407591206905,
+          "worst_month": -0.3293798559343566,
+          "bench_sharpe": 0.7067212644382364,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.019033123152390474,
+            "arith_active_annual": -0.021455135067948855,
+            "arith_active_tstat": -0.665412628328582,
+            "volmatched_active_annual": -0.020641227450756666,
+            "volmatched_active_tstat": -0.6417199180923875,
+            "bench_leverage_applied": 0.9953554310945112,
+            "variance_drag_annual": -0.00028490414617671905,
+            "jensen_alpha_annual": 0.06389476231707586,
+            "jensen_beta": 0.512950277024452,
+            "jensen_alpha_tstat": 2.2881900396911097,
+            "strat_vol": 0.24680828497094476,
+            "bench_vol": 0.24795995205406157,
+            "strat_sharpe": 0.6230886284706609,
+            "bench_sharpe": 0.7067212644382364
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": 0.17620159092119708,
+              "mean_annual": 0.01966798253185842
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.33644488510260584,
+              "mean_annual": 0.10989945860046699
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.9010646524307812,
+              "mean_annual": 0.25819322730967426
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.2387173836852141,
+              "mean_annual": 0.265149097563134
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5244786877934577,
+              "mean_annual": 0.11974899023340657
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.43348989209511757,
+              "mean_annual": 0.09206914492010712
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.5853458891804103,
+              "mean_annual": 0.13636763474814978
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.14558978959854352,
+            "full_kelly_growth": 0.19411971946472467,
+            "implied_vol": 0.31154431423533047
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.4680211061078959,
+          "vol": 0.24563739323126008,
+          "mean_annual": 0.11496348448155452,
+          "geo_annual": 0.09232095062860478,
+          "tstat": 3.493145690907516,
+          "max_drawdown": -0.7301518745818676,
+          "skew": 4.061342697069742,
+          "worst_month": -0.33237304272060575,
+          "bench_sharpe": 0.7064764801178273,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.061685845032440026,
+            "arith_active_annual": -0.060214008827565696,
+            "arith_active_tstat": -1.8794237666190015,
+            "volmatched_active_annual": -0.05857355647378471,
+            "volmatched_active_tstat": -1.837170197938784,
+            "bench_leverage_applied": 0.9906354844860907,
+            "variance_drag_annual": -0.0005730707712078842,
+            "jensen_alpha_annual": 0.02527111244378834,
+            "jensen_beta": 0.5120085368472187,
+            "jensen_alpha_tstat": 0.9100243827537811,
+            "strat_vol": 0.24563739323126008,
+            "bench_vol": 0.24795941300112898,
+            "strat_sharpe": 0.4680211061078959,
+            "bench_sharpe": 0.7064764801178273
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": -0.07184911411488636,
+              "mean_annual": -0.00798120327404013
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.21871204630037988,
+              "mean_annual": 0.07111742298951722
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.800758869832345,
+              "mean_annual": 0.22817396705720513
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.0631898308819592,
+              "mean_annual": 0.22599175379320424
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.3553509786015671,
+              "mean_annual": 0.08068580760596167
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.19357119469745343,
+              "mean_annual": 0.04097949011616955
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.41134720476095504,
+              "mean_annual": 0.09541309462655814
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.08214140841092188,
+            "full_kelly_growth": 0.10952187788122916,
+            "implied_vol": 0.23401055305394794
+          }
+        },
+        "breakeven_roundtrip_bps": 31.574038983868537,
+        "concentration": {
+          "top_cell_share": 0.03362919101276614,
+          "top_cell": "NASDAQ 1975-01",
+          "top_cell_abs_share": 0.006431720341550606,
+          "top_instrument_share": 0.20517972877938556,
+          "top_instrument": "NASDAQ"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1973,
+          "NASDAQ": 0.2052,
+          "FTSE100": 0.0693,
+          "N225": 0.1846,
+          "DAX": 0.0752,
+          "HSI": 0.0614,
+          "ASX200": 0.0546,
+          "US5Y_TR": 0.0169,
+          "US10Y_TR": 0.0127,
+          "US30Y_TR": 0.0302,
+          "GOLD_F": 0.0298,
+          "WTI_F": 0.0183,
+          "SILVER_F": 0.0254,
+          "COPPER_F": 0.0316,
+          "USDX": 0.008,
+          "EURUSD": -0.0023,
+          "GBPUSD": -0.0062,
+          "JPYUSD": -0.0119
+        },
+        "per_block_pnl_share": {
+          "equity": 0.8476,
+          "rates": 0.0597,
+          "commodity": 0.1051,
+          "fx": -0.0124
+        }
+      },
+      "40%": {
+        "effect": "E4_COMPOSITE",
+        "vol_target": 0.4,
+        "days": 15980,
+        "days_in_market_pct": 58.78,
+        "cap_binding_days": 1588,
+        "mean_gross_leverage": 3.354239671986101,
+        "bench_leverage": 4.177191028448704,
+        "turnover_per_year": 136.99137317924556,
+        "months": 736,
+        "years": 61.33,
+        "gross": {
+          "sharpe": 0.8035163430928554,
+          "vol": 0.36622254934036585,
+          "mean_annual": 0.2942658036041136,
+          "geo_annual": 0.25939244737241923,
+          "tstat": 5.923811112186456
+        },
+        "net_2bps": {
+          "sharpe": 0.7648190175355282,
+          "vol": 0.36583117368242923,
+          "mean_annual": 0.2797946388396647,
+          "geo_annual": 0.24171058209547638,
+          "tstat": 5.639502501451645,
+          "max_drawdown": -0.8303389706088179,
+          "skew": 1.8111082924159905,
+          "worst_month": -0.5203204998654671,
+          "bench_sharpe": 0.7223836236491092,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": 0.025666916495915293,
+            "arith_active_annual": 0.01363566645093231,
+            "arith_active_tstat": 0.3053720698193231,
+            "volmatched_active_annual": 0.015524189951144811,
+            "volmatched_active_tstat": 0.3489193577929843,
+            "bench_leverage_applied": 0.9929045281349589,
+            "variance_drag_annual": -0.0009598076758199313,
+            "jensen_alpha_annual": 0.12216048348700315,
+            "jensen_beta": 0.5922556505907784,
+            "jensen_alpha_tstat": 3.0727224618981697,
+            "strat_vol": 0.36583117368242923,
+            "bench_vol": 0.36844546813538576,
+            "strat_sharpe": 0.7648190175355282,
+            "bench_sharpe": 0.7223836236491092
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": 0.41021461932358827,
+              "mean_annual": 0.0802167996049801
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4021258279097996,
+              "mean_annual": 0.16637677369370302
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.1736530697325953,
+              "mean_annual": 0.46905242413157694
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.3498826879203898,
+              "mean_annual": 0.465239164663355
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.5940696690063317,
+              "mean_annual": 0.21441934575513194
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.6103143969721149,
+              "mean_annual": 0.19566108430964363
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.6052499970364659,
+              "mean_annual": 0.25623621413455244
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.21935554859400397,
+            "full_kelly_growth": 0.2924740647920053,
+            "implied_vol": 0.3824095087677641
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.6093601796434495,
+          "vol": 0.36434885907584685,
+          "mean_annual": 0.22201968621934393,
+          "geo_annual": 0.17332763150672473,
+          "tstat": 4.4946062229390185,
+          "max_drawdown": -0.8519147584356845,
+          "skew": 1.8123897738305774,
+          "worst_month": -0.5222591638804487,
+          "bench_sharpe": 0.7221400716964016,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.04260736123997402,
+            "arith_active_annual": -0.04404828395152902,
+            "arith_active_tstat": -0.9893029856913124,
+            "volmatched_active_annual": -0.041091224996190244,
+            "volmatched_active_tstat": -0.9281475577331231,
+            "bench_leverage_applied": 0.9888860769169633,
+            "variance_drag_annual": -0.001500339702828462,
+            "jensen_alpha_annual": 0.06507728960256676,
+            "jensen_beta": 0.5898582851441547,
+            "jensen_alpha_tstat": 1.644980417721951,
+            "strat_vol": 0.36434885907584685,
+            "bench_vol": 0.36844371417562305,
+            "strat_sharpe": 0.6093601796434495,
+            "bench_sharpe": 0.7221400716964016
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": 0.1877224792188017,
+              "mean_annual": 0.036414174843968326
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.2706581967994686,
+              "mean_annual": 0.1115830066454718
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.0483510627020491,
+              "mean_annual": 0.41677595626050534
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.1644834771384829,
+              "mean_annual": 0.4000703390757507
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.4342028970166107,
+              "mean_annual": 0.15616407191486636
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.42825414118931143,
+              "mean_annual": 0.137294003627609
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.44719301566032194,
+              "mean_annual": 0.1880510463279817
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.13924493570066138,
+            "full_kelly_growth": 0.1856599142675485,
+            "implied_vol": 0.30468008982172473
+          }
+        },
+        "breakeven_roundtrip_bps": 37.99765433338467,
+        "concentration": {
+          "top_cell_share": 0.018920823842220217,
+          "top_cell": "NASDAQ 1975-01",
+          "top_cell_abs_share": 0.0037604864858886483,
+          "top_instrument_share": 0.19055031048531043,
+          "top_instrument": "NASDAQ"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1893,
+          "NASDAQ": 0.1906,
+          "FTSE100": 0.0703,
+          "N225": 0.1745,
+          "DAX": 0.0726,
+          "HSI": 0.0616,
+          "ASX200": 0.0536,
+          "US5Y_TR": 0.03,
+          "US10Y_TR": 0.0273,
+          "US30Y_TR": 0.0411,
+          "GOLD_F": 0.0313,
+          "WTI_F": 0.0172,
+          "SILVER_F": 0.0261,
+          "COPPER_F": 0.0268,
+          "USDX": 0.0004,
+          "EURUSD": 0.0012,
+          "GBPUSD": -0.0026,
+          "JPYUSD": -0.0111
+        },
+        "per_block_pnl_share": {
+          "equity": 0.8124,
+          "rates": 0.0983,
+          "commodity": 0.1014,
+          "fx": -0.0121
+        }
+      }
+    }
+  },
+  "sample_years": 61.33,
+  "dsr_bars": {
+    "32": 0.4808,
+    "44": 0.4973,
+    "56": 0.5093,
+    "304": 0.5848
+  },
+  "eligible_instruments_by_era": {
+    "1920s": 0.0,
+    "1930s": 0.9,
+    "1940s": 1.0,
+    "1950s": 1.0,
+    "1960s": 2.2,
+    "1970s": 5.19,
+    "1980s": 7.29,
+    "1990s": 10.33,
+    "2000s": 15.16,
+    "2010s": 18.0,
+    "2020s": 18.0
+  },
+  "eligible_instruments_at_split": {
+    "E1_TOM": {
+      "pre_mean": 2.57,
+      "post_mean": 14.58
+    },
+    "E2_HALLOWEEN": {
+      "pre_mean": 4.09,
+      "post_mean": 17.33
+    },
+    "E3_JANUARY": {
+      "pre_mean": 1.64,
+      "post_mean": 12.85
+    }
+  },
+  "benchmark_dsr": {
+    "bench_net_10bps_sharpe": 0.7064764801178273,
+    "clears_bar_at_n_trials": {
+      "32": true,
+      "44": true,
+      "56": true,
+      "304": true
+    }
+  },
+  "placebo_midmonth": {
+    "gross_sharpe": 0.4522109451734539,
+    "net_10bps_sharpe": -0.020222068110608095,
+    "live_E1_gross_sharpe": 0.7451353456372465,
+    "live_E1_net_10bps_sharpe": 0.24549268629767773
+  },
+  "correlations": {
+    "seasonal_vs_trend": {
+      "rho": 0.027243642905456573,
+      "months": 736,
+      "start": "1965-03-31",
+      "end": "2026-06-30"
+    },
+    "seasonal_vs_carry": {
+      "rho": -0.039520765677637446,
+      "months": 269,
+      "start": "2004-02-29",
+      "end": "2026-06-30"
+    },
+    "trend_vs_carry": {
+      "rho": -0.04410403548109701,
+      "months": 269,
+      "start": "2004-02-29",
+      "end": "2026-06-30"
+    },
+    "per_effect_vs_trend": {
+      "E1_TOM": {
+        "rho": -0.011481559665491995,
+        "months": 737,
+        "start": "1965-02-28",
+        "end": "2026-06-30"
+      },
+      "E2_HALLOWEEN": {
+        "rho": 0.024645272698940776,
+        "months": 737,
+        "start": "1965-02-28",
+        "end": "2026-06-30"
+      },
+      "E3_JANUARY": {
+        "rho": 0.03599511377273185,
+        "months": 737,
+        "start": "1965-02-28",
+        "end": "2026-06-30"
+      }
+    },
+    "per_effect_vs_carry": {
+      "E1_TOM": {
+        "rho": -0.0025999526245899904,
+        "months": 269,
+        "start": "2004-02-29",
+        "end": "2026-06-30"
+      },
+      "E2_HALLOWEEN": {
+        "rho": -0.017717777525715336,
+        "months": 269,
+        "start": "2004-02-29",
+        "end": "2026-06-30"
+      },
+      "E3_JANUARY": {
+        "rho": -0.07586051669978637,
+        "months": 269,
+        "start": "2004-02-29",
+        "end": "2026-06-30"
+      }
+    }
+  },
+  "portfolio": {
+    "trend_carry_equal_risk": {
+      "months": 269,
+      "sharpe": 0.6546216935874152,
+      "tstat": 2.983417381381856,
+      "max_drawdown_at_10pct_vol": -0.13558937531449722,
+      "half_kelly_growth": 0.16069858564322087,
+      "decades": {
+        "2000s": 0.892040845173643,
+        "2010s": 0.6286747601599636,
+        "2020s": 0.41658799009197384
+      },
+      "start": "2004-02-29",
+      "end": "2026-06-30"
+    },
+    "trend_carry_seasonal_equal_risk": {
+      "months": 269,
+      "sharpe": 0.7139923854513349,
+      "tstat": 3.5013978602547486,
+      "max_drawdown_at_10pct_vol": -0.14842803386412184,
+      "half_kelly_growth": 0.19116942243093288,
+      "decades": {
+        "2000s": 0.9064127929069148,
+        "2010s": 0.657045518472547,
+        "2020s": 0.5878730699403194
+      },
+      "start": "2004-02-29",
+      "end": "2026-06-30"
+    },
+    "trend_carry_seasonal_pit_risk_parity": {
+      "months": 257,
+      "sharpe": 0.7300701462344543,
+      "tstat": 3.3940388844737623,
+      "max_drawdown_at_10pct_vol": -0.13860030663392797,
+      "half_kelly_growth": 0.19987590690854906,
+      "decades": {
+        "2000s": 1.1389661220301261,
+        "2010s": 0.665142439724566,
+        "2020s": 0.5055741919568298
+      },
+      "start": "2005-02-28",
+      "end": "2026-06-30"
+    },
+    "trend_seasonal_equal_risk": {
+      "months": 736,
+      "sharpe": 0.7548603020662406,
+      "tstat": 5.669803966568268,
+      "max_drawdown_at_10pct_vol": -0.22521496179435707,
+      "half_kelly_growth": 0.21368027836332595,
+      "decades": {
+        "1960s": 0.6688577144167415,
+        "1970s": 0.5221402014113645,
+        "1980s": 1.1335849888707894,
+        "1990s": 1.0947638851068482,
+        "2000s": 0.8754959445194165,
+        "2010s": 0.1738340918891419,
+        "2020s": 0.574976216726221
+      },
+      "start": "1965-03-31",
+      "end": "2026-06-30"
+    },
+    "formula_check_3_sleeve": 1.0360980723070743,
+    "sleeve_sharpes": {
+      "trend": 0.6116253670229176,
+      "carry": 0.4300527333828786,
+      "seasonal": 0.4680211061078959
+    }
+  },
+  "secondaries": {
+    "S1_equity_only": {
+      "E1_TOM": {
+        "effect": "E1_TOM",
+        "vol_target": 0.2,
+        "days": 13641,
+        "days_in_market_pct": 18.33,
+        "cap_binding_days": 8,
+        "mean_gross_leverage": 0.7568914016641038,
+        "bench_leverage": 1.6783604313200071,
+        "turnover_per_year": 98.05964127836903,
+        "months": 628,
+        "years": 52.33,
+        "gross": {
+          "sharpe": 0.6501090446839185,
+          "vol": 0.24330322907514107,
+          "mean_annual": 0.15817362982255256,
+          "geo_annual": 0.13505519435852834,
+          "tstat": 4.619432674313858
+        },
+        "net_2bps": {
+          "sharpe": 0.6086556313985707,
+          "vol": 0.24302261207078493,
+          "mean_annual": 0.14791708139407353,
+          "geo_annual": 0.12361708922005119,
+          "tstat": 4.327607835505945,
+          "max_drawdown": -0.7036542859301602,
+          "skew": -0.696976811655509,
+          "worst_month": -0.4681686474163502,
+          "bench_sharpe": 0.6704969189657112,
+          "active": {
+            "months": 628,
+            "geometric_excess_annual": -0.017615876257013163,
+            "arith_active_annual": -0.015342309280076055,
+            "arith_active_tstat": -0.40484916755974576,
+            "volmatched_active_annual": -0.015028831238386985,
+            "volmatched_active_tstat": -0.3969694204655036,
+            "bench_leverage_applied": 0.9980798774245413,
+            "variance_drag_annual": -0.00011372987809463511,
+            "jensen_alpha_annual": 0.08958937669366632,
+            "jensen_beta": 0.3572701359447298,
+            "jensen_alpha_tstat": 2.8535269231960476,
+            "strat_vol": 0.24302261207078493,
+            "bench_vol": 0.24349014299124408,
+            "strat_sharpe": 0.6086556313985707,
+            "bench_sharpe": 0.6704969189657112
+          },
+          "decades": {
+            "1970s": {
+              "months": 70,
+              "sharpe": 0.3611801722609834,
+              "mean_annual": 0.12347497413605119
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.1700326191395807,
+              "mean_annual": 0.26477531917884156
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.1779314169192026,
+              "mean_annual": 0.29223574945643566
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.6201914985421878,
+              "mean_annual": 0.14253677070669019
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.09520216781534968,
+              "mean_annual": -0.019920329988914343
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.16583689613716768,
+              "mean_annual": 0.03453048466138759
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.13892312911244728,
+            "full_kelly_growth": 0.18523083881659638,
+            "implied_vol": 0.30432781569928535
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.44197632262048514,
+          "vol": 0.24196812654608418,
+          "mean_annual": 0.10694418276220649,
+          "geo_annual": 0.07895312781692546,
+          "tstat": 3.146131196653855,
+          "max_drawdown": -0.7270248189159698,
+          "skew": -0.7452432211801323,
+          "worst_month": -0.4729476601982804,
+          "bench_sharpe": 0.6704249490080849,
+          "active": {
+            "months": 628,
+            "geometric_excess_annual": -0.06225758849563054,
+            "arith_active_annual": -0.05629455762601913,
+            "arith_active_tstat": -1.4896747988440595,
+            "volmatched_active_annual": -0.0552772861390338,
+            "volmatched_active_tstat": -1.4674915445728243,
+            "bench_leverage_applied": 0.9937681981338133,
+            "variance_drag_annual": -0.0003683023079127136,
+            "jensen_alpha_annual": 0.048794260155143945,
+            "jensen_beta": 0.3562262393642981,
+            "jensen_alpha_tstat": 1.562898227554003,
+            "strat_vol": 0.24196812654608418,
+            "bench_vol": 0.2434854798135758,
+            "strat_sharpe": 0.44197632262048514,
+            "bench_sharpe": 0.6704249490080849
+          },
+          "decades": {
+            "1970s": {
+              "months": 70,
+              "sharpe": 0.2130662153114196,
+              "mean_annual": 0.07248928403178113
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.9874929999493913,
+              "mean_annual": 0.22254581053428157
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.0007446638146835,
+              "mean_annual": 0.24689824662183146
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.4580099968842995,
+              "mean_annual": 0.10487639543279671
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.2864304655112547,
+              "mean_annual": -0.05978403266744818
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.021105743158726303,
+              "mean_annual": 0.004388801305969106
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.07325365115892268,
+            "full_kelly_growth": 0.09767153487856359,
+            "implied_vol": 0.22098816131024257
+          }
+        },
+        "breakeven_roundtrip_bps": 29.870631218433918,
+        "publication_split": {
+          "split_year": 1987,
+          "pre_months": 154,
+          "post_months": 474,
+          "pre_sharpe": 0.4543183308380017,
+          "post_sharpe": 0.4387422134270724,
+          "pre_mean_annual": 0.1256936012092047,
+          "post_mean_annual": 0.10085259955368808,
+          "pre_tstat": 1.6612016755999117,
+          "post_tstat": 2.682250357790207,
+          "decay_sharpe_points": -0.015576117410929291,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 1987,
+          "pre_months": 154,
+          "post_months": 474,
+          "pre_sharpe": -0.22114843669881237,
+          "post_sharpe": -0.1951929804021116,
+          "pre_mean_annual": -0.06031716835847188,
+          "post_mean_annual": -0.05363985605086194,
+          "pre_tstat": -0.8004546074574563,
+          "post_tstat": -1.2344931587036214,
+          "decay_sharpe_points": 0.025955456296700763,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1987,
+          "pre_months": 154,
+          "post_months": 474,
+          "pre_sharpe": 0.8227461773055376,
+          "post_sharpe": 0.6252312618106154,
+          "pre_mean_annual": 0.187177220922328,
+          "post_mean_annual": 0.1554612593708168,
+          "pre_tstat": 2.6404906642697625,
+          "post_tstat": 3.884049944267226,
+          "decay_sharpe_points": -0.19751491549492217,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.03641601024005244,
+          "top_cell": "SPX 1974-09",
+          "top_cell_abs_share": 0.007062473815774297,
+          "top_instrument_share": 0.2517989021021941,
+          "top_instrument": "NASDAQ"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.2475,
+          "NASDAQ": 0.2518,
+          "FTSE100": 0.1213,
+          "N225": 0.1637,
+          "DAX": 0.0725,
+          "HSI": 0.0958,
+          "ASX200": 0.0474
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": 0.0,
+          "commodity": 0.0,
+          "fx": 0.0
+        }
+      },
+      "E2_HALLOWEEN": {
+        "effect": "E2_HALLOWEEN",
+        "vol_target": 0.2,
+        "days": 13641,
+        "days_in_market_pct": 49.58,
+        "cap_binding_days": 0,
+        "mean_gross_leverage": 1.2539467936913922,
+        "bench_leverage": 2.178926729078143,
+        "turnover_per_year": 5.773935597648035,
+        "months": 628,
+        "years": 52.33,
+        "gross": {
+          "sharpe": 0.6412016216685094,
+          "vol": 0.31586773568410426,
+          "mean_annual": 0.20253490435340776,
+          "geo_annual": 0.17600038696407147,
+          "tstat": 4.8058933976113565
+        },
+        "net_2bps": {
+          "sharpe": 0.6393084370428379,
+          "vol": 0.3158511830176806,
+          "mean_annual": 0.20192632615316478,
+          "geo_annual": 0.17529901796633107,
+          "tstat": 4.793077634481028,
+          "max_drawdown": -0.5721773564681278,
+          "skew": 7.365303036966188,
+          "worst_month": -0.32530588948363826,
+          "bench_sharpe": 0.6799839144781167,
+          "active": {
+            "months": 628,
+            "geometric_excess_annual": -0.000768900007153489,
+            "arith_active_annual": -0.013098860207826312,
+            "arith_active_tstat": -0.32612097614839314,
+            "volmatched_active_annual": -0.012847397667741817,
+            "volmatched_active_tstat": -0.320078747574269,
+            "bench_leverage_applied": 0.9988305437872643,
+            "variance_drag_annual": -0.00011687223084523579,
+            "jensen_alpha_annual": 0.0909832006361515,
+            "jensen_beta": 0.5159540953995894,
+            "jensen_alpha_tstat": 2.648048977356384,
+            "strat_vol": 0.3158511830176806,
+            "bench_vol": 0.3162209896185875,
+            "strat_sharpe": 0.6393084370428379,
+            "bench_sharpe": 0.6799839144781167
+          },
+          "decades": {
+            "1970s": {
+              "months": 70,
+              "sharpe": 0.49415909627077553,
+              "mean_annual": 0.34240030880530986
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.2144352445226605,
+              "mean_annual": 0.2721291352930415
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.2005996095266658,
+              "mean_annual": 0.29060642776997825
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.28727272452621416,
+              "mean_annual": 0.06608337685859961
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.902465491966397,
+              "mean_annual": 0.18195506905041317
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.28495146111623765,
+              "mean_annual": 0.0711388478355371
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.15326822912780858,
+            "full_kelly_growth": 0.2043576388370781,
+            "implied_vol": 0.31965421852141895
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.6317239645714702,
+          "vol": 0.3157898457873407,
+          "mean_annual": 0.19949201335219208,
+          "geo_annual": 0.17249559875056641,
+          "tstat": 4.74168762076362,
+          "max_drawdown": -0.5747070327354042,
+          "skew": 7.371554188056944,
+          "worst_month": -0.32531852550480544,
+          "bench_sharpe": 0.6799117936827614,
+          "active": {
+            "months": 628,
+            "geometric_excess_annual": -0.003542548507750376,
+            "arith_active_annual": -0.015505865463000073,
+            "arith_active_tstat": -0.3864627365402376,
+            "volmatched_active_annual": -0.015217227123881441,
+            "volmatched_active_tstat": -0.379566923158546,
+            "bench_leverage_applied": 0.9986574828518808,
+            "variance_drag_annual": -0.00013415022990274222,
+            "jensen_alpha_annual": 0.08864433060188318,
+            "jensen_beta": 0.5155757041007429,
+            "jensen_alpha_tstat": 2.5843785789799965,
+            "strat_vol": 0.3157898457873407,
+            "bench_vol": 0.31621436900020516,
+            "strat_sharpe": 0.6317239645714702,
+            "bench_sharpe": 0.6799117936827614
+          },
+          "decades": {
+            "1970s": {
+              "months": 70,
+              "sharpe": 0.48859828062422966,
+              "mean_annual": 0.33859955729864566
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 1.2058723322255127,
+              "mean_annual": 0.27001686571572847
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 1.1905681930173644,
+              "mean_annual": 0.2880915411992889
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.27772863973354395,
+              "mean_annual": 0.06386303541831767
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.8907224022880912,
+              "mean_annual": 0.17947279261365606
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.277810348102557,
+              "mean_annual": 0.06930393821323698
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.14965318778021103,
+            "full_kelly_growth": 0.19953758370694805,
+            "implied_vol": 0.3158619822857351
+          }
+        },
+        "breakeven_roundtrip_bps": 632.018788509156,
+        "publication_split": {
+          "split_year": 2002,
+          "pre_months": 334,
+          "post_months": 294,
+          "pre_sharpe": 0.7144162988643964,
+          "post_sharpe": 0.5323188818536644,
+          "pre_mean_annual": 0.26909286188611475,
+          "post_mean_annual": 0.12042166161637514,
+          "pre_tstat": 4.130742262594701,
+          "post_tstat": 2.5068974259956525,
+          "decay_sharpe_points": -0.182097417010732,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 2002,
+          "pre_months": 334,
+          "post_months": 294,
+          "pre_sharpe": 0.058983671426636526,
+          "post_sharpe": -0.23662745396885623,
+          "pre_mean_annual": 0.02133426107509421,
+          "post_mean_annual": -0.056741706914554435,
+          "pre_tstat": 0.38878701069626576,
+          "post_tstat": -0.9788825587601703,
+          "decay_sharpe_points": -0.2956111253954928,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 2002,
+          "pre_months": 334,
+          "post_months": 294,
+          "pre_sharpe": 0.7618729417965479,
+          "post_sharpe": 0.580975674277556,
+          "pre_mean_annual": 0.2480916681297903,
+          "post_mean_annual": 0.17740153313126092,
+          "pre_tstat": 4.049637988161336,
+          "post_tstat": 2.664033640473652,
+          "decay_sharpe_points": -0.18089726751899182,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": 0.04827580471573886,
+          "top_cell": "NASDAQ 1975-01",
+          "top_cell_abs_share": 0.016279067501412336,
+          "top_instrument_share": 0.2388328210007777,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1958,
+          "NASDAQ": 0.2059,
+          "FTSE100": 0.1082,
+          "N225": 0.2388,
+          "DAX": 0.111,
+          "HSI": 0.0677,
+          "ASX200": 0.0725
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": 0.0,
+          "commodity": 0.0,
+          "fx": 0.0
+        }
+      }
+    },
+    "S2_long_short": {
+      "E1_TOM": {
+        "effect": "E1_TOM",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 100.0,
+        "cap_binding_days": 64,
+        "mean_gross_leverage": 3.987613066020163,
+        "bench_leverage": 2.62401833337306,
+        "turnover_per_year": 187.17484190512508,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.009174901769272898,
+          "vol": 0.22990830948081956,
+          "mean_annual": 0.0021093861554261125,
+          "geo_annual": -0.023113607680205654,
+          "tstat": 0.07020384898389259
+        },
+        "net_2bps": {
+          "sharpe": -0.07516657006306592,
+          "vol": 0.22940313587902908,
+          "mean_annual": -0.017243446885738072,
+          "geo_annual": -0.04183587123077876,
+          "tstat": -0.575083715484556,
+          "max_drawdown": -0.9797837823851998,
+          "skew": 1.0759779075806166,
+          "worst_month": -0.2106561988068547,
+          "bench_sharpe": 0.7036159170758307,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.18595998334932265,
+            "arith_active_annual": -0.17950060194215683,
+            "arith_active_tstat": -3.345539137162478,
+            "volmatched_active_annual": -0.17865514471733257,
+            "volmatched_active_tstat": -3.338716834205953,
+            "bench_leverage_applied": 0.9947893994287628,
+            "variance_drag_annual": -0.0002763702184742211,
+            "jensen_alpha_annual": 0.07613022156181629,
+            "jensen_beta": -0.5754671861163053,
+            "jensen_alpha_tstat": 2.992806458090884,
+            "strat_vol": 0.22940313587902908,
+            "bench_vol": 0.23060472499079612,
+            "strat_sharpe": -0.07516657006306592,
+            "bench_sharpe": 0.7036159170758307
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.8181992908248943,
+              "mean_annual": 0.1802301874306443
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.1993038387578845,
+              "mean_annual": 0.049977718206857404
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.0005466697394446193,
+              "mean_annual": 0.00011695315325522815
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.06891669643773865,
+              "mean_annual": -0.01567701535122594
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.04174559661133807,
+              "mean_annual": -0.009465803403535467
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.9307316960348365,
+              "mean_annual": -0.1950859148409057
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.14832323308587966,
+              "mean_annual": -0.0375117172426978
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.002118754970642174,
+            "full_kelly_growth": 0.0028250066275228984,
+            "implied_vol": -0.03758328503153296
+          }
+        },
+        "net_10bps": {
+          "sharpe": -0.41500172258084783,
+          "vol": 0.22763100782143317,
+          "mean_annual": -0.09446726035870923,
+          "geo_annual": -0.11336416281328554,
+          "tstat": -3.1562345165988464,
+          "max_drawdown": -0.9996276973430964,
+          "skew": 1.0122686333075162,
+          "worst_month": -0.21877164622541345,
+          "bench_sharpe": 0.7033711545670019,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.257424058853577,
+            "arith_active_annual": -0.25666767492151543,
+            "arith_active_tstat": -4.821560129143119,
+            "volmatched_active_annual": -0.25457634514532096,
+            "volmatched_active_tstat": -4.8141842512468855,
+            "bench_leverage_applied": 0.987106507823476,
+            "variance_drag_annual": -0.0006812343262519276,
+            "jensen_alpha_annual": -0.0023988167447712926,
+            "jensen_beta": -0.5676215061601325,
+            "jensen_alpha_tstat": -0.09291061689842998,
+            "strat_vol": 0.22763100782143317,
+            "bench_vol": 0.23060430259278605,
+            "strat_sharpe": -0.41500172258084783,
+            "bench_sharpe": 0.7033711545670019
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.37523420261115853,
+              "mean_annual": 0.08127427590233625
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": -0.14324131861119238,
+              "mean_annual": -0.035327122446719914
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": -0.22027339153714767,
+              "mean_annual": -0.0469490279350479
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.3872452354039455,
+              "mean_annual": -0.08756476434143942
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.37982449945785907,
+              "mean_annual": -0.08593479310508799
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -1.410762989498475,
+              "mean_annual": -0.29403454472857216
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.43268712758471334,
+              "mean_annual": -0.10820926738182624
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.06458491115440163,
+            "full_kelly_growth": 0.0861132148725355,
+            "implied_vol": -0.20750086129042392
+          }
+        },
+        "breakeven_roundtrip_bps": -0.3201776087395249,
+        "publication_split": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.1438525488625107,
+          "post_sharpe": -0.5659787550922242,
+          "pre_mean_annual": -0.03269282617724484,
+          "post_mean_annual": -0.1287429485226863,
+          "pre_tstat": -0.6310221813680433,
+          "post_tstat": -3.589741419801778,
+          "decay_sharpe_points": -0.4221262062297135,
+          "survived_publication": false
+        },
+        "publication_split_active": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": -0.4238496842809212,
+          "post_sharpe": -0.7364507024605045,
+          "pre_mean_annual": -0.16161975504420967,
+          "post_mean_annual": -0.30615352488496705,
+          "pre_tstat": -1.837259260606254,
+          "post_tstat": -4.6783583217026035,
+          "decay_sharpe_points": -0.3126010181795833,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1987,
+          "pre_months": 263,
+          "post_months": 474,
+          "pre_sharpe": 0.6330128697573097,
+          "post_sharpe": 0.7393436695564757,
+          "pre_mean_annual": 0.1306109602612617,
+          "post_mean_annual": 0.1797278965908784,
+          "pre_tstat": 2.6166249764353404,
+          "post_tstat": 4.498440194641479,
+          "decay_sharpe_points": 0.10633079979916593,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.7367970224615489,
+          "top_cell": "US5Y_TR 1966-08",
+          "top_cell_abs_share": 0.0020799878471731382,
+          "top_instrument_share": -3.5375293614479424,
+          "top_instrument": "US5Y_TR"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": -0.5472,
+          "NASDAQ": 0.5423,
+          "FTSE100": -0.4524,
+          "N225": 3.1788,
+          "DAX": 1.1081,
+          "HSI": 0.341,
+          "ASX200": 1.0652,
+          "US5Y_TR": -3.5375,
+          "US10Y_TR": -2.9264,
+          "US30Y_TR": 1.0451,
+          "GOLD_F": 1.2714,
+          "WTI_F": 0.3223,
+          "SILVER_F": 1.0453,
+          "COPPER_F": 0.3199,
+          "USDX": -1.1313,
+          "EURUSD": 0.0843,
+          "GBPUSD": 0.0786,
+          "JPYUSD": -0.8074
+        },
+        "per_block_pnl_share": {
+          "equity": 5.2359,
+          "rates": -5.4189,
+          "commodity": 2.9589,
+          "fx": -1.7759
+        }
+      },
+      "E2_HALLOWEEN": {
+        "effect": "E2_HALLOWEEN",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 100.0,
+        "cap_binding_days": 0,
+        "mean_gross_leverage": 3.551415424941906,
+        "bench_leverage": 2.441591847321468,
+        "turnover_per_year": 15.036230528891128,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": 0.283878533975371,
+          "vol": 0.21392466924506934,
+          "mean_annual": 0.06072862148645643,
+          "geo_annual": 0.038936623292025685,
+          "tstat": 2.148328997164452
+        },
+        "net_2bps": {
+          "sharpe": 0.27660098560484914,
+          "vol": 0.21390565736410466,
+          "mean_annual": 0.059166515653364504,
+          "geo_annual": 0.037322192206272226,
+          "tstat": 2.0933029881794987,
+          "max_drawdown": -0.5616220812655117,
+          "skew": 0.4848400269144444,
+          "worst_month": -0.2121728635788539,
+          "bench_sharpe": 0.7015402926861605,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.09762691470492155,
+            "arith_active_annual": -0.09131326115539658,
+            "arith_active_tstat": -2.1129928852015865,
+            "volmatched_active_annual": -0.09089692182107505,
+            "volmatched_active_tstat": -2.106345657052827,
+            "bench_leverage_applied": 0.9972332539085925,
+            "variance_drag_annual": -0.00012712153707220876,
+            "jensen_alpha_annual": 0.06837490805958926,
+            "jensen_beta": -0.0611935543865629,
+            "jensen_alpha_tstat": 2.4350163082116163,
+            "strat_vol": 0.21390565736410466,
+            "bench_vol": 0.21449912197142942,
+            "strat_sharpe": 0.27660098560484914,
+            "bench_sharpe": 0.7015402926861605
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.22009802146524196,
+              "mean_annual": 0.04180402944361182
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.44298112922440186,
+              "mean_annual": 0.10731024631233049
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.3446551508186175,
+              "mean_annual": 0.06791537442778711
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.1029048215171931,
+              "mean_annual": 0.022741472128360044
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.14314947532675748,
+              "mean_annual": 0.03281961345124256
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.4295744964020901,
+              "mean_annual": 0.08327060457215948
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.21099494331630295,
+              "mean_annual": 0.04426162810680742
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.028690539464090233,
+            "full_kelly_growth": 0.03825405261878698,
+            "implied_vol": 0.13830049280242457
+          }
+        },
+        "net_10bps": {
+          "sharpe": 0.24742521012460872,
+          "vol": 0.21387510308406477,
+          "mean_annual": 0.052918092320997076,
+          "geo_annual": 0.030877444414702093,
+          "tstat": 1.8729354441229016,
+          "max_drawdown": -0.5816999568057515,
+          "skew": 0.48936620514776413,
+          "worst_month": -0.2122740675338174,
+          "bench_sharpe": 0.7012953655781466,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.10401238181110407,
+            "arith_active_annual": -0.09750892430959388,
+            "arith_active_tstat": -2.2587466727921646,
+            "volmatched_active_annual": -0.09707152628440593,
+            "volmatched_active_tstat": -2.251971772283853,
+            "bench_leverage_applied": 0.9970922907667439,
+            "variance_drag_annual": -0.0001335884349609462,
+            "jensen_alpha_annual": 0.062113446727276755,
+            "jensen_beta": -0.06112834391219172,
+            "jensen_alpha_tstat": 2.212569944528256,
+            "strat_vol": 0.21387510308406477,
+            "bench_vol": 0.21449880323475284,
+            "strat_sharpe": 0.24742521012460872,
+            "bench_sharpe": 0.7012953655781466
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": 0.17244649579817123,
+              "mean_annual": 0.03279610017544562
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.4157779813016712,
+              "mean_annual": 0.10064026478882565
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": 0.3237545863999536,
+              "mean_annual": 0.06377525019822312
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": 0.07934240981552797,
+              "mean_annual": 0.01754641676134437
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": 0.11272118725520332,
+              "mean_annual": 0.025814132545057142
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": 0.3897575866774443,
+              "mean_annual": 0.07562628106078707
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": 0.1869297591987492,
+              "mean_annual": 0.03919721394506499
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.02295721297695254,
+            "full_kelly_growth": 0.03060961730260339,
+            "implied_vol": 0.12371260506230436
+          }
+        },
+        "breakeven_roundtrip_bps": 69.81862309297058,
+        "publication_split": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.2412532145071412,
+          "post_sharpe": 0.25631686937101544,
+          "pre_mean_annual": 0.051659162341560656,
+          "post_mean_annual": 0.05481505143967168,
+          "pre_tstat": 1.5376746249121405,
+          "post_tstat": 1.1072799461075937,
+          "decay_sharpe_points": 0.015063654863874232,
+          "survived_publication": true
+        },
+        "publication_split_active": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": -0.2927392213507231,
+          "post_sharpe": -0.33945938673198695,
+          "pre_mean_annual": -0.09145019916347236,
+          "post_mean_annual": -0.10554175728635687,
+          "pre_tstat": -1.905233498875715,
+          "post_tstat": -1.314517708995175,
+          "decay_sharpe_points": -0.046720165381263834,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 2002,
+          "pre_months": 443,
+          "post_months": 294,
+          "pre_sharpe": 0.6700089562619032,
+          "post_sharpe": 0.7471356801934919,
+          "pre_mean_annual": 0.14352669540247354,
+          "post_mean_annual": 0.1608244394335026,
+          "pre_tstat": 3.9683475657205936,
+          "post_tstat": 3.3224174653409553,
+          "decay_sharpe_points": 0.0771267239315887,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.03371387855707455,
+          "top_cell": "US10Y_TR 1966-02",
+          "top_cell_abs_share": 0.001822899561930663,
+          "top_instrument_share": 0.2527301333179866,
+          "top_instrument": "N225"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.2305,
+          "NASDAQ": 0.2072,
+          "FTSE100": 0.139,
+          "N225": 0.2527,
+          "DAX": 0.1353,
+          "HSI": 0.0414,
+          "ASX200": 0.0733,
+          "US5Y_TR": -0.1269,
+          "US10Y_TR": -0.1315,
+          "US30Y_TR": -0.0928,
+          "GOLD_F": 0.0589,
+          "WTI_F": 0.0481,
+          "SILVER_F": 0.0504,
+          "COPPER_F": 0.0755,
+          "USDX": 0.0083,
+          "EURUSD": 0.0269,
+          "GBPUSD": 0.0422,
+          "JPYUSD": -0.0386
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0795,
+          "rates": -0.3512,
+          "commodity": 0.2329,
+          "fx": 0.0388
+        }
+      },
+      "E3_JANUARY": {
+        "effect": "E3_JANUARY",
+        "vol_target": 0.2,
+        "days": 16000,
+        "days_in_market_pct": 100.0,
+        "cap_binding_days": 0,
+        "mean_gross_leverage": 1.7732618669194726,
+        "bench_leverage": 2.8562895313783847,
+        "turnover_per_year": 7.606476786124068,
+        "months": 737,
+        "years": 61.42,
+        "gross": {
+          "sharpe": -0.3507183370278361,
+          "vol": 0.25025918805331954,
+          "mean_annual": -0.08777048625999676,
+          "geo_annual": -0.1119676664727359,
+          "tstat": -2.8236998014687984
+        },
+        "net_2bps": {
+          "sharpe": -0.3539790443417972,
+          "vol": 0.25019684268332254,
+          "mean_annual": -0.0885644392703775,
+          "geo_annual": -0.11266726230766418,
+          "tstat": -2.8493290332832566,
+          "max_drawdown": -0.9994908306219598,
+          "skew": 1.1017280138234502,
+          "worst_month": -0.29239065933468333,
+          "bench_sharpe": 0.7062673164666619,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.26825181514576313,
+            "arith_active_annual": -0.2659276245054776,
+            "arith_active_tstat": -4.501503235916601,
+            "volmatched_active_annual": -0.2652702919407593,
+            "volmatched_active_tstat": -4.499176473164704,
+            "bench_leverage_applied": 0.9962938613002074,
+            "variance_drag_annual": -0.00023329470670360383,
+            "jensen_alpha_annual": 0.020622209474882823,
+            "jensen_beta": -0.6156105541323599,
+            "jensen_alpha_tstat": 0.8661968521670305,
+            "strat_vol": 0.25019684268332254,
+            "bench_vol": 0.25112755623808086,
+            "strat_sharpe": -0.3539790443417972,
+            "bench_sharpe": 0.7062673164666619
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.2681564106482901,
+              "mean_annual": -0.10997060971422057
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.016432785138812477,
+              "mean_annual": 0.003956696304814711
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": -0.318611578971139,
+              "mean_annual": -0.07437765347839034
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.6769687069504151,
+              "mean_annual": -0.16004596542293356
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.4667830665974906,
+              "mean_annual": -0.10954504937228778
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.40742071182034684,
+              "mean_annual": -0.09002063266105723
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.4157930282535016,
+              "mean_annual": -0.09204888735316283
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.04698793643742452,
+            "full_kelly_growth": 0.06265058191656603,
+            "implied_vol": -0.1769895221708986
+          }
+        },
+        "net_10bps": {
+          "sharpe": -0.36702083557052567,
+          "vol": 0.249959245962949,
+          "mean_annual": -0.0917402513119001,
+          "geo_annual": -0.11546318835409099,
+          "tstat": -2.951713580343168,
+          "max_drawdown": -0.9995769393378611,
+          "skew": 1.104994477383444,
+          "worst_month": -0.29239065933468333,
+          "bench_sharpe": 0.7060227634030279,
+          "active": {
+            "months": 737,
+            "geometric_excess_annual": -0.2709771530862262,
+            "arith_active_annual": -0.2690416196532546,
+            "arith_active_tstat": -4.553867892320491,
+            "volmatched_active_annual": -0.2682171688847985,
+            "volmatched_active_tstat": -4.551081646034999,
+            "bench_leverage_applied": 0.9953500033520961,
+            "variance_drag_annual": -0.00029256912814472,
+            "jensen_alpha_annual": 0.017456803796345094,
+            "jensen_beta": -0.615883882509076,
+            "jensen_alpha_tstat": 0.7335895888157502,
+            "strat_vol": 0.249959245962949,
+            "bench_vol": 0.25112698560420676,
+            "strat_sharpe": -0.36702083557052567,
+            "bench_sharpe": 0.7060227634030279
+          },
+          "decades": {
+            "1960s": {
+              "months": 59,
+              "sharpe": -0.2822434307045397,
+              "mean_annual": -0.11562168831822617
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.005375856254961847,
+              "mean_annual": 0.0012938323191977964
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": -0.33109078381896817,
+              "mean_annual": -0.07716936070377801
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.6906936561159446,
+              "mean_annual": -0.16312400060404839
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.4802618409253433,
+              "mean_annual": -0.11260726824764258
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.4215825182483412,
+              "mean_annual": -0.09310071103247591
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.4306081823339256,
+              "mean_annual": -0.09520493094673563
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.050514110153582564,
+            "full_kelly_growth": 0.06735214687144342,
+            "implied_vol": -0.18351041778526284
+          }
+        },
+        "breakeven_roundtrip_bps": -242.95241606903977,
+        "publication_split": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": -0.03664625986202469,
+          "post_sharpe": -0.4771450496726134,
+          "pre_mean_annual": -0.012181410083514421,
+          "post_mean_annual": -0.10893861467975245,
+          "pre_tstat": -0.11719792295262421,
+          "post_tstat": -3.62472957970804,
+          "decay_sharpe_points": -0.4404987898105887,
+          "survived_publication": false
+        },
+        "publication_split_active": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": -0.18730969477187537,
+          "post_sharpe": -0.6945546157805166,
+          "pre_mean_annual": -0.09088229747553479,
+          "post_mean_annual": -0.30655193481650406,
+          "pre_tstat": -0.5553088203177601,
+          "post_tstat": -4.978412019080361,
+          "decay_sharpe_points": -0.5072449210086412,
+          "survived_publication": false
+        },
+        "publication_split_benchmark": {
+          "split_year": 1976,
+          "pre_months": 131,
+          "post_months": 606,
+          "pre_sharpe": 0.3714016656269601,
+          "post_sharpe": 0.7683362974171888,
+          "pre_mean_annual": 0.07906855591196563,
+          "post_mean_annual": 0.19853651426255903,
+          "pre_tstat": 1.0183230284280034,
+          "post_tstat": 5.294379623065054,
+          "decay_sharpe_points": 0.3969346317902287,
+          "survived_publication": true
+        },
+        "concentration": {
+          "top_cell_share": -0.08321344461710051,
+          "top_cell": "SPX 1965-06",
+          "top_cell_abs_share": 0.010663100783891316,
+          "top_instrument_share": -0.0,
+          "top_instrument": "US5Y_TR"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.2274,
+          "NASDAQ": 0.1427,
+          "FTSE100": 0.0925,
+          "N225": 0.2663,
+          "DAX": 0.107,
+          "HSI": 0.0943,
+          "ASX200": 0.0698,
+          "US5Y_TR": -0.0,
+          "US10Y_TR": -0.0,
+          "US30Y_TR": -0.0,
+          "GOLD_F": -0.0,
+          "WTI_F": -0.0,
+          "SILVER_F": -0.0,
+          "COPPER_F": -0.0,
+          "USDX": -0.0,
+          "EURUSD": -0.0,
+          "GBPUSD": -0.0,
+          "JPYUSD": -0.0
+        },
+        "per_block_pnl_share": {
+          "equity": 1.0,
+          "rates": -0.0,
+          "commodity": -0.0,
+          "fx": -0.0
+        }
+      },
+      "E4_COMPOSITE": {
+        "effect": "E4_COMPOSITE",
+        "vol_target": 0.2,
+        "days": 15980,
+        "days_in_market_pct": 100.0,
+        "cap_binding_days": 92,
+        "mean_gross_leverage": 2.5006081571938656,
+        "bench_leverage": 2.6093246589506083,
+        "turnover_per_year": 94.08621440504102,
+        "months": 736,
+        "years": 61.33,
+        "gross": {
+          "sharpe": -0.05680462974107205,
+          "vol": 0.22876462248183416,
+          "mean_annual": -0.01299488967793672,
+          "geo_annual": -0.03658452421545136,
+          "tstat": -0.42012001111585995
+        },
+        "net_2bps": {
+          "sharpe": -0.09948229117158867,
+          "vol": 0.22846007140386232,
+          "mean_annual": -0.022727731344480973,
+          "geo_annual": -0.0459184034947067,
+          "tstat": -0.7355283959812995,
+          "max_drawdown": -0.9653648166110789,
+          "skew": 2.3126496664704637,
+          "worst_month": -0.1768080220612226,
+          "bench_sharpe": 0.704329586827426,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.18961362472852938,
+            "arith_active_annual": -0.18433663605544687,
+            "arith_active_tstat": -3.3379104814714475,
+            "volmatched_active_annual": -0.18363891904292762,
+            "volmatched_active_tstat": -3.3325033519500398,
+            "bench_leverage_applied": 0.9956826821283946,
+            "variance_drag_annual": -0.00022680583741974646,
+            "jensen_alpha_annual": 0.07287762227593704,
+            "jensen_beta": -0.5915846889217286,
+            "jensen_alpha_tstat": 2.9070238562646247,
+            "strat_vol": 0.22846007140386232,
+            "bench_vol": 0.22945068293796245,
+            "strat_sharpe": -0.09948229117158867,
+            "bench_sharpe": 0.704329586827426
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": -0.02888224652689409,
+              "mean_annual": -0.004557336670483154
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.24078356386829564,
+              "mean_annual": 0.07025315345060924
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": -0.028427033731364536,
+              "mean_annual": -0.0062933725243440545
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.38067775976517176,
+              "mean_annual": -0.08066626314217404
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.15200463891287636,
+              "mean_annual": -0.03434793375194497
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.2282016048330924,
+              "mean_annual": -0.053938552655564395
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.2610684471039459,
+              "mean_annual": -0.049540109074869124
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.0037112723462807817,
+            "full_kelly_growth": 0.004948363128374375,
+            "implied_vol": -0.04974114558579434
+          }
+        },
+        "net_10bps": {
+          "sharpe": -0.2709223866282641,
+          "vol": 0.2273653289084303,
+          "mean_annual": -0.061598357544392204,
+          "geo_annual": -0.08240037794184284,
+          "tstat": -1.9967631337224938,
+          "max_drawdown": -0.9951731586480712,
+          "skew": 2.2541826827122167,
+          "worst_month": -0.17987293079463773,
+          "bench_sharpe": 0.7040846135928336,
+          "active": {
+            "months": 736,
+            "geometric_excess_annual": -0.2260316791876199,
+            "arith_active_annual": -0.22315076591851926,
+            "arith_active_tstat": -4.059862793069723,
+            "volmatched_active_annual": -0.22168278729329186,
+            "volmatched_active_tstat": -4.051662061519183,
+            "bench_leverage_applied": 0.9909132977960453,
+            "variance_drag_annual": -0.0004762180067560944,
+            "jensen_alpha_annual": 0.03325825116379974,
+            "jensen_beta": -0.5871568840281269,
+            "jensen_alpha_tstat": 1.3143941027817752,
+            "strat_vol": 0.2273653289084303,
+            "bench_vol": 0.2294502752300613,
+            "strat_sharpe": -0.2709223866282641,
+            "bench_sharpe": 0.7040846135928336
+          },
+          "decades": {
+            "1960s": {
+              "months": 58,
+              "sharpe": -0.2514644913374212,
+              "mean_annual": -0.040110305511005064
+            },
+            "1970s": {
+              "months": 120,
+              "sharpe": 0.06975769024650999,
+              "mean_annual": 0.020173882788212406
+            },
+            "1980s": {
+              "months": 120,
+              "sharpe": -0.13218893236010562,
+              "mean_annual": -0.02916887871711519
+            },
+            "1990s": {
+              "months": 120,
+              "sharpe": -0.5500607257215975,
+              "mean_annual": -0.11648044057289447
+            },
+            "2000s": {
+              "months": 120,
+              "sharpe": -0.3324609299586913,
+              "mean_annual": -0.0749413499648771
+            },
+            "2010s": {
+              "months": 120,
+              "sharpe": -0.43185210389891465,
+              "mean_annual": -0.10113182233835223
+            },
+            "2020s": {
+              "months": 78,
+              "sharpe": -0.46225248798586954,
+              "mean_annual": -0.0874892355952715
+            }
+          },
+          "kelly": {
+            "half_kelly_growth": 0.027524602341132985,
+            "full_kelly_growth": 0.036699469788177314,
+            "implied_vol": -0.13546119331413206
+          }
+        },
+        "breakeven_roundtrip_bps": -4.104915923228675,
+        "concentration": {
+          "top_cell_share": -0.1712241813267002,
+          "top_cell": "NASDAQ 1978-10",
+          "top_cell_abs_share": 0.0039511973749812145,
+          "top_instrument_share": -0.09081244126306375,
+          "top_instrument": "USDX"
+        },
+        "per_instrument_pnl_share": {
+          "SPX": 0.1261,
+          "NASDAQ": -0.0538,
+          "FTSE100": -0.0498,
+          "N225": 0.5705,
+          "DAX": 0.0891,
+          "HSI": 0.1424,
+          "ASX200": 0.1012,
+          "US5Y_TR": 0.0683,
+          "US10Y_TR": 0.0448,
+          "US30Y_TR": 0.1989,
+          "GOLD_F": 0.0228,
+          "WTI_F": -0.0446,
+          "SILVER_F": 0.0214,
+          "COPPER_F": -0.0657,
+          "USDX": -0.0908,
+          "EURUSD": -0.0203,
+          "GBPUSD": -0.0339,
+          "JPYUSD": -0.0267
+        },
+        "per_block_pnl_share": {
+          "equity": 0.9258,
+          "rates": 0.312,
+          "commodity": -0.0661,
+          "fx": -0.1717
+        }
+      },
+      "rho_vs_trend": {
+        "rho": -0.020479337602366237,
+        "months": 736,
+        "start": "1965-03-31",
+        "end": "2026-06-30"
+      },
+      "rho_vs_carry": {
+        "rho": -0.018227938869348728,
+        "months": 269,
+        "start": "2004-02-29",
+        "end": "2026-06-30"
+      }
+    },
+    "S3_trading_day_calendar": {
+      "effect": "E1_TOM",
+      "vol_target": 0.2,
+      "days": 16000,
+      "days_in_market_pct": 22.14,
+      "cap_binding_days": 719,
+      "mean_gross_leverage": 1.4718421453813877,
+      "bench_leverage": 2.2927907654688937,
+      "turnover_per_year": 227.39332864554885,
+      "months": 737,
+      "years": 61.42,
+      "gross": {
+        "sharpe": 0.7922788920137556,
+        "vol": 0.20088718214273416,
+        "mean_annual": 0.15915867408781093,
+        "geo_annual": 0.1485912425151398,
+        "tstat": 5.895996397975334
+      },
+      "net_2bps": {
+        "sharpe": 0.6751834629851743,
+        "vol": 0.2005560079336145,
+        "mean_annual": 0.13541209995909995,
+        "geo_annual": 0.1219467188247349,
+        "tstat": 5.006182790907225,
+        "max_drawdown": -0.6172470058097792,
+        "skew": 0.22708826159499435,
+        "worst_month": -0.16424232478199463,
+        "bench_sharpe": 0.6998520449916598,
+        "active": {
+          "months": 737,
+          "geometric_excess_annual": -0.005409096767749644,
+          "arith_active_annual": -0.005517491237377236,
+          "arith_active_tstat": -0.20806572235446638,
+          "volmatched_active_annual": -0.004947432328603737,
+          "volmatched_active_tstat": -0.18695338471637502,
+          "bench_leverage_applied": 0.9959550091365925,
+          "variance_drag_annual": -0.00016369303815311296,
+          "jensen_alpha_annual": 0.0720432464551364,
+          "jensen_beta": 0.44964902662363976,
+          "jensen_alpha_tstat": 3.1170189450804635,
+          "strat_vol": 0.2005560079336145,
+          "bench_vol": 0.20137054996839598,
+          "strat_sharpe": 0.6751834629851743,
+          "bench_sharpe": 0.6998520449916598
+        },
+        "decades": {
+          "1960s": {
+            "months": 59,
+            "sharpe": 0.5448701242469982,
+            "mean_annual": 0.08701596007731667
+          },
+          "1970s": {
+            "months": 120,
+            "sharpe": 0.3343913353018911,
+            "mean_annual": 0.06969742923867686
+          },
+          "1980s": {
+            "months": 120,
+            "sharpe": 1.0933374576169324,
+            "mean_annual": 0.22049143471599522
+          },
+          "1990s": {
+            "months": 120,
+            "sharpe": 1.2378411799804896,
+            "mean_annual": 0.28527750105161837
+          },
+          "2000s": {
+            "months": 120,
+            "sharpe": 0.8838715624899236,
+            "mean_annual": 0.1746348591280868
+          },
+          "2010s": {
+            "months": 120,
+            "sharpe": -0.14536503067688955,
+            "mean_annual": -0.023697754716847576
+          },
+          "2020s": {
+            "months": 78,
+            "sharpe": 0.4603291067817082,
+            "mean_annual": 0.09610717557937698
+          }
+        },
+        "kelly": {
+          "half_kelly_growth": 0.17095226575824457,
+          "full_kelly_growth": 0.2279363543443261,
+          "implied_vol": 0.33759173149258714
+        }
+      },
+      "net_10bps": {
+        "sharpe": 0.20431960987793088,
+        "vol": 0.19955680469908593,
+        "mean_annual": 0.04077336848460369,
+        "geo_annual": 0.021225389705450473,
+        "tstat": 1.488837622931063,
+        "max_drawdown": -0.8531599687134434,
+        "skew": 0.224302140248803,
+        "worst_month": -0.1693651379192057,
+        "bench_sharpe": 0.6996069834818456,
+        "active": {
+          "months": 737,
+          "geometric_excess_annual": -0.10607512422100503,
+          "arith_active_annual": -0.1001067049029934,
+          "arith_active_tstat": -3.762529767952866,
+          "volmatched_active_annual": -0.09883796568419961,
+          "volmatched_active_tstat": -3.731433024409415,
+          "bench_leverage_applied": 0.9909941896800187,
+          "variance_drag_annual": -0.0003635412189451877,
+          "jensen_alpha_annual": -0.02232705725139793,
+          "jensen_beta": 0.44790170972154614,
+          "jensen_alpha_tstat": -0.9549700259710991,
+          "strat_vol": 0.19955680469908593,
+          "bench_vol": 0.20137030749243917,
+          "strat_sharpe": 0.20431960987793088,
+          "bench_sharpe": 0.6996069834818456
+        },
+        "decades": {
+          "1960s": {
+            "months": 59,
+            "sharpe": -0.15045906426600314,
+            "mean_annual": -0.023959590433574714
+          },
+          "1970s": {
+            "months": 120,
+            "sharpe": -0.14004906662895522,
+            "mean_annual": -0.029129409768156245
+          },
+          "1980s": {
+            "months": 120,
+            "sharpe": 0.7331196078222171,
+            "mean_annual": 0.14674604682245007
+          },
+          "1990s": {
+            "months": 120,
+            "sharpe": 0.8478481860977929,
+            "mean_annual": 0.19362120846123365
+          },
+          "2000s": {
+            "months": 120,
+            "sharpe": 0.4146298713380091,
+            "mean_annual": 0.08117500705421059
+          },
+          "2010s": {
+            "months": 120,
+            "sharpe": -0.8186514366087614,
+            "mean_annual": -0.13238411758333665
+          },
+          "2020s": {
+            "months": 78,
+            "sharpe": 0.0161026319513497,
+            "mean_annual": 0.003335130902123724
+          }
+        },
+        "kelly": {
+          "half_kelly_growth": 0.0156549386177512,
+          "full_kelly_growth": 0.020873251490334935,
+          "implied_vol": 0.10215980493896544
+        }
+      },
+      "breakeven_roundtrip_bps": 13.137114405634232,
+      "publication_split": {
+        "split_year": 1987,
+        "pre_months": 263,
+        "post_months": 474,
+        "pre_sharpe": 0.05266243721440707,
+        "post_sharpe": 0.284699898316355,
+        "pre_mean_annual": 0.01019716872283451,
+        "post_mean_annual": 0.05773864387984691,
+        "pre_tstat": 0.22147844603804534,
+        "post_tstat": 1.7087412251055625,
+        "decay_sharpe_points": 0.23203746110194795,
+        "survived_publication": true
+      },
+      "publication_split_active": {
+        "split_year": 1987,
+        "pre_months": 263,
+        "post_months": 474,
+        "pre_sharpe": -0.5337478421919857,
+        "post_sharpe": -0.4446831528478375,
+        "pre_mean_annual": -0.10183622607580635,
+        "post_mean_annual": -0.0971743739479284,
+        "pre_tstat": -2.464267162812748,
+        "post_tstat": -2.8512258295236528,
+        "decay_sharpe_points": 0.08906468934414818,
+        "survived_publication": false
+      },
+      "publication_split_benchmark": {
+        "split_year": 1987,
+        "pre_months": 263,
+        "post_months": 474,
+        "pre_sharpe": 0.6278613897875855,
+        "post_sharpe": 0.7362269346584944,
+        "pre_mean_annual": 0.11305151530183566,
+        "post_mean_annual": 0.15632081342252374,
+        "pre_tstat": 2.5962425019495856,
+        "post_tstat": 4.479029503301445,
+        "decay_sharpe_points": 0.10836554487090888,
+        "survived_publication": true
+      },
+      "concentration": {
+        "top_cell_share": 0.013646038249310858,
+        "top_cell": "USDX 1978-11",
+        "top_cell_abs_share": 0.0020789269594988155,
+        "top_instrument_share": 0.15922481631040403,
+        "top_instrument": "SPX"
+      },
+      "per_instrument_pnl_share": {
+        "SPX": 0.1592,
+        "NASDAQ": 0.1465,
+        "FTSE100": 0.0877,
+        "N225": 0.1243,
+        "DAX": 0.0576,
+        "HSI": 0.0748,
+        "ASX200": 0.0349,
+        "US5Y_TR": 0.0905,
+        "US10Y_TR": 0.0767,
+        "US30Y_TR": 0.0524,
+        "GOLD_F": 0.0268,
+        "WTI_F": 0.011,
+        "SILVER_F": 0.0223,
+        "COPPER_F": 0.0289,
+        "USDX": 0.0262,
+        "EURUSD": -0.0099,
+        "GBPUSD": -0.0112,
+        "JPYUSD": 0.0012
+      },
+      "per_block_pnl_share": {
+        "equity": 0.6851,
+        "rates": 0.2196,
+        "commodity": 0.089,
+        "fx": 0.0063
+      }
+    },
+    "S4_unscreened": {
+      "effect": "E4_COMPOSITE",
+      "vol_target": 0.2,
+      "days": 15980,
+      "days_in_market_pct": 58.78,
+      "cap_binding_days": 261,
+      "mean_gross_leverage": 1.9409859252537331,
+      "bench_leverage": 2.819442613386642,
+      "turnover_per_year": 92.75920193480009,
+      "months": 736,
+      "years": 61.33,
+      "gross": {
+        "sharpe": 0.6620956059510206,
+        "vol": 0.2471541101706423,
+        "mean_annual": 0.1636396503367167,
+        "geo_annual": 0.14612252941488071,
+        "tstat": 4.9597279093345925
+      },
+      "net_2bps": {
+        "sharpe": 0.6235591863984254,
+        "vol": 0.2468418543516945,
+        "mean_annual": 0.15392050586862127,
+        "geo_annual": 0.13519329503248592,
+        "tstat": 4.668946441177352,
+        "max_drawdown": -0.6912213049530573,
+        "skew": 4.113559336789827,
+        "worst_month": -0.32881447924798723,
+        "bench_sharpe": 0.7075114690958985,
+        "active": {
+          "months": 736,
+          "geometric_excess_annual": -0.019136958471482085,
+          "arith_active_annual": -0.021546974449257843,
+          "arith_active_tstat": -0.6682197709306182,
+          "volmatched_active_annual": -0.020722937138101933,
+          "volmatched_active_tstat": -0.6442353553159419,
+          "bench_leverage_applied": 0.9953037605050059,
+          "variance_drag_annual": -0.00028817451620134077,
+          "jensen_alpha_annual": 0.06392804163685963,
+          "jensen_beta": 0.5128726078970883,
+          "jensen_alpha_tstat": 2.2887156166954075,
+          "strat_vol": 0.2468418543516945,
+          "bench_vol": 0.24800655251864992,
+          "strat_sharpe": 0.6235591863984254,
+          "bench_sharpe": 0.7075114690958985
+        },
+        "decades": {
+          "1960s": {
+            "months": 58,
+            "sharpe": 0.17620159092119708,
+            "mean_annual": 0.01966798253185842
+          },
+          "1970s": {
+            "months": 120,
+            "sharpe": 0.33644488510260584,
+            "mean_annual": 0.10989945860046699
+          },
+          "1980s": {
+            "months": 120,
+            "sharpe": 0.9010646524307812,
+            "mean_annual": 0.25819322730967426
+          },
+          "1990s": {
+            "months": 120,
+            "sharpe": 1.2387173836852141,
+            "mean_annual": 0.265149097563134
+          },
+          "2000s": {
+            "months": 120,
+            "sharpe": 0.5278570228507612,
+            "mean_annual": 0.12046320469731445
+          },
+          "2010s": {
+            "months": 120,
+            "sharpe": 0.433331384315715,
+            "mean_annual": 0.09219562701359196
+          },
+          "2020s": {
+            "months": 78,
+            "sharpe": 0.5853458891804102,
+            "mean_annual": 0.13636763474814978
+          }
+        },
+        "kelly": {
+          "half_kelly_growth": 0.14580977210319984,
+          "full_kelly_growth": 0.19441302947093314,
+          "implied_vol": 0.3117795931992127
+        }
+      },
+      "net_10bps": {
+        "sharpe": 0.4685073371255098,
+        "vol": 0.24567210982605686,
+        "mean_annual": 0.1150991859806117,
+        "geo_annual": 0.09246396227196327,
+        "tstat": 3.497464914623191,
+        "max_drawdown": -0.7301518745818676,
+        "skew": 4.062950384529584,
+        "worst_month": -0.33181018948665864,
+        "bench_sharpe": 0.7072666577271685,
+        "active": {
+          "months": 736,
+          "geometric_excess_annual": -0.061796592858749944,
+          "arith_active_annual": -0.06030720050209116,
+          "arith_active_tstat": -1.882279311561968,
+          "volmatched_active_annual": -0.058656506032845404,
+          "volmatched_active_tstat": -1.8397497592490504,
+          "bench_leverage_applied": 0.9905893137510787,
+          "variance_drag_annual": -0.0005760993707508034,
+          "jensen_alpha_annual": 0.025301825769235113,
+          "jensen_beta": 0.5119389436839676,
+          "jensen_alpha_tstat": 0.9108797623054893,
+          "strat_vol": 0.24567210982605686,
+          "bench_vol": 0.2480060166364674,
+          "strat_sharpe": 0.4685073371255098,
+          "bench_sharpe": 0.7072666577271685
+        },
+        "decades": {
+          "1960s": {
+            "months": 58,
+            "sharpe": -0.07184911411488636,
+            "mean_annual": -0.00798120327404013
+          },
+          "1970s": {
+            "months": 120,
+            "sharpe": 0.21871204630037988,
+            "mean_annual": 0.07111742298951722
+          },
+          "1980s": {
+            "months": 120,
+            "sharpe": 0.800758869832345,
+            "mean_annual": 0.22817396705720513
+          },
+          "1990s": {
+            "months": 120,
+            "sharpe": 1.0631898308819592,
+            "mean_annual": 0.22599175379320424
+          },
+          "2000s": {
+            "months": 120,
+            "sharpe": 0.3586522926801937,
+            "mean_annual": 0.08139852539926777
+          },
+          "2010s": {
+            "months": 120,
+            "sharpe": 0.19379565011780325,
+            "mean_annual": 0.041099074850413975
+          },
+          "2020s": {
+            "months": 78,
+            "sharpe": 0.41134720476095515,
+            "mean_annual": 0.0954130946265582
+          }
+        },
+        "kelly": {
+          "half_kelly_growth": 0.08231217185266353,
+          "full_kelly_growth": 0.10974956247021804,
+          "implied_vol": 0.2342536685627549
+        }
+      },
+      "breakeven_roundtrip_bps": 31.600942955920917,
+      "concentration": {
+        "top_cell_share": 0.03359951461593198,
+        "top_cell": "NASDAQ 1975-01",
+        "top_cell_abs_share": 0.006432055664593192,
+        "top_instrument_share": 0.20501597065314522,
+        "top_instrument": "NASDAQ"
+      },
+      "per_instrument_pnl_share": {
+        "SPX": 0.1971,
+        "NASDAQ": 0.205,
+        "FTSE100": 0.0693,
+        "N225": 0.1845,
+        "DAX": 0.0752,
+        "HSI": 0.0614,
+        "ASX200": 0.0546,
+        "US5Y_TR": 0.0169,
+        "US10Y_TR": 0.0127,
+        "US30Y_TR": 0.0302,
+        "GOLD_F": 0.0298,
+        "WTI_F": 0.0182,
+        "SILVER_F": 0.0253,
+        "COPPER_F": 0.0316,
+        "USDX": 0.0079,
+        "EURUSD": -0.0019,
+        "GBPUSD": -0.0061,
+        "JPYUSD": -0.0115
+      },
+      "per_block_pnl_share": {
+        "equity": 0.8471,
+        "rates": 0.0597,
+        "commodity": 0.1048,
+        "fx": -0.0116
+      }
+    }
+  }
+}

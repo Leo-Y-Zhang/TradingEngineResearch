@@ -1,0 +1,52 @@
+# ── TradingEngineResearch — canonical .gitignore ──────────────────────────────────────────
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Test / tooling caches
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Secrets & runtime state — NEVER commit
+.env
+.env.*
+*.env
+!.env.example
+secrets/*
+!secrets/.gitkeep
+state/
+_run/
+audit.log
+*.db
+*.db-wal
+*.db-shm
+
+# Free-data research caches — raw SEC EDGAR companyfacts JSON (re-fetchable, never source)
+_data/edgar_cache/
+_data/
+
+# Local tooling / scratch
+node_modules/
+reports/
+
+# Local-only notes (never committed)
+*.local.md
+
+# Sharadar row-level derivatives from sleeve runs (ticker-level prices, spreads, volumes).
+# Nasdaq Data Link Personal Use licence: raw rows and row-level derivatives are NEVER
+# committed. Portfolio-level aggregates (equity curves, daily return series, result
+# JSON/CSV) ARE derived statistics under s6.2 and remain committable.
+research/sleeves/**/positions_*.parquet

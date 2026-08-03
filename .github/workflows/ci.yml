@@ -1,0 +1,66 @@
+# TradingEngineResearch CI — ruff + mypy + pytest (with coverage floor) + gitleaks.
+# Runs from the repository root on every push, pull request, and manual dispatch.
+name: CI
+
+"on":          # quoted so YAML 1.1 parsers don't coerce the key to boolean true
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install (quant core + dev), pinned to validated versions
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]" -c constraints.txt
+          # The ops-API surface (ops/api.py, ops/api_security.py) is where the
+          # authentication, rate limiting and security trail live, and every test
+          # covering it starts with `pytest.importorskip("fastapi")`. The dev extra
+          # does not include FastAPI, so ALL of them were silently SKIPPED here and
+          # a green run said nothing about the security work. Installed pinned via
+          # constraints.txt rather than by adding the whole `app` extra, which would
+          # also pull an unpinned alembic and make the gate depend on the day it runs.
+          # Plain `uvicorn`, not `uvicorn[standard]`: the extra adds uvloop/httptools,
+          # which nothing here needs and which constraints.txt does not pin, and it
+          # would also make CI exercise a different event loop and HTTP parser from
+          # the Windows dev machine.
+          pip install fastapi uvicorn httpx -c constraints.txt
+
+      - name: Lint (ruff)
+        run: ruff check .
+
+      - name: Type-check (mypy)
+        run: mypy
+
+      - name: Tests + coverage floor
+        run: pytest --cov --cov-report=term-missing
+
+  gitleaks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

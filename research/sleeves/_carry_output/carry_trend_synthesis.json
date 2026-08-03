@@ -1,0 +1,171 @@
+{
+  "vol_matched_active_vs_own_universe": {
+    "n_months": 269,
+    "strategy_vol": 0.03992965620712024,
+    "benchmark_vol": 0.0650595552814592,
+    "benchmark_scale_factor": 0.6137400729897009,
+    "raw_active_annual": 0.015265429449019029,
+    "raw_active_tstat": 0.876876347750612,
+    "vol_matched_active_annual": 0.016001806322753512,
+    "vol_matched_active_tstat": 1.2157653174478484,
+    "strategy_sharpe": 0.4300527333828786,
+    "benchmark_sharpe": 0.02930281858896994
+  },
+  "leverage_sweep": {
+    "4%": {
+      "vol_matched_active_tstat": 1.215765317447848,
+      "own_tstat": 2.0478225388661,
+      "raw_active_tstat": 0.8780908398516403
+    },
+    "10%": {
+      "vol_matched_active_tstat": 1.2157653174478489,
+      "own_tstat": 2.0478225388661007,
+      "raw_active_tstat": 1.4805827716893336
+    },
+    "20%": {
+      "vol_matched_active_tstat": 1.2157653174478489,
+      "own_tstat": 2.0478225388661007,
+      "raw_active_tstat": 1.7712282387716034
+    },
+    "40%": {
+      "vol_matched_active_tstat": 1.2157653174478489,
+      "own_tstat": 2.0478225388661007,
+      "raw_active_tstat": 1.9176940423034916
+    }
+  },
+  "reference_vs_real_trend_correlation": 0.7657091140531427,
+  "two_sleeve_vs_real_trend_sleeve": {
+    "overlap_months": 269,
+    "overlap_first": "2004-02-29",
+    "overlap_last": "2026-06-30",
+    "correlation": -0.044104035481097016,
+    "carry_sharpe": 0.43005273338287864,
+    "trend_sharpe": 0.4750767366054395,
+    "formula_sharpe": 0.6546216935874148,
+    "measured_equal_weight": {
+      "n_months": 269,
+      "years": 22.42,
+      "arithmetic_annual": 0.06285280790329498,
+      "geometric_annual": 0.05781793956882786,
+      "annual_vol": 0.11508857078460867,
+      "sharpe": 0.5461255403103901,
+      "t_stat": 2.4231757770000404,
+      "se_monthly": 0.0021615163215380558,
+      "max_drawdown": -0.26555214174938935,
+      "skew": 0.5325270366650352,
+      "kurtosis": 5.096060991811134,
+      "worst_month": -0.12001957346290272,
+      "best_month": 0.18435840516909163,
+      "hit_rate": 0.5613382899628253
+    },
+    "measured_risk_parity": {
+      "n_months": 245,
+      "years": 20.42,
+      "arithmetic_annual": 0.029381467218954013,
+      "geometric_annual": 0.028615684040436795,
+      "annual_vol": 0.04788155220512154,
+      "sharpe": 0.6136281274484517,
+      "t_stat": 2.6011313240209692,
+      "se_monthly": 0.0009413041083195085,
+      "max_drawdown": -0.07466693079572517,
+      "skew": 0.48175616870873966,
+      "kurtosis": 2.4705981751246333,
+      "worst_month": -0.03886541841802093,
+      "best_month": 0.05839880798719429,
+      "hit_rate": 0.563265306122449
+    },
+    "half_kelly_equal_weight": 0.1118449146672433,
+    "half_kelly_risk_parity": 0.14120230454846,
+    "by_decade_equal_weight": {
+      "2000s": {
+        "n_months": 71,
+        "arithmetic_annual": 0.15026553838049883,
+        "annual_vol": 0.1315319043849148,
+        "sharpe": 1.1424265396535425
+      },
+      "2010s": {
+        "n_months": 120,
+        "arithmetic_annual": 0.021650981439556127,
+        "annual_vol": 0.10418796958042638,
+        "sharpe": 0.2078069236471968
+      },
+      "2020s": {
+        "n_months": 78,
+        "arithmetic_annual": 0.046672234977233246,
+        "annual_vol": 0.11299172518241386,
+        "sharpe": 0.4130588757883427
+      }
+    },
+    "dsr_bar_at_overlap": 0.8134706716647754,
+    "combo_clears_dsr": false,
+    "sleeves_needed_at_combo_quality": 3.4789252417944048,
+    "ceiling_as_N_to_infinity": Infinity
+  },
+  "two_sleeve_vs_my_trend_reference": {
+    "overlap_months": 269,
+    "overlap_first": "2004-02-29",
+    "overlap_last": "2026-06-30",
+    "correlation": 0.07473526564127751,
+    "carry_sharpe": 0.43005273338287864,
+    "trend_sharpe": 0.29653467901209424,
+    "formula_sharpe": 0.4955895291999851,
+    "measured_equal_weight": {
+      "n_months": 269,
+      "years": 22.42,
+      "arithmetic_annual": 0.015748405234427533,
+      "geometric_annual": 0.015331610459211165,
+      "annual_vol": 0.03246668234848792,
+      "sharpe": 0.4850635819634644,
+      "t_stat": 2.1335650932693033,
+      "se_monthly": 0.0006151052559910397,
+      "max_drawdown": -0.08529814895565224,
+      "skew": 0.3239146914968122,
+      "kurtosis": 3.8982080336941336,
+      "worst_month": -0.03776569433633316,
+      "best_month": 0.048475363685223934,
+      "hit_rate": 0.5836431226765799
+    },
+    "measured_risk_parity": {
+      "n_months": 245,
+      "years": 20.42,
+      "arithmetic_annual": 0.014648557134888933,
+      "geometric_annual": 0.014224469592664102,
+      "annual_vol": 0.032251076343017736,
+      "sharpe": 0.45420366685096086,
+      "t_stat": 1.9208551450707443,
+      "se_monthly": 0.0006355050237424954,
+      "max_drawdown": -0.07588434654647136,
+      "skew": 0.46194074970848653,
+      "kurtosis": 4.3472794757080155,
+      "worst_month": -0.03672919595910893,
+      "best_month": 0.05001124014609861,
+      "hit_rate": 0.5755102040816327
+    },
+    "half_kelly_equal_weight": 0.08823250445520996,
+    "half_kelly_risk_parity": 0.07736286411782199,
+    "by_decade_equal_weight": {
+      "2000s": {
+        "n_months": 71,
+        "arithmetic_annual": 0.02364546570063272,
+        "annual_vol": 0.040751515494740376,
+        "sharpe": 0.5802352480286173
+      },
+      "2010s": {
+        "n_months": 120,
+        "arithmetic_annual": 0.019776873731052767,
+        "annual_vol": 0.03123068473622884,
+        "sharpe": 0.6332513647422787
+      },
+      "2020s": {
+        "n_months": 78,
+        "arithmetic_annual": 0.002362411481919891,
+        "annual_vol": 0.025092966608201216,
+        "sharpe": 0.09414636056415014
+      }
+    },
+    "dsr_bar_at_overlap": 0.8134706716647754,
+    "combo_clears_dsr": false,
+    "sleeves_needed_at_combo_quality": 10.253078047430813,
+    "ceiling_as_N_to_infinity": 1.328908510850373
+  }
+}

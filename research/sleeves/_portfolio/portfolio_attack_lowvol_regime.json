@@ -1,0 +1,269 @@
+{
+  "A_stock_bond_regime_by_decade": {
+    "1960": {
+      "n": 96,
+      "rho_spx_bond": 0.19123829409683807
+    },
+    "1970": {
+      "n": 120,
+      "rho_spx_bond": 0.33150344296831846
+    },
+    "1980": {
+      "n": 120,
+      "rho_spx_bond": 0.26982369520308236
+    },
+    "1990": {
+      "n": 120,
+      "rho_spx_bond": 0.34791706717188436
+    },
+    "2000": {
+      "n": 120,
+      "rho_spx_bond": -0.2454733796005103
+    },
+    "2010": {
+      "n": 120,
+      "rho_spx_bond": -0.47303510634208135
+    },
+    "2020": {
+      "n": 78,
+      "rho_spx_bond": 0.2823997281729435
+    }
+  },
+  "A_summary": {
+    "rho_full": 0.10993423826976083,
+    "n_full": 774,
+    "rho_lowvol_window": -0.3136490206483293,
+    "n_lowvol_window": 213,
+    "shift": -0.4235832589180901
+  },
+  "B_equity_proxy": {
+    "SPX": {
+      "trend": {
+        "rho_full": -0.030297708434476652,
+        "n_full": 738,
+        "rho_lowvol_window": -0.20514623150642217,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.04282597595039415,
+        "n_outside_window": 525,
+        "window_minus_outside": -0.2479722074568163
+      },
+      "carry": {
+        "rho_full": -0.16476258365237662,
+        "n_full": 269,
+        "rho_lowvol_window": -0.2846790148164705,
+        "n_lowvol_window": 144,
+        "rho_outside_window": -0.01664839700543491,
+        "n_outside_window": 125,
+        "window_minus_outside": -0.2680306178110356
+      },
+      "seasonal": {
+        "rho_full": 0.431177137246756,
+        "n_full": 736,
+        "rho_lowvol_window": 0.37795498828635476,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.45212912026713775,
+        "n_outside_window": 523,
+        "window_minus_outside": -0.07417413198078299
+      },
+      "defensive": {
+        "rho_full": -0.13519242977091517,
+        "n_full": 629,
+        "rho_lowvol_window": -0.3741587426350524,
+        "n_lowvol_window": 213,
+        "rho_outside_window": -0.015657626343306537,
+        "n_outside_window": 416,
+        "window_minus_outside": -0.35850111629174586
+      },
+      "passive_monthly": {
+        "rho_full": 0.8250749630584243,
+        "n_full": 738,
+        "rho_lowvol_window": 0.8229416564098223,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.8269644337209143,
+        "n_outside_window": 525,
+        "window_minus_outside": -0.004022777311092018
+      }
+    },
+    "NASDAQ": {
+      "trend": {
+        "rho_full": -0.04215287962651951,
+        "n_full": 665,
+        "rho_lowvol_window": -0.160518457192775,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.028942969232152498,
+        "n_outside_window": 452,
+        "window_minus_outside": -0.1894614264249275
+      },
+      "carry": {
+        "rho_full": -0.1582198157166751,
+        "n_full": 269,
+        "rho_lowvol_window": -0.28559845246360227,
+        "n_lowvol_window": 144,
+        "rho_outside_window": -0.0019387132723274595,
+        "n_outside_window": 125,
+        "window_minus_outside": -0.2836597391912748
+      },
+      "seasonal": {
+        "rho_full": 0.4213213230527564,
+        "n_full": 665,
+        "rho_lowvol_window": 0.37243388372469044,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.46222493340347903,
+        "n_outside_window": 452,
+        "window_minus_outside": -0.08979104967878859
+      },
+      "defensive": {
+        "rho_full": -0.1506187210219473,
+        "n_full": 629,
+        "rho_lowvol_window": -0.3425811288900626,
+        "n_lowvol_window": 213,
+        "rho_outside_window": -0.03105497942895581,
+        "n_outside_window": 416,
+        "window_minus_outside": -0.3115261494611068
+      },
+      "passive_monthly": {
+        "rho_full": 0.7805767736711112,
+        "n_full": 665,
+        "rho_lowvol_window": 0.7867116852375877,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.7816413751017669,
+        "n_outside_window": 452,
+        "window_minus_outside": 0.005070310135820821
+      }
+    },
+    "DJIA": {
+      "trend": {
+        "rho_full": -0.05748354337060991,
+        "n_full": 414,
+        "rho_lowvol_window": -0.17843941200132396,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.08397335566802033,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.2624127676693443
+      },
+      "carry": {
+        "rho_full": -0.16275904137436553,
+        "n_full": 269,
+        "rho_lowvol_window": -0.2768483112306751,
+        "n_lowvol_window": 144,
+        "rho_outside_window": -0.03020819336310696,
+        "n_outside_window": 125,
+        "window_minus_outside": -0.24664011786756815
+      },
+      "seasonal": {
+        "rho_full": 0.42082341566687576,
+        "n_full": 414,
+        "rho_lowvol_window": 0.3386274246205834,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.5113088418528797,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.17268141723229635
+      },
+      "defensive": {
+        "rho_full": -0.2380275366214759,
+        "n_full": 414,
+        "rho_lowvol_window": -0.38738888352079853,
+        "n_lowvol_window": 213,
+        "rho_outside_window": -0.05043199911900701,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.3369568844017915
+      },
+      "passive_monthly": {
+        "rho_full": 0.7669156427932736,
+        "n_full": 414,
+        "rho_lowvol_window": 0.7618610675854389,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.7709661125450086,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.009105044959569653
+      }
+    },
+    "EQ_EW3": {
+      "trend": {
+        "rho_full": -0.08372852377977782,
+        "n_full": 414,
+        "rho_lowvol_window": -0.18898869307171112,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.05399236763600012,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.24298106070771125
+      },
+      "carry": {
+        "rho_full": -0.16689685146018693,
+        "n_full": 269,
+        "rho_lowvol_window": -0.2896771884379771,
+        "n_lowvol_window": 144,
+        "rho_outside_window": -0.015856773408418578,
+        "n_outside_window": 125,
+        "window_minus_outside": -0.2738204150295585
+      },
+      "seasonal": {
+        "rho_full": 0.4456997322346409,
+        "n_full": 414,
+        "rho_lowvol_window": 0.38740135420937283,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.5214439995786291,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.13404264536925625
+      },
+      "defensive": {
+        "rho_full": -0.22274737993237917,
+        "n_full": 414,
+        "rho_lowvol_window": -0.38621413163976587,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.004641794439026824,
+        "n_outside_window": 201,
+        "window_minus_outside": -0.3908559260787927
+      },
+      "passive_monthly": {
+        "rho_full": 0.822762180130258,
+        "n_full": 414,
+        "rho_lowvol_window": 0.839131949491111,
+        "n_lowvol_window": 213,
+        "rho_outside_window": 0.8002982072436912,
+        "n_outside_window": 201,
+        "window_minus_outside": 0.03883374224741987
+      }
+    }
+  },
+  "C_lowvol_measured": {
+    "trend": {
+      "rho": -0.2104693507132934,
+      "n": 213
+    },
+    "carry": {
+      "rho": -0.3923313650638472,
+      "n": 144
+    },
+    "seasonal": {
+      "rho": 0.24112425031781465,
+      "n": 213
+    },
+    "defensive": {
+      "rho": -0.30270948337697545,
+      "n": 213
+    },
+    "passive_monthly": {
+      "rho": 0.5710127191447091,
+      "n": 213
+    }
+  },
+  "C_lowvol_vs_equity_proxy": {
+    "SPX": {
+      "rho": 0.6115439734275299,
+      "n": 213
+    },
+    "NASDAQ": {
+      "rho": 0.49471680204541474,
+      "n": 213
+    },
+    "DJIA": {
+      "rho": 0.5721402386037462,
+      "n": 213
+    },
+    "EQ_EW3": {
+      "rho": 0.5826878677826972,
+      "n": 213
+    }
+  }
+}

@@ -1,0 +1,723 @@
+{
+  "window_control": {
+    "trend": {
+      "n_full": 738,
+      "sharpe_full": 0.6116253670229176,
+      "vol_full": 0.22801287445503043,
+      "n_lowvol_window": 213,
+      "sharpe_lowvol_window": 0.6706366613887352,
+      "vol_lowvol_window": 0.2266676845074422,
+      "sharpe_premium": 0.059011294365817646,
+      "dd50_cagr_full": 0.16714037485066968,
+      "dd50_cagr_lowvol_window": 0.2093090638440802,
+      "dd50_cagr_premium": 0.04216868899341053
+    },
+    "seasonal": {
+      "n_full": 736,
+      "sharpe_full": 0.4680211061078959,
+      "vol_full": 0.24563739323126008,
+      "n_lowvol_window": 213,
+      "sharpe_lowvol_window": 0.2506142871763816,
+      "vol_lowvol_window": 0.21798718215713334,
+      "sharpe_premium": -0.21740681893151426,
+      "dd50_cagr_full": 0.11515229160314244,
+      "dd50_cagr_lowvol_window": 0.05170029485731553,
+      "dd50_cagr_premium": -0.06345199674582691
+    },
+    "defensive": {
+      "n_full": 629,
+      "sharpe_full": 0.11362310090043631,
+      "vol_full": 0.22004658187435203,
+      "n_lowvol_window": 213,
+      "sharpe_lowvol_window": 0.5421137734293369,
+      "vol_lowvol_window": 0.210327661222631,
+      "sharpe_premium": 0.42849067252890055,
+      "dd50_cagr_full": 0.05263001451999272,
+      "dd50_cagr_lowvol_window": 0.1377516500748872,
+      "dd50_cagr_premium": 0.08512163555489449
+    },
+    "carry": {
+      "n_full": 269,
+      "sharpe_full": 0.4300527333828786,
+      "vol_full": 0.03992965620712024,
+      "n_lowvol_window": 144,
+      "sharpe_lowvol_window": 0.4928013779558906,
+      "vol_lowvol_window": 0.042161320679182435,
+      "sharpe_premium": 0.06274864457301199,
+      "dd50_cagr_full": 0.034707210488468254,
+      "dd50_cagr_lowvol_window": 0.03827830023170664,
+      "dd50_cagr_premium": 0.003571089743238387
+    },
+    "passive_monthly": {
+      "n_full": 738,
+      "sharpe_full": 0.6691135560076179,
+      "vol_full": 0.08787305250840342,
+      "n_lowvol_window": 213,
+      "sharpe_lowvol_window": 0.46669826257325014,
+      "vol_lowvol_window": 0.09561105595561784,
+      "sharpe_premium": -0.20241529343436776,
+      "dd50_cagr_full": 0.14020433208836502,
+      "dd50_cagr_lowvol_window": 0.07784914926212583,
+      "dd50_cagr_premium": -0.0623551828262392
+    },
+    "passive_daily": {
+      "n_full": 736,
+      "sharpe_full": 0.7064764801178273,
+      "vol_full": 0.24795941300112898,
+      "n_lowvol_window": 213,
+      "sharpe_lowvol_window": 0.5267050269779553,
+      "vol_lowvol_window": 0.2673245989140977,
+      "sharpe_premium": -0.17977145313987197,
+      "dd50_cagr_full": 0.17274093043295324,
+      "dd50_cagr_lowvol_window": 0.11064501666790383,
+      "dd50_cagr_premium": -0.062095913765049415
+    }
+  },
+  "mean_sharpe_premium_on_lowvol_window": -0.008223825673003967,
+  "drawdown_uncertainty": {
+    "lowvol+trend [equal_weight]": {
+      "combo": [
+        "lowvol",
+        "trend"
+      ],
+      "scheme": "equal_weight",
+      "n": 213,
+      "first": "1998-05-31",
+      "last": "2016-01-31",
+      "sharpe": 0.9259603726095635,
+      "vol": 0.1245981182828154,
+      "half_kelly_leverage": 3.71578794836933,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.5671962434920361,
+        "boot_median": -0.6107078838905742,
+        "boot_p75": -0.5430211158766192,
+        "boot_p95": -0.8174425511937019,
+        "boot_p99": -0.8852465448561463,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.6502
+      },
+      "dd50_observed_path": {
+        "leverage": 3.1499999999999995,
+        "cagr": 0.313020529861918,
+        "max_dd_observed": -0.4975057735977,
+        "dd_used": -0.4975057735977,
+        "vol": 0.3924040840429181
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 1.7999999999999996,
+        "cagr": 0.20879280908379982,
+        "max_dd_observed": -0.3052223990832036,
+        "dd_used": -0.4914742071809646,
+        "vol": 0.22423188351414025
+      },
+      "dd60_observed_path": {
+        "leverage": 3.999999999999999,
+        "cagr": 0.36286720700218567,
+        "max_dd_observed": -0.5998155266391623,
+        "dd_used": -0.5998155266391623,
+        "vol": 0.4983024955643785
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 2.2999999999999994,
+        "cagr": 0.2505304552487333,
+        "max_dd_observed": -0.3806036410484871,
+        "dd_used": -0.5967808219300227,
+        "vol": 0.2865130570698031
+      }
+    },
+    "lowvol+trend [erc]": {
+      "combo": [
+        "lowvol",
+        "trend"
+      ],
+      "scheme": "erc",
+      "n": 213,
+      "first": "1998-05-31",
+      "last": "2016-01-31",
+      "sharpe": 0.9211519718636172,
+      "vol": 0.11859583613019298,
+      "half_kelly_leverage": 3.8835763628850697,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.5585517499257209,
+        "boot_median": -0.6332688344248616,
+        "boot_p75": -0.5583120893389748,
+        "boot_p95": -0.8295938716414919,
+        "boot_p99": -0.8956881127179418,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.7432
+      },
+      "dd50_observed_path": {
+        "leverage": 3.3999999999999995,
+        "cagr": 0.31264350233545746,
+        "max_dd_observed": -0.4962692611783651,
+        "dd_used": -0.4962692611783651,
+        "vol": 0.40301298725964485
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 1.8499999999999996,
+        "cagr": 0.2024977667715191,
+        "max_dd_observed": -0.27300442902229916,
+        "dd_used": -0.49368342639476365,
+        "vol": 0.2192277633131724
+      },
+      "dd60_observed_path": {
+        "leverage": 4.199999999999999,
+        "cagr": 0.35489690378283,
+        "max_dd_observed": -0.598446839608406,
+        "dd_used": -0.598446839608406,
+        "vol": 0.49788094782394543
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 2.3499999999999996,
+        "cagr": 0.2416010538411193,
+        "max_dd_observed": -0.3485777164887963,
+        "dd_used": -0.5974162669493119,
+        "vol": 0.2785077928137968
+      }
+    },
+    "lowvol+trend+carry [erc]": {
+      "combo": [
+        "lowvol",
+        "trend",
+        "carry"
+      ],
+      "scheme": "erc",
+      "n": 144,
+      "first": "2004-02-29",
+      "last": "2016-01-31",
+      "sharpe": 1.180806408584726,
+      "vol": 0.041070723245054404,
+      "half_kelly_leverage": 14.375281408355947,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.7006345266710745,
+        "boot_median": -0.7340066255428171,
+        "boot_p75": -0.6639226872037685,
+        "boot_p95": -0.9208341068189371,
+        "boot_p99": -0.9619982663525771,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.6082
+      },
+      "dd50_observed_path": {
+        "leverage": 9.549999999999997,
+        "cagr": 0.30568444014531626,
+        "max_dd_observed": -0.49937641229310925,
+        "dd_used": -0.49937641229310925,
+        "vol": 0.3922288379748871
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 5.949999999999998,
+        "cagr": 0.21638939017645398,
+        "max_dd_observed": -0.32004370848540054,
+        "dd_used": -0.49868740535752965,
+        "vol": 0.24439506222130422
+      },
+      "dd60_observed_path": {
+        "leverage": 11.799999999999997,
+        "cagr": 0.3475963939162252,
+        "max_dd_observed": -0.5993797135622421,
+        "dd_used": -0.5993797135622421,
+        "vol": 0.4846314010199947
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 7.249999999999998,
+        "cagr": 0.25135524002847287,
+        "max_dd_observed": -0.38725652993882476,
+        "dd_used": -0.5927831660050211,
+        "vol": 0.29777709550130393
+      }
+    },
+    "lowvol+trend+defensive [erc]": {
+      "combo": [
+        "lowvol",
+        "trend",
+        "defensive"
+      ],
+      "scheme": "erc",
+      "n": 213,
+      "first": "1998-05-31",
+      "last": "2016-01-31",
+      "sharpe": 1.0928270853315225,
+      "vol": 0.09830435980040438,
+      "half_kelly_leverage": 5.558385648156305,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.7447711074386811,
+        "boot_median": -0.6783063332315082,
+        "boot_p75": -0.6036090714473796,
+        "boot_p95": -0.8674577690527105,
+        "boot_p99": -0.92337587069782,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.2908
+      },
+      "dd50_observed_path": {
+        "leverage": 3.249999999999999,
+        "cagr": 0.32445351096360464,
+        "max_dd_observed": -0.49996802098180226,
+        "dd_used": -0.49996802098180226,
+        "vol": 0.31913982289184295
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 2.4499999999999993,
+        "cagr": 0.2592260659286947,
+        "max_dd_observed": -0.3824080335421328,
+        "dd_used": -0.49297001320274875,
+        "vol": 0.24051515548257538
+      },
+      "dd60_observed_path": {
+        "leverage": 4.049999999999999,
+        "cagr": 0.38361523356115246,
+        "max_dd_observed": -0.5994151625046819,
+        "dd_used": -0.5994151625046819,
+        "vol": 0.39777193145500933
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 3.099999999999999,
+        "cagr": 0.3126405207745273,
+        "max_dd_observed": -0.47936864650683886,
+        "dd_used": -0.5959214308288409,
+        "vol": 0.30439695708360254
+      }
+    },
+    "lowvol+trend+carry+defensive [erc]": {
+      "combo": [
+        "lowvol",
+        "trend",
+        "carry",
+        "defensive"
+      ],
+      "scheme": "erc",
+      "n": 144,
+      "first": "2004-02-29",
+      "last": "2016-01-31",
+      "sharpe": 1.2258073243116578,
+      "vol": 0.04869996270824056,
+      "half_kelly_leverage": 12.585300441146313,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.730709834007517,
+        "boot_median": -0.730709834007517,
+        "boot_p75": -0.674039618333254,
+        "boot_p95": -0.9145446007697519,
+        "boot_p99": -0.9573862727919974,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.4726
+      },
+      "dd50_observed_path": {
+        "leverage": 8.349999999999998,
+        "cagr": 0.3653589565176336,
+        "max_dd_observed": -0.49943567377949616,
+        "dd_used": -0.49943567377949616,
+        "vol": 0.40647360418887707
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 5.649999999999999,
+        "cagr": 0.2710969521921496,
+        "max_dd_observed": -0.3435286106027966,
+        "dd_used": -0.49677185274272523,
+        "vol": 0.2749995650489249
+      },
+      "dd60_observed_path": {
+        "leverage": 10.149999999999999,
+        "cagr": 0.4146338130383167,
+        "max_dd_observed": -0.5997098488879797,
+        "dd_used": -0.5997098488879797,
+        "vol": 0.49412765276948273
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 6.949999999999998,
+        "cagr": 0.31903103254361587,
+        "max_dd_observed": -0.41941821360848597,
+        "dd_used": -0.5944450543185543,
+        "vol": 0.33830034127572317
+      }
+    },
+    "trend+carry [erc]": {
+      "combo": [
+        "trend",
+        "carry"
+      ],
+      "scheme": "erc",
+      "n": 269,
+      "first": "2004-02-29",
+      "last": "2026-06-30",
+      "sharpe": 0.6546216935874151,
+      "vol": 0.04699578713348932,
+      "half_kelly_leverage": 6.964684852793219,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.5858939560162364,
+        "boot_median": -0.6022786220271028,
+        "boot_p75": -0.5250700307970071,
+        "boot_p95": -0.8034893354514797,
+        "boot_p99": -0.874079366830663,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.5542
+      },
+      "dd50_observed_path": {
+        "leverage": 5.849999999999999,
+        "cagr": 0.09167885759334182,
+        "max_dd_observed": -0.4984669960289442,
+        "dd_used": -0.4984669960289442,
+        "vol": 0.2749831820311499
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 3.7999999999999994,
+        "cagr": 0.07974813423593097,
+        "max_dd_observed": -0.3129205961276026,
+        "dd_used": -0.49992739680373627,
+        "vol": 0.17867206883818038
+      },
+      "dd60_observed_path": {
+        "leverage": 7.149999999999999,
+        "cagr": 0.09417742703174325,
+        "max_dd_observed": -0.599455120333477,
+        "dd_used": -0.599455120333477,
+        "vol": 0.3360675074730091
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 4.599999999999999,
+        "cagr": 0.08554541464587362,
+        "max_dd_observed": -0.38880814854142676,
+        "dd_used": -0.5939737271024998,
+        "vol": 0.2162536872169715
+      }
+    },
+    "trend [1x]": {
+      "combo": [
+        "trend"
+      ],
+      "scheme": "equal_weight",
+      "n": 738,
+      "first": "1965-01-31",
+      "last": "2026-06-30",
+      "sharpe": 0.6116253670229176,
+      "vol": 0.22801287445503043,
+      "half_kelly_leverage": 1.341207965744813,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.6442132220544944,
+        "boot_median": -0.5789807416354074,
+        "boot_p75": -0.517457665226524,
+        "boot_p95": -0.7447833679341818,
+        "boot_p99": -0.8080139248879677,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.2476
+      },
+      "dd50_observed_path": {
+        "leverage": 0.9499999999999998,
+        "cagr": 0.16714037485066968,
+        "max_dd_observed": -0.4861616195082902,
+        "dd_used": -0.4861616195082902,
+        "vol": 0.21721140665494915
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 0.7999999999999998,
+        "cagr": 0.15090608910726222,
+        "max_dd_observed": -0.418541914485149,
+        "dd_used": -0.49141628555176065,
+        "vol": 0.1830501737897636
+      },
+      "dd60_observed_path": {
+        "leverage": 1.1999999999999997,
+        "cagr": 0.18805059976696215,
+        "max_dd_observed": -0.5916216965129448,
+        "dd_used": -0.5916216965129448,
+        "vol": 0.2741693467555128
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 0.9999999999999998,
+        "cagr": 0.17229680949503434,
+        "max_dd_observed": -0.5074219239255986,
+        "dd_used": -0.5954448369418132,
+        "vol": 0.22860118892016687
+      }
+    },
+    "passive_monthly [1x]": {
+      "combo": [
+        "passive_monthly"
+      ],
+      "scheme": "equal_weight",
+      "n": 738,
+      "first": "1965-01-31",
+      "last": "2026-06-30",
+      "sharpe": 0.6691135560076179,
+      "vol": 0.08787305250840342,
+      "half_kelly_leverage": 3.8072738849241046,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.7984813889956319,
+        "boot_median": -0.7963476374665881,
+        "boot_p75": -0.73367838482521,
+        "boot_p95": -0.9366391291647214,
+        "boot_p99": -0.9706839924748227,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.4912
+      },
+      "dd50_observed_path": {
+        "leverage": 1.9499999999999997,
+        "cagr": 0.14020433208836502,
+        "max_dd_observed": -0.4935338637797,
+        "dd_used": -0.4935338637797,
+        "vol": 0.17131667596532316
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 1.3999999999999997,
+        "cagr": 0.12129180959803643,
+        "max_dd_observed": -0.35772577001223305,
+        "dd_used": -0.4938306784095923,
+        "vol": 0.12309505287580122
+      },
+      "dd60_observed_path": {
+        "leverage": 2.4499999999999993,
+        "cagr": 0.15521332067826843,
+        "max_dd_observed": -0.5993241179381417,
+        "dd_used": -0.5993241179381417,
+        "vol": 0.21519678435256018
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 1.7499999999999996,
+        "cagr": 0.13360906600913158,
+        "max_dd_observed": -0.4460800465799809,
+        "dd_used": -0.5977929458085406,
+        "vol": 0.1537736541838616
+      }
+    },
+    "lowvol [1x]": {
+      "combo": [
+        "lowvol"
+      ],
+      "scheme": "equal_weight",
+      "n": 213,
+      "first": "1998-05-31",
+      "last": "2016-01-31",
+      "sharpe": 0.4868894080769178,
+      "vol": 0.16170855141705612,
+      "half_kelly_leverage": 1.5054534958426553,
+      "half_kelly_dd_bootstrap": {
+        "observed": -0.7324079653451792,
+        "boot_median": -0.6739354000205569,
+        "boot_p75": -0.4358241754783244,
+        "boot_p95": -0.8761928751144453,
+        "boot_p99": -0.9383457099623419,
+        "p_ruin": 0.0,
+        "p_worse_than_observed": 0.2632
+      },
+      "dd50_observed_path": {
+        "leverage": 0.8499999999999999,
+        "cagr": 0.08046212272160158,
+        "max_dd_observed": -0.48968140301178364,
+        "dd_used": -0.48968140301178364,
+        "vol": 0.13693897894858434
+      },
+      "dd50_bootstrap_p95": {
+        "leverage": 0.5999999999999999,
+        "cagr": 0.0645892336159084,
+        "max_dd_observed": -0.36418048251387214,
+        "dd_used": -0.4769293704740652,
+        "vol": 0.0965676482735575
+      },
+      "dd60_observed_path": {
+        "leverage": 1.0999999999999999,
+        "cagr": 0.09303807891160987,
+        "max_dd_observed": -0.5960182490433673,
+        "dd_used": -0.5960182490433673,
+        "vol": 0.1773357385527561
+      },
+      "dd60_bootstrap_p95": {
+        "leverage": 0.7499999999999999,
+        "cagr": 0.07430637564897058,
+        "max_dd_observed": -0.4420452926761893,
+        "dd_used": -0.583822577359315,
+        "vol": 0.12078596696844238
+      }
+    }
+  },
+  "iteration11_reconciliation": {
+    "note": "Iteration 11 measured, on the 61.5-year 18-instrument panel: peak compound 15.83%/yr at -87.8% DD, and 12.30%/yr at a <=50% DD cap, from plain equal weight. The book here is the monthly equal-weight benchmark series persisted by the trend sleeve, levered STATICALLY, whereas iteration 11 levered to a VOLATILITY TARGET (time-varying leverage) and charged its own rebalancing costs. The two should agree in magnitude, not to the digit.",
+    "measured_here": {
+      "ruin_leverage": 7.749999999999998,
+      "peak_leverage": 5.049999999999999,
+      "peak_cagr": 0.19344991972379333,
+      "peak_max_dd": -0.8999993918912484,
+      "peak_vol": 0.44355344257486795,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 1.3499999999999996,
+        "cagr": 0.11945383087766537,
+        "max_dd": -0.3464088888063883,
+        "vol": 0.1187156469942916
+      },
+      "dd_cap_50": {
+        "leverage": 1.9499999999999997,
+        "cagr": 0.14020433208836502,
+        "max_dd": -0.4935338637797,
+        "vol": 0.17131667596532316
+      },
+      "dd_cap_60": {
+        "leverage": 2.4499999999999993,
+        "cagr": 0.15521332067826843,
+        "max_dd": -0.5993241179381417,
+        "vol": 0.21519678435256018
+      }
+    },
+    "iteration11_peak_cagr": 0.1583,
+    "iteration11_dd50_cagr": 0.123,
+    "sharpe_here": 0.6691135560076179,
+    "iteration11_sharpe": 0.6678
+  },
+  "financing_sensitivity_passive": {
+    "optimistic_bill_plus_50bp": {
+      "ruin_leverage": 7.799999999999998,
+      "peak_leverage": 5.849999999999999,
+      "peak_cagr": 0.24757643593473144,
+      "peak_max_dd": -0.9282251257531038,
+      "peak_vol": 0.5138372912977107,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 1.3499999999999996,
+        "cagr": 0.12334372713920594,
+        "max_dd": -0.34460485618806747,
+        "vol": 0.1187156469942916
+      },
+      "dd_cap_50": {
+        "leverage": 1.9999999999999996,
+        "cagr": 0.15316024351078594,
+        "max_dd": -0.48965028568427305,
+        "vol": 0.17570341791342378
+      },
+      "dd_cap_60": {
+        "leverage": 2.5499999999999994,
+        "cagr": 0.17584651027715714,
+        "max_dd": -0.5993955688583367,
+        "vol": 0.22397546049397
+      }
+    },
+    "primary_bill_plus_150bp": {
+      "ruin_leverage": 7.749999999999998,
+      "peak_leverage": 5.049999999999999,
+      "peak_cagr": 0.19344991972379333,
+      "peak_max_dd": -0.8999993918912484,
+      "peak_vol": 0.44355344257486795,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 1.3499999999999996,
+        "cagr": 0.11945383087766537,
+        "max_dd": -0.3464088888063883,
+        "vol": 0.1187156469942916
+      },
+      "dd_cap_50": {
+        "leverage": 1.9499999999999997,
+        "cagr": 0.14020433208836502,
+        "max_dd": -0.4935338637797,
+        "vol": 0.17131667596532316
+      },
+      "dd_cap_60": {
+        "leverage": 2.4499999999999993,
+        "cagr": 0.15521332067826843,
+        "max_dd": -0.5993241179381417,
+        "vol": 0.21519678435256018
+      }
+    },
+    "retail_bill_plus_300bp": {
+      "ruin_leverage": 7.699999999999998,
+      "peak_leverage": 3.499999999999999,
+      "peak_cagr": 0.13621844250969728,
+      "peak_max_dd": -0.7893145613194936,
+      "peak_vol": 0.30739747835883785,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 1.2999999999999998,
+        "cagr": 0.11262130973520246,
+        "max_dd": -0.33802261289489033,
+        "vol": 0.11433733426504195
+      },
+      "dd_cap_50": {
+        "leverage": 1.8499999999999996,
+        "cagr": 0.12267265615818812,
+        "max_dd": -0.4901345850115212,
+        "vol": 0.1625443119855667
+      },
+      "dd_cap_60": {
+        "leverage": 2.2999999999999994,
+        "cagr": 0.1289127206896754,
+        "max_dd": -0.5947933171934032,
+        "vol": 0.20203017691639474
+      }
+    }
+  },
+  "financing_sensitivity_lowvol_trend": {
+    "optimistic_bill_plus_50bp": {
+      "ruin_leverage": 10.949999999999998,
+      "peak_leverage": 6.499999999999998,
+      "peak_cagr": 0.4924663384294381,
+      "peak_max_dd": -0.8130388765854408,
+      "peak_vol": 0.8097835549055744,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 2.0999999999999996,
+        "cagr": 0.24768405955969097,
+        "max_dd": -0.3462845919965165,
+        "vol": 0.2615995655421336
+      },
+      "dd_cap_50": {
+        "leverage": 3.1999999999999993,
+        "cagr": 0.34509988985730566,
+        "max_dd": -0.4949275420779915,
+        "vol": 0.398633255447582
+      },
+      "dd_cap_60": {
+        "leverage": 4.049999999999999,
+        "cagr": 0.4069395051404836,
+        "max_dd": -0.5951184319717757,
+        "vol": 0.5045319444818441
+      }
+    },
+    "primary_bill_plus_150bp": {
+      "ruin_leverage": 10.899999999999997,
+      "peak_leverage": 5.999999999999999,
+      "peak_cagr": 0.41627726158832856,
+      "peak_max_dd": -0.7867227680701442,
+      "peak_vol": 0.7474863938386616,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 2.05,
+        "cagr": 0.23008068875395482,
+        "max_dd": -0.3433752537847028,
+        "vol": 0.2553713796325177
+      },
+      "dd_cap_50": {
+        "leverage": 3.1499999999999995,
+        "cagr": 0.313020529861918,
+        "max_dd": -0.4975057735977,
+        "vol": 0.3924040840429181
+      },
+      "dd_cap_60": {
+        "leverage": 3.999999999999999,
+        "cagr": 0.36286720700218567,
+        "max_dd": -0.5998155266391623,
+        "vol": 0.4983024955643785
+      }
+    },
+    "retail_bill_plus_300bp": {
+      "ruin_leverage": 10.749999999999998,
+      "peak_leverage": 5.249999999999999,
+      "peak_cagr": 0.32173534941808524,
+      "peak_max_dd": -0.7402848775316193,
+      "peak_vol": 0.6540413302144557,
+      "peak_is_at_ruin_boundary": false,
+      "dd_cap_35": {
+        "leverage": 1.9999999999999996,
+        "cagr": 0.20788589608509533,
+        "max_dd": -0.3435755221782918,
+        "vol": 0.24914327972954833
+      },
+      "dd_cap_50": {
+        "leverage": 3.0499999999999994,
+        "cagr": 0.2673039916730777,
+        "max_dd": -0.4972723242180027,
+        "vol": 0.37994581349108797
+      },
+      "dd_cap_60": {
+        "leverage": 3.849999999999999,
+        "cagr": 0.29914788103755785,
+        "max_dd": -0.5974954466016772,
+        "vol": 0.4796142200427824
+      }
+    }
+  }
+}

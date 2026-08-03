@@ -1,0 +1,34 @@
+{
+  "source": "_lowvol_verify.attack5_structure.combined_repair on the next-trading-day execution frame of _lowvol_verify.attack7_final",
+  "corrections": [
+    "delisting ACTIONS window off-by-one repaired",
+    "previously-free exit legs charged",
+    "execution moved to next trading day's close"
+  ],
+  "band": "B2_200k_1M",
+  "reproduction_gate": "PASSED",
+  "targets": {
+    "gross_annual": 0.1451,
+    "net_annual": 0.0989,
+    "net_sharpe": 0.614,
+    "bench_annual": 0.0571,
+    "bench_sharpe": 0.231,
+    "vol_matched_active_annual": 0.0618,
+    "vol_matched_active_tstat": 2.12,
+    "dsr": 0.586
+  },
+  "measured": {
+    "gross_annual": 0.14507228300588573,
+    "net_annual": 0.09893705965697784,
+    "net_sharpe": 0.6138478845083756,
+    "bench_annual": 0.05713800802917375,
+    "bench_sharpe": 0.23057315692977987,
+    "vol_matched_active_annual": 0.06177438343348736,
+    "vol_matched_active_tstat": 2.1242986567661037,
+    "dsr": 0.5856157373287897
+  },
+  "n_months": 213,
+  "first_month": "1998-04-30",
+  "last_month": "2015-12-31",
+  "return_convention": "TOTAL return, not excess over cash. The registered low-vol convention carries no risk-free deduction; the multi-asset sleeves are EXCESS returns over the 13-week bill. Do not mix them without converting."
+}

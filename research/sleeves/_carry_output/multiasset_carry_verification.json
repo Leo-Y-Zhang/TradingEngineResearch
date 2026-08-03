@@ -1,0 +1,317 @@
+{
+  "lookahead_identical_on_truncation": true,
+  "single_factor_betas": {
+    "duration_US10Y": {
+      "alpha_annual": 0.013626922302186506,
+      "beta": 0.2729348449554338,
+      "t_alpha": 1.939796364854176,
+      "n_months": 269
+    },
+    "equity_SPY": {
+      "alpha_annual": 0.021443393840854863,
+      "beta": -0.04450607238824867,
+      "t_alpha": 2.61890952048017,
+      "n_months": 269
+    },
+    "dollar_USDX": {
+      "alpha_annual": 0.014882292953857821,
+      "beta": 0.24238899682517545,
+      "t_alpha": 2.1887962057533503,
+      "n_months": 269
+    },
+    "commodity_DBC": {
+      "alpha_annual": 0.01855963675576163,
+      "beta": -0.07101943927911238,
+      "t_alpha": 2.376741130352103,
+      "n_months": 245
+    }
+  },
+  "joint_alpha_annual": 0.005689921294389357,
+  "joint_alpha_tstat": 1.1581207804967695,
+  "joint_betas": {
+    "duration_US10Y": 0.3312637072506817,
+    "equity_SPY": 0.03711964694122438,
+    "dollar_USDX": 0.3328824815149505,
+    "commodity_DBC": 0.018497148696067653
+  },
+  "mean_position": {
+    "US5Y_TR": 0.26498988045696664,
+    "US10Y_TR": 0.1498318224466944,
+    "US30Y_TR": 0.06079518388663904,
+    "FX_EUR": -0.09154745858995504,
+    "FX_GBP": 0.0020834946430522403,
+    "FX_JPY": -0.13400511334493162,
+    "FX_AUD": 0.023828318385968852,
+    "FX_NZD": 0.055648711383499194,
+    "FX_CAD": -0.030660442869647826,
+    "FX_CHF": -0.1477246460869455,
+    "FX_SEK": -0.07012452286432226,
+    "FX_NOK": 0.016459191100764835,
+    "SPY_EQ": -0.003906267637539304
+  },
+  "fraction_of_months_long": {
+    "US5Y_TR": 0.8736059479553904,
+    "US10Y_TR": 0.9479553903345725,
+    "US30Y_TR": 0.9702602230483272,
+    "FX_EUR": 0.0037174721189591076,
+    "FX_GBP": 0.2825278810408922,
+    "FX_JPY": 0.0,
+    "FX_AUD": 0.6096654275092936,
+    "FX_NZD": 0.8252788104089219,
+    "FX_CAD": 0.1821561338289963,
+    "FX_CHF": 0.0,
+    "FX_SEK": 0.0,
+    "FX_NOK": 0.5464684014869888,
+    "SPY_EQ": 0.4646840148698885
+  },
+  "mean_position_by_class": {
+    "rates": 0.4756168867903001,
+    "fx": -0.37604246824251714,
+    "equity": -0.003906267637539304
+  },
+  "static_tilt_performance": {
+    "n_months": 269,
+    "years": 22.42,
+    "arithmetic_annual": 0.010545025075578827,
+    "geometric_annual": 0.01003682867083433,
+    "annual_vol": 0.03336360366835845,
+    "sharpe": 0.31606373161600565,
+    "t_stat": 1.408615292734043,
+    "se_monthly": 0.0006238410829162309,
+    "max_drawdown": -0.08378155172289992,
+    "skew": 0.00728908190010571,
+    "kurtosis": 1.0895796158762425,
+    "worst_month": -0.03065180328964287,
+    "best_month": 0.03675153278342444,
+    "hit_rate": 0.5427509293680297
+  },
+  "dynamic_residual_performance": {
+    "n_months": 269,
+    "years": 22.42,
+    "arithmetic_annual": 0.006626832719331859,
+    "geometric_annual": 0.006406125091761972,
+    "annual_vol": 0.021884909966274978,
+    "sharpe": 0.30280374603066323,
+    "t_stat": 1.630796303883374,
+    "se_monthly": 0.00033862969803726917,
+    "max_drawdown": -0.04856829001169283,
+    "skew": -0.9507828096866109,
+    "kurtosis": 5.964629107233492,
+    "worst_month": -0.03775077245055865,
+    "best_month": 0.01892419350209046,
+    "hit_rate": 0.5539033457249071
+  },
+  "expanding_static_performance": {
+    "n_months": 267,
+    "years": 22.25,
+    "arithmetic_annual": 0.007011313337720831,
+    "geometric_annual": 0.006462034126693439,
+    "annual_vol": 0.03377047587742479,
+    "sharpe": 0.20761665791058104,
+    "t_stat": 0.9471778804398294,
+    "se_monthly": 0.0006168599621492668,
+    "max_drawdown": -0.0903739241643311,
+    "skew": -0.13547849003522863,
+    "kurtosis": 0.827007440002701,
+    "worst_month": -0.032098974771802714,
+    "best_month": 0.03440759698933425,
+    "hit_rate": 0.5131086142322098
+  },
+  "expanding_dynamic_residual": {
+    "n_months": 267,
+    "years": 22.25,
+    "arithmetic_annual": 0.009695885462124664,
+    "geometric_annual": 0.009484999543151407,
+    "annual_vol": 0.02244748845003823,
+    "sharpe": 0.43193631589141773,
+    "t_stat": 2.3141370927171985,
+    "se_monthly": 0.00034915410055863825,
+    "max_drawdown": -0.053058294336734035,
+    "skew": -0.9526925810940954,
+    "kurtosis": 6.872040608036748,
+    "worst_month": -0.041860143940931224,
+    "best_month": 0.019765417060201226,
+    "hit_rate": 0.5580524344569289
+  },
+  "expanding_dynamic_residual_tstat": 2.3141370927171985,
+  "rolling_5y_sharpe": {
+    "min": -0.21273755622426374,
+    "max": 1.1582932573477933,
+    "median": 0.47637320332217264,
+    "pct_negative": 0.040892193308550186
+  },
+  "leave_one_decade_out_sharpe": {
+    "drop_2000s": 0.5665461453180914,
+    "drop_2010s": 0.10015416227732549,
+    "drop_2020s": 0.5542690598667598
+  },
+  "concentration_stress": {
+    "drop_worst_1": 0.45672248211567895,
+    "drop_worst_5": 0.4320200060961819,
+    "drop_worst_10": 0.5159093997480628
+  },
+  "top10_cells": [
+    {
+      "date": "2008-12-31",
+      "instrument": "FX_CHF",
+      "pnl": -0.023755247738230803,
+      "share_of_total": -0.0606513178393583
+    },
+    {
+      "date": "2008-11-30",
+      "instrument": "US10Y_TR",
+      "pnl": 0.023708886949854048,
+      "share_of_total": 0.060532950607742504
+    },
+    {
+      "date": "2008-11-30",
+      "instrument": "US30Y_TR",
+      "pnl": 0.017233081431766297,
+      "share_of_total": 0.04399908225699037
+    },
+    {
+      "date": "2019-08-31",
+      "instrument": "US30Y_TR",
+      "pnl": 0.01679969375220921,
+      "share_of_total": 0.04289256742750383
+    },
+    {
+      "date": "2008-08-31",
+      "instrument": "FX_GBP",
+      "pnl": -0.015500227232183484,
+      "share_of_total": -0.039574801273423936
+    },
+    {
+      "date": "2004-04-30",
+      "instrument": "US10Y_TR",
+      "pnl": -0.014953447530533518,
+      "share_of_total": -0.03817877670494468
+    },
+    {
+      "date": "2015-01-31",
+      "instrument": "FX_CHF",
+      "pnl": -0.014897522433879054,
+      "share_of_total": -0.03803599011522926
+    },
+    {
+      "date": "2008-10-31",
+      "instrument": "FX_JPY",
+      "pnl": -0.013865951273923675,
+      "share_of_total": -0.03540220784590451
+    },
+    {
+      "date": "2020-03-31",
+      "instrument": "SPY_EQ",
+      "pnl": -0.013709239643455919,
+      "share_of_total": -0.03500209554173656
+    },
+    {
+      "date": "2022-03-31",
+      "instrument": "US5Y_TR",
+      "pnl": -0.01304734031373615,
+      "share_of_total": -0.033312150352914814
+    }
+  ],
+  "cip_basis_stress": {
+    "10bps_per_year_on_fx_notional": {
+      "sharpe": 0.41292621554864384,
+      "arithmetic_annual": 0.016487357649146533,
+      "tstat": 1.9667840112895045
+    },
+    "25bps_per_year_on_fx_notional": {
+      "sharpe": 0.3872329919469702,
+      "arithmetic_annual": 0.015460607430500303,
+      "tstat": 1.8451177620709158
+    },
+    "50bps_per_year_on_fx_notional": {
+      "sharpe": 0.3444023118293206,
+      "arithmetic_annual": 0.013749357066089912,
+      "tstat": 1.6420609699024489
+    },
+    "100bps_per_year_on_fx_notional": {
+      "sharpe": 0.2587122713762135,
+      "arithmetic_annual": 0.010326856337269137,
+      "tstat": 1.2349632931671999
+    }
+  },
+  "accrual_leg": {
+    "n_months": 269,
+    "years": 22.42,
+    "arithmetic_annual": 0.017162814656303944,
+    "geometric_annual": 0.017297333503401235,
+    "annual_vol": 0.0014984113190752658,
+    "sharpe": 11.454007613140467,
+    "t_stat": 25.823636353557816,
+    "se_monthly": 5.538470783549996e-05,
+    "max_drawdown": 0.0,
+    "skew": -0.014923658362512866,
+    "kurtosis": 0.44445557621925236,
+    "worst_month": 0.0,
+    "best_month": 0.0029127031884607873,
+    "hit_rate": 0.9925650557620818
+  },
+  "price_leg": {
+    "n_months": 269,
+    "years": 22.42,
+    "arithmetic_annual": 0.0003094133430421096,
+    "geometric_annual": -0.00047647769308445387,
+    "annual_vol": 0.039733427223401147,
+    "sharpe": 0.007787230165231745,
+    "t_stat": 0.03714012075924049,
+    "se_monthly": 0.0006942477495066826,
+    "max_drawdown": -0.12262378671577667,
+    "skew": 0.1047134397870161,
+    "kurtosis": 1.5087611113561574,
+    "worst_month": -0.035161277382373304,
+    "best_month": 0.051050175514222355,
+    "hit_rate": 0.48698884758364314
+  },
+  "arithmetic_vs_geometric": {
+    "arithmetic_annual": 0.017171857794910685,
+    "geometric_annual": 0.01650291592190456,
+    "variance_drag": 0.000668941873006125
+  },
+  "per_class_leg": {
+    "rates": {
+      "sharpe": 0.2542176093095982,
+      "arithmetic_annual": 0.008050274061729625,
+      "tstat": 1.1497360384953907,
+      "mean_net_position": 0.47561688679029984
+    },
+    "fx": {
+      "sharpe": 0.22233321584891655,
+      "arithmetic_annual": 0.007191439058773426,
+      "tstat": 1.003069404628232,
+      "mean_net_position": -0.37604246824251714
+    },
+    "equity": {
+      "sharpe": 0.25821049163622506,
+      "arithmetic_annual": 0.0022305148788430065,
+      "tstat": 1.2623259328001555,
+      "mean_net_position": -0.003906267637539314
+    }
+  },
+  "sleeves_needed_for_30pct": {
+    "carry_as_reported": {
+      "sleeve_sharpe": 0.43005273338287864,
+      "n_sleeves_needed": 5.91425931999063,
+      "ceiling_as_N_to_infinity": 1.5731093816315826
+    },
+    "carry_after_50bps_basis": {
+      "sleeve_sharpe": 0.3444023118293206,
+      "n_sleeves_needed": 12.583341447704948,
+      "ceiling_as_N_to_infinity": 1.2598048233121162
+    },
+    "carry_ex_2010s": {
+      "sleeve_sharpe": 0.10015416227732549,
+      "n_sleeves_needed": Infinity,
+      "ceiling_as_N_to_infinity": 0.3663584487617751
+    },
+    "trend_reference_over_overlap": {
+      "sleeve_sharpe": 0.29653467901209424,
+      "n_sleeves_needed": 26.300309812341585,
+      "ceiling_as_N_to_infinity": 1.0847076400691633
+    }
+  },
+  "rho_used": 0.07473526564127751
+}

@@ -1,0 +1,1102 @@
+[
+  {
+    "book": "top_decile",
+    "horizon_days": 20,
+    "entries": 21728,
+    "entries_per_year": 1229.8867924528302,
+    "entry_days_per_year": 173.71698113207546,
+    "mean_concurrent_positions": 93.41876379690949,
+    "months": 212,
+    "years": 17.666666666666668,
+    "start": "1998-04-02",
+    "end": "2015-12-31",
+    "gross_return_annual": 0.062968500565181,
+    "gross_volatility": 0.09033063437467735,
+    "gross_sharpe": 0.697089099407821,
+    "benchmark_return_annual": 0.03400606471525558,
+    "benchmark_volatility": 0.2279697200714522,
+    "benchmark_sharpe": 0.1491692173179715,
+    "mean_position_gross_return": 0.014350984149988885,
+    "benchmark_return_over_horizon": 0.002657544182539384,
+    "gross_alpha_bps_per_bet": 116.93439967449501,
+    "median_spread_conservative_bps": 75.03821854338622,
+    "median_spread_realistic_bps": 55.14882370645834,
+    "median_dollar_volume": 6967500.0,
+    "share_entries_upper_bound": 0.6089377761413843,
+    "share_entries_measured": 0.3910622238586156,
+    "delisted_positions": 40,
+    "truncated_positions": 57,
+    "open_at_end": 0,
+    "mean_position_notional": 8091.984707405513,
+    "median_position_notional": 8514.948799413456,
+    "rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56,
+      "no_holding_bars": 1,
+      "horizon_past_cutoff": 22
+    },
+    "screen_rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56
+    },
+    "conservative_net_return_annual": -0.007381453537541938,
+    "conservative_net_volatility": 0.08729307496468977,
+    "conservative_net_sharpe": -0.08455944003035465,
+    "conservative_max_drawdown": 0.3568632053122551,
+    "conservative_excess_over_benchmark_annual": -0.04138751825279752,
+    "conservative_cost_drag_annual": 0.07034995410272293,
+    "conservative_turnover_annual": 4.9587737280455375,
+    "conservative_cost_per_roundtrip_bps": 136.96651179388493,
+    "conservative_cover_ratio": 0.8537444528810415,
+    "conservative_net_alpha_bps_per_bet": -20.03211211938992,
+    "conservative_bets_per_unit_turnover": 248.02236599280778,
+    "conservative_mean_cash_weight": 0.6149333905939932,
+    "conservative_total_cost": 1144678.338845511,
+    "conservative_cost_share_spread": 0.7419660435808947,
+    "conservative_cost_share_impact": 0.22470929793849445,
+    "conservative_cost_share_commission": 0.03332465848061216,
+    "conservative_orders": 42266,
+    "conservative_orders_at_035_minimum": 14689,
+    "conservative_share_orders_at_035_minimum": 0.3475370273979085,
+    "conservative_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": -0.009067186544220007,
+        "annual_volatility": 0.030161299195834202,
+        "sharpe": -0.3006232087466691,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": -0.003359283661711454,
+        "annual_volatility": 0.09581109858137427,
+        "sharpe": -0.03506152952476949,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": -0.013583411304136317,
+        "annual_volatility": 0.08371809356675851,
+        "sharpe": -0.16225179916817659,
+        "thin": false
+      }
+    },
+    "conservative_pnl_concentration": {
+      "total_net_pnl": -122105.94993297113,
+      "max_name_month_share_of_total": 0.0440700523116961,
+      "max_name_month_share_of_absolute": 0.0007855905525105558,
+      "exceeds_alarm": true,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 27,
+      "top": [
+        {
+          "ticker": "WEBC",
+          "month": "2005-01",
+          "pnl": -5381.215601115382,
+          "share_of_total": 0.0440700523116961
+        },
+        {
+          "ticker": "PGL",
+          "month": "2007-02",
+          "pnl": -5191.459760500355,
+          "share_of_total": 0.042516026150651594
+        },
+        {
+          "ticker": "FFLC1",
+          "month": "2005-05",
+          "pnl": -4897.885033574001,
+          "share_of_total": 0.04011176389244461
+        },
+        {
+          "ticker": "SIMG",
+          "month": "2015-03",
+          "pnl": -4838.296248453515,
+          "share_of_total": 0.0396237550349467
+        },
+        {
+          "ticker": "PBG",
+          "month": "2010-02",
+          "pnl": -4809.134724478451,
+          "share_of_total": 0.039384933552528596
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -4789.577120916972,
+          "share_of_total": 0.03922476442422473
+        },
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -4785.79186227627,
+          "share_of_total": 0.03919376463557578
+        },
+        {
+          "ticker": "FRNK",
+          "month": "2015-01",
+          "pnl": -4779.681967284553,
+          "share_of_total": 0.03914372698388828
+        },
+        {
+          "ticker": "VITC",
+          "month": "2014-08",
+          "pnl": -4685.401046189349,
+          "share_of_total": 0.03837160309355403
+        },
+        {
+          "ticker": "WALB",
+          "month": "1999-04",
+          "pnl": 4615.408591521318,
+          "share_of_total": -0.037798392249148396
+        }
+      ]
+    },
+    "realistic_net_return_annual": 0.0005855085127963733,
+    "realistic_net_volatility": 0.08734164475334226,
+    "realistic_net_sharpe": 0.0067036579680847825,
+    "realistic_max_drawdown": 0.33753173980225026,
+    "realistic_excess_over_benchmark_annual": -0.033420556202459206,
+    "realistic_cost_drag_annual": 0.06238299205238462,
+    "realistic_turnover_annual": 4.9856893414349805,
+    "realistic_cost_per_roundtrip_bps": 119.98056706834608,
+    "realistic_cover_ratio": 0.9746111602213395,
+    "realistic_net_alpha_bps_per_bet": -3.0461673938510643,
+    "realistic_bets_per_unit_turnover": 246.68339886954215,
+    "realistic_mean_cash_weight": 0.6148652889545517,
+    "realistic_total_cost": 1076474.137006735,
+    "realistic_cost_share_spread": 0.6996260315166037,
+    "realistic_cost_share_impact": 0.2627878756342511,
+    "realistic_cost_share_commission": 0.03758609284914485,
+    "realistic_orders": 42554,
+    "realistic_orders_at_035_minimum": 13555,
+    "realistic_share_orders_at_035_minimum": 0.3185364478074917,
+    "realistic_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": -0.007268334446114855,
+        "annual_volatility": 0.030168429054561297,
+        "sharpe": -0.2409251881485,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": 0.0060376260968542095,
+        "annual_volatility": 0.09579815644518776,
+        "sharpe": 0.06302444974824459,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": -0.006262912499305995,
+        "annual_volatility": 0.08386141218998751,
+        "sharpe": -0.07468169609542713,
+        "thin": false
+      }
+    },
+    "realistic_pnl_concentration": {
+      "total_net_pnl": 11088.459465294123,
+      "max_name_month_share_of_total": -0.505682574905209,
+      "max_name_month_share_of_absolute": 0.0007659873289834673,
+      "exceeds_alarm": true,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 7503,
+      "top": [
+        {
+          "ticker": "WEBC",
+          "month": "2005-01",
+          "pnl": -5607.2407341419685,
+          "share_of_total": -0.505682574905209
+        },
+        {
+          "ticker": "SIMG",
+          "month": "2015-03",
+          "pnl": -5535.894876224114,
+          "share_of_total": -0.4992483305323851
+        },
+        {
+          "ticker": "PGL",
+          "month": "2007-02",
+          "pnl": -5505.243580010216,
+          "share_of_total": -0.4964840785359888
+        },
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -5494.634295792794,
+          "share_of_total": -0.49552729240617266
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -5489.157823844591,
+          "share_of_total": -0.49503340306425425
+        },
+        {
+          "ticker": "FRNK",
+          "month": "2015-01",
+          "pnl": -5463.953445066032,
+          "share_of_total": -0.4927603750699286
+        },
+        {
+          "ticker": "VITC",
+          "month": "2014-08",
+          "pnl": -5344.724093266742,
+          "share_of_total": -0.4820078127169284
+        },
+        {
+          "ticker": "PBG",
+          "month": "2010-02",
+          "pnl": -5303.848904451044,
+          "share_of_total": -0.47832153069158184
+        },
+        {
+          "ticker": "PMFG",
+          "month": "2015-09",
+          "pnl": -5175.813794899966,
+          "share_of_total": -0.4667748311746817
+        },
+        {
+          "ticker": "FFLC1",
+          "month": "2005-05",
+          "pnl": -5116.935436995668,
+          "share_of_total": -0.46146495399214055
+        }
+      ]
+    },
+    "registered_verdict": "DEAD",
+    "bounds_sharpe_inverted": false
+  },
+  {
+    "book": "top_decile",
+    "horizon_days": 40,
+    "entries": 21593,
+    "entries_per_year": 1222.245283018868,
+    "entry_days_per_year": 172.86792452830187,
+    "mean_concurrent_positions": 172.67152317880794,
+    "months": 212,
+    "years": 17.666666666666668,
+    "start": "1998-04-02",
+    "end": "2015-12-31",
+    "gross_return_annual": 0.1063228956395017,
+    "gross_volatility": 0.1255880625476699,
+    "gross_sharpe": 0.8466003335240906,
+    "benchmark_return_annual": 0.03400606471525558,
+    "benchmark_volatility": 0.2279697200714522,
+    "benchmark_sharpe": 0.1491692173179715,
+    "mean_position_gross_return": 0.028243857469557366,
+    "benchmark_return_over_horizon": 0.0053221509061609495,
+    "gross_alpha_bps_per_bet": 229.21706563396415,
+    "median_spread_conservative_bps": 74.8942092212092,
+    "median_spread_realistic_bps": 55.007469097870874,
+    "median_dollar_volume": 6949250.0,
+    "share_entries_upper_bound": 0.6097809475292919,
+    "share_entries_measured": 0.3902190524707081,
+    "delisted_positions": 87,
+    "truncated_positions": 119,
+    "open_at_end": 0,
+    "mean_position_notional": 10864.002429750199,
+    "median_position_notional": 8813.90472974315,
+    "rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56,
+      "no_holding_bars": 1,
+      "horizon_past_cutoff": 157
+    },
+    "screen_rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56
+    },
+    "conservative_net_return_annual": 0.04541723850846524,
+    "conservative_net_volatility": 0.12408380351822203,
+    "conservative_net_sharpe": 0.36602068296363593,
+    "conservative_max_drawdown": 0.46355357034169076,
+    "conservative_excess_over_benchmark_annual": 0.011411173793209661,
+    "conservative_cost_drag_annual": 0.06090565713103646,
+    "conservative_turnover_annual": 4.147616926557281,
+    "conservative_cost_per_roundtrip_bps": 132.38130032684228,
+    "conservative_cover_ratio": 1.7314912685404933,
+    "conservative_net_alpha_bps_per_bet": 96.83576530712187,
+    "conservative_bets_per_unit_turnover": 294.68615464287575,
+    "conservative_mean_cash_weight": 0.3730700819647343,
+    "conservative_total_cost": 1459515.4966542402,
+    "conservative_cost_share_spread": 0.7134692385550616,
+    "conservative_cost_share_impact": 0.25518357829200145,
+    "conservative_cost_share_commission": 0.03134718315293829,
+    "conservative_orders": 39056,
+    "conservative_orders_at_035_minimum": 10980,
+    "conservative_share_orders_at_035_minimum": 0.2811347808275297,
+    "conservative_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.04656664808094724,
+        "annual_volatility": 0.05449848441853017,
+        "sharpe": 0.8544576712139539,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": 0.04678338765295753,
+        "annual_volatility": 0.13776594063997133,
+        "sharpe": 0.33958602130274157,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": 0.04282592157868437,
+        "annual_volatility": 0.11466503568181247,
+        "sharpe": 0.3734871866043223,
+        "thin": false
+      }
+    },
+    "conservative_pnl_concentration": {
+      "total_net_pnl": 1193161.2924213025,
+      "max_name_month_share_of_total": -0.01007013600695301,
+      "max_name_month_share_of_absolute": 0.0009743358384187178,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "SIMG",
+          "month": "2015-03",
+          "pnl": -12015.296492914347,
+          "share_of_total": -0.01007013600695301
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -11912.23588300982,
+          "share_of_total": -0.009983759914668466
+        },
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -11868.25893380447,
+          "share_of_total": -0.009946902408910711
+        },
+        {
+          "ticker": "PTRY",
+          "month": "2015-03",
+          "pnl": -11841.520105380481,
+          "share_of_total": -0.009924492338626141
+        },
+        {
+          "ticker": "VITC",
+          "month": "2014-08",
+          "pnl": -11802.267535623621,
+          "share_of_total": -0.009891594380901411
+        },
+        {
+          "ticker": "GDPMQ",
+          "month": "2014-04",
+          "pnl": 10445.144746672115,
+          "share_of_total": 0.008754176667494472
+        },
+        {
+          "ticker": "CXDC",
+          "month": "2014-05",
+          "pnl": 9955.368972639159,
+          "share_of_total": 0.008343690862143675
+        },
+        {
+          "ticker": "BGMD",
+          "month": "2014-01",
+          "pnl": 9467.358526084272,
+          "share_of_total": 0.007934684594797741
+        },
+        {
+          "ticker": "ACOM2",
+          "month": "2012-12",
+          "pnl": -9369.391173968475,
+          "share_of_total": -0.007852577211044962
+        },
+        {
+          "ticker": "OPTT",
+          "month": "2014-02",
+          "pnl": 9231.127007630195,
+          "share_of_total": 0.007736696678197892
+        }
+      ]
+    },
+    "realistic_net_return_annual": 0.05250012479973032,
+    "realistic_net_volatility": 0.12419090848117871,
+    "realistic_net_sharpe": 0.4227372634743773,
+    "realistic_max_drawdown": 0.45659831178810095,
+    "realistic_excess_over_benchmark_annual": 0.01849406008447474,
+    "realistic_cost_drag_annual": 0.05382277083977138,
+    "realistic_turnover_annual": 4.157912476589458,
+    "realistic_cost_per_roundtrip_bps": 115.20843045435538,
+    "realistic_cover_ratio": 1.9895858725788131,
+    "realistic_net_alpha_bps_per_bet": 114.00863517960877,
+    "realistic_bets_per_unit_turnover": 293.95647212406425,
+    "realistic_mean_cash_weight": 0.37301450220114446,
+    "realistic_total_cost": 1361806.9248077215,
+    "realistic_cost_share_spread": 0.662037720097617,
+    "realistic_cost_share_impact": 0.30224240543646874,
+    "realistic_cost_share_commission": 0.035719874465916394,
+    "realistic_orders": 39613,
+    "realistic_orders_at_035_minimum": 10581,
+    "realistic_share_orders_at_035_minimum": 0.2671092823063136,
+    "realistic_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.04833188377452036,
+        "annual_volatility": 0.05454082072587622,
+        "sharpe": 0.8861598181193099,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": 0.05519031514365502,
+        "annual_volatility": 0.13795137778439903,
+        "sharpe": 0.40007077877765507,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": 0.04918756193114948,
+        "annual_volatility": 0.11461465774856448,
+        "sharpe": 0.4291559465199864,
+        "thin": false
+      }
+    },
+    "realistic_pnl_concentration": {
+      "total_net_pnl": 1471095.6472726357,
+      "max_name_month_share_of_total": -0.009159897314874356,
+      "max_name_month_share_of_absolute": 0.0010226993406682544,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "SIMG",
+          "month": "2015-03",
+          "pnl": -13475.085069375968,
+          "share_of_total": -0.009159897314874356
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -13365.47487118005,
+          "share_of_total": -0.009085388088775338
+        },
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -13346.245120225662,
+          "share_of_total": -0.009072316368394654
+        },
+        {
+          "ticker": "PTRY",
+          "month": "2015-03",
+          "pnl": -13270.411841452506,
+          "share_of_total": -0.009020767525249242
+        },
+        {
+          "ticker": "VITC",
+          "month": "2014-08",
+          "pnl": -13201.029274048666,
+          "share_of_total": -0.008973603652844022
+        },
+        {
+          "ticker": "GDPMQ",
+          "month": "2014-04",
+          "pnl": 11971.50682249774,
+          "share_of_total": 0.00813781676581841
+        },
+        {
+          "ticker": "CXDC",
+          "month": "2014-05",
+          "pnl": 11092.551468810429,
+          "share_of_total": 0.007540333281099474
+        },
+        {
+          "ticker": "BGMD",
+          "month": "2014-01",
+          "pnl": 10501.795723750736,
+          "share_of_total": 0.007138757934075007
+        },
+        {
+          "ticker": "OPTT",
+          "month": "2014-02",
+          "pnl": 10426.91256856705,
+          "share_of_total": 0.007087854952122394
+        },
+        {
+          "ticker": "ACOM2",
+          "month": "2012-12",
+          "pnl": -10386.215374236403,
+          "share_of_total": -0.0070601904053567924
+        }
+      ]
+    },
+    "registered_verdict": "MARGINAL",
+    "bounds_sharpe_inverted": false
+  },
+  {
+    "book": "top_decile",
+    "horizon_days": 60,
+    "entries": 21497,
+    "entries_per_year": 1216.811320754717,
+    "entry_days_per_year": 172.24528301886792,
+    "mean_concurrent_positions": 256.3490066225166,
+    "months": 212,
+    "years": 17.666666666666668,
+    "start": "1998-04-02",
+    "end": "2015-12-24",
+    "gross_return_annual": 0.10108351140477323,
+    "gross_volatility": 0.15354293342275807,
+    "gross_sharpe": 0.6583403687257591,
+    "benchmark_return_annual": 0.03621731602678846,
+    "benchmark_volatility": 0.22587713449567198,
+    "benchmark_sharpe": 0.160340780432038,
+    "mean_position_gross_return": 0.027801282068697523,
+    "benchmark_return_over_horizon": 0.008506665009663683,
+    "gross_alpha_bps_per_bet": 192.9461705903384,
+    "median_spread_conservative_bps": 74.84366510517106,
+    "median_spread_realistic_bps": 54.982477329276115,
+    "median_dollar_volume": 6892380.0,
+    "share_entries_upper_bound": 0.6099920919198027,
+    "share_entries_measured": 0.39000790808019725,
+    "delisted_positions": 144,
+    "truncated_positions": 197,
+    "open_at_end": 0,
+    "mean_position_notional": 8165.596784880335,
+    "median_position_notional": 5707.785709742201,
+    "rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56,
+      "no_holding_bars": 1,
+      "horizon_past_cutoff": 253
+    },
+    "screen_rejects": {
+      "insufficient_history": 259,
+      "thin_trading": 3299,
+      "illiquid": 850,
+      "price_floor": 1550,
+      "no_bar_after_filing": 163,
+      "no_price_data": 56
+    },
+    "conservative_net_return_annual": 0.050851519317933525,
+    "conservative_net_volatility": 0.1535722242161136,
+    "conservative_net_sharpe": 0.3311244567661729,
+    "conservative_max_drawdown": 0.5700065628773341,
+    "conservative_excess_over_benchmark_annual": 0.014634203291145065,
+    "conservative_cost_drag_annual": 0.050231992086839705,
+    "conservative_turnover_annual": 3.4196915340538783,
+    "conservative_cost_per_roundtrip_bps": 130.29775277585813,
+    "conservative_cover_ratio": 1.4808096569573985,
+    "conservative_net_alpha_bps_per_bet": 62.64841781448027,
+    "conservative_bets_per_unit_turnover": 355.82487737197926,
+    "conservative_mean_cash_weight": 0.22015932196094784,
+    "conservative_total_cost": 1206275.7097789827,
+    "conservative_cost_share_spread": 0.7164515716478227,
+    "conservative_cost_share_impact": 0.2510773102593433,
+    "conservative_cost_share_commission": 0.03247111809281827,
+    "conservative_orders": 38768,
+    "conservative_orders_at_035_minimum": 14188,
+    "conservative_share_orders_at_035_minimum": 0.3659719356170037,
+    "conservative_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.04304772325243622,
+        "annual_volatility": 0.06462968069067364,
+        "sharpe": 0.6660673980190066,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": 0.0344130338235642,
+        "annual_volatility": 0.17273938347269946,
+        "sharpe": 0.19921938547964654,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": 0.08106761991776024,
+        "annual_volatility": 0.1373824696166508,
+        "sharpe": 0.5900870769317923,
+        "thin": false
+      }
+    },
+    "conservative_pnl_concentration": {
+      "total_net_pnl": 1403535.7901373599,
+      "max_name_month_share_of_total": -0.008945122398415667,
+      "max_name_month_share_of_absolute": 0.000964422497193441,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -12554.799433335727,
+          "share_of_total": -0.008945122398415667
+        },
+        {
+          "ticker": "OVRL",
+          "month": "2014-12",
+          "pnl": -12514.435641021697,
+          "share_of_total": -0.0089163637500095
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -12496.004762750323,
+          "share_of_total": -0.008903232002033504
+        },
+        {
+          "ticker": "PMFG",
+          "month": "2015-09",
+          "pnl": -11820.787833149767,
+          "share_of_total": -0.008422149200764522
+        },
+        {
+          "ticker": "GDPMQ",
+          "month": "2014-05",
+          "pnl": 11645.387512417672,
+          "share_of_total": 0.008297178877980713
+        },
+        {
+          "ticker": "FONR",
+          "month": "2014-01",
+          "pnl": 11105.623439315355,
+          "share_of_total": 0.007912604379136268
+        },
+        {
+          "ticker": "ACOM2",
+          "month": "2012-12",
+          "pnl": -9564.708755733544,
+          "share_of_total": -0.006814723801804494
+        },
+        {
+          "ticker": "PTRY",
+          "month": "2015-03",
+          "pnl": -9090.200924843351,
+          "share_of_total": -0.006476643480501285
+        },
+        {
+          "ticker": "ESMK",
+          "month": "2008-08",
+          "pnl": -8839.366718098709,
+          "share_of_total": -0.006297927548561926
+        },
+        {
+          "ticker": "AAMRQ",
+          "month": "2013-05",
+          "pnl": 8798.192406837805,
+          "share_of_total": 0.006268591416522946
+        }
+      ]
+    },
+    "realistic_net_return_annual": 0.05691325604079189,
+    "realistic_net_volatility": 0.15341571616871652,
+    "realistic_net_sharpe": 0.3709740922383886,
+    "realistic_max_drawdown": 0.5648504367934697,
+    "realistic_excess_over_benchmark_annual": 0.020695940014003433,
+    "realistic_cost_drag_annual": 0.04417025536398134,
+    "realistic_turnover_annual": 3.42550501350399,
+    "realistic_cost_per_roundtrip_bps": 113.14612974696206,
+    "realistic_cover_ratio": 1.7052829913125591,
+    "realistic_net_alpha_bps_per_bet": 79.80004084337634,
+    "realistic_bets_per_unit_turnover": 355.2210012707078,
+    "realistic_mean_cash_weight": 0.2201060399551341,
+    "realistic_total_cost": 1111332.6996137663,
+    "realistic_cost_share_spread": 0.6663443949912558,
+    "realistic_cost_share_impact": 0.2966162592995014,
+    "realistic_cost_share_commission": 0.037039345709234194,
+    "realistic_orders": 38486,
+    "realistic_orders_at_035_minimum": 13772,
+    "realistic_share_orders_at_035_minimum": 0.3578444109546329,
+    "realistic_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.044772115486725994,
+        "annual_volatility": 0.06461451546796955,
+        "sharpe": 0.6929111077048972,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": 0.04144856444359091,
+        "annual_volatility": 0.1725386417544466,
+        "sharpe": 0.24022771955385877,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": 0.08668173958338588,
+        "annual_volatility": 0.13729481281794698,
+        "sharpe": 0.6313548036102858,
+        "thin": false
+      }
+    },
+    "realistic_pnl_concentration": {
+      "total_net_pnl": 1660683.5659110611,
+      "max_name_month_share_of_total": -0.008359342541378998,
+      "max_name_month_share_of_absolute": 0.0010070177033184252,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "GTI1",
+          "month": "2015-08",
+          "pnl": -13882.222780289305,
+          "share_of_total": -0.008359342541378998
+        },
+        {
+          "ticker": "OVRL",
+          "month": "2014-12",
+          "pnl": -13782.657550196775,
+          "share_of_total": -0.008299388175516462
+        },
+        {
+          "ticker": "HLSSF",
+          "month": "2015-04",
+          "pnl": -13775.559870880445,
+          "share_of_total": -0.008295114225040872
+        },
+        {
+          "ticker": "GDPMQ",
+          "month": "2014-05",
+          "pnl": 13150.118062096451,
+          "share_of_total": 0.007918497136979986
+        },
+        {
+          "ticker": "PMFG",
+          "month": "2015-09",
+          "pnl": -13077.80062942147,
+          "share_of_total": -0.0078749503504883
+        },
+        {
+          "ticker": "FONR",
+          "month": "2014-01",
+          "pnl": 12147.420604002795,
+          "share_of_total": 0.007314711154703724
+        },
+        {
+          "ticker": "ACOM2",
+          "month": "2012-12",
+          "pnl": -10455.47676827037,
+          "share_of_total": -0.006295887418223731
+        },
+        {
+          "ticker": "PTRY",
+          "month": "2015-03",
+          "pnl": -10030.390314662262,
+          "share_of_total": -0.006039916646708989
+        },
+        {
+          "ticker": "AAMRQ",
+          "month": "2013-05",
+          "pnl": 9618.152022910135,
+          "share_of_total": 0.005791682545875956
+        },
+        {
+          "ticker": "BGMD",
+          "month": "2014-02",
+          "pnl": 9297.932005973033,
+          "share_of_total": 0.005598858323663925
+        }
+      ]
+    },
+    "registered_verdict": "MARGINAL",
+    "bounds_sharpe_inverted": false
+  },
+  {
+    "book": "bottom_decile_DIAGNOSTIC",
+    "horizon_days": 40,
+    "entries": 20083,
+    "entries_per_year": 1136.7735849056603,
+    "entry_days_per_year": 163.75471698113208,
+    "mean_concurrent_positions": 159.77637969094923,
+    "months": 212,
+    "years": 17.666666666666668,
+    "start": "1998-04-15",
+    "end": "2015-12-31",
+    "gross_return_annual": 0.00863320816833646,
+    "gross_volatility": 0.14771651344200037,
+    "gross_sharpe": 0.05844443500033065,
+    "benchmark_return_annual": 0.03400606471525558,
+    "benchmark_volatility": 0.2279697200714522,
+    "benchmark_sharpe": 0.1491692173179715,
+    "mean_position_gross_return": 0.012605972647659648,
+    "benchmark_return_over_horizon": 0.0053221509061609495,
+    "gross_alpha_bps_per_bet": 72.83821741498699,
+    "median_spread_conservative_bps": 91.97531175385964,
+    "median_spread_realistic_bps": 72.4587267369053,
+    "median_dollar_volume": 3393967.1999999997,
+    "share_entries_upper_bound": 0.5768062540457103,
+    "share_entries_measured": 0.4231937459542897,
+    "delisted_positions": 158,
+    "truncated_positions": 197,
+    "open_at_end": 0,
+    "mean_position_notional": 4498.274478762349,
+    "median_position_notional": 5442.659579332194,
+    "rejects": {
+      "insufficient_history": 242,
+      "thin_trading": 3826,
+      "price_floor": 2570,
+      "no_price_data": 85,
+      "illiquid": 1261,
+      "no_bar_after_filing": 212,
+      "no_holding_bars": 9,
+      "horizon_past_cutoff": 310
+    },
+    "screen_rejects": {
+      "insufficient_history": 242,
+      "thin_trading": 3826,
+      "price_floor": 2570,
+      "no_price_data": 85,
+      "illiquid": 1261,
+      "no_bar_after_filing": 212
+    },
+    "conservative_net_return_annual": -0.05074363762834899,
+    "conservative_net_volatility": 0.14619899203848052,
+    "conservative_net_sharpe": -0.34708609765922965,
+    "conservative_max_drawdown": 0.6841502237475682,
+    "conservative_excess_over_benchmark_annual": -0.08474970234360457,
+    "conservative_cost_drag_annual": 0.05937684579668545,
+    "conservative_turnover_annual": 3.7250568974917218,
+    "conservative_cost_per_roundtrip_bps": 165.36030556409014,
+    "conservative_cover_ratio": 0.44048187481581813,
+    "conservative_net_alpha_bps_per_bet": -92.52208814910315,
+    "conservative_bets_per_unit_turnover": 305.16945544405246,
+    "conservative_mean_cash_weight": 0.4055494576762567,
+    "conservative_total_cost": 749319.9082280046,
+    "conservative_cost_share_spread": 0.7474851913086434,
+    "conservative_cost_share_impact": 0.21390149714999226,
+    "conservative_cost_share_commission": 0.03861331154133898,
+    "conservative_orders": 36767,
+    "conservative_orders_at_035_minimum": 15264,
+    "conservative_share_orders_at_035_minimum": 0.4151548943345935,
+    "conservative_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.037300966565301685,
+        "annual_volatility": 0.06314357292276462,
+        "sharpe": 0.5907325930214171,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": -0.0691672299264956,
+        "annual_volatility": 0.17499996341997984,
+        "sharpe": -0.39524139648247913,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": -0.04309332138122679,
+        "annual_volatility": 0.10460895626513596,
+        "sharpe": -0.4119467674642015,
+        "thin": false
+      }
+    },
+    "conservative_pnl_concentration": {
+      "total_net_pnl": -601691.761063417,
+      "max_name_month_share_of_total": 0.008796427823744808,
+      "max_name_month_share_of_absolute": 0.0008544215076088551,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "OWN1",
+          "month": "2000-05",
+          "pnl": -5292.738148336253,
+          "share_of_total": 0.008796427823744808
+        },
+        {
+          "ticker": "DAYR",
+          "month": "2000-06",
+          "pnl": -5181.932217406696,
+          "share_of_total": 0.008612270522448673
+        },
+        {
+          "ticker": "ABTE",
+          "month": "2000-10",
+          "pnl": -5023.628656090969,
+          "share_of_total": 0.008349173083594027
+        },
+        {
+          "ticker": "PRST1",
+          "month": "2000-01",
+          "pnl": 4979.498954864147,
+          "share_of_total": -0.008275830378769835
+        },
+        {
+          "ticker": "OSIP",
+          "month": "2000-07",
+          "pnl": 4899.124684046711,
+          "share_of_total": -0.008142249904482828
+        },
+        {
+          "ticker": "APMC1",
+          "month": "2000-01",
+          "pnl": 4775.888872482998,
+          "share_of_total": -0.00793743438341618
+        },
+        {
+          "ticker": "INTS1",
+          "month": "1999-12",
+          "pnl": 4748.950775841303,
+          "share_of_total": -0.007892663790921966
+        },
+        {
+          "ticker": "WLNK",
+          "month": "2000-01",
+          "pnl": 4671.062012219756,
+          "share_of_total": -0.007763214181234961
+        },
+        {
+          "ticker": "FOTO1",
+          "month": "2000-02",
+          "pnl": 4662.558802755623,
+          "share_of_total": -0.007749082012549279
+        },
+        {
+          "ticker": "FJ",
+          "month": "2000-11",
+          "pnl": -4586.302117038163,
+          "share_of_total": 0.007622344884584146
+        }
+      ]
+    },
+    "realistic_net_return_annual": -0.044600353783028734,
+    "realistic_net_volatility": 0.14639453346911274,
+    "realistic_net_sharpe": -0.30465860115219945,
+    "realistic_max_drawdown": 0.6657100509783025,
+    "realistic_excess_over_benchmark_annual": -0.07860641849828431,
+    "realistic_cost_drag_annual": 0.053233561951365194,
+    "realistic_turnover_annual": 3.741059793523474,
+    "realistic_cost_per_roundtrip_bps": 148.12842439300462,
+    "realistic_cover_ratio": 0.491723433321193,
+    "realistic_net_alpha_bps_per_bet": -75.29020697801764,
+    "realistic_bets_per_unit_turnover": 303.86405127061687,
+    "realistic_mean_cash_weight": 0.40548098239393016,
+    "realistic_total_cost": 702933.490579328,
+    "realistic_cost_share_spread": 0.7175747091514609,
+    "realistic_cost_share_impact": 0.23986789695160413,
+    "realistic_cost_share_commission": 0.04255739389691468,
+    "realistic_orders": 36743,
+    "realistic_orders_at_035_minimum": 14773,
+    "realistic_share_orders_at_035_minimum": 0.4020629779822007,
+    "realistic_sharpe_by_decade": {
+      "1990s": {
+        "months": 20,
+        "annual_return": 0.03880237909185391,
+        "annual_volatility": 0.06325360955701725,
+        "sharpe": 0.6134413413494951,
+        "thin": true
+      },
+      "2000s": {
+        "months": 120,
+        "annual_return": -0.06218210223606735,
+        "annual_volatility": 0.17534647815106308,
+        "sharpe": -0.3546241868770055,
+        "thin": false
+      },
+      "2010s": {
+        "months": 72,
+        "annual_return": -0.037207465470484036,
+        "annual_volatility": 0.10453829233135147,
+        "sharpe": -0.35592187934875386,
+        "thin": false
+      }
+    },
+    "realistic_pnl_concentration": {
+      "total_net_pnl": -553610.97657737,
+      "max_name_month_share_of_total": 0.009592359630495212,
+      "max_name_month_share_of_absolute": 0.0008218540150275544,
+      "exceeds_alarm": false,
+      "alarm_threshold": 0.03,
+      "name_months_over_alarm": 0,
+      "top": [
+        {
+          "ticker": "OWN1",
+          "month": "2000-05",
+          "pnl": -5310.435582719794,
+          "share_of_total": 0.009592359630495212
+        },
+        {
+          "ticker": "DAYR",
+          "month": "2000-06",
+          "pnl": -5199.864752388699,
+          "share_of_total": 0.009392633044482259
+        },
+        {
+          "ticker": "ABTE",
+          "month": "2000-10",
+          "pnl": -5055.044194764148,
+          "share_of_total": 0.009131040403165995
+        },
+        {
+          "ticker": "PRST1",
+          "month": "2000-01",
+          "pnl": 4991.0630574777515,
+          "share_of_total": -0.009015469831061461
+        },
+        {
+          "ticker": "OSIP",
+          "month": "2000-07",
+          "pnl": 4990.262210806054,
+          "share_of_total": -0.009014023243646144
+        },
+        {
+          "ticker": "APMC1",
+          "month": "2000-01",
+          "pnl": 4786.395205858862,
+          "share_of_total": -0.008645773672065078
+        },
+        {
+          "ticker": "INTS1",
+          "month": "1999-12",
+          "pnl": 4758.951944001717,
+          "share_of_total": -0.008596202288876816
+        },
+        {
+          "ticker": "WLNK",
+          "month": "2000-01",
+          "pnl": 4681.251311509321,
+          "share_of_total": -0.00845584988298203
+        },
+        {
+          "ticker": "FOTO1",
+          "month": "2000-02",
+          "pnl": 4673.5661784169815,
+          "share_of_total": -0.008441968053651529
+        },
+        {
+          "ticker": "FJ",
+          "month": "2000-11",
+          "pnl": -4617.4770506624645,
+          "share_of_total": 0.008340652996458694
+        }
+      ]
+    },
+    "registered_verdict": "DIAGNOSTIC_NOT_GATE_ELIGIBLE",
+    "bounds_sharpe_inverted": false
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "ACTIONS": {
+    "bytes": 46564150,
+    "fetched_utc": "2026-07-27T20:35:11+00:00",
+    "file": "ACTIONS.csv",
+    "rows": 671240,
+    "sha256": "0309a897a26a8f7630a9632131f3ea2ad020d5990b52aa5f6bc1613377f578dd",
+    "vendor_last_refreshed": "2026-07-25 14:13:22 UTC",
+    "vendor_snapshot_time": "2026-07-25 14:13:30 UTC"
+  },
+  "DAILY": {
+    "bytes": 2486903402,
+    "fetched_utc": "2026-07-27T20:37:21+00:00",
+    "file": "DAILY.csv",
+    "rows": 39973270,
+    "sha256": "528863ae8903a82cd706b5c603dec5bd89ec4ed427e0c59927eb7cf23a232a0a",
+    "vendor_last_refreshed": "2026-07-26 15:25:19 UTC",
+    "vendor_snapshot_time": "2026-07-26 15:27:56 UTC"
+  },
+  "SEP": {
+    "bytes": 3222093313,
+    "fetched_utc": "2026-07-27T20:42:04+00:00",
+    "file": "SEP.csv",
+    "rows": 46235528,
+    "sha256": "d673f60052770436f72a9c53e1fcd35bb1307df53b0d8518ea7b9b664f478f79",
+    "vendor_last_refreshed": "2026-07-27 20:09:59 UTC",
+    "vendor_snapshot_time": "2026-07-27 20:13:19 UTC"
+  },
+  "SF1": {
+    "bytes": 2401230568,
+    "fetched_utc": "2026-07-27T20:40:02+00:00",
+    "file": "SF1.csv",
+    "rows": 3200111,
+    "sha256": "7f456d2dbbae728f1c59273839751e2477ebdc25e90728077e56f42130eddf15",
+    "vendor_last_refreshed": "2026-07-25 13:36:54 UTC",
+    "vendor_snapshot_time": "2026-07-25 13:43:57 UTC"
+  },
+  "SF2": {
+    "bytes": 1215807789,
+    "fetched_utc": "2026-07-27T20:35:50+00:00",
+    "file": "SF2.csv",
+    "rows": 11822993,
+    "sha256": "7347d2660eea0fc22a7a17ff05a1799d29b62d66dbda2ff26c1fedaa67d9fc66",
+    "vendor_last_refreshed": "2026-07-25 17:15:43 UTC",
+    "vendor_snapshot_time": "2026-07-25 17:19:01 UTC"
+  },
+  "SF3": {
+    "bytes": 2892006797,
+    "fetched_utc": "2026-07-27T20:38:36+00:00",
+    "file": "SF3.csv",
+    "rows": 79190744,
+    "sha256": "76877b0ae36cdf63d327cb851890fcc4cd60cfab5577def26c5de8dded565e42",
+    "vendor_last_refreshed": "2026-07-27 18:52:09 UTC",
+    "vendor_snapshot_time": "2026-07-27 19:04:42 UTC"
+  },
+  "TICKERS": {
+    "bytes": 26435573,
+    "fetched_utc": "2026-07-27T20:35:14+00:00",
+    "file": "TICKERS.csv",
+    "rows": 78883,
+    "sha256": "d96363a6f7153d7326c09fd81b7383a154dfd3329827dec8f280e964976f7271",
+    "vendor_last_refreshed": "2026-07-27 02:38:47 UTC",
+    "vendor_snapshot_time": "2026-07-27 02:40:15 UTC"
+  }
+}

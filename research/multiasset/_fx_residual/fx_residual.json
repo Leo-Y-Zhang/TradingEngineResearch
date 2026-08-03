@@ -1,0 +1,470 @@
+{
+  "prereg": "research/multiasset/fx_residual_prereg.md",
+  "what_this_changes": "Nothing. No panel series, strategy, gate or headline number is touched. This tests the yardstick, not the ruler.",
+  "sponsor_fee_pct_yr": 0.4,
+  "low_rate_threshold_pct": 0.5,
+  "P0_source_identity": {
+    "prediction": "the OECD pull reproduces the pre-block FRED series exactly on the registered window; otherwise the transport substitution changed the data and the run is void",
+    "passed": true,
+    "per_currency": {
+      "GB": {
+        "matched": true,
+        "n": 582,
+        "expected_n": 582,
+        "first": "1978-01",
+        "expected_first": "1978-01",
+        "last": "2026-06",
+        "expected_last": "2026-06",
+        "last_value": 3.7298,
+        "expected_last_value": 3.7298
+      },
+      "JP": {
+        "matched": true,
+        "n": 492,
+        "expected_n": 492,
+        "first": "1985-07",
+        "expected_first": "1985-07",
+        "last": "2026-06",
+        "expected_last": "2026-06",
+        "last_value": 0.841,
+        "expected_last_value": 0.841
+      },
+      "US": {
+        "matched": true,
+        "n": 864,
+        "expected_n": 864,
+        "first": "1954-07",
+        "expected_first": "1954-07",
+        "last": "2026-06",
+        "expected_last": "2026-06",
+        "last_value": 3.625172,
+        "expected_last_value": 3.625172
+      },
+      "EZ": {
+        "matched": true,
+        "n": 385,
+        "expected_n": 385,
+        "first": "1994-01",
+        "expected_first": "1994-01",
+        "last": "2026-01",
+        "expected_last": "2026-01",
+        "last_value": 1.931671,
+        "expected_last_value": 1.931671
+      }
+    }
+  },
+  "overnight_sources": {
+    "EZ": {
+      "oecd_ref_area": "EA20",
+      "n": 390,
+      "first": "1994-01-31",
+      "last": "2026-06-30"
+    },
+    "GB": {
+      "oecd_ref_area": "GBR",
+      "n": 582,
+      "first": "1978-01-31",
+      "last": "2026-06-30"
+    },
+    "JP": {
+      "oecd_ref_area": "JPN",
+      "n": 492,
+      "first": "1985-07-31",
+      "last": "2026-06-30"
+    },
+    "US": {
+      "oecd_ref_area": "USA",
+      "n": 864,
+      "first": "1954-07-31",
+      "last": "2026-06-30"
+    }
+  },
+  "source_note": "Overnight legs from OECD SDMX direct (dataflow OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0, MEASURE=IRSTCI); FRED was IP-blocked mid-run. OECD publishes these series, FRED mirrors them. See the prereg amendment and P0.",
+  "transport_crosscheck_3m": {
+    "question": "Does OECD-direct carry the same 3-month data the repo already holds from FRED? If yes, the overnight substitution is transport, not source.",
+    "per_currency": {
+      "EZ": {
+        "n_overlap": 385,
+        "max_abs_diff": 0.00012444000000000344,
+        "mean_abs_diff": 1.035007540373798e-06,
+        "identical": false
+      },
+      "GB": {
+        "n_overlap": 481,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "identical": true
+      },
+      "JP": {
+        "n_overlap": 290,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "identical": true
+      },
+      "US": {
+        "n_overlap": 744,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "identical": true
+      }
+    }
+  },
+  "P6_sign_discipline": {
+    "prediction": "mean(i3m - overnight) >= 0 for every currency; otherwise the two series are paired wrongly and the run is void",
+    "passed": true,
+    "mean_3m_minus_overnight_pct_yr": {
+      "EZ": 0.2214,
+      "GB": 0.1776,
+      "JP": 0.1607,
+      "US": 0.143
+    },
+    "negative_offenders": {}
+  },
+  "P5_null_control": {
+    "prediction": "fee=0 and both rate spreads zeroed reproduces the published residuals to within 0.01 pp",
+    "passed": true,
+    "published_pct_yr": {
+      "EURUSD": 0.9356,
+      "GBPUSD": 0.858,
+      "JPYUSD": 0.496
+    },
+    "reproduced_pct_yr": {
+      "EURUSD": 0.9356,
+      "GBPUSD": 0.858,
+      "JPYUSD": 0.496
+    },
+    "abs_delta_pp": {
+      "EURUSD": 0.0,
+      "GBPUSD": 0.0,
+      "JPYUSD": 0.0
+    }
+  },
+  "by_construction": {
+    "published": {
+      "EURUSD": {
+        "etf": "FXE",
+        "n": 242,
+        "first": "2005-12-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.9356,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.2179,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2775
+        },
+        "predicted_pct_yr": 0.3404,
+        "remainder_pct_yr": 0.5952,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.3989,
+          "gap_high_pct_yr": 1.4722,
+          "asymmetry_pct_yr": 1.0732
+        },
+        "regime_after": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.0657,
+          "gap_high_pct_yr": 1.1247,
+          "asymmetry_pct_yr": 1.059
+        }
+      },
+      "GBPUSD": {
+        "etf": "FXB",
+        "n": 235,
+        "first": "2006-07-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.858,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.2475,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.28
+        },
+        "predicted_pct_yr": 0.3675,
+        "remainder_pct_yr": 0.4905,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.3382,
+          "gap_high_pct_yr": 0.949,
+          "asymmetry_pct_yr": 0.6108
+        },
+        "regime_after": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.0031,
+          "gap_high_pct_yr": 0.5759,
+          "asymmetry_pct_yr": 0.5728
+        }
+      },
+      "JPYUSD": {
+        "etf": "FXY",
+        "n": 232,
+        "first": "2007-02-28",
+        "last": "2026-06-30",
+        "measured_residual_pct_yr": 0.496,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.1711,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2751
+        },
+        "predicted_pct_yr": 0.296,
+        "remainder_pct_yr": 0.2,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.5064,
+          "gap_high_pct_yr": 0.4598,
+          "asymmetry_pct_yr": 0.0466
+        },
+        "regime_after": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.127,
+          "gap_high_pct_yr": 0.4527,
+          "asymmetry_pct_yr": 0.3257
+        }
+      }
+    },
+    "zero_floored": {
+      "EURUSD": {
+        "etf": "FXE",
+        "n": 242,
+        "first": "2005-12-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.9356,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.0704,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2775
+        },
+        "predicted_pct_yr": 0.1928,
+        "remainder_pct_yr": 0.7427,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.3989,
+          "gap_high_pct_yr": 1.4722,
+          "asymmetry_pct_yr": 1.0732
+        },
+        "regime_after": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.3608,
+          "gap_high_pct_yr": 1.1247,
+          "asymmetry_pct_yr": 0.7639
+        }
+      },
+      "GBPUSD": {
+        "etf": "FXB",
+        "n": 235,
+        "first": "2006-07-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.858,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.2475,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.28
+        },
+        "predicted_pct_yr": 0.3675,
+        "remainder_pct_yr": 0.4905,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.3382,
+          "gap_high_pct_yr": 0.949,
+          "asymmetry_pct_yr": 0.6108
+        },
+        "regime_after": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.0031,
+          "gap_high_pct_yr": 0.5759,
+          "asymmetry_pct_yr": 0.5728
+        }
+      },
+      "JPYUSD": {
+        "etf": "FXY",
+        "n": 232,
+        "first": "2007-02-28",
+        "last": "2026-06-30",
+        "measured_residual_pct_yr": 0.496,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.1547,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2751
+        },
+        "predicted_pct_yr": 0.2796,
+        "remainder_pct_yr": 0.2164,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.5064,
+          "gap_high_pct_yr": 0.4598,
+          "asymmetry_pct_yr": 0.0466
+        },
+        "regime_after": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.1481,
+          "gap_high_pct_yr": 0.4527,
+          "asymmetry_pct_yr": 0.3045
+        }
+      }
+    },
+    "fee_first": {
+      "EURUSD": {
+        "etf": "FXE",
+        "n": 242,
+        "first": "2005-12-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.9356,
+        "components_pct_yr": {
+          "A1_foreign_tenor": -0.1218,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2775
+        },
+        "predicted_pct_yr": 0.0007,
+        "remainder_pct_yr": 0.9349,
+        "remainder_inside_budget": false,
+        "regime_before": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.3989,
+          "gap_high_pct_yr": 1.4722,
+          "asymmetry_pct_yr": 1.0732
+        },
+        "regime_after": {
+          "n_low_rate_months": 121,
+          "n_normal_months": 121,
+          "gap_low_pct_yr": 0.7363,
+          "gap_high_pct_yr": 1.1335,
+          "asymmetry_pct_yr": 0.3973
+        }
+      },
+      "GBPUSD": {
+        "etf": "FXB",
+        "n": 235,
+        "first": "2006-07-31",
+        "last": "2026-02-28",
+        "measured_residual_pct_yr": 0.858,
+        "components_pct_yr": {
+          "A1_foreign_tenor": 0.2051,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.28
+        },
+        "predicted_pct_yr": 0.3251,
+        "remainder_pct_yr": 0.5329,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.3382,
+          "gap_high_pct_yr": 0.949,
+          "asymmetry_pct_yr": 0.6108
+        },
+        "regime_after": {
+          "n_low_rate_months": 35,
+          "n_normal_months": 200,
+          "gap_low_pct_yr": 0.2713,
+          "gap_high_pct_yr": 0.5787,
+          "asymmetry_pct_yr": 0.3074
+        }
+      },
+      "JPYUSD": {
+        "etf": "FXY",
+        "n": 232,
+        "first": "2007-02-28",
+        "last": "2026-06-30",
+        "measured_residual_pct_yr": 0.496,
+        "components_pct_yr": {
+          "A1_foreign_tenor": -0.1401,
+          "B_sponsor_fee": 0.4,
+          "C_us_ted_subtracted": 0.2751
+        },
+        "predicted_pct_yr": -0.0152,
+        "remainder_pct_yr": 0.5112,
+        "remainder_inside_budget": true,
+        "regime_before": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.5064,
+          "gap_high_pct_yr": 0.4598,
+          "asymmetry_pct_yr": 0.0466
+        },
+        "regime_after": {
+          "n_low_rate_months": 180,
+          "n_normal_months": 52,
+          "gap_low_pct_yr": 0.5066,
+          "gap_high_pct_yr": 0.527,
+          "asymmetry_pct_yr": 0.0204
+        }
+      }
+    }
+  },
+  "headline_construction": "zero_floored",
+  "P1_asymmetry_collapse": {
+    "prediction": "regime asymmetry <= 0.25 pp/yr for EUR and GBP (published: EUR 0.9163, GBP 0.3578)",
+    "passed": false,
+    "asymmetry_before_pct_yr": {
+      "EURUSD": 1.0732,
+      "GBPUSD": 0.6108,
+      "JPYUSD": 0.0466
+    },
+    "asymmetry_after_pct_yr": {
+      "EURUSD": 0.7639,
+      "GBPUSD": 0.5728,
+      "JPYUSD": 0.3045
+    },
+    "widened_and_therefore_refuted": []
+  },
+  "P2_level_inside_budget": {
+    "prediction": "adjusted remainder inside TOL_FX = 0.75%/yr for EUR and GBP",
+    "passed": true,
+    "remainder_pct_yr": {
+      "EURUSD": 0.7427,
+      "GBPUSD": 0.4905,
+      "JPYUSD": 0.2164
+    }
+  },
+  "P3_cross_currency_consistency": {
+    "prediction": "the three remainders lie within 0.35000000000000003 pp/yr of one another (informative, not decisive)",
+    "passed": false,
+    "remainder_spread_pp": 0.5263
+  },
+  "P4_do_no_harm": {
+    "prediction": "JPY, the leg that already passed, stays inside 0.75%/yr",
+    "passed": true,
+    "jpy_remainder_pct_yr": 0.2164
+  },
+  "bracket": {
+    "per_pair": {
+      "EURUSD": {
+        "low": 0.5952,
+        "high": 0.9349,
+        "range_pp": 0.3397
+      },
+      "GBPUSD": {
+        "low": 0.4905,
+        "high": 0.5329,
+        "range_pp": 0.0424
+      },
+      "JPYUSD": {
+        "low": 0.2,
+        "high": 0.5112,
+        "range_pp": 0.3112
+      }
+    },
+    "widest_range_pp": 0.3397,
+    "max_allowed_pp": 0.25,
+    "constructions_agree": false
+  },
+  "verdict": "NOT EXPLAINED",
+  "decision_rule": "EXPLAINED requires P1 and P2 and P4, with P5 and P6 passing as preconditions. P3 cannot rescue a failure."
+}

@@ -1,0 +1,187 @@
+{
+  "negative_control_top_decile_weekly": {
+    "seeds": [
+      11,
+      22,
+      33,
+      44
+    ],
+    "placebo_gross_sharpe": [
+      0.21696978478904824,
+      0.06593985003485779,
+      -0.23119531507809168,
+      -0.24321037530312828
+    ],
+    "mean": -0.047874013889328486,
+    "sd": 0.22719949154848443
+  },
+  "traded_regime_mix_top_decile": {
+    "measured": {
+      "share_of_cells": 0.25794123378732436,
+      "median_conservative_bps": 90.37285989590866,
+      "median_realistic_bps": 90.37285989590866,
+      "mean_realistic_bps": 114.75404254982587,
+      "median_dollar_volume": 119977263.0
+    },
+    "upper_bound": {
+      "share_of_cells": 0.7420587662126756,
+      "median_conservative_bps": 49.97718133227305,
+      "median_realistic_bps": 8.999999999999998,
+      "mean_realistic_bps": 14.258460499077621,
+      "median_dollar_volume": 121422432.0
+    },
+    "all_cells_mean_realistic_bps": 40.18041492342291,
+    "all_cells_mean_conservative_bps": 77.49088128351556
+  },
+  "delisting_audit": {
+    "terminal_returns_booked_over_all_weekly_periods": 1266,
+    "name_periods_hitting_the_+-100pct_cap": 919,
+    "max_bar_date": "2015-12-31"
+  },
+  "fortnightly_other_phase_POSTHOC": {
+    "realistic": {
+      "gross_sharpe": 0.4337060032486812,
+      "net_sharpe": -0.4021126242138139
+    },
+    "zero_cost": {
+      "gross_sharpe": 0.4337060032486812,
+      "net_sharpe": 0.3903682609603145
+    },
+    "periods": 460,
+    "periods_per_year": 26.08928571428571
+  },
+  "breakeven_costs": {
+    "top_decile__weekly__long_short": {
+      "gross_annual_geometric": 0.24879808134903492,
+      "gross_annual_arithmetic": 0.26519647736522645,
+      "net_annual_vol": 0.2973416240282056,
+      "turnover": 89.79179860183949,
+      "actual_realistic_bps_per_rt": 57.799100950814584,
+      "bps_per_rt_to_clear_0.75_gate": 4.698676271221052,
+      "bps_per_rt_for_zero_excess": 25.00998011572704,
+      "commission_only_bps_per_rt": 3.0613482907363285,
+      "zero_cost_sharpe": 0.7988214199354859
+    },
+    "top_decile__weekly__long_only": {
+      "gross_annual_geometric": 0.11093173826668146,
+      "gross_annual_arithmetic": 0.18561263035803305,
+      "net_annual_vol": 0.40131834884904516,
+      "turnover": 44.750037546248215,
+      "actual_realistic_bps_per_rt": 57.95992617103901,
+      "bps_per_rt_to_clear_0.75_gate": -25.782354072778613,
+      "bps_per_rt_for_zero_excess": 17.70063375848956,
+      "commission_only_bps_per_rt": 3.2121103442164114,
+      "zero_cost_sharpe": 0.42602029412810427
+    },
+    "top_decile__fortnightly__long_short": {
+      "gross_annual_geometric": 0.07538533858695917,
+      "gross_annual_arithmetic": 0.10988290226680339,
+      "net_annual_vol": 0.2754504745500118,
+      "turnover": 45.31748492892023,
+      "actual_realistic_bps_per_rt": 59.48981237331018,
+      "bps_per_rt_to_clear_0.75_gate": -21.339435274791988,
+      "bps_per_rt_for_zero_excess": 12.849697300123054,
+      "commission_only_bps_per_rt": 3.079799236963509,
+      "zero_cost_sharpe": 0.3459191054936232
+    },
+    "top_decile__fortnightly__long_only": {
+      "gross_annual_geometric": 0.019520083765962593,
+      "gross_annual_arithmetic": 0.09630230768513602,
+      "net_annual_vol": 0.39299992012893514,
+      "turnover": 22.55182106458198,
+      "actual_realistic_bps_per_rt": 58.33258989938822,
+      "bps_per_rt_to_clear_0.75_gate": -87.99627836850422,
+      "bps_per_rt_for_zero_excess": -3.1742032136758027,
+      "commission_only_bps_per_rt": 3.2344239083759474,
+      "zero_cost_sharpe": 0.2260597897925139
+    },
+    "top_decile__monthly__long_short": {
+      "gross_annual_geometric": 0.13981305409393618,
+      "gross_annual_arithmetic": 0.16392527990893863,
+      "net_annual_vol": 0.26121833722398646,
+      "turnover": 20.99367018225475,
+      "actual_realistic_bps_per_rt": 61.93227345598302,
+      "bps_per_rt_to_clear_0.75_gate": -15.237198989669759,
+      "bps_per_rt_for_zero_excess": 45.26853588759032,
+      "commission_only_bps_per_rt": 3.1171071259370793,
+      "zero_cost_sharpe": 0.6013344075326136
+    },
+    "top_decile__monthly__long_only": {
+      "gross_annual_geometric": 0.03269033673551691,
+      "gross_annual_arithmetic": 0.10088587625080046,
+      "net_annual_vol": 0.3672730513764725,
+      "turnover": 10.437209089432017,
+      "actual_realistic_bps_per_rt": 58.233526240354145,
+      "bps_per_rt_to_clear_0.75_gate": -167.2563141983139,
+      "bps_per_rt_for_zero_excess": -4.133606592208054,
+      "commission_only_bps_per_rt": 3.223968680418263,
+      "zero_cost_sharpe": 0.2657284315807612
+    },
+    "top_quintile__weekly__long_short": {
+      "gross_annual_geometric": 0.19760325666445033,
+      "gross_annual_arithmetic": 0.21965786714517382,
+      "net_annual_vol": 0.28509367557691656,
+      "turnover": 89.52935322861367,
+      "actual_realistic_bps_per_rt": 62.82128284832663,
+      "bps_per_rt_to_clear_0.75_gate": 0.6520331323716854,
+      "bps_per_rt_for_zero_excess": 23.065209925096433,
+      "commission_only_bps_per_rt": 3.3983983687459047,
+      "zero_cost_sharpe": 0.6639650311320265
+    },
+    "top_quintile__weekly__long_only": {
+      "gross_annual_geometric": 0.08067734887693878,
+      "gross_annual_arithmetic": 0.1562403315881871,
+      "net_annual_vol": 0.39551823539053504,
+      "turnover": 44.48810486981116,
+      "actual_realistic_bps_per_rt": 65.42943115708655,
+      "bps_per_rt_to_clear_0.75_gate": -31.55862569681767,
+      "bps_per_rt_for_zero_excess": 13.700867862983493,
+      "commission_only_bps_per_rt": 3.6562379971314254,
+      "zero_cost_sharpe": 0.3535215363166014
+    },
+    "top_quintile__fortnightly__long_short": {
+      "gross_annual_geometric": 0.05459340704612514,
+      "gross_annual_arithmetic": 0.08685061779808351,
+      "net_annual_vol": 0.2623567122426426,
+      "turnover": 45.20603189848504,
+      "actual_realistic_bps_per_rt": 64.46480114500856,
+      "bps_per_rt_to_clear_0.75_gate": -24.31465708618898,
+      "bps_per_rt_for_zero_excess": 10.037710408382829,
+      "commission_only_bps_per_rt": 3.4061937043404695,
+      "zero_cost_sharpe": 0.27078022098109267
+    },
+    "top_quintile__fortnightly__long_only": {
+      "gross_annual_geometric": 0.010085888994737502,
+      "gross_annual_arithmetic": 0.0866801051478461,
+      "net_annual_vol": 0.39133706301730853,
+      "turnover": 22.436475905645683,
+      "actual_realistic_bps_per_rt": 65.89189217067201,
+      "bps_per_rt_to_clear_0.75_gate": -92.18145175067025,
+      "bps_per_rt_for_zero_excess": -6.5981095570051025,
+      "commission_only_bps_per_rt": 3.6705617056134012,
+      "zero_cost_sharpe": 0.2002505356548157
+    },
+    "top_quintile__monthly__long_short": {
+      "gross_annual_geometric": 0.10420717442221195,
+      "gross_annual_arithmetic": 0.12501147905143592,
+      "net_annual_vol": 0.2312612502995704,
+      "turnover": 20.92017564207283,
+      "actual_realistic_bps_per_rt": 67.2716252680247,
+      "bps_per_rt_to_clear_0.75_gate": -23.15203251727712,
+      "bps_per_rt_for_zero_excess": 29.736457433001966,
+      "commission_only_bps_per_rt": 3.4424159750570102,
+      "zero_cost_sharpe": 0.5074561083767745
+    },
+    "top_quintile__monthly__long_only": {
+      "gross_annual_geometric": 0.021908306290618462,
+      "gross_annual_arithmetic": 0.08764259793685651,
+      "net_annual_vol": 0.36068503808990393,
+      "turnover": 10.421932280449775,
+      "actual_realistic_bps_per_rt": 66.45509687313731,
+      "bps_per_rt_to_clear_0.75_gate": -175.4676347049526,
+      "bps_per_rt_for_zero_excess": -15.209503782165442,
+      "commission_only_bps_per_rt": 3.667664102253838,
+      "zero_cost_sharpe": 0.23245993453094252
+    }
+  }
+}

@@ -1,0 +1,57 @@
+# TradingEngineResearch — exact validated dependency lockfile (ROADMAP Phase 0)
+# ---------------------------------------------------------------------------
+# These are the EXACT versions the 327-test suite is validated against
+# (CPython 3.13, Windows). Use as a pip constraints file so resolution can never
+# drift onto an unvalidated release:
+#
+#   pip install -e ".[dev]" -c constraints.txt          # quant core + dev tooling
+#   pip install -e ".[all]" -c constraints.txt          # + optional engines (see torch note)
+#
+# A constraint only applies to a package actually being installed, so unused pins
+# below (e.g. torch when the `nlp` extra is not selected) are simply ignored.
+# Abstract version ranges live in pyproject.toml; this file pins the closure of
+# DIRECT dependencies. A fully hash-locked transitive lock (pip-tools / uv) is a
+# future hardening step (see ROADMAP Phase 6).
+
+# ── Core runtime (required) ────────────────────────────────────────────────────
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.17.1
+scikit-learn==1.9.0
+pydantic==2.10.4
+arch==8.0.0
+statsmodels==0.14.6
+hmmlearn==0.3.3
+
+# ── Dev toolchain ──────────────────────────────────────────────────────────────
+pytest==9.0.3
+pytest-cov==7.1.0
+coverage==7.14.1
+hypothesis==6.155.2
+mypy==2.1.0
+ruff==0.15.16
+
+# ── Optional: NLP / sentiment (extra `nlp`) ─────────────────────────────────────
+# torch is pinned to the CPU build; installing it requires the PyTorch CPU index:
+#   pip install torch==2.13.0+cpu --index-url https://download.pytorch.org/whl/cpu
+transformers==5.10.2
+torch==2.13.0+cpu
+psutil==7.2.2
+
+# ── Optional: baseline app / ingestion (validated versions present in the env) ──
+fastapi==0.115.6
+uvicorn==0.30.6
+httpx==0.28.1
+pydantic-settings==2.7.0        # central config (core/config.py)
+sqlalchemy==2.0.36              # central config app + SQL persistence backend (ops/state_store.py)
+requests==2.33.1
+yfinance==1.4.1                 # upgraded from 0.2.44 (Yahoo API change broke the old release)
+pyarrow==25.0.0                 # parquet cache for insider-transactions ingestion (data/insider_ingestion.py)
+cryptography==48.0.1            # encrypted secrets vault (core/vault.py, extra `vault`); floor raised 2026-07-08 (security), pin updated 2026-07-11 to match
+
+# ── Not yet installed / wired (pinned when their code paths are added) ──────────
+# pytest-asyncio, aiohttp                          (baseline app / future phases)
+# alembic                                          (persistence migrations, extra `persistence`; pin on first install)
+# ib-insync, alpaca-py                             (broker connectivity — future)
+# lightgbm                                         (extra `boost`  — optional fallback)
+# nlshrink                                         (extra `shrinkage` — optional fallback)

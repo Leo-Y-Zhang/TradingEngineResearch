@@ -1,0 +1,65 @@
+==============================================================================
+SLEEVE: INSTITUTIONAL OWNERSHIP FLOW (Sharadar SF3 13F holdings)
+Pre-registration: research/sleeves/institutional_flow_prereg.md
+==============================================================================
+
+SAMPLE
+  rebalances                         9
+  first / last rebalance    2013-11-29 .. 2015-11-30
+  monthly return periods            26   (2.17 years)
+  eligible names / date           1078
+  median spread                     91 bps
+  median dollar volume       7,203,000 USD/day
+  cells at rebalance dates      49,785
+    of which spread MEASURED    16,018
+    excluded, upper_bound       23,696
+  signal autocorr (q-on-q)      -0.251
+  book size                    250,000 USD (50 x 5,000)
+  min median dollar volume     500,000 USD/day
+
+BREADTH  (the whole point -- prereg §7)
+  rebalances per year              4.0
+  independent cross-sections         1
+  INDEPENDENT BETS PER YEAR        4.0
+  total independent bets in sample   9
+  Grinold: IR ~= IC * sqrt(BR). At BR = 4, IR = 1.0 needs IC = 0.50.
+
+HEADLINE  (net of per-name costs)
+  gross return       1.17%/yr
+  NET return        -6.54%/yr
+  net volatility    14.71%
+  NET SHARPE         -0.44   +/- 0.71 standard error
+  max drawdown      22.98%
+  turnover            6.61 x/yr
+  cost drag          7.71%/yr
+  mean positions      49.8
+
+BENCHMARK  (equal-weight buy-and-hold of THIS universe, zero costs)
+  benchmark return    -0.00%/yr
+  benchmark vol       12.43%
+  benchmark Sharpe     -0.00
+  gross excess         1.18%/yr   (signal contribution BEFORE costs)
+  EXCESS              -6.54%/yr   <-- the number that decides
+
+COST DECOMPOSITION  (share of total charged cost)
+  half-spread        63.5%
+  market impact      34.7%
+  commission          1.8%
+
+SIGNAL QUALITY
+  IC (3m horizon, Spearman)  mean  0.0072  t   0.54  n 8
+  IC (1m horizon, Spearman)  mean  0.0306  t   2.29
+  long/short decile spread     2.99%/yr  Sharpe  0.36   NOT DEPLOYABLE (no borrow)
+
+MECHANISM TEST H2 -- does the effect live in the LOW-ownership tercile?
+  tercile   mean own   names/date    net      bench    excess    IC     IC t
+  low         32.8%          360  -18.40%    -5.11%   -13.29%  0.0246    1.24
+  mid         73.2%          359   -4.25%     2.26%    -6.51% -0.0003   -0.02
+  high        96.6%          360   -6.26%     2.85%    -9.11% -0.0094   -0.40
+
+VERDICT  (gates fixed in advance: excess > 2%, Sharpe >= 0.75, IC t >= 2.0)
+  DEAD
+
+NOTES
+  ! ONLY 9 REBALANCES. Sharadar SF3 begins 2013-06-30, so the DEV window contains 11 quarters of 13F data in total. Every statistic below is estimated on a sample too short to distinguish from noise.
+==============================================================================

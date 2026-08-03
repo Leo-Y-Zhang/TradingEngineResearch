@@ -1,0 +1,33 @@
+# TradingEngineResearch pre-commit hooks — ruff (lint) + mypy (types).
+#
+# Unlike CI, pre-commit needs no remote and works locally now. It uses LOCAL hooks
+# that invoke the project's already-installed, version-pinned ruff/mypy (see
+# constraints.txt) — so there are no external hook-repo revisions to drift, and the
+# checks match exactly what CI runs.
+#
+# Activate locally:
+#   pip install pre-commit && pre-commit install
+# Run on demand against all files:
+#   pre-commit run --all-files
+#
+# pytest is intentionally NOT a pre-commit hook (too slow per-commit); it runs in CI.
+
+default_language_version:
+  python: python3
+
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff (lint)
+        entry: ruff check --force-exclude
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+
+      - id: mypy
+        name: mypy (type-check)
+        entry: mypy
+        language: system
+        pass_filenames: false       # mypy uses the [tool.mypy] files/exclude config
+        always_run: true
