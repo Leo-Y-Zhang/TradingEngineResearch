@@ -42,7 +42,7 @@ UNIVERSE = [
 START, END = "2015-01-01", "2026-01-01"
 TAGS = ["StockholdersEquity", "NetIncomeLoss", "Assets"]
 FIX = Path(__file__).resolve().parents[1] / "tests" / "fixtures" / "fama_french_daily_sample.csv"
-UA = {"User-Agent": "TradingEngineResearch research 268190724+GreenPandaTech@users.noreply.github.com"}
+UA = {"User-Agent": "TradingEngineResearch research 268190724+Leo-Y-Zhang@users.noreply.github.com"}
 
 
 def _get(url):

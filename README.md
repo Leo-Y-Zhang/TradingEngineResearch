@@ -2,7 +2,7 @@
 
 <!-- Coverage is enforced in CI (80% floor) but no badge service is wired, so no
      coverage badge is shown. -->
-[![CI](https://github.com/GreenPandaTech/TradingEngineResearch/actions/workflows/ci.yml/badge.svg)](https://github.com/GreenPandaTech/TradingEngineResearch/actions/workflows/ci.yml)
+[![CI](https://github.com/Leo-Y-Zhang/TradingEngineResearch/actions/workflows/ci.yml/badge.svg)](https://github.com/Leo-Y-Zhang/TradingEngineResearch/actions/workflows/ci.yml)
 
 TradingEngineResearch is a systematic-trading research platform built to answer one question
 honestly: can a disciplined retail researcher find deployable equity alpha in public

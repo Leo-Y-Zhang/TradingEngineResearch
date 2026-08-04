@@ -57,7 +57,7 @@ __all__ = [
 ]
 
 DEFAULT_TAGS = ("StockholdersEquity", "NetIncomeLoss", "Assets")
-_UA = {"User-Agent": "TradingEngineResearch research 268190724+GreenPandaTech@users.noreply.github.com"}
+_UA = {"User-Agent": "TradingEngineResearch research 268190724+Leo-Y-Zhang@users.noreply.github.com"}
 
 # ── companyfacts → 14-factor library bridge (Stage B / #1, free SEC fundamentals) ─────
 #
