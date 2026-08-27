@@ -23,7 +23,6 @@ request budgets for the observation and the control endpoints.
 
 from __future__ import annotations
 
-import hashlib
 import logging
 import math
 import secrets
@@ -673,10 +672,11 @@ def create_app(
     global budget which any unauthenticated third party could exhaust, denying the
     operator the surface they need to diagnose with — measured: two anonymous 401s
     locked the token holder out. So the budget is now keyed on the caller's
-    **identity**: a request bearing the valid token is keyed on a fingerprint of
-    that token (never the token itself), and everything else is keyed on the client
-    address. An anonymous flood can therefore only exhaust the anonymous budget,
-    while token guessing stays capped exactly as before.
+    **identity**: a request bearing the valid token is keyed on an opaque handle
+    for the token holder (minted at random per process, never derived from the
+    credential), and everything else is keyed on the client address. An anonymous
+    flood can therefore only exhaust the anonymous budget, while token guessing
+    stays capped exactly as before.
 
     ``trusted_proxy_header`` (SEC-4): OFF by default, because ``X-Forwarded-For``
     is caller-supplied and a spoofable identity is worse than a coarse one — it
@@ -709,13 +709,17 @@ def create_app(
     read_limiter = RateLimiter(policy.read_per_minute, policy.window_seconds, time_fn)
     write_limiter = RateLimiter(policy.write_per_minute, policy.window_seconds, time_fn)
 
-    # Fingerprint, not the credential: this ends up in a rate-limiter key, and a
-    # key is one careless log line away from being an exfiltrated token.
-    token_identity = (
-        "token:" + hashlib.sha256(api_token.encode("utf-8")).hexdigest()[:12]
-        if api_token
-        else None
-    )
+    # An opaque handle for the token holder, NOT a digest of the credential. The
+    # old comment here said the key was "one careless log line away" from leaking
+    # the token; it is not one line away, it IS logged — ``identity`` is a field on
+    # every ``rate_limited`` event. A bare SHA-256 in the trail is an offline
+    # oracle: one fast unsalted hash per candidate is all a wordlist needs against
+    # an operator-chosen token. Deriving it bought nothing, because there is
+    # exactly ONE token per app and the limiter's map is in-memory and dies with
+    # the process, so the identity only has to be stable for this instance and
+    # distinct from every address key. A random handle is both of those, and is
+    # unlinkable to the credential by construction. Shape unchanged: 12 hex.
+    token_identity = "token:" + secrets.token_hex(6) if api_token else None
     expected_authorization = (
         f"Bearer {api_token}".encode("utf-8") if api_token else None
     )

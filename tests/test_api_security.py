@@ -461,8 +461,11 @@ def test_the_security_log_never_carries_the_raw_token_as_an_identity(tmp_path, s
     So the test now drives the limiter over its budget with the valid credential,
     which is the only path that writes an identity, and pins the SHAPE of what it
     writes. ``TOKEN not in identity`` alone would still be weak — a truncated or
-    reordered credential would slip through — so the fingerprint is checked against
-    the value it is supposed to be.
+    reordered credential would slip through — so the handle is also checked for the
+    one property that matters once it is in a log file: that it is not a FUNCTION
+    of the credential at all. This used to be an equality against
+    ``sha256(TOKEN)[:12]``, which pinned the opposite — a derivation an attacker
+    who reads the trail can replay offline against a wordlist.
     """
     policy = RateLimitPolicy(read_per_minute=1, write_per_minute=1)
     client, _svc = _app(tmp_path, token=TOKEN, policy=policy)
@@ -475,17 +478,30 @@ def test_the_security_log_never_carries_the_raw_token_as_an_identity(tmp_path, s
     identity = throttled[0]["identity"]
     assert TOKEN not in identity, f"the credential itself is the rate-limiter identity: {identity!r}"
     assert re.fullmatch(r"token:[0-9a-f]{12}", identity), (
-        f"the identity is not the expected sha256 fingerprint: {identity!r}"
+        f"the identity is not the expected opaque handle: {identity!r}"
     )
-    import hashlib
-
-    assert identity == "token:" + hashlib.sha256(TOKEN.encode("utf-8")).hexdigest()[:12]
 
     blob = "\n".join(r.getMessage() for r in seclog.records) + str(
         [getattr(r, "security", None) for r in seclog.records])
     assert TOKEN not in blob
     # Any prefix of the credential is a gift to an attacker with a wordlist.
     assert TOKEN[:8] not in blob
+
+    # And the handle must not be computable from the credential: a second app given
+    # the SAME token must write a different one. Any deterministic derivation —
+    # sha256, a truncation, a keyed digest with a fixed key — makes these two equal
+    # and turns the logged value into something a wordlist can confirm offline.
+    seclog.clear()
+    other_dir = tmp_path / "second"
+    other_dir.mkdir()
+    other, _svc2 = _app(other_dir, token=TOKEN, policy=policy)
+    assert other.get("/status", headers=auth).status_code == 200
+    assert other.get("/status", headers=auth).status_code == 429
+    other_identity = _events(seclog, "rate_limited")[0]["identity"]
+    assert other_identity != identity, (
+        "the rate-limit identity is derived from the credential, so the trail carries "
+        f"a value an attacker can reproduce offline: {identity!r}"
+    )
 
 
 # ── 6. the generated docs are part of the admin surface (SEC-5) ───────────────────────

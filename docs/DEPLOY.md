@@ -102,8 +102,11 @@ control surface was open by design.
   address (loopback, or the docker gateway behind a compose port map), so an
   IP-keyed budget was one global budget any anonymous caller could exhaust —
   measured: two anonymous 401s locked the token holder out. A request bearing the
-  valid token is now keyed on a fingerprint of that token; everything else shares
-  the anonymous budget for its address.
+  valid token is now keyed on an opaque handle for the token holder, minted at
+  random when the app starts rather than derived from the credential — the handle
+  is written to the security trail, and a digest of the token there would be an
+  offline oracle for anyone with a wordlist. Everything else shares the anonymous
+  budget for its address.
   `ENGINE_API_TRUSTED_PROXY_HEADER` (unset by default) names a proxy header
   to take the client address from. **Leave it unset unless the API is unreachable
   except through a proxy that sets that header itself** — it is caller-supplied,
