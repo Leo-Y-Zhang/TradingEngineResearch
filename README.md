@@ -1,6 +1,6 @@
 # TradingEngineResearch
 
-<!-- Coverage is enforced in CI (80% floor) but no badge service is wired, so no
+<!-- Coverage is enforced in CI (70% floor) but no badge service is wired, so no
      coverage badge is shown. -->
 [![CI](https://github.com/Leo-Y-Zhang/TradingEngineResearch/actions/workflows/ci.yml/badge.svg)](https://github.com/Leo-Y-Zhang/TradingEngineResearch/actions/workflows/ci.yml)
 
@@ -28,8 +28,8 @@ artefacts (pre-registrations, errata, result files, dev logs) live in
 
 | | |
 |---|---|
-| Automated tests | 1,813 passing (unit, property-based and stateful; Hypothesis fuzzing of order-state invariants) |
-| CI | ruff + mypy + pytest with an 80% coverage floor (measured baseline 88%) + gitleaks secret scan |
+| Automated tests | 1,813 passing with all optional extras installed (unit, property-based and stateful; Hypothesis fuzzing of order-state invariants) — the base `.[dev]` install silently skips the ~33 tests gated on `app`/`vault`/`brokers`/`persistence` |
+| CI | ruff + mypy + pytest with a 70% coverage floor (measured ~72% in CI / ~75% locally) + gitleaks secret scan |
 | Engine baseline | 18.4% annualised, Sharpe 1.15, max drawdown 17.1%, net of costs including financing (8 large caps, monthly, 2016–2024) |
 | Baseline replication | rerun on a second, survivorship-free data vendor: 18.37% / 1.15 / 17.09%; daily-return correlation 1.000000 on the overlapping sample |
 | Alpha studies | 9 studies across 5 data sources — all banked NOT-DEPLOYABLE |
@@ -155,7 +155,14 @@ Requires Python ≥ 3.11 (validated on CPython 3.13).
 # Install (dev extras = tests, lint, types), pinned to the validated environment
 pip install -e ".[dev]" -c constraints.txt
 
-# Run the test suite (1,813 tests; a few skip when optional local data is absent)
+# For the full 1,813-test suite, install the optional extras too:
+pip install -e ".[dev,app,vault,brokers,persistence]" -c constraints.txt
+
+# Run the test suite. 1,813 tests; without the extras above, modules gated on
+# fastapi/uvicorn/httpx (app), cryptography (vault), alpaca-py (brokers) and
+# sqlalchemy/alembic (persistence) skip as a unit and 3 more need local
+# licensed data (_data/multiasset) or are an acknowledged information-limit
+# skip (test_spread_estimation), not a missing package.
 pytest -q
 
 # Run the offline research self-tests — each builds a deterministic synthetic
@@ -189,7 +196,7 @@ execution/     order lifecycle, child scheduling, cost models, TCA
 broker/        broker adapters (paper deterministic; live-only submit paths)
 ops/           run loop, FastAPI control API, hash-chained ledger
 backtesting/   backtest engine and bootstrap analysis
-tests/         1,813 tests, incl. the no-live-path and edge-recovery proofs
+tests/         1,813 tests (with all extras), incl. the no-live-path and edge-recovery proofs
 scripts/       study runners (each with an offline --selftest)
 docs/          RESEARCH_WRITEUP.md, ARCHITECTURE.md, SYSTEMS.md, project-control/
 ```
