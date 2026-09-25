@@ -28,7 +28,7 @@ artefacts (pre-registrations, errata, result files, dev logs) live in
 
 | | |
 |---|---|
-| Automated tests | 1,813 passing with all optional extras installed (unit, property-based and stateful; Hypothesis fuzzing of order-state invariants) — the base `.[dev]` install silently skips the ~33 tests gated on `app`/`vault`/`brokers`/`persistence` |
+| Automated tests | 1,831 passing with all optional extras installed (unit, property-based and stateful; Hypothesis fuzzing of order-state invariants) — the base `.[dev]` install silently skips the ~33 tests gated on `app`/`vault`/`brokers`/`persistence` |
 | CI | ruff + mypy + pytest with a 70% coverage floor (measured ~72% in CI / ~75% locally) + gitleaks secret scan |
 | Engine baseline | 18.4% annualised, Sharpe 1.15, max drawdown 17.1%, net of costs including financing (8 large caps, monthly, 2016–2024) |
 | Baseline replication | rerun on a second, survivorship-free data vendor: 18.37% / 1.15 / 17.09%; daily-return correlation 1.000000 on the overlapping sample |
@@ -95,11 +95,13 @@ and it implements purged walk-forward with embargo, purging by bar count rather 
 calendar days (a recorded defect fix: calendar purging under-purges a business-day
 index).
 
-Promotion is decided by an all-or-nothing, default-deny rule enforcing **seven
+Promotion is decided by an all-or-nothing, default-deny rule enforcing **eight
 checks**: mean rank-IC > 0.01, net-of-cost Sharpe > 0.75, IC stability > 0.60, a
 deflated-Sharpe proxy > 0.25, the full **Deflated Sharpe Ratio ≥ 0.95** (Bailey and
-López de Prado, 2014), zero leakage flags, and no single regime with Sharpe below
-−0.50. Any one failure blocks promotion. Overfitting probability is computed by
+López de Prado, 2014), a probability-of-backtest-overfitting proxy below 0.50, zero
+leakage flags, and no single regime with Sharpe below −0.50. Any one failure blocks
+promotion. (The PBO check was added on 2026-07-31, after the nine studies below had
+closed.) Overfitting probability is computed by
 Combinatorial Symmetric Cross-Validation (Bailey, Borwein, López de Prado and Zhu,
 2017). Trial counts are honest: `n_trials` is the number of configurations tried
 during the research, not folds, and a superseded defective run still counts as a look.
@@ -155,10 +157,10 @@ Requires Python ≥ 3.11 (validated on CPython 3.13).
 # Install (dev extras = tests, lint, types), pinned to the validated environment
 pip install -e ".[dev]" -c constraints.txt
 
-# For the full 1,813-test suite, install the optional extras too:
+# For the full 1,831-test suite, install the optional extras too:
 pip install -e ".[dev,app,vault,brokers,persistence]" -c constraints.txt
 
-# Run the test suite. 1,813 tests; without the extras above, modules gated on
+# Run the test suite. 1,831 tests; without the extras above, modules gated on
 # fastapi/uvicorn/httpx (app), cryptography (vault), alpaca-py (brokers) and
 # sqlalchemy/alembic (persistence) skip as a unit and 3 more need local
 # licensed data (_data/multiasset) or are an acknowledged information-limit
@@ -196,8 +198,8 @@ execution/     order lifecycle, child scheduling, cost models, TCA
 broker/        broker adapters (paper deterministic; live-only submit paths)
 ops/           run loop, FastAPI control API, hash-chained ledger
 backtesting/   backtest engine and bootstrap analysis
-tests/         1,813 tests (with all extras), incl. the no-live-path and edge-recovery proofs
-scripts/       study runners (each with an offline --selftest)
+tests/         1,831 tests (with all extras), incl. the no-live-path and edge-recovery proofs
+scripts/       study runners (the three alpha-search runners carry an offline --selftest)
 docs/          RESEARCH_WRITEUP.md, ARCHITECTURE.md, SYSTEMS.md, project-control/
 ```
 
