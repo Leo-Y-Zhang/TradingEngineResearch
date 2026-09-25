@@ -83,12 +83,17 @@ def sortino(returns: object, periods_per_year: int = 252, risk_free: float = 0.0
 
 
 def max_drawdown(returns: object) -> float:
-    """Maximum peak-to-trough drawdown as a positive magnitude (0.25 = -25%)."""
+    """Maximum peak-to-trough drawdown as a positive magnitude (0.25 = -25%).
+
+    The equity path starts at 1.0 before the first return, and that starting capital
+    is the first peak: a loss in period one is a drawdown, exactly as the harness's
+    drawdown governor (``peak = 1.0``) sees it.
+    """
     r = _arr(returns)
     if r.size == 0:
         return 0.0
     equity = np.cumprod(1.0 + r)
-    running_peak = np.maximum.accumulate(equity)
+    running_peak = np.maximum(np.maximum.accumulate(equity), 1.0)
     drawdowns = equity / running_peak - 1.0
     return float(-np.min(drawdowns))
 

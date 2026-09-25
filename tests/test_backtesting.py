@@ -39,6 +39,17 @@ class TestMetrics:
     def test_max_drawdown_monotonic_up_is_zero(self):
         assert m.max_drawdown(pd.Series([0.01, 0.02, 0.01])) == pytest.approx(0.0, abs=1e-12)
 
+    def test_max_drawdown_measures_from_the_starting_capital(self):
+        # The equity path starts at 1.0, so that is the first peak. Measuring from the
+        # first MARK instead drops a loss taken in period one: 1 -> 0.9 -> 0.81 is a
+        # 19% drawdown, not 10%, and a 50% first-period loss is not "no drawdown".
+        assert m.max_drawdown(pd.Series([-0.1, -0.1])) == pytest.approx(0.19, abs=1e-12)
+        assert m.max_drawdown(pd.Series([-0.5, 0.1])) == pytest.approx(0.5, abs=1e-12)
+        r = pd.Series([-0.1, -0.1])
+        assert m.calmar(r, periods_per_year=12) == pytest.approx(
+            m.ann_return(r, periods_per_year=12) / 0.19, rel=1e-12
+        )
+
     def test_hit_rate(self):
         # positives: 0.01, 0.02 -> 2 of 5 (0.0 is not a hit)
         assert m.hit_rate(pd.Series([0.01, -0.01, 0.02, 0.0, -0.03])) == pytest.approx(0.4)
