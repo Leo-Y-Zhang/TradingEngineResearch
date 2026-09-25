@@ -189,6 +189,47 @@ class TestBacktester:
         assert max(seen) > 0.05                             # full book in a crash → deep drawdown
 
 
+class TestAnnualisation:
+    """The periods-per-year the harness infers when the caller does not pass one."""
+
+    @staticmethod
+    def _implied_ppy(monkeypatch, index: pd.DatetimeIndex, rebalance: str) -> float:
+        from types import SimpleNamespace
+
+        def _stub_run_cycle(self, inputs):
+            n = len(inputs.symbols)
+            return SimpleNamespace(
+                blocked=False, target_weights={s: 1.0 / n for s in inputs.symbols}
+            )
+
+        monkeypatch.setattr(eng.TradingEngine, "run_cycle", _stub_run_cycle)
+        rng = np.random.default_rng(3)
+        prices = pd.DataFrame(
+            {c: 100.0 * np.exp(np.cumsum(rng.normal(0.0005, 0.01, len(index))))
+             for c in ("AAA", "BBB")},
+            index=index,
+        )
+        res = Backtester(rebalance=rebalance, warmup=5, seed=7).run(prices)
+        # sharpe = raw_sharpe * sqrt(ppy), so the ppy the run used can be read back.
+        return (res.metrics["sharpe"] / m.sharpe(res.returns, periods_per_year=1)) ** 2
+
+    def test_daily_rebalance_on_trading_days_is_not_annualised_as_365(self, monkeypatch):
+        # Daily rebalances on an exchange calendar are one CALENDAR day apart at the
+        # median, which the gap rule turned into 365 periods a year -- inflating Sharpe
+        # by sqrt(365/252) ~ 1.2x. It is the number of rebalances a year that counts.
+        idx = pd.bdate_range("2021-01-04", "2022-12-30", tz="UTC")
+        assert 250 <= self._implied_ppy(monkeypatch, idx, "D") <= 263
+
+    def test_daily_rebalance_on_a_seven_day_calendar_is_365(self, monkeypatch):
+        idx = pd.date_range("2021-01-01", "2022-12-31", freq="D", tz="UTC")
+        assert self._implied_ppy(monkeypatch, idx, "D") == pytest.approx(365, abs=1)
+
+    @pytest.mark.parametrize("rebalance, expected", [("W", 52), ("M", 12)])
+    def test_weekly_and_monthly_are_unchanged(self, monkeypatch, rebalance, expected):
+        idx = pd.bdate_range("2019-01-01", "2022-12-30", tz="UTC")
+        assert self._implied_ppy(monkeypatch, idx, rebalance) == pytest.approx(expected)
+
+
 class TestAchievedBook:
 
     def test_paper_book_carries_achieved_weights(self, monkeypatch):
