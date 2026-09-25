@@ -63,6 +63,13 @@ class TestMetrics:
         expected = r.mean() / r.std(ddof=1) * np.sqrt(252)
         assert m.sharpe(r, periods_per_year=252) == pytest.approx(expected, rel=1e-9)
 
+    def test_sharpe_risk_free_is_an_annual_rate(self):
+        # risk_free is annual: 12% a year is 1% a month off every monthly return.
+        r = pd.Series([0.02, 0.00, 0.03, 0.01, -0.01, 0.02])
+        excess = r - 0.01
+        expected = excess.mean() / excess.std(ddof=1) * np.sqrt(12)
+        assert m.sharpe(r, periods_per_year=12, risk_free=0.12) == pytest.approx(expected, rel=1e-12)
+
     def test_ann_vol_matches_formula(self):
         rng = np.random.default_rng(1)
         r = pd.Series(rng.normal(0.0, 0.01, 1000))

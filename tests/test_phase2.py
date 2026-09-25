@@ -261,6 +261,23 @@ class TestSelectionRule:
         """Boundaries are strict (> not >=)."""
         assert selection_rule(_passing_result(mean_rank_ic=0.01)) is False
         assert selection_rule(_passing_result(sharpe_net=0.75))   is False
+        assert selection_rule(_passing_result(stability_score=0.60)) is False
+        assert selection_rule(_passing_result(deflated_sharpe_proxy=0.25)) is False
+
+    def test_real_dsr_bar_is_0_95_inclusive(self):
+        # The binding criterion, and the only inclusive one: DSR >= 0.95 passes. Anything
+        # below fails, including the programme's strongest banked result (0.905).
+        assert selection_rule(_passing_result(deflated_sharpe_ratio=0.95)) is True
+        assert selection_rule(_passing_result(deflated_sharpe_ratio=0.9499)) is False
+        assert selection_rule(_passing_result(deflated_sharpe_ratio=0.905)) is False
+
+    def test_regime_bar_is_strictly_below_minus_half(self):
+        assert selection_rule(
+            _passing_result(regime_breakdown={"trending": {"sharpe": -0.50}})
+        ) is True
+        assert selection_rule(
+            _passing_result(regime_breakdown={"trending": {"sharpe": -0.5001}})
+        ) is False
 
 
 # ── 4. SignalOutput ───────────────────────────────────────────────────────────
@@ -414,6 +431,14 @@ class TestEvaluateAlphaStability:
 
     def test_empty_series_returns_zero(self):
         assert evaluate_alpha_stability(pd.Series([], dtype=float)) == 0.0
+
+    def test_known_answer(self):
+        # sqrt(hit_rate * sigmoid(t / 2)) with t the fold-IC t-statistic. Pinned because
+        # the 0.60 bar in selection_rule is read against exactly this scale.
+        ic = pd.Series([0.02, 0.04, -0.01, 0.03])
+        t = 0.02 / (np.std(ic.to_numpy(), ddof=1) / 2.0)
+        expected = np.sqrt(0.75 / (1.0 + np.exp(-t / 2.0)))
+        assert evaluate_alpha_stability(ic) == pytest.approx(expected, rel=1e-12)
 
 
 # ── 8. normalize_mode (security fix) ─────────────────────────────────────────
@@ -605,6 +630,50 @@ class TestDeflatedSharpeAndPBO:
         from research.validation import deflated_sharpe_ratio
         assert deflated_sharpe_ratio([1.0, 1.0, 1.0, 1.0]) == 0.0   # zero variance
         assert deflated_sharpe_ratio([1.0, 2.0]) == 0.0            # too few observations
+
+    def test_dsr_known_answer_on_two_point_returns(self):
+        # Alternating mu +/- s: skew 0 and (non-excess) kurtosis exactly 1, so the moment
+        # terms vanish, sigma_SR = 1/sqrt(T-1), and with SR = (mu/s)*sqrt((T-1)/T) the
+        # statistic is z = (mu/s)*(T-1)/sqrt(T) = 0.1 * 99 / 10 = 0.99 for T = 100.
+        from scipy.stats import norm
+        from research.validation import deflated_sharpe_ratio
+        r = 0.001 + 0.01 * np.tile([1.0, -1.0], 50)
+        assert deflated_sharpe_ratio(r, n_trials=1) == pytest.approx(norm.cdf(0.99), abs=1e-9)
+        # N trials subtract the expected-maximum bracket, in units of sigma_SR.
+        gamma = 0.5772156649015329
+        bracket = (1 - gamma) * norm.ppf(1 - 1 / 10) + gamma * norm.ppf(1 - 1 / (10 * np.e))
+        assert deflated_sharpe_ratio(r, n_trials=10) == pytest.approx(
+            norm.cdf(0.99 - bracket), abs=1e-9
+        )
+
+    def test_dsr_penalises_negative_skew(self):
+        # The estimator variance is (1 - g3*SR + (g4-1)/4*SR^2)/(T-1): with a positive
+        # Sharpe, negative skew widens it and must LOWER the DSR. Reflecting a series
+        # about its mean keeps the mean, variance and kurtosis and flips the skew, so it
+        # isolates exactly the g3 term.
+        from scipy.stats import skew
+        from research.validation import deflated_sharpe_ratio
+        base = np.random.default_rng(5).lognormal(0.0, 0.6, 250)
+        right = 0.001 + 0.01 * (base - base.mean()) / base.std()
+        left = 2.0 * right.mean() - right
+        assert skew(right) > 1.0 and skew(left) < -1.0
+        dsr_right = deflated_sharpe_ratio(right, n_trials=1)
+        dsr_left = deflated_sharpe_ratio(left, n_trials=1)
+        assert 0.5 < dsr_left < dsr_right < 1.0
+
+    def test_pbo_known_answers_on_two_blocks(self):
+        # S=2 blocks give two combinations (IS = block 0, then IS = block 1).
+        from research.validation import probability_of_backtest_overfitting as pbo
+        # Config 0 wins both blocks: the IS-best is the OOS-best every time.
+        dominant = np.array([[2.0, 1.0], [2.0, 1.0], [2.0, 1.0], [2.0, 1.0]])
+        assert pbo(dominant, n_splits=2) == 0.0
+        # Each config wins one block: the IS-best is the OOS-worst every time.
+        reversal = np.array([[2.0, 1.0], [2.0, 1.0], [1.0, 2.0], [1.0, 2.0]])
+        assert pbo(reversal, n_splits=2) == 1.0
+        # Three configs, IS-best always lands exactly on the OOS median: logit 0,
+        # which the docstring counts as overfit (logit <= 0).
+        median = np.array([[3.0, 2.0, 1.0], [3.0, 2.0, 1.0], [2.0, 3.0, 1.0], [2.0, 3.0, 1.0]])
+        assert pbo(median, n_splits=2) == 1.0
 
     def test_pbo_around_half_for_pure_noise(self):
         from research.validation import probability_of_backtest_overfitting
