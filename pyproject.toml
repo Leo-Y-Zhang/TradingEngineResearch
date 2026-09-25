@@ -75,7 +75,7 @@ brokers = ["ib-insync>=0.9.86,<1", "alpaca-py>=0.30,<1"]
 # Market-data ingestion (future phase).
 ingestion = ["requests>=2.32,<3", "aiohttp>=3.10,<4", "yfinance>=1.0,<2", "pyarrow>=25,<26"]
 # Encrypted secrets vault (Phase 6).
-vault = ["cryptography>=48.0.1,<50"]
+vault = ["cryptography>=50.0.1,<51"]
 # SQL persistence backend (Phase 6 — ops/state_store.py SqlStateStore + Alembic).
 persistence = ["sqlalchemy>=2,<3", "alembic>=1.13,<2"]
 # Development toolchain.

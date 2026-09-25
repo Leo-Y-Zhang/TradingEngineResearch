@@ -47,7 +47,7 @@ sqlalchemy==2.0.36              # central config app + SQL persistence backend (
 requests==2.33.1
 yfinance==1.4.1                 # upgraded from 0.2.44 (Yahoo API change broke the old release)
 pyarrow==25.0.0                 # parquet cache for insider-transactions ingestion (data/insider_ingestion.py)
-cryptography==48.0.1            # encrypted secrets vault (core/vault.py, extra `vault`); floor raised 2026-07-08 (security), pin updated 2026-07-11 to match
+cryptography==50.0.1            # encrypted secrets vault (core/vault.py, extra `vault`); floor and pin raised 2026-09-25 (security: CVE-2026-69247/-69248/-69249)
 
 # ── Not yet installed / wired (pinned when their code paths are added) ──────────
 # pytest-asyncio, aiohttp                          (baseline app / future phases)
