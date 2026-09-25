@@ -111,7 +111,9 @@ def evaluate_factor(
     Parameters
     ----------
     factor_series : Series indexed by datetime — the raw factor values
-    returns_df    : DataFrame indexed by datetime — forward returns per symbol
+    returns_df    : DataFrame indexed by datetime — per-bar returns per symbol (the return
+                    earned over each bar); the forward label over the next
+                    ``label_horizon`` bars is built from it here, so do not pre-shift it
     costs_bps     : round-trip transaction cost in bps (used for net Sharpe)
     splitter      : optional custom PurgedWalkForwardSplitter; uses default if None
     regime_labels : optional Series indexed by datetime — regime label per bar
@@ -261,12 +263,15 @@ def evaluate_factor(
             mask = regime_labels.loc[common_idx] == regime
             regime_ic_vals = []
             for train_idx, valid_idx, _ in splits:
-                val_idx_dates = common_idx[valid_idx]
-                regime_mask = mask.loc[val_idx_dates]
+                regime_mask = mask.iloc[valid_idx].to_numpy(dtype=bool)
                 if not regime_mask.any():
                     continue
-                rf = factor_aligned.loc[val_idx_dates][regime_mask].values
-                rr = returns_aligned.loc[val_idx_dates][regime_mask].mean(axis=1).values
+                # Score against the same FORWARD return as the headline IC (SIGNALS-4),
+                # not the same-bar return, dropping the unlabelable tail the same way.
+                rf = factor_aligned.iloc[valid_idx].to_numpy(dtype=float)[regime_mask]
+                rr = fwd_mkt[valid_idx][regime_mask]
+                finite = np.isfinite(rf) & np.isfinite(rr)
+                rf, rr = rf[finite], rr[finite]
                 if len(rf) >= 2 and np.std(rf) > 0 and np.std(rr) > 0:
                     regime_ic_vals.append(float(np.corrcoef(rf, rr)[0, 1]))
             if regime_ic_vals:

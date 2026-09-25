@@ -485,6 +485,44 @@ class TestFactoryPromotion:
         assert result.mean_rank_ic > 0.1, f"real edge should show high forward IC, got {result.mean_rank_ic}"
         assert selection_rule(result) is True, result.leakage_flags
 
+    def test_regime_breakdown_scores_the_forward_return_like_the_headline_ic(self):
+        # The per-regime IC must be the SAME forward-return IC as the headline, restricted
+        # to the regime's bars. Scored against the same-bar return instead, it undid
+        # SIGNALS-4 for the regime check: one regime covering every bar turned the
+        # near-perfect predictor above into a negative-IC regime that failed the gate,
+        # while a same-bar (look-ahead) "factor" scored a perfect regime IC.
+        h = 2
+        ret = self._returns(n=300, k=3, seed=7)
+        mkt = ret.mean(axis=1)
+        noise = np.random.default_rng(7).normal(0.0, 1e-4, len(ret))
+        predictor = (mkt.rolling(h).sum().shift(-h) + noise).fillna(0.0)
+        splitter = PurgedWalkForwardSplitter(
+            train_size=60, valid_size=30, test_size=30, embargo_size=2, label_horizon=h
+        )
+        one_regime = pd.Series("all", index=ret.index)
+
+        result = af.evaluate_factor(predictor, ret, splitter=splitter, regime_labels=one_regime)
+        assert result.regime_breakdown["all"]["ic"] == pytest.approx(result.mean_ic, abs=1e-6)
+        assert selection_rule(result) is True, result.regime_breakdown
+
+        same_bar = af.evaluate_factor(mkt, ret, splitter=splitter, regime_labels=one_regime)
+        assert same_bar.regime_breakdown["all"]["ic"] == pytest.approx(same_bar.mean_ic, abs=1e-6)
+
+    def test_costs_lower_the_net_sharpe(self):
+        # sharpe_net is net of costs_bps: the same factor must score lower when trading
+        # it costs more, while its IC (a pure forecast statistic) must not move.
+        h = 2
+        ret = self._returns(n=300, k=3, seed=7)
+        noise = np.random.default_rng(7).normal(0.0, 1e-4, len(ret))
+        factor = (ret.mean(axis=1).rolling(h).sum().shift(-h) + noise).fillna(0.0)
+        splitter = PurgedWalkForwardSplitter(
+            train_size=60, valid_size=30, test_size=30, embargo_size=2, label_horizon=h
+        )
+        free = af.evaluate_factor(factor, ret, costs_bps=0.0, splitter=splitter, n_trials=1)
+        costly = af.evaluate_factor(factor, ret, costs_bps=50.0, splitter=splitter, n_trials=1)
+        assert costly.sharpe_net < free.sharpe_net
+        assert costly.mean_ic == free.mean_ic
+
     def test_junk_rejected_across_seeds(self):
         # SIGNALS-6: random junk must NOT validate, robustly across seeds.
         splitter = PurgedWalkForwardSplitter(
