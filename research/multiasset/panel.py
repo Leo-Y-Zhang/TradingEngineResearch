@@ -384,8 +384,10 @@ def monthly_returns(daily: pd.DataFrame, *, min_obs: int = 5) -> pd.DataFrame:
     monthly.index.name = "date"
 
     last_date = daily.index.max()
-    last_bday = (last_date + pd.offsets.MonthEnd(0)) - pd.offsets.BDay(0)
     month_end = (last_date + pd.offsets.MonthEnd(0)).normalize()
+    # Roll a weekend month end BACK to its Friday. (`month_end - BDay(0)` rolls it
+    # FORWARD into the next month, so every month ending on a weekend looked partial.)
+    last_bday = pd.offsets.BMonthEnd().rollback(month_end)
     if last_date < pd.Timestamp(last_bday).normalize():
         monthly = monthly[monthly.index < month_end]
     return monthly
