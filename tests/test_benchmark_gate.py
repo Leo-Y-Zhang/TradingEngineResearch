@@ -111,6 +111,20 @@ def test_pairing_tightens_the_interval() -> None:
     )
 
 
+def test_both_bounds_are_one_sided_90_percent() -> None:
+    # Registered wording: one-sided 90% bounds, i.e. the 10th and 90th percentiles of
+    # the paired bootstrap. On a well-behaved Gaussian pair they sit symmetrically about
+    # the point gap; a 95% (5th-percentile) lower bound would sit ~1.28x further out.
+    bench = _bench(seed=6)
+    rng = np.random.default_rng(7)
+    cand = bench + 0.001 + pd.Series(rng.normal(0.0, 0.01, len(bench)), index=bench.index)
+    cmp_ = paired_sharpe_comparison(cand, bench, _PPY)
+    below = cmp_.sharpe_gap - cmp_.diff_lower_90
+    above = cmp_.diff_upper_90 - cmp_.sharpe_gap
+    assert below > 0 and above > 0
+    assert below / above == pytest.approx(1.0, abs=0.12)
+
+
 # ── the benchmark-shopping detector (C7) ──────────────────────────────────────
 
 def test_beats_nominated_but_loses_to_panel_member_is_sensitive_not_promotable() -> None:

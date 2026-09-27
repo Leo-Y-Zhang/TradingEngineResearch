@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+import pytest
 
 from research.alpha_factory import learn_signal_weights
 from research.validation import selection_rule
@@ -61,3 +62,27 @@ def test_degenerate_input_fails_closed():
     sig = pd.DataFrame(rng.standard_normal((5, len(SYMBOLS))), index=short, columns=SYMBOLS)
     w2, r2 = learn_signal_weights({"a": sig}, sig)
     assert w2 == {"a": 0.0} and selection_rule(r2) is False
+
+
+def test_net_sharpe_is_annualised_at_the_callers_frequency():
+    # Every banked study passes periods_per_year=12 (monthly rebalances). The net Sharpe
+    # is the per-period Sharpe times sqrt(periods_per_year), and nothing else moves: the
+    # DSR is computed on the per-period returns and must not depend on it.
+    rng = np.random.default_rng(7)
+    sig_a = _panel(rng)
+    fwd = 0.03 * sig_a + 0.02 * _panel(rng)
+    _, monthly = learn_signal_weights({"alpha": sig_a}, fwd, n_trials=8, periods_per_year=12)
+    _, daily = learn_signal_weights({"alpha": sig_a}, fwd, n_trials=8, periods_per_year=252)
+    assert daily.sharpe_net / monthly.sharpe_net == pytest.approx(np.sqrt(252 / 12), rel=1e-12)
+    assert daily.deflated_sharpe_ratio == monthly.deflated_sharpe_ratio
+
+
+def test_ridge_penalty_shrinks_the_weights():
+    # The combiner is RIDGE (closed-form, l2-penalised), not OLS: a heavy penalty must
+    # pull the learned loading toward zero without flipping its sign.
+    rng = np.random.default_rng(7)
+    sig_a = _panel(rng)
+    fwd = 0.03 * sig_a + 0.02 * _panel(rng)
+    light, _ = learn_signal_weights({"alpha": sig_a}, fwd, n_trials=8, l2=1.0)
+    heavy, _ = learn_signal_weights({"alpha": sig_a}, fwd, n_trials=8, l2=1e6)
+    assert 0.0 < heavy["alpha"] < light["alpha"] / 2.0

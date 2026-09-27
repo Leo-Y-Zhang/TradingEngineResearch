@@ -139,13 +139,25 @@ class Backtester:
         return [index[p] for p in sorted(last_pos.values()) if p >= self.warmup]
 
     def _infer_ppy(self, dates: list[pd.Timestamp]) -> int:
+        """Rebalances per year, used when ``periods_per_year`` is not given.
+
+        Weekly and slower: ``365.25 / median gap``, which a missing week or month does
+        not move. Daily: the median gap is one CALENDAR day whether the calendar has
+        252 trading days a year or 365, so the gap cannot tell them apart and read every
+        exchange calendar as 365; count the rebalances per year of span instead.
+        """
         if self.periods_per_year is not None:
             return int(self.periods_per_year)
         if len(dates) < 2:
             return 252
         gaps = np.diff([d.value for d in dates]) / 8.64e13   # ns → days
         median_days = float(np.median(gaps))
-        return max(1, int(round(365.25 / median_days))) if median_days > 0 else 252
+        if median_days <= 0:
+            return 252
+        if median_days < 4.0:                                  # daily rebalancing
+            span_days = float(np.sum(gaps))
+            return max(1, int(round((len(dates) - 1) * 365.25 / span_days)))
+        return max(1, int(round(365.25 / median_days)))
 
     # ── inputs ────────────────────────────────────────────────────────────────────
 

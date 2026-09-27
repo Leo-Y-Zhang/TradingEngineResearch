@@ -232,6 +232,20 @@ def test_monthly_returns_compound_daily_and_refuse_to_present_a_stub_as_a_month(
     assert monthly.index.tolist() == [pd.Timestamp("2020-01-31"), pd.Timestamp("2020-02-29")]
 
 
+def test_monthly_returns_keep_a_final_month_that_ends_on_its_last_business_day():
+    # 2024-08-31 is a Saturday, so Friday 2024-08-30 is August's last business day and
+    # data ending there covers the whole month. Rolling the weekend month-end FORWARD
+    # to Monday 2024-09-02 made every such month look partial and dropped it.
+    idx = pd.bdate_range("2024-07-01", "2024-08-30")
+    daily = pd.DataFrame({"A": 0.001}, index=idx)
+    monthly = monthly_returns(daily, min_obs=5)
+    assert monthly.index.tolist() == [pd.Timestamp("2024-07-31"), pd.Timestamp("2024-08-31")]
+    assert monthly.loc["2024-08-31", "A"] == pytest.approx(1.001 ** 22 - 1.0)
+    # One business day short is still a partial month.
+    short = monthly_returns(daily.iloc[:-1], min_obs=5)
+    assert short.index.tolist() == [pd.Timestamp("2024-07-31")]
+
+
 def test_a_month_below_min_obs_is_nan_for_that_instrument_only():
     idx = pd.DatetimeIndex(["2020-01-02", "2020-01-03"]                      # 2 obs ⇒ stub
                            + list(pd.bdate_range("2020-02-03", "2020-02-10"))  # 6 obs ⇒ kept

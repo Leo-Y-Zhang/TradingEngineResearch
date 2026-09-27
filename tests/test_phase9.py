@@ -16,6 +16,7 @@ Covers the Phase 9 acceptance targets:
 
 from __future__ import annotations
 
+import logging
 from datetime import datetime, timezone
 
 import numpy as np
@@ -754,7 +755,15 @@ class TestCycleAuditPersistence:
         e.run_cycle(_inputs())
         assert list(tmp_path.iterdir()) == []            # no I/O unless opted in
 
-    def test_audit_write_failure_never_breaks_the_cycle(self):
-        e = TradingEngine(mode="RESEARCH", audit_log_path=r"Z:\no\such\dir\audit.md")
-        result = e.run_cycle(_inputs())                  # must not raise
+    def test_audit_write_failure_never_breaks_the_cycle(self, tmp_path, caplog):
+        # A parent directory that does not exist fails the write on every OS. The old
+        # Windows path (Z:\...) is a legal FILE NAME on Linux, so on CI the write
+        # succeeded, the failure path was never exercised, and a stray file was left in
+        # the working directory.
+        target = tmp_path / "no" / "such" / "dir" / "audit.md"
+        e = TradingEngine(mode="RESEARCH", audit_log_path=str(target))
+        with caplog.at_level(logging.WARNING, logger="core.engine.engine"):
+            result = e.run_cycle(_inputs())              # must not raise
         assert [a["step"] for a in result.audit] == list(range(1, 14))
+        assert not target.exists()
+        assert any("cycle audit persistence" in r.getMessage() for r in caplog.records)

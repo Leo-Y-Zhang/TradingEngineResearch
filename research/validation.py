@@ -303,7 +303,7 @@ def evaluate_alpha_stability(ic_series: pd.Series) -> float:
     std_ic  = float(np.std(values, ddof=1))
     if std_ic > 0:
         t_stat = mean_ic / (std_ic / math.sqrt(n))
-        # Map t-stat to [0,1]: t=0 → 0.5, t=2 → ~0.97 (sigmoid-like)
+        # Map t-stat to [0,1] with a logistic on t/2: t=0 → 0.5, t=2 → ~0.73, t=6 → ~0.95
         t_component = 1.0 / (1.0 + math.exp(-t_stat / 2.0))
     else:
         t_component = 1.0 if mean_ic > 0 else 0.0

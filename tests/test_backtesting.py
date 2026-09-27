@@ -39,6 +39,13 @@ class TestMetrics:
     def test_max_drawdown_monotonic_up_is_zero(self):
         assert m.max_drawdown(pd.Series([0.01, 0.02, 0.01])) == pytest.approx(0.0, abs=1e-12)
 
+    def test_max_drawdown_counts_a_loss_from_the_starting_equity(self):
+        # equity 1 -> 0.9 -> 0.945: the starting capital is the first peak, so the
+        # worst peak-to-trough is (0.9-1.0)/1.0 = -10%. Measuring only from the first
+        # period's close reported 0.0 for a book that lost money from day one.
+        assert m.max_drawdown(pd.Series([-0.10, 0.05])) == pytest.approx(0.10, abs=1e-12)
+        assert m.max_drawdown(pd.Series([-0.20])) == pytest.approx(0.20, abs=1e-12)
+
     def test_hit_rate(self):
         # positives: 0.01, 0.02 -> 2 of 5 (0.0 is not a hit)
         assert m.hit_rate(pd.Series([0.01, -0.01, 0.02, 0.0, -0.03])) == pytest.approx(0.4)
@@ -51,6 +58,13 @@ class TestMetrics:
         r = pd.Series(rng.normal(0.001, 0.01, 500))
         expected = r.mean() / r.std(ddof=1) * np.sqrt(252)
         assert m.sharpe(r, periods_per_year=252) == pytest.approx(expected, rel=1e-9)
+
+    def test_sharpe_risk_free_is_an_annual_rate(self):
+        # risk_free is annual: 12% a year is 1% a month off every monthly return.
+        r = pd.Series([0.02, 0.00, 0.03, 0.01, -0.01, 0.02])
+        excess = r - 0.01
+        expected = excess.mean() / excess.std(ddof=1) * np.sqrt(12)
+        assert m.sharpe(r, periods_per_year=12, risk_free=0.12) == pytest.approx(expected, rel=1e-12)
 
     def test_ann_vol_matches_formula(self):
         rng = np.random.default_rng(1)
@@ -176,6 +190,47 @@ class TestBacktester:
         assert seen, "engine was never invoked"
         assert seen[0] == pytest.approx(0.0, abs=1e-9)     # flat at the start
         assert max(seen) > 0.05                             # full book in a crash → deep drawdown
+
+
+class TestAnnualisation:
+    """The periods-per-year the harness infers when the caller does not pass one."""
+
+    @staticmethod
+    def _implied_ppy(monkeypatch, index: pd.DatetimeIndex, rebalance: str) -> float:
+        from types import SimpleNamespace
+
+        def _stub_run_cycle(self, inputs):
+            n = len(inputs.symbols)
+            return SimpleNamespace(
+                blocked=False, target_weights={s: 1.0 / n for s in inputs.symbols}
+            )
+
+        monkeypatch.setattr(eng.TradingEngine, "run_cycle", _stub_run_cycle)
+        rng = np.random.default_rng(3)
+        prices = pd.DataFrame(
+            {c: 100.0 * np.exp(np.cumsum(rng.normal(0.0005, 0.01, len(index))))
+             for c in ("AAA", "BBB")},
+            index=index,
+        )
+        res = Backtester(rebalance=rebalance, warmup=5, seed=7).run(prices)
+        # sharpe = raw_sharpe * sqrt(ppy), so the ppy the run used can be read back.
+        return (res.metrics["sharpe"] / m.sharpe(res.returns, periods_per_year=1)) ** 2
+
+    def test_daily_rebalance_on_trading_days_is_not_annualised_as_365(self, monkeypatch):
+        # Daily rebalances on an exchange calendar are one CALENDAR day apart at the
+        # median, which the gap rule turned into 365 periods a year -- inflating Sharpe
+        # by sqrt(365/252) ~ 1.2x. It is the number of rebalances a year that counts.
+        idx = pd.bdate_range("2021-01-04", "2022-12-30", tz="UTC")
+        assert 250 <= self._implied_ppy(monkeypatch, idx, "D") <= 263
+
+    def test_daily_rebalance_on_a_seven_day_calendar_is_365(self, monkeypatch):
+        idx = pd.date_range("2021-01-01", "2022-12-31", freq="D", tz="UTC")
+        assert self._implied_ppy(monkeypatch, idx, "D") == pytest.approx(365, abs=1)
+
+    @pytest.mark.parametrize("rebalance, expected", [("W", 52), ("M", 12)])
+    def test_weekly_and_monthly_are_unchanged(self, monkeypatch, rebalance, expected):
+        idx = pd.bdate_range("2019-01-01", "2022-12-30", tz="UTC")
+        assert self._implied_ppy(monkeypatch, idx, rebalance) == pytest.approx(expected)
 
 
 class TestAchievedBook:
